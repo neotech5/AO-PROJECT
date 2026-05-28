@@ -407,6 +407,103 @@ body.sidebar-open {
 }
 
 /* ============================================
+   TABS (Player Guide & Profession)
+   ============================================ */
+.tabs {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.tabs-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.4rem;
+    background: rgba(15, 15, 30, 0.6);
+    border: 1px solid rgba(212, 175, 55, 0.18);
+    border-radius: 14px;
+}
+
+.tab-btn {
+    flex: 1 1 auto;
+    min-width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.65rem 0.9rem;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: rgba(232, 232, 240, 0.7);
+    font-family: inherit;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+    white-space: nowrap;
+}
+
+.tab-btn:hover {
+    background: rgba(212, 175, 55, 0.08);
+    color: var(--text);
+}
+
+.tab-btn.active {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.22), rgba(212, 175, 55, 0.08));
+    border-color: rgba(212, 175, 55, 0.55);
+    color: var(--accent);
+    box-shadow: 0 4px 14px rgba(212, 175, 55, 0.12);
+}
+
+.tab-btn-icon {
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.tab-btn-tag {
+    display: inline-block;
+    padding: 0.15rem 0.45rem;
+    border-radius: 999px;
+    background: rgba(212, 175, 55, 0.12);
+    color: var(--accent);
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.tab-btn-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tabs-panels > .tab-panel {
+    display: none;
+}
+
+.tabs-panels > .tab-panel.active {
+    display: block;
+    animation: tabFade 0.22s ease-out;
+}
+
+@keyframes tabFade {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 640px) {
+    .tab-btn {
+        min-width: 110px;
+        font-size: 0.78rem;
+        padding: 0.55rem 0.7rem;
+    }
+    .tab-btn-title {
+        max-width: 90px;
+    }
+}
+
+/* ============================================
    GUIDE PHASES
    ============================================ */
 .guide-phases-grid {

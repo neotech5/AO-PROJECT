@@ -117,6 +117,76 @@ function toggleSidebar() {
     }
 }
 
+// ============================================
+// TABS (Player Guide & Profession)
+// ============================================
+
+const activeTab = {
+    guide: null,
+    profession: null,
+};
+
+function getActiveTabId(group, ids) {
+    if (!ids || ids.length === 0) return null;
+    const current = activeTab[group];
+    if (current && ids.includes(current)) return current;
+    activeTab[group] = ids[0];
+    return ids[0];
+}
+
+function setActiveTab(group, targetId) {
+    activeTab[group] = targetId;
+
+    // Update tab buttons
+    document.querySelectorAll(`.tab-btn[data-group="${group}"]`).forEach(btn => {
+        const isActive = btn.dataset.target === targetId;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+    });
+
+    // Update panels — only toggle those that belong to this group's container
+    const containerId = group === 'guide' ? 'guidePhasesGrid' : 'professionGrid';
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    container.querySelectorAll('.tab-panel').forEach(panel => {
+        panel.classList.toggle('active', panel.id === targetId);
+    });
+}
+
+function setupTabs() {
+    document.addEventListener('click', (e) => {
+        const btn = e.target.closest('.tab-btn');
+        if (!btn) return;
+        const group = btn.dataset.group;
+        const target = btn.dataset.target;
+        if (!group || !target) return;
+        setActiveTab(group, target);
+    });
+}
+
+// When a sidebar link points to a tab panel, activate that tab too
+function activateTabForHash(hash) {
+    if (!hash) return;
+    const id = hash.replace(/^#/, '');
+    if (!id) return;
+
+    // Guide phases
+    const guideIds = ['guide-beginner', 'guide-midgame', 'guide-endgame'];
+    if (guideIds.includes(id)) {
+        setActiveTab('guide', id);
+        return;
+    }
+
+    // Professions
+    const professionIds = [
+        'profession-lumberjack', 'profession-ore-miner', 'profession-skinner',
+        'profession-stone-quarrier', 'profession-fiber-harvester', 'profession-fisherman'
+    ];
+    if (professionIds.includes(id)) {
+        setActiveTab('profession', id);
+    }
+}
+
 function setupSidebar() {
     const toggle = document.getElementById('menuToggle');
     const closeBtn = document.getElementById('sidebarClose');
@@ -146,15 +216,32 @@ function setupSidebar() {
         });
     });
 
-    // Sidebar link click → smooth scroll + close
+    // Sidebar link click → activate tab if needed + smooth scroll + close
     document.querySelectorAll('.sidebar-link').forEach(link => {
         link.addEventListener('click', (e) => {
             const href = link.getAttribute('href');
             if (href && href.startsWith('#')) {
                 e.preventDefault();
+
+                // If link points to a tabbed panel, activate that tab first
+                activateTabForHash(href);
+
                 const target = document.querySelector(href);
                 if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Scroll to its containing section so user sees the tab row + content
+                    const guideIds = ['guide-beginner', 'guide-midgame', 'guide-endgame'];
+                    const professionIds = [
+                        'profession-lumberjack', 'profession-ore-miner', 'profession-skinner',
+                        'profession-stone-quarrier', 'profession-fiber-harvester', 'profession-fisherman'
+                    ];
+                    const id = href.replace(/^#/, '');
+                    let scrollTarget = target;
+                    if (guideIds.includes(id)) {
+                        scrollTarget = document.getElementById('guides') || target;
+                    } else if (professionIds.includes(id)) {
+                        scrollTarget = document.getElementById('professions') || target;
+                    }
+                    scrollTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
                 // Mark active
                 document.querySelectorAll('.sidebar-link').forEach(l => l.classList.remove('active'));
@@ -212,15 +299,35 @@ function getGuidePhases() {
 }
 
 function renderGuides() {
-    const grid = document.getElementById('guidePhasesGrid');
-    if (!grid) return;
-    grid.innerHTML = '';
+    const tabsRow = document.getElementById('guideTabsRow');
+    const panels = document.getElementById('guidePhasesGrid');
+    if (!tabsRow || !panels) return;
+    tabsRow.innerHTML = '';
+    panels.innerHTML = '';
 
     const phases = getGuidePhases();
+    const activeId = getActiveTabId('guide', phases.map(p => p.id));
+
     phases.forEach(phase => {
-        const card = document.createElement('article');
-        card.className = 'guide-phase-card';
-        card.id = phase.id;
+        const isActive = phase.id === activeId;
+
+        const tabBtn = document.createElement('button');
+        tabBtn.type = 'button';
+        tabBtn.className = 'tab-btn' + (isActive ? ' active' : '');
+        tabBtn.setAttribute('role', 'tab');
+        tabBtn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        tabBtn.dataset.target = phase.id;
+        tabBtn.dataset.group = 'guide';
+        tabBtn.innerHTML = `
+            <span class="tab-btn-tag">${phase.tag}</span>
+            <span class="tab-btn-title">${phase.title}</span>
+        `;
+        tabsRow.appendChild(tabBtn);
+
+        const panel = document.createElement('article');
+        panel.className = 'guide-phase-card tab-panel' + (isActive ? ' active' : '');
+        panel.id = phase.id;
+        panel.setAttribute('role', 'tabpanel');
 
         const activitiesHtml = Array.isArray(phase.activities)
             ? phase.activities.map(a => `<li>${a}</li>`).join('')
@@ -232,7 +339,7 @@ function renderGuides() {
             ? phase.tips.map(a => `<li>${a}</li>`).join('')
             : '';
 
-        card.innerHTML = `
+        panel.innerHTML = `
             <div class="guide-phase-header">
                 <span class="guide-phase-tag">${phase.tag}</span>
                 <h3 class="guide-phase-title">${phase.title}</h3>
@@ -261,7 +368,7 @@ function renderGuides() {
                 </div>
             </div>
         `;
-        grid.appendChild(card);
+        panels.appendChild(panel);
     });
 }
 
@@ -410,15 +517,35 @@ function renderProfessionOverview() {
 function renderProfessions() {
     renderProfessionOverview();
 
-    const grid = document.getElementById('professionGrid');
-    if (!grid) return;
-    grid.innerHTML = '';
+    const tabsRow = document.getElementById('professionTabsRow');
+    const panels = document.getElementById('professionGrid');
+    if (!tabsRow || !panels) return;
+    tabsRow.innerHTML = '';
+    panels.innerHTML = '';
 
     const professions = getProfessions();
+    const activeId = getActiveTabId('profession', professions.map(p => p.id));
+
     professions.forEach(p => {
+        const isActive = p.id === activeId;
+
+        const tabBtn = document.createElement('button');
+        tabBtn.type = 'button';
+        tabBtn.className = 'tab-btn' + (isActive ? ' active' : '');
+        tabBtn.setAttribute('role', 'tab');
+        tabBtn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        tabBtn.dataset.target = p.id;
+        tabBtn.dataset.group = 'profession';
+        tabBtn.innerHTML = `
+            <span class="tab-btn-icon">${p.icon}</span>
+            <span class="tab-btn-title">${p.name}</span>
+        `;
+        tabsRow.appendChild(tabBtn);
+
         const card = document.createElement('article');
-        card.className = 'profession-card';
+        card.className = 'profession-card tab-panel' + (isActive ? ' active' : '');
         card.id = p.id;
+        card.setAttribute('role', 'tabpanel');
 
         const biomesHtml = p.biomes.map(b => `<span class="badge badge-outline">${b}</span>`).join('');
         const toolsHtml = p.tools.map(tool => `
@@ -488,7 +615,7 @@ function renderProfessions() {
                 </div>
             </div>
         `;
-        grid.appendChild(card);
+        panels.appendChild(card);
     });
 }
 
@@ -947,6 +1074,7 @@ function renderProTips() {
 
 document.addEventListener('DOMContentLoaded', () => {
     setupSidebar();
+    setupTabs();
 
     // Load translations first
     loadTranslations().then(() => {

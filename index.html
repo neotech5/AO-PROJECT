@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Albion Online Farming Guide</title>
+    <title>Kitab Pemula Albion Online</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
     <header class="sticky-header">
         <div class="container">
             <div class="header-content">
-                <h1 class="logo" data-i18n="hero.title">Albion Farming</h1>
+                <h1 class="logo" data-i18n="hero.title">Kitab Pemula Albion</h1>
                 <div class="header-actions">
                     <div class="language-switcher">
                         <button class="lang-btn active" data-lang="en">EN</button>
@@ -146,7 +146,10 @@
                     <h2>📖 <span data-i18n="guides.title">Player Progression Guide</span></h2>
                     <p data-i18n="guides.description">Step-by-step path from your first hour to end-game farming. Choose the phase that matches your current progress.</p>
                 </div>
-                <div class="guide-phases-grid" id="guidePhasesGrid"></div>
+                <div class="tabs" id="guideTabs">
+                    <div class="tabs-row" id="guideTabsRow" role="tablist"></div>
+                    <div class="tabs-panels" id="guidePhasesGrid"></div>
+                </div>
             </div>
 
             <!-- Profession Section -->
@@ -156,7 +159,10 @@
                     <p data-i18n="professions.description">Pick a gathering profession from the Destiny Board. Each one has its preferred biome, tools, and best T8 hunting grounds.</p>
                 </div>
                 <div class="profession-overview-card" id="profession-overview"></div>
-                <div class="profession-grid" id="professionGrid"></div>
+                <div class="tabs" id="professionTabs">
+                    <div class="tabs-row" id="professionTabsRow" role="tablist"></div>
+                    <div class="tabs-panels" id="professionGrid"></div>
+                </div>
             </div>
 
             <!-- Gathering Builds Section -->
