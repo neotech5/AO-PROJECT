@@ -15,16 +15,86 @@
         <div class="container">
             <div class="header-content">
                 <h1 class="logo" data-i18n="hero.title">Albion Farming</h1>
-                <div class="language-switcher">
-                    <button class="lang-btn active" data-lang="en">EN</button>
-                    <button class="lang-btn" data-lang="id">ID</button>
+                <div class="header-actions">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="id">ID</button>
+                    </div>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </button>
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- Sidebar Drawer -->
+    <div class="sidebar-backdrop" id="sidebarBackdrop" aria-hidden="true"></div>
+    <aside class="sidebar" id="sidebar" role="dialog" aria-modal="true" aria-labelledby="sidebarTitle" aria-hidden="true">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title" id="sidebarTitle" data-i18n="sidebar.title">Menu</h2>
+            <button class="sidebar-close" id="sidebarClose" aria-label="Close menu">×</button>
+        </div>
+        <nav class="sidebar-nav">
+            <!-- Player Guide group -->
+            <div class="sidebar-group">
+                <button class="sidebar-group-toggle" data-target="group-guide" aria-expanded="true">
+                    <span class="sidebar-group-icon">📖</span>
+                    <span class="sidebar-group-label" data-i18n="sidebar.guideGroup">Player Guide</span>
+                    <span class="sidebar-chevron">▾</span>
+                </button>
+                <ul class="sidebar-group-items" id="group-guide">
+                    <li><a href="#guide-beginner" class="sidebar-link" data-i18n="sidebar.guideBeginner">Beginner (Pemula)</a></li>
+                    <li><a href="#guide-midgame" class="sidebar-link" data-i18n="sidebar.guideMidgame">Mid Game</a></li>
+                    <li><a href="#guide-endgame" class="sidebar-link" data-i18n="sidebar.guideEndgame">End Game</a></li>
+                </ul>
+            </div>
+
+            <!-- Profession group -->
+            <div class="sidebar-group">
+                <button class="sidebar-group-toggle" data-target="group-profession" aria-expanded="true">
+                    <span class="sidebar-group-icon">🛠️</span>
+                    <span class="sidebar-group-label" data-i18n="sidebar.professionGroup">Gathering Professions</span>
+                    <span class="sidebar-chevron">▾</span>
+                </button>
+                <ul class="sidebar-group-items" id="group-profession">
+                    <li><a href="#profession-overview" class="sidebar-link" data-i18n="sidebar.professionOverview">Gatherer Overview</a></li>
+                    <li><a href="#profession-lumberjack" class="sidebar-link" data-i18n="sidebar.lumberjack">Lumberjack (Wood)</a></li>
+                    <li><a href="#profession-ore-miner" class="sidebar-link" data-i18n="sidebar.oreMiner">Ore Miner (Ore)</a></li>
+                    <li><a href="#profession-skinner" class="sidebar-link" data-i18n="sidebar.skinner">Skinner (Hide)</a></li>
+                    <li><a href="#profession-stone-quarrier" class="sidebar-link" data-i18n="sidebar.stoneQuarrier">Stone Quarrier (Stone)</a></li>
+                    <li><a href="#profession-fiber-harvester" class="sidebar-link" data-i18n="sidebar.fiberHarvester">Fiber Harvester (Fiber)</a></li>
+                    <li><a href="#profession-fisherman" class="sidebar-link" data-i18n="sidebar.fisherman">Fisherman (Fishing)</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick links group -->
+            <div class="sidebar-group">
+                <button class="sidebar-group-toggle" data-target="group-quick" aria-expanded="true">
+                    <span class="sidebar-group-icon">🧭</span>
+                    <span class="sidebar-group-label" data-i18n="sidebar.quickGroup">Quick Links</span>
+                    <span class="sidebar-chevron">▾</span>
+                </button>
+                <ul class="sidebar-group-items" id="group-quick">
+                    <li><a href="#home" class="sidebar-link" data-i18n="sidebar.home">Home</a></li>
+                    <li><a href="#biomes" class="sidebar-link" data-i18n="sidebar.biomes">Biomes</a></li>
+                    <li><a href="#tiers" class="sidebar-link" data-i18n="sidebar.tiers">Tier Guide</a></li>
+                    <li><a href="#t8maps" class="sidebar-link" data-i18n="sidebar.t8maps">T8 Maps</a></li>
+                    <li><a href="#builds" class="sidebar-link" data-i18n="sidebar.builds">Builds</a></li>
+                    <li><a href="#events" class="sidebar-link" data-i18n="sidebar.events">Events</a></li>
+                    <li><a href="#protips" class="sidebar-link" data-i18n="sidebar.protips">Pro Tips</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="sidebar-footer">
+            <p data-i18n="sidebar.footer">Albion East · Asia Server</p>
+        </div>
+    </aside>
+
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-background"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -69,8 +139,28 @@
     <!-- Main Content -->
     <section class="main-content">
         <div class="container">
+
+            <!-- Player Guide Section -->
+            <div class="section-block" id="guides">
+                <div class="section-header">
+                    <h2>📖 <span data-i18n="guides.title">Player Progression Guide</span></h2>
+                    <p data-i18n="guides.description">Step-by-step path from your first hour to end-game farming. Choose the phase that matches your current progress.</p>
+                </div>
+                <div class="guide-phases-grid" id="guidePhasesGrid"></div>
+            </div>
+
+            <!-- Profession Section -->
+            <div class="section-block" id="professions">
+                <div class="section-header">
+                    <h2>🛠️ <span data-i18n="professions.title">Gathering Professions</span></h2>
+                    <p data-i18n="professions.description">Pick a gathering profession from the Destiny Board. Each one has its preferred biome, tools, and best T8 hunting grounds.</p>
+                </div>
+                <div class="profession-overview-card" id="professionOverview"></div>
+                <div class="profession-grid" id="professionGrid"></div>
+            </div>
+
             <!-- Gathering Builds Section -->
-            <div class="section-block">
+            <div class="section-block" id="builds">
                 <div class="section-header">
                     <h2>⚔️ <span data-i18n="builds.title">Recommended Gathering Builds</span></h2>
                     <p data-i18n="builds.description">Optimize your equipment for maximum efficiency and safety while gathering T8 resources.</p>
@@ -79,7 +169,7 @@
             </div>
 
             <!-- Biomes Section -->
-            <div class="section-block">
+            <div class="section-block" id="biomes">
                 <div class="section-header">
                     <h2 data-i18n="biomes.title">Biome Distribution</h2>
                     <p data-i18n="biomes.description">Each city specializes in different resources. Choose your farming location based on what you need.</p>
@@ -88,7 +178,7 @@
             </div>
 
             <!-- Tier Guide Section -->
-            <div class="section-block">
+            <div class="section-block" id="tiers">
                 <div class="section-header">
                     <h2 data-i18n="tiers.title">Tier Progression Guide</h2>
                     <p data-i18n="tiers.description">Learn the best strategies for each tier level, from safe beginner zones to dangerous T8 Outlands.</p>
@@ -97,7 +187,7 @@
             </div>
 
             <!-- T8 Maps Section -->
-            <div class="section-block">
+            <div class="section-block" id="t8maps">
                 <div class="section-header">
                     <h2 data-i18n="t8Maps.title">T8 Farming Locations</h2>
                     <p data-i18n="t8Maps.description">Specific map names for each resource type in the Outlands (Black Zone). These are the most valuable farming spots.</p>
@@ -106,7 +196,7 @@
             </div>
 
             <!-- Event Schedule Section -->
-            <div class="section-block">
+            <div class="section-block" id="events">
                 <div class="section-header">
                     <h2>📅 <span data-i18n="events.title">Asia Server Events & Schedule</span></h2>
                     <p data-i18n="events.description">Important events and timings for Asia server farming activities.</p>
@@ -115,22 +205,27 @@
             </div>
 
             <!-- Pro Tips Section -->
-            <div class="pro-tips-grid">
-                <div class="card pro-tip-card">
-                    <div class="card-icon">⚡</div>
-                    <h3 class="card-title" data-i18n="proTips.efficiency.title">Efficiency Tips</h3>
-                    <div class="card-content" id="efficiencyTips"></div>
-                    <div class="card-note">💡 <em data-i18n="proTips.efficiency.radiantTip">Tip: Use the new Loot All button from Radiant Wilds for faster PvE farming!</em></div>
+            <div class="section-block" id="protips">
+                <div class="section-header">
+                    <h2>💡 <span data-i18n="proTips.title">Pro Tips</span></h2>
                 </div>
-                <div class="card pro-tip-card">
-                    <div class="card-icon">🛡️</div>
-                    <h3 class="card-title" data-i18n="proTips.safety.title">Safety Strategies</h3>
-                    <div class="card-content" id="safetyTips"></div>
-                </div>
-                <div class="card pro-tip-card">
-                    <div class="card-icon">🧭</div>
-                    <h3 class="card-title" data-i18n="proTips.profitability.title">Resource Profitability</h3>
-                    <div class="card-content" id="profitabilityTips"></div>
+                <div class="pro-tips-grid">
+                    <div class="card pro-tip-card">
+                        <div class="card-icon">⚡</div>
+                        <h3 class="card-title" data-i18n="proTips.efficiency.title">Efficiency Tips</h3>
+                        <div class="card-content" id="efficiencyTips"></div>
+                        <div class="card-note">💡 <em data-i18n="proTips.efficiency.radiantTip">Tip: Use the new Loot All button from Radiant Wilds for faster PvE farming!</em></div>
+                    </div>
+                    <div class="card pro-tip-card">
+                        <div class="card-icon">🛡️</div>
+                        <h3 class="card-title" data-i18n="proTips.safety.title">Safety Strategies</h3>
+                        <div class="card-content" id="safetyTips"></div>
+                    </div>
+                    <div class="card pro-tip-card">
+                        <div class="card-icon">🧭</div>
+                        <h3 class="card-title" data-i18n="proTips.profitability.title">Resource Profitability</h3>
+                        <div class="card-content" id="profitabilityTips"></div>
+                    </div>
                 </div>
             </div>
         </div>

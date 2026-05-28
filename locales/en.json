@@ -8,6 +8,30 @@
     "extreme": "Extreme",
     "dangerous": "Dangerous"
   },
+  "sidebar": {
+    "title": "Menu",
+    "guideGroup": "Player Guide",
+    "guideBeginner": "Beginner (Pemula)",
+    "guideMidgame": "Mid Game",
+    "guideEndgame": "End Game",
+    "professionGroup": "Gathering Professions",
+    "professionOverview": "Gatherer Overview",
+    "lumberjack": "Lumberjack (Wood)",
+    "oreMiner": "Ore Miner (Ore)",
+    "skinner": "Skinner (Hide)",
+    "stoneQuarrier": "Stone Quarrier (Stone)",
+    "fiberHarvester": "Fiber Harvester (Fiber)",
+    "fisherman": "Fisherman (Fishing)",
+    "quickGroup": "Quick Links",
+    "home": "Home",
+    "biomes": "Biomes",
+    "tiers": "Tier Guide",
+    "t8maps": "T8 Maps",
+    "builds": "Builds",
+    "events": "Events",
+    "protips": "Pro Tips",
+    "footer": "Albion East · Asia Server"
+  },
   "tracker": {
     "title": "🕐 Asia Server Status",
     "peakTime": "Peak Time:",
@@ -26,8 +50,220 @@
     "description": "Master the art of resource gathering across all tiers. From beginner zones to the most dangerous T8 Outlands, discover the best farming spots and strategies.",
     "cta": "Start Farming"
   },
+  "guides": {
+    "title": "Player Progression Guide",
+    "description": "Step-by-step path from your first hour to end-game farming. Choose the phase that matches your current progress.",
+    "labelGoal": "Goal",
+    "labelActivities": "Main Activities",
+    "labelEquipment": "Equipment",
+    "labelTips": "Key Tips",
+    "beginner": {
+      "tag": "PHASE 1",
+      "title": "Beginner (Pemula)",
+      "hours": "0 – 50 hours",
+      "goal": "Learn the controls, level up your Destiny Board, and gather T2–T4 resources in safe Royal Continent zones.",
+      "activities": [
+        "Complete the tutorial and starter quests",
+        "Gather and craft in Blue Zones around your starter city",
+        "Unlock the Royal Continent by reaching T3 Adventurer",
+        "Try Yellow Zone solo dungeons for early fame",
+        "Set Learning Points (LP) on your chosen gathering branch"
+      ],
+      "equipment": [
+        "T2–T3 Gathering Tools (Axe / Pickaxe / Sickle / Skinning Knife / Stone Hammer)",
+        "Adept's Bag (T4) when affordable",
+        "Pork Pie food buff for +carry weight",
+        "Riding Horse mount (cheap, faster travel)"
+      ],
+      "tips": [
+        "Do NOT buy Premium until you understand the game loop",
+        "Stick to Blue/Yellow zones — no full-loss in Blue",
+        "Spend LP on a single gathering line to fast-track to T6 quickly",
+        "Buy a Backpack of Insight for daily silver",
+        "Use the in-game map to find resource icons (axe = wood, etc.)"
+      ]
+    },
+    "midgame": {
+      "tag": "PHASE 2",
+      "title": "Mid Game",
+      "hours": "50 – 300 hours",
+      "goal": "Specialize one gathering line to T6, enter Red Zones and shallow Black Zones, and start trading on the market.",
+      "activities": [
+        "Farm Red Zone resources (lower competition than Black)",
+        "Run group Hellgates 2v2 / 5v5 for silver and loot",
+        "Join a small guild and travel together to T6 Black Zones",
+        "Use Mists / Avalonian Roads for solo gathering with quick escapes",
+        "Refine your own resources for higher market profit"
+      ],
+      "equipment": [
+        "T6 Gathering Tools with .1 / .2 enchant",
+        "Stalker Hood (invisibility) or Cleric Cowl (cleanse) for escape",
+        "Assassin Shoes for speed boost",
+        "Swiftclaw or Direwolf mount",
+        "Resurrection Mage Potion + Sticky Potion for survival"
+      ],
+      "tips": [
+        "Focus ONE resource to T6 before branching out — specialization > generalization",
+        "Always carry escape gear in a second slot",
+        "Sell raw resources at the city closest to that biome (highest demand)",
+        "Avoid 13:00–15:00 UTC peak PvP — go solo at night instead",
+        "Check the Killboard before entering an unfamiliar Black Zone"
+      ]
+    },
+    "endgame": {
+      "tag": "PHASE 3",
+      "title": "End Game",
+      "hours": "300+ hours",
+      "goal": "Farm T7–T8 resources in deep Black Zone for maximum profit, contribute to guild wars, and master the meta.",
+      "activities": [
+        "Group gathering in Watchtower / Mists / Avalonian Roads",
+        "Participate in ZvZ, Crystal League, or Mist Hunting",
+        "Craft T8 resources into masterpiece items for huge profit",
+        "Run premium content (Castles, Mists Bosses, Avalonian Dungeons)"
+      ],
+      "equipment": [
+        "Full T8 gathering set with .3 / .4 enchant (when affordable)",
+        "Specter Hood (group invisibility) for team gathering",
+        "Royal Boots for stamina/speed",
+        "Saddled Eagle or Spectral Bonehorse for travel",
+        "Major Healing Potion + Resurrection Mage Potion"
+      ],
+      "tips": [
+        "Avoid solo gathering during 13:00–15:00 UTC — extreme ganker density",
+        "Run with guild or trusted group for Watchtower territory T8",
+        "Use scout/spotter alts on the world map for early gank warning",
+        "Refine T8 with focus for huge ROI — never sell raw if you can refine",
+        "Always have a transport plan back to city (mount + escape gear)"
+      ]
+    }
+  },
+  "professions": {
+    "title": "Gathering Professions",
+    "description": "Pick a gathering profession from the Destiny Board. Each one has its preferred biome, tools, and best T8 hunting grounds.",
+    "labelResource": "Resource",
+    "labelHub": "City Hub",
+    "labelBiomes": "Best Biomes",
+    "labelTools": "Tools by Tier",
+    "labelToolName": "Tool",
+    "labelBestSpots": "Best T7-T8 Spots",
+    "labelTips": "Tips",
+    "overview": {
+      "title": "Gatherer Overview",
+      "description": "Gatherers form the backbone of Albion's economy. Every weapon, armor, and consumable starts from raw materials. Pick a path on the Destiny Board, level its tools, and choose your biome wisely.",
+      "points": [
+        "Specialize ONE branch to T6 before opening a second",
+        "Bonus yield per tier from the Destiny Board (e.g. +X% items)",
+        "Higher tier tools = faster cluster clearing time",
+        "Always match biome to resource for maximum yield",
+        "T5+ enchanted resources sell for 5–20× the raw tier"
+      ]
+    },
+    "lumberjack": {
+      "name": "Lumberjack (Penebang Kayu)",
+      "tagline": "Chop wood from forests, swamps, and highlands.",
+      "tips": [
+        "Best paired with Forest biome (Lymhurst hub)",
+        "Use Stalker Hood for safe ganker escape",
+        "Logs are heaviest of all resources — bring Pork Pie",
+        "Refining your own planks at Lymhurst gets the city-specialty bonus"
+      ]
+    },
+    "oreMiner": {
+      "name": "Ore Miner (Penambang)",
+      "tagline": "Mine ore from mountains and highlands.",
+      "tips": [
+        "Fort Sterling is the ore refining hub (city bonus)",
+        "T8 Meteorite Ore has the highest raw silver value",
+        "Pair with Tank build (Knight set) — ore zones get crowded",
+        "Use Cleric Robe to cleanse focus drain debuffs"
+      ]
+    },
+    "skinner": {
+      "name": "Skinner (Penguliti)",
+      "tagline": "Skin hide from animals in steppe, forest, and highland biomes.",
+      "tips": [
+        "Bridgewatch refines hide with city bonus",
+        "Skinning animals counts toward Killing Track too — fame double-dip",
+        "T8 Direwolf Hide is end-game material for tank armor",
+        "Travel light — hide is mid-weight, allows more inventory"
+      ]
+    },
+    "stoneQuarrier": {
+      "name": "Stone Quarrier (Pemecah Batu)",
+      "tagline": "Quarry stone from highlands and mountains.",
+      "tips": [
+        "Martlock refines stone with city bonus",
+        "Stone has the lowest PvP competition — great for beginners",
+        "T8 Adamantium Stone is required for highest-tier crafting buildings",
+        "Stone is heavy — Pork Pie + extra Bag tier is essential"
+      ]
+    },
+    "fiberHarvester": {
+      "name": "Fiber Harvester (Pemanen Serat)",
+      "tagline": "Harvest fiber from swamps and steppes.",
+      "tips": [
+        "Thetford is the cloth refining hub",
+        "T8 Ghoul Yarrow used for end-game cloth armor (Robe of Purity, etc.)",
+        "Fiber is lightweight — bring more bags for max load",
+        "Pair with Cleric set to cleanse mob roots in swamps"
+      ]
+    },
+    "fisherman": {
+      "name": "Fisherman (Pemancing)",
+      "tagline": "Fish in lakes, ponds, and rivers across all biomes.",
+      "hub": "Any city with water (Caerleon has best market)",
+      "bestSpots": [
+        "Royal Continent rivers (safe T2–T6 fish)",
+        "Yellow / Red zone lakes (better fish + treasure)",
+        "Black Zone deep lakes (T7–T8 rare fish + Hooked Box loot)"
+      ],
+      "tips": [
+        "Fishing rod is a 1-handed weapon — pair with Bag for capacity",
+        "Use Bait (crafted from fish) for higher tier catches",
+        "Fishing Spots refresh — move around, don't camp one spot",
+        "Excellent solo profession with low ganker risk",
+        "Caerleon Black Market sells rare fish for huge silver"
+      ]
+    },
+    "tools": {
+      "t2": {
+        "axe": "Journeyman's Axe",
+        "pickaxe": "Journeyman's Pickaxe",
+        "skinning": "Journeyman's Skinning Knife",
+        "stonehammer": "Journeyman's Stone Hammer",
+        "sickle": "Journeyman's Sickle"
+      },
+      "t3": {
+        "fishingrod": "Journeyman's Fishing Rod"
+      },
+      "t4": {
+        "axe": "Adept's Axe",
+        "pickaxe": "Adept's Pickaxe",
+        "skinning": "Adept's Skinning Knife",
+        "stonehammer": "Adept's Stone Hammer",
+        "sickle": "Adept's Sickle",
+        "fishingrod": "Adept's Fishing Rod"
+      },
+      "t6": {
+        "axe": "Expert's Axe",
+        "pickaxe": "Expert's Pickaxe",
+        "skinning": "Expert's Skinning Knife",
+        "stonehammer": "Expert's Stone Hammer",
+        "sickle": "Expert's Sickle",
+        "fishingrod": "Expert's Fishing Rod"
+      },
+      "t8": {
+        "axe": "Elder's Axe",
+        "pickaxe": "Elder's Pickaxe",
+        "skinning": "Elder's Skinning Knife",
+        "stonehammer": "Elder's Stone Hammer",
+        "sickle": "Elder's Sickle",
+        "fishingrod": "Elder's Fishing Rod"
+      }
+    }
+  },
   "builds": {
-    "title": "⚔️ Recommended Gathering Builds",
+    "title": "Recommended Gathering Builds",
     "description": "Optimize your equipment for maximum efficiency and safety while gathering T8 resources.",
     "solo": "Solo Gatherer (Speed)",
     "tank": "Tank Gatherer (Safe)",
@@ -141,6 +377,7 @@
     "lowActivityNote": "Best for new players and solo farmers"
   },
   "proTips": {
+    "title": "Pro Tips",
     "efficiency": {
       "title": "Efficiency Tips",
       "tips": [
@@ -164,7 +401,7 @@
       "title": "Resource Profitability",
       "tips": [
         "Stone: Low competition, stable profit",
-        "Fishing: High profit, requires patience",
+        "Fishing: Steady profit, requires patience",
         "Ore: Medium competition, good returns",
         "Hide & Fiber: High competition, varied profit"
       ]

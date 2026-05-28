@@ -8,6 +8,30 @@
     "extreme": "Ekstrem",
     "dangerous": "Berbahaya"
   },
+  "sidebar": {
+    "title": "Menu",
+    "guideGroup": "Panduan Pemain",
+    "guideBeginner": "Pemula (Beginner)",
+    "guideMidgame": "Mid Game",
+    "guideEndgame": "End Game",
+    "professionGroup": "Profesi Pengumpul",
+    "professionOverview": "Ringkasan Pengumpul",
+    "lumberjack": "Lumberjack (Penebang Kayu)",
+    "oreMiner": "Ore Miner (Penambang)",
+    "skinner": "Skinner (Penguliti)",
+    "stoneQuarrier": "Stone Quarrier (Pemecah Batu)",
+    "fiberHarvester": "Fiber Harvester (Pemanen Serat)",
+    "fisherman": "Fisherman (Pemancing)",
+    "quickGroup": "Tautan Cepat",
+    "home": "Beranda",
+    "biomes": "Bioma",
+    "tiers": "Panduan Tier",
+    "t8maps": "Peta T8",
+    "builds": "Build",
+    "events": "Event",
+    "protips": "Pro Tips",
+    "footer": "Albion East · Server Asia"
+  },
   "tracker": {
     "title": "🕐 Status Server Asia",
     "peakTime": "Waktu Puncak:",
@@ -26,9 +50,221 @@
     "description": "Kuasai seni pengumpulan sumber daya di semua tier. Dari zona pemula hingga Outlands T8 paling berbahaya, temukan spot pengumpulan terbaik dan strategi.",
     "cta": "Mulai Mengumpul"
   },
+  "guides": {
+    "title": "Panduan Perkembangan Pemain",
+    "description": "Langkah demi langkah dari jam pertama hingga farming end-game. Pilih fasa yang sesuai dengan progress anda.",
+    "labelGoal": "Tujuan",
+    "labelActivities": "Aktiviti Utama",
+    "labelEquipment": "Perlengkapan",
+    "labelTips": "Tips Penting",
+    "beginner": {
+      "tag": "FASA 1",
+      "title": "Pemula (Beginner)",
+      "hours": "0 – 50 jam",
+      "goal": "Pelajari kontrol asas, naik level Destiny Board, dan kumpulkan sumber T2–T4 di zona aman Royal Continent.",
+      "activities": [
+        "Selesaikan tutorial dan quest awal",
+        "Kumpul dan craft di Zona Biru sekitar kota mula",
+        "Buka Royal Continent dengan mencapai T3 Adventurer",
+        "Cuba Solo Dungeon di Zona Kuning untuk fame awal",
+        "Tetapkan Learning Points (LP) pada satu cabang gathering"
+      ],
+      "equipment": [
+        "Alat Pengumpul T2–T3 (Axe / Pickaxe / Sickle / Skinning Knife / Stone Hammer)",
+        "Adept's Bag (T4) bila mampu",
+        "Pork Pie untuk buff +kapasiti angkut",
+        "Mount Riding Horse (murah, perjalanan lebih cepat)"
+      ],
+      "tips": [
+        "JANGAN beli Premium sebelum faham loop permainan",
+        "Stay di Zona Biru/Kuning — tiada full-loss di Biru",
+        "Habiskan LP untuk satu line gathering supaya cepat sampai T6",
+        "Beli Backpack of Insight untuk silver harian",
+        "Guna peta dalam game untuk cari ikon resource (axe = kayu, dll.)"
+      ]
+    },
+    "midgame": {
+      "tag": "FASA 2",
+      "title": "Mid Game",
+      "hours": "50 – 300 jam",
+      "goal": "Specialize satu line gathering ke T6, masuk Zona Merah dan Zona Hitam cetek, dan mula trading di pasar.",
+      "activities": [
+        "Farm sumber Zona Merah (kompetisi lebih rendah dari Hitam)",
+        "Main Hellgates 2v2 / 5v5 berkumpulan untuk silver & loot",
+        "Sertai guild kecil dan bergerak bersama ke Zona Hitam T6",
+        "Guna Mists / Avalonian Roads untuk gathering solo dengan escape cepat",
+        "Refine sendiri sumber anda untuk profit pasar lebih tinggi"
+      ],
+      "equipment": [
+        "Alat Pengumpul T6 dengan enchant .1 / .2",
+        "Stalker Hood (invisibility) atau Cleric Cowl (cleanse) untuk escape",
+        "Assassin Shoes untuk boost kelajuan",
+        "Mount Swiftclaw atau Direwolf",
+        "Resurrection Mage Potion + Sticky Potion untuk survival"
+      ],
+      "tips": [
+        "Fokus SATU resource ke T6 sebelum cabang baru — specialization > generalization",
+        "Sentiasa bawa escape gear di slot kedua",
+        "Jual raw resource di kota terdekat dengan bioma tu (demand tertinggi)",
+        "Elak 13:00–15:00 UTC waktu puncak PvP — pergi solo waktu malam",
+        "Semak Killboard sebelum masuk Zona Hitam yang tak biasa"
+      ]
+    },
+    "endgame": {
+      "tag": "FASA 3",
+      "title": "End Game",
+      "hours": "300+ jam",
+      "goal": "Farm sumber T7–T8 di Zona Hitam dalam untuk profit maksimum, bantu guild war, dan kuasai meta.",
+      "activities": [
+        "Group gathering di Watchtower / Mists / Avalonian Roads",
+        "Sertai ZvZ, Crystal League, atau Mist Hunting",
+        "Craft sumber T8 jadi masterpiece item untuk profit besar",
+        "Main premium content (Castles, Mists Bosses, Avalonian Dungeons)"
+      ],
+      "equipment": [
+        "Full T8 gathering set dengan enchant .3 / .4 (bila mampu)",
+        "Specter Hood (group invisibility) untuk team gathering",
+        "Royal Boots untuk stamina/kelajuan",
+        "Mount Saddled Eagle atau Spectral Bonehorse",
+        "Major Healing Potion + Resurrection Mage Potion"
+      ],
+      "tips": [
+        "Elak gathering solo waktu 13:00–15:00 UTC — densiti ganker ekstrem",
+        "Pergi dengan guild atau group dipercayai untuk Watchtower T8",
+        "Guna alt scout/spotter di world map untuk amaran gank awal",
+        "Refine T8 dengan focus untuk ROI besar — jangan jual raw kalau boleh refine",
+        "Sentiasa ada plan transport balik kota (mount + escape gear)"
+      ]
+    }
+  },
+  "professions": {
+    "title": "Profesi Pengumpul",
+    "description": "Pilih profesi pengumpul dari Destiny Board. Setiap satu ada bioma kegemaran, alat, dan kawasan T8 terbaik.",
+    "labelResource": "Sumber",
+    "labelHub": "Kota Hub",
+    "labelBiomes": "Bioma Terbaik",
+    "labelTools": "Alat Mengikut Tier",
+    "labelToolName": "Alat",
+    "labelBestSpots": "Spot T7-T8 Terbaik",
+    "labelTips": "Tips",
+    "overview": {
+      "title": "Ringkasan Pengumpul",
+      "description": "Pengumpul adalah tulang belakang ekonomi Albion. Setiap senjata, armor, dan consumable bermula dari bahan mentah. Pilih satu cabang di Destiny Board, naik level alat, dan pilih bioma dengan bijak.",
+      "points": [
+        "Specialize SATU cabang ke T6 sebelum buka cabang kedua",
+        "Bonus yield setiap tier dari Destiny Board (cth: +X% item)",
+        "Alat tier lebih tinggi = clearing cluster lebih cepat",
+        "Sentiasa padankan bioma dengan resource untuk yield maksimum",
+        "Sumber enchanted T5+ dijual 5–20× harga raw tier"
+      ]
+    },
+    "lumberjack": {
+      "name": "Lumberjack (Penebang Kayu)",
+      "tagline": "Tebang kayu di hutan, rawa, dan dataran tinggi.",
+      "tips": [
+        "Paling sesuai dengan bioma Forest (hub Lymhurst)",
+        "Guna Stalker Hood untuk escape selamat dari ganker",
+        "Log adalah resource paling berat — bawa Pork Pie",
+        "Refine planks sendiri di Lymhurst dapat city-specialty bonus"
+      ]
+    },
+    "oreMiner": {
+      "name": "Ore Miner (Penambang)",
+      "tagline": "Tambang bijih di gunung dan dataran tinggi.",
+      "tips": [
+        "Fort Sterling hub refining ore (city bonus)",
+        "Meteorite Ore T8 ada nilai silver mentah tertinggi",
+        "Padankan dengan build Tank (set Knight) — zona ore selalu ramai",
+        "Guna Cleric Robe untuk cleanse debuff focus drain"
+      ]
+    },
+    "skinner": {
+      "name": "Skinner (Penguliti)",
+      "tagline": "Kulit haiwan di bioma stepa, hutan, dan dataran tinggi.",
+      "tips": [
+        "Bridgewatch refine kulit dengan city bonus",
+        "Skinning haiwan kira sebagai Killing Track — double-dip fame",
+        "Direwolf Hide T8 bahan end-game untuk tank armor",
+        "Bawa muatan ringan — kulit berat sederhana, lebih ruang inventori"
+      ]
+    },
+    "stoneQuarrier": {
+      "name": "Stone Quarrier (Pemecah Batu)",
+      "tagline": "Pecah batu di dataran tinggi dan gunung.",
+      "tips": [
+        "Martlock refine batu dengan city bonus",
+        "Batu ada kompetisi PvP terendah — bagus untuk pemula",
+        "Adamantium Stone T8 diperlukan untuk bangunan crafting tertinggi",
+        "Batu berat — Pork Pie + tier Bag tambahan adalah wajib"
+      ]
+    },
+    "fiberHarvester": {
+      "name": "Fiber Harvester (Pemanen Serat)",
+      "tagline": "Pungut serat di rawa dan stepa.",
+      "tips": [
+        "Thetford adalah hub refining cloth",
+        "Ghoul Yarrow T8 untuk armor cloth end-game (Robe of Purity, dll.)",
+        "Fiber ringan — bawa lebih banyak bag untuk muatan max",
+        "Padankan dengan set Cleric untuk cleanse root mob di rawa"
+      ]
+    },
+    "fisherman": {
+      "name": "Fisherman (Pemancing)",
+      "tagline": "Memancing di tasik, kolam, dan sungai di semua bioma.",
+      "hub": "Mana-mana kota dengan air (Caerleon pasar terbaik)",
+      "bestSpots": [
+        "Sungai Royal Continent (ikan T2–T6 aman)",
+        "Tasik zon Kuning / Merah (ikan lebih baik + harta)",
+        "Tasik dalam Zona Hitam (ikan rare T7–T8 + loot Hooked Box)"
+      ],
+      "tips": [
+        "Fishing rod adalah senjata 1-tangan — padankan dengan Bag untuk kapasiti",
+        "Guna Bait (dibuat dari ikan) untuk tangkapan tier lebih tinggi",
+        "Spot memancing refresh — jangan kekal di satu tempat sahaja",
+        "Profesi solo terbaik dengan risiko ganker rendah",
+        "Black Market Caerleon jual ikan rare untuk silver besar"
+      ]
+    },
+    "tools": {
+      "t2": {
+        "axe": "Journeyman's Axe",
+        "pickaxe": "Journeyman's Pickaxe",
+        "skinning": "Journeyman's Skinning Knife",
+        "stonehammer": "Journeyman's Stone Hammer",
+        "sickle": "Journeyman's Sickle"
+      },
+      "t3": {
+        "fishingrod": "Journeyman's Fishing Rod"
+      },
+      "t4": {
+        "axe": "Adept's Axe",
+        "pickaxe": "Adept's Pickaxe",
+        "skinning": "Adept's Skinning Knife",
+        "stonehammer": "Adept's Stone Hammer",
+        "sickle": "Adept's Sickle",
+        "fishingrod": "Adept's Fishing Rod"
+      },
+      "t6": {
+        "axe": "Expert's Axe",
+        "pickaxe": "Expert's Pickaxe",
+        "skinning": "Expert's Skinning Knife",
+        "stonehammer": "Expert's Stone Hammer",
+        "sickle": "Expert's Sickle",
+        "fishingrod": "Expert's Fishing Rod"
+      },
+      "t8": {
+        "axe": "Elder's Axe",
+        "pickaxe": "Elder's Pickaxe",
+        "skinning": "Elder's Skinning Knife",
+        "stonehammer": "Elder's Stone Hammer",
+        "sickle": "Elder's Sickle",
+        "fishingrod": "Elder's Fishing Rod"
+      }
+    }
+  },
   "builds": {
-    "title": "⚔️ Rekomendasi Build Pengumpul",
-    "description": "Optimalkan perlengkapan Anda untuk efisiensi dan keamanan maksimal saat mengumpulkan sumber daya T8.",
+    "title": "Rekomendasi Build Pengumpul",
+    "description": "Optimalkan perlengkapan anda untuk efisiensi dan keamanan maksimal saat mengumpulkan sumber daya T8.",
     "solo": "Pengumpul Solo (Kecepatan)",
     "tank": "Pengumpul Tank (Aman)",
     "balanced": "Pengumpul Seimbang",
@@ -38,7 +274,7 @@
   },
   "biomes": {
     "title": "Distribusi Bioma",
-    "description": "Setiap kota mengkhususkan diri pada sumber daya yang berbeda. Pilih lokasi pengumpulan Anda berdasarkan apa yang Anda butuhkan.",
+    "description": "Setiap kota mengkhususkan diri pada sumber daya yang berbeza. Pilih lokasi pengumpulan anda berdasarkan apa yang diperlukan.",
     "primaryResource": "Sumber Daya Utama",
     "secondaryResource": "Sekunder",
     "tertiaryResource": "Tersier"
@@ -48,14 +284,14 @@
     "forest": "Hutan (Forest)",
     "mountain": "Gunung (Mountain)",
     "highland": "Dataran Tinggi (Highland)",
-    "steppe": "Stepa (Stepe)"
+    "steppe": "Stepa (Steppe)"
   },
   "biome_descriptions": {
-    "swamp": "Rawa mistis dengan sumber daya serat (fiber) yang melimpah dan bahaya tersembunyi di kabut.",
-    "forest": "Hutan kuno penuh dengan pohon menjulang dan sumber daya kayu yang kaya.",
+    "swamp": "Rawa mistis dengan sumber serat (fiber) yang melimpah dan bahaya tersembunyi di kabut.",
+    "forest": "Hutan kuno penuh dengan pokok menjulang dan sumber kayu yang kaya.",
     "mountain": "Puncak megah dengan deposit bijih (ore) bercahaya dan medan berbahaya.",
     "highland": "Dataran tinggi berbatu dengan batu melimpah dan deposit mineral berharga.",
-    "steppe": "Padang luas di mana pemburu mengumpulkan kulit (hide) dan serat di bawah matahari terbenam."
+    "steppe": "Padang luas di mana pemburu mengumpul kulit (hide) dan serat di bawah matahari terbenam."
   },
   "tiers": {
     "title": "Panduan Perkembangan Tier",
@@ -82,7 +318,7 @@
       "zoneType": "Zona Kuning/Merah",
       "tips": [
         "Zona merah menawarkan hasil sumber daya yang lebih baik tetapi risiko lebih tinggi",
-        "Selalu gunakan Pork Pie untuk meningkatkan kapasitas angkut",
+        "Selalu gunakan Pork Pie untuk meningkatkan kapasiti angkut",
         "Pertimbangkan perlengkapan pengumpul untuk bonus hasil"
       ]
     },
@@ -125,31 +361,32 @@
     "ore": "Bijih (Ore)"
   },
   "events": {
-    "title": "📅 Jadwal & Event Server Asia",
-    "description": "Event penting dan pengaturan waktu untuk aktivitas pengumpulan di server Asia.",
+    "title": "📅 Jadual & Event Server Asia",
+    "description": "Event penting dan pengaturan waktu untuk aktiviti pengumpulan di server Asia.",
     "worldBoss": "Spawn World Boss",
     "worldBossDesc": "World Boss muncul setiap jam genap UTC (00:00, 02:00, 04:00, dst) di server Asia untuk menghindari bentrokan maintenance.",
     "worldBossNote": "Peluang pengumpulan risiko tinggi, imbalan tinggi",
     "primeTime": "Waktu Puncak Asia",
-    "primeTimeDesc": "Periode aktivitas puncak untuk PvP dan aktivitas guild. Bahaya ekstrem di zona hitam.",
+    "primeTimeDesc": "Periode aktiviti puncak untuk PvP dan aktiviti guild. Bahaya ekstrem di zona hitam.",
     "primeTimeNote": "Waktu terbaik untuk pengumpulan grup dengan perlindungan guild",
-    "dangerWindow": "Jendela Bahaya Puncak",
-    "dangerWindowDesc": "Konsentrasi tertinggi ganker dan pemain PvP. Hindari pengumpulan solo di zona hitam.",
-    "dangerWindowNote": "Tetap di zona biru/kuning atau mengumpul dengan grup",
-    "lowActivity": "Periode Aktivitas Rendah",
+    "dangerWindow": "Tetingkap Bahaya Puncak",
+    "dangerWindowDesc": "Konsentrasi tertinggi ganker dan pemain PvP. Elak pengumpulan solo di zona hitam.",
+    "dangerWindowNote": "Stay di zona biru/kuning atau mengumpul dengan grup",
+    "lowActivity": "Periode Aktiviti Rendah",
     "lowActivityDesc": "Waktu teraman untuk pengumpulan solo dengan risiko ganking dan kompetisi yang berkurang.",
     "lowActivityNote": "Terbaik untuk pemain baru dan pengumpul solo"
   },
   "proTips": {
+    "title": "Pro Tips",
     "efficiency": {
       "title": "Tips Efisiensi",
       "tips": [
-        "Gunakan Pork Pie untuk meningkatkan kapasitas angkut",
-        "Kumpulkan di bioma yang sesuai dengan tipe sumber daya Anda",
+        "Gunakan Pork Pie untuk meningkatkan kapasiti angkut",
+        "Kumpulkan di bioma yang sesuai dengan tipe sumber daya anda",
         "Fokus pada satu sumber daya hingga T8 untuk profit maksimal",
         "Gunakan Learning Points untuk mempercepat level"
       ],
-      "radiantTip": "💡 Tips: Gunakan tombol 'Loot All' baru dari Radiant Wilds untuk pengumpulan PvE yang lebih cepat!"
+      "radiantTip": "💡 Tips: Gunakan butang 'Loot All' baru dari Radiant Wilds untuk pengumpulan PvE yang lebih cepat!"
     },
     "safety": {
       "title": "Strategi Keamanan",
@@ -164,7 +401,7 @@
       "title": "Profitabilitas Sumber Daya",
       "tips": [
         "Batu: Kompetisi rendah, profit stabil",
-        "Memancing: Profit tinggi, memerlukan kesabaran",
+        "Memancing: Profit stabil, memerlukan kesabaran",
         "Bijih: Kompetisi sedang, return bagus",
         "Kulit & Serat: Kompetisi tinggi, profit bervariasi"
       ]
