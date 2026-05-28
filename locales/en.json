@@ -361,7 +361,7 @@
     "ore": "Ore"
   },
   "events": {
-    "title": "📅 Asia Server Events & Schedule",
+    "title": "Asia Server Events & Schedule",
     "description": "Important events and timings for Asia server farming activities.",
     "worldBoss": "World Boss Spawn",
     "worldBossDesc": "World Bosses spawn every even-numbered hour (00:00, 02:00, 04:00, etc.) on Asia server to avoid maintenance collision.",

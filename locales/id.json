@@ -361,7 +361,7 @@
     "ore": "Bijih (Ore)"
   },
   "events": {
-    "title": "📅 Jadual & Event Server Asia",
+    "title": "Jadual & Event Server Asia",
     "description": "Event penting dan pengaturan waktu untuk aktiviti pengumpulan di server Asia.",
     "worldBoss": "Spawn World Boss",
     "worldBossDesc": "World Boss muncul setiap jam genap UTC (00:00, 02:00, 04:00, dst) di server Asia untuk menghindari bentrokan maintenance.",
