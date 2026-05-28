@@ -70,6 +70,7 @@ function updatePageLanguage() {
     renderProTips();
     renderGatheringBuilds();
     renderEventSchedule();
+    updatePrimeTimeTracker();
 }
 
 // ============================================
@@ -280,11 +281,14 @@ function getProfessions() {
             hub: 'Lymhurst',
             tools: [
                 { tier: 'T2', name: t('professions.tools.t2.axe', "Journeyman's Axe") },
+                { tier: 'T3', name: t('professions.tools.t3.axe', "Journeyman's Axe") },
                 { tier: 'T4', name: t('professions.tools.t4.axe', "Adept's Axe") },
-                { tier: 'T6', name: t('professions.tools.t6.axe', "Expert's Axe") },
+                { tier: 'T5', name: t('professions.tools.t5.axe', "Expert's Axe") },
+                { tier: 'T6', name: t('professions.tools.t6.axe', "Master's Axe") },
                 { tier: 'T8', name: t('professions.tools.t8.axe', "Elder's Axe") }
             ],
-            bestSpots: ['Whitebank Wall', 'Whitebank Ridge', 'Highbole Glen', 'Timberscar Dell'],
+            royalSpots: t('professions.lumberjack.royalSpots') || [],
+            outlandsSpots: t('professions.lumberjack.outlandsSpots') || [],
             tips: t('professions.lumberjack.tips') || []
         },
         {
@@ -297,11 +301,14 @@ function getProfessions() {
             hub: 'Fort Sterling',
             tools: [
                 { tier: 'T2', name: t('professions.tools.t2.pickaxe', "Journeyman's Pickaxe") },
+                { tier: 'T3', name: t('professions.tools.t3.pickaxe', "Journeyman's Pickaxe") },
                 { tier: 'T4', name: t('professions.tools.t4.pickaxe', "Adept's Pickaxe") },
-                { tier: 'T6', name: t('professions.tools.t6.pickaxe', "Expert's Pickaxe") },
+                { tier: 'T5', name: t('professions.tools.t5.pickaxe', "Expert's Pickaxe") },
+                { tier: 'T6', name: t('professions.tools.t6.pickaxe', "Master's Pickaxe") },
                 { tier: 'T8', name: t('professions.tools.t8.pickaxe', "Elder's Pickaxe") }
             ],
-            bestSpots: ['Blackthorn Quarry', 'Shaleheath Hills', 'Birken Fell', 'Munten Fell'],
+            royalSpots: t('professions.oreMiner.royalSpots') || [],
+            outlandsSpots: t('professions.oreMiner.outlandsSpots') || [],
             tips: t('professions.oreMiner.tips') || []
         },
         {
@@ -314,11 +321,14 @@ function getProfessions() {
             hub: 'Bridgewatch',
             tools: [
                 { tier: 'T2', name: t('professions.tools.t2.skinning', "Journeyman's Skinning Knife") },
+                { tier: 'T3', name: t('professions.tools.t3.skinning', "Journeyman's Skinning Knife") },
                 { tier: 'T4', name: t('professions.tools.t4.skinning', "Adept's Skinning Knife") },
-                { tier: 'T6', name: t('professions.tools.t6.skinning', "Expert's Skinning Knife") },
+                { tier: 'T5', name: t('professions.tools.t5.skinning', "Expert's Skinning Knife") },
+                { tier: 'T6', name: t('professions.tools.t6.skinning', "Master's Skinning Knife") },
                 { tier: 'T8', name: t('professions.tools.t8.skinning', "Elder's Skinning Knife") }
             ],
-            bestSpots: ['Sandmount Ascent', 'Sandrift Dunes', 'Dryvein Oasis', 'Sandmount Desert'],
+            royalSpots: t('professions.skinner.royalSpots') || [],
+            outlandsSpots: t('professions.skinner.outlandsSpots') || [],
             tips: t('professions.skinner.tips') || []
         },
         {
@@ -331,11 +341,14 @@ function getProfessions() {
             hub: 'Martlock',
             tools: [
                 { tier: 'T2', name: t('professions.tools.t2.stonehammer', "Journeyman's Stone Hammer") },
+                { tier: 'T3', name: t('professions.tools.t3.stonehammer', "Journeyman's Stone Hammer") },
                 { tier: 'T4', name: t('professions.tools.t4.stonehammer', "Adept's Stone Hammer") },
-                { tier: 'T6', name: t('professions.tools.t6.stonehammer', "Expert's Stone Hammer") },
+                { tier: 'T5', name: t('professions.tools.t5.stonehammer', "Expert's Stone Hammer") },
+                { tier: 'T6', name: t('professions.tools.t6.stonehammer', "Master's Stone Hammer") },
                 { tier: 'T8', name: t('professions.tools.t8.stonehammer', "Elder's Stone Hammer") }
             ],
-            bestSpots: ['Everwinter Peak', 'Frostpeak Ascent', 'Whitepeak Tundra', 'Glacierfall Valley'],
+            royalSpots: t('professions.stoneQuarrier.royalSpots') || [],
+            outlandsSpots: t('professions.stoneQuarrier.outlandsSpots') || [],
             tips: t('professions.stoneQuarrier.tips') || []
         },
         {
@@ -348,11 +361,14 @@ function getProfessions() {
             hub: 'Thetford',
             tools: [
                 { tier: 'T2', name: t('professions.tools.t2.sickle', "Journeyman's Sickle") },
+                { tier: 'T3', name: t('professions.tools.t3.sickle', "Journeyman's Sickle") },
                 { tier: 'T4', name: t('professions.tools.t4.sickle', "Adept's Sickle") },
-                { tier: 'T6', name: t('professions.tools.t6.sickle', "Expert's Sickle") },
+                { tier: 'T5', name: t('professions.tools.t5.sickle', "Expert's Sickle") },
+                { tier: 'T6', name: t('professions.tools.t6.sickle', "Master's Sickle") },
                 { tier: 'T8', name: t('professions.tools.t8.sickle', "Elder's Sickle") }
             ],
-            bestSpots: ['Willow Wood', 'Drownfield Mire', 'Wispwhisper Marsh', 'Nightcreak Marsh'],
+            royalSpots: t('professions.fiberHarvester.royalSpots') || [],
+            outlandsSpots: t('professions.fiberHarvester.outlandsSpots') || [],
             tips: t('professions.fiberHarvester.tips') || []
         },
         {
@@ -366,23 +382,24 @@ function getProfessions() {
             tools: [
                 { tier: 'T3', name: t('professions.tools.t3.fishingrod', "Journeyman's Fishing Rod") },
                 { tier: 'T4', name: t('professions.tools.t4.fishingrod', "Adept's Fishing Rod") },
-                { tier: 'T6', name: t('professions.tools.t6.fishingrod', "Expert's Fishing Rod") },
+                { tier: 'T5', name: t('professions.tools.t5.fishingrod', "Expert's Fishing Rod") },
+                { tier: 'T6', name: t('professions.tools.t6.fishingrod', "Master's Fishing Rod") },
                 { tier: 'T8', name: t('professions.tools.t8.fishingrod', "Elder's Fishing Rod") }
             ],
-            bestSpots: t('professions.fisherman.bestSpots') || ['Black Zone lakes (rare fish)', 'Royal Continent rivers'],
+            royalSpots: t('professions.fisherman.royalSpots') || [],
+            outlandsSpots: t('professions.fisherman.outlandsSpots') || [],
             tips: t('professions.fisherman.tips') || []
         }
     ];
 }
 
 function renderProfessionOverview() {
-    const container = document.getElementById('professionOverview');
+    const container = document.getElementById('profession-overview');
     if (!container) return;
     const points = t('professions.overview.points') || [];
     const pointsHtml = Array.isArray(points)
         ? points.map(p => `<li>${p}</li>`).join('')
         : '';
-    container.id = 'profession-overview';
     container.innerHTML = `
         <h3>${t('professions.overview.title', 'Gatherer Overview')}</h3>
         <p>${t('professions.overview.description', '')}</p>
@@ -410,8 +427,20 @@ function renderProfessions() {
                 <td>${tool.name}</td>
             </tr>
         `).join('');
-        const spotsHtml = Array.isArray(p.bestSpots)
-            ? p.bestSpots.map(s => `<li>${s}</li>`).join('')
+        const formatSpotEntry = (s) => {
+            if (typeof s === 'string') return `<li>${s}</li>`;
+            if (s && typeof s === 'object' && s.tier) {
+                const zone = s.zone ? `: ${s.zone}` : '';
+                const zoneType = s.zoneType ? ` <span class="spot-zone-type">(${s.zoneType})</span>` : '';
+                return `<li><strong>${s.tier}</strong>${zoneType}${zone}</li>`;
+            }
+            return '';
+        };
+        const royalHtml = Array.isArray(p.royalSpots)
+            ? p.royalSpots.map(formatSpotEntry).join('')
+            : '';
+        const outlandsHtml = Array.isArray(p.outlandsSpots)
+            ? p.outlandsSpots.map(formatSpotEntry).join('')
             : '';
         const tipsHtml = Array.isArray(p.tips)
             ? p.tips.map(s => `<li>${s}</li>`).join('')
@@ -446,8 +475,12 @@ function renderProfessions() {
                     </table>
                 </div>
                 <div class="profession-row">
-                    <span class="row-label">${t('professions.labelBestSpots', 'Best T7-T8 Spots')}</span>
-                    <ul class="profession-list">${spotsHtml}</ul>
+                    <span class="row-label">${t('professions.labelRoyalSpots', 'Royal Continent Spots (T2-T6)')}</span>
+                    <ul class="profession-list profession-spot-list">${royalHtml}</ul>
+                </div>
+                <div class="profession-row">
+                    <span class="row-label">${t('professions.labelOutlandsSpots', 'Outlands Spots (T7-T8)')}</span>
+                    <ul class="profession-list profession-spot-list">${outlandsHtml}</ul>
                 </div>
                 <div class="profession-row">
                     <span class="row-label">${t('professions.labelTips', 'Tips')}</span>

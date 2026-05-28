@@ -691,6 +691,28 @@ body.sidebar-open {
     color: var(--accent);
 }
 
+.profession-spot-list li {
+    padding-left: 0;
+}
+
+.profession-spot-list li::before {
+    content: '';
+    display: none;
+}
+
+.profession-spot-list li strong {
+    display: inline-block;
+    min-width: 2.4rem;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.spot-zone-type {
+    font-size: 0.72rem;
+    color: rgba(232, 232, 240, 0.55);
+    margin-left: 0.15rem;
+}
+
 .profession-tools-table {
     width: 100%;
     border-collapse: collapse;
