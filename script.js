@@ -62,6 +62,7 @@ function updatePageLanguage() {
     document.documentElement.lang = currentLanguage;
 
     // Re-render dynamic content
+    renderEssentials();
     renderGuides();
     renderProfessions();
     renderBiomes();
@@ -124,6 +125,7 @@ function toggleSidebar() {
 const activeTab = {
     guide: null,
     profession: null,
+    essentials: null,
 };
 
 function getActiveTabId(group, ids) {
@@ -145,7 +147,10 @@ function setActiveTab(group, targetId) {
     });
 
     // Update panels — only toggle those that belong to this group's container
-    const containerId = group === 'guide' ? 'guidePhasesGrid' : 'professionGrid';
+    let containerId;
+    if (group === 'guide') containerId = 'guidePhasesGrid';
+    else if (group === 'profession') containerId = 'professionGrid';
+    else if (group === 'essentials') containerId = 'essentialsGrid';
     const container = document.getElementById(containerId);
     if (!container) return;
     container.querySelectorAll('.tab-panel').forEach(panel => {
@@ -169,6 +174,13 @@ function activateTabForHash(hash) {
     if (!hash) return;
     const id = hash.replace(/^#/, '');
     if (!id) return;
+
+    // Essentials
+    const essentialsIds = ['essential-first-hour', 'essential-mount', 'essential-food', 'essential-refining'];
+    if (essentialsIds.includes(id)) {
+        setActiveTab('essentials', id);
+        return;
+    }
 
     // Guide phases
     const guideIds = ['guide-beginner', 'guide-midgame', 'guide-endgame'];
@@ -229,6 +241,7 @@ function setupSidebar() {
                 const target = document.querySelector(href);
                 if (target) {
                     // Scroll to its containing section so user sees the tab row + content
+                    const essentialsIds = ['essential-first-hour', 'essential-mount', 'essential-food', 'essential-refining'];
                     const guideIds = ['guide-beginner', 'guide-midgame', 'guide-endgame'];
                     const professionIds = [
                         'profession-lumberjack', 'profession-ore-miner', 'profession-skinner',
@@ -236,7 +249,9 @@ function setupSidebar() {
                     ];
                     const id = href.replace(/^#/, '');
                     let scrollTarget = target;
-                    if (guideIds.includes(id)) {
+                    if (essentialsIds.includes(id)) {
+                        scrollTarget = document.getElementById('essentials') || target;
+                    } else if (guideIds.includes(id)) {
                         scrollTarget = document.getElementById('guides') || target;
                     } else if (professionIds.includes(id)) {
                         scrollTarget = document.getElementById('professions') || target;
@@ -250,6 +265,234 @@ function setupSidebar() {
                 setTimeout(closeSidebar, 200);
             }
         });
+    });
+}
+
+// ============================================
+// BEGINNER ESSENTIALS (First Hour / Mount / Food & Potion / Refining)
+// ============================================
+
+function getEssentials() {
+    return [
+        {
+            id: 'essential-first-hour',
+            icon: '✅',
+            title: t('essentials.firstHour.title', 'First Hour Checklist'),
+            subtitle: t('essentials.firstHour.subtitle', 'Step-by-step untuk jam pertama main'),
+            intro: t('essentials.firstHour.intro', ''),
+            steps: t('essentials.firstHour.steps') || [],
+            tips: t('essentials.firstHour.tips') || []
+        },
+        {
+            id: 'essential-mount',
+            icon: '🐎',
+            title: t('essentials.mount.title', 'Mount Guide'),
+            subtitle: t('essentials.mount.subtitle', 'Pilih mount yang sesuai dengan aktivitas'),
+            intro: t('essentials.mount.intro', ''),
+            tableHeaders: t('essentials.mount.tableHeaders') || ['Mount', 'Tier', 'Best For', 'Note'],
+            rows: t('essentials.mount.rows') || [],
+            tips: t('essentials.mount.tips') || []
+        },
+        {
+            id: 'essential-food',
+            icon: '🍖',
+            title: t('essentials.food.title', 'Food & Potion'),
+            subtitle: t('essentials.food.subtitle', 'Buff yang wajib dipakai gatherer'),
+            intro: t('essentials.food.intro', ''),
+            foodTitle: t('essentials.food.foodTitle', 'Food'),
+            foods: t('essentials.food.foods') || [],
+            potionTitle: t('essentials.food.potionTitle', 'Potions'),
+            potions: t('essentials.food.potions') || [],
+            tips: t('essentials.food.tips') || []
+        },
+        {
+            id: 'essential-refining',
+            icon: '🏭',
+            title: t('essentials.refining.title', 'Refining 101'),
+            subtitle: t('essentials.refining.subtitle', 'Cara dapat bonus 21–43% dari city specialty'),
+            intro: t('essentials.refining.intro', ''),
+            bonusTitle: t('essentials.refining.bonusTitle', 'City Specialty Bonus'),
+            bonusRows: t('essentials.refining.bonusRows') || [],
+            stepsTitle: t('essentials.refining.stepsTitle', 'Cara Refine'),
+            steps: t('essentials.refining.steps') || [],
+            tips: t('essentials.refining.tips') || []
+        }
+    ];
+}
+
+function renderEssentials() {
+    const tabsRow = document.getElementById('essentialsTabsRow');
+    const panels = document.getElementById('essentialsGrid');
+    if (!tabsRow || !panels) return;
+    tabsRow.innerHTML = '';
+    panels.innerHTML = '';
+
+    const items = getEssentials();
+    const activeId = getActiveTabId('essentials', items.map(it => it.id));
+
+    items.forEach(item => {
+        const isActive = item.id === activeId;
+
+        const tabBtn = document.createElement('button');
+        tabBtn.type = 'button';
+        tabBtn.className = 'tab-btn' + (isActive ? ' active' : '');
+        tabBtn.setAttribute('role', 'tab');
+        tabBtn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        tabBtn.dataset.target = item.id;
+        tabBtn.dataset.group = 'essentials';
+        tabBtn.innerHTML = `
+            <span class="tab-btn-icon">${item.icon}</span>
+            <span class="tab-btn-title">${item.title}</span>
+        `;
+        tabsRow.appendChild(tabBtn);
+
+        const panel = document.createElement('article');
+        panel.className = 'essential-card tab-panel' + (isActive ? ' active' : '');
+        panel.id = item.id;
+        panel.setAttribute('role', 'tabpanel');
+
+        let body = '';
+
+        if (item.id === 'essential-first-hour') {
+            const stepsHtml = (item.steps || []).map((s, i) => `
+                <li class="checklist-item">
+                    <span class="checklist-num">${i + 1}</span>
+                    <div class="checklist-text">
+                        <strong>${s.title || ''}</strong>
+                        ${s.detail ? `<span class="checklist-detail">${s.detail}</span>` : ''}
+                    </div>
+                </li>
+            `).join('');
+            const tipsHtml = (item.tips || []).map(tp => `<li>${tp}</li>`).join('');
+            body = `
+                ${item.intro ? `<p class="essential-intro">${item.intro}</p>` : ''}
+                <ol class="checklist">${stepsHtml}</ol>
+                ${tipsHtml ? `<div class="essential-section">
+                    <h4>💡 ${t('essentials.commonTips', 'Tips')}</h4>
+                    <ul class="essential-list">${tipsHtml}</ul>
+                </div>` : ''}
+            `;
+        } else if (item.id === 'essential-mount') {
+            const headers = item.tableHeaders || [];
+            const headersHtml = headers.map(h => `<th>${h}</th>`).join('');
+            const rowsHtml = (item.rows || []).map(r => `
+                <tr>
+                    <td><strong>${r.name || ''}</strong></td>
+                    <td>${r.tier || ''}</td>
+                    <td>${r.bestFor || ''}</td>
+                    <td>${r.note || ''}</td>
+                </tr>
+            `).join('');
+            const tipsHtml = (item.tips || []).map(tp => `<li>${tp}</li>`).join('');
+            body = `
+                ${item.intro ? `<p class="essential-intro">${item.intro}</p>` : ''}
+                <div class="essential-table-wrap">
+                    <table class="essential-table">
+                        <thead><tr>${headersHtml}</tr></thead>
+                        <tbody>${rowsHtml}</tbody>
+                    </table>
+                </div>
+                ${tipsHtml ? `<div class="essential-section">
+                    <h4>💡 ${t('essentials.commonTips', 'Tips')}</h4>
+                    <ul class="essential-list">${tipsHtml}</ul>
+                </div>` : ''}
+            `;
+        } else if (item.id === 'essential-food') {
+            const foodsHtml = (item.foods || []).map(f => `
+                <div class="essential-row-card">
+                    <div class="essential-row-header">
+                        <strong>${f.name || ''}</strong>
+                        ${f.tier ? `<span class="essential-tag">${f.tier}</span>` : ''}
+                    </div>
+                    <div class="essential-row-body">
+                        <span class="essential-row-effect">${f.effect || ''}</span>
+                        ${f.useCase ? `<span class="essential-row-use">→ ${f.useCase}</span>` : ''}
+                    </div>
+                </div>
+            `).join('');
+            const potionsHtml = (item.potions || []).map(p => `
+                <div class="essential-row-card">
+                    <div class="essential-row-header">
+                        <strong>${p.name || ''}</strong>
+                        ${p.tier ? `<span class="essential-tag">${p.tier}</span>` : ''}
+                    </div>
+                    <div class="essential-row-body">
+                        <span class="essential-row-effect">${p.effect || ''}</span>
+                        ${p.useCase ? `<span class="essential-row-use">→ ${p.useCase}</span>` : ''}
+                    </div>
+                </div>
+            `).join('');
+            const tipsHtml = (item.tips || []).map(tp => `<li>${tp}</li>`).join('');
+            body = `
+                ${item.intro ? `<p class="essential-intro">${item.intro}</p>` : ''}
+                <div class="essential-section">
+                    <h4>🍖 ${item.foodTitle}</h4>
+                    <div class="essential-rows">${foodsHtml}</div>
+                </div>
+                <div class="essential-section">
+                    <h4>🧪 ${item.potionTitle}</h4>
+                    <div class="essential-rows">${potionsHtml}</div>
+                </div>
+                ${tipsHtml ? `<div class="essential-section">
+                    <h4>💡 ${t('essentials.commonTips', 'Tips')}</h4>
+                    <ul class="essential-list">${tipsHtml}</ul>
+                </div>` : ''}
+            `;
+        } else if (item.id === 'essential-refining') {
+            const bonusHtml = (item.bonusRows || []).map(b => `
+                <tr>
+                    <td><strong>${b.city || ''}</strong></td>
+                    <td>${b.resource || ''}</td>
+                    <td><span class="essential-bonus">${b.bonus || ''}</span></td>
+                </tr>
+            `).join('');
+            const stepsHtml = (item.steps || []).map((s, i) => `
+                <li class="checklist-item">
+                    <span class="checklist-num">${i + 1}</span>
+                    <div class="checklist-text">
+                        <strong>${s.title || ''}</strong>
+                        ${s.detail ? `<span class="checklist-detail">${s.detail}</span>` : ''}
+                    </div>
+                </li>
+            `).join('');
+            const tipsHtml = (item.tips || []).map(tp => `<li>${tp}</li>`).join('');
+            body = `
+                ${item.intro ? `<p class="essential-intro">${item.intro}</p>` : ''}
+                <div class="essential-section">
+                    <h4>🏛️ ${item.bonusTitle}</h4>
+                    <div class="essential-table-wrap">
+                        <table class="essential-table">
+                            <thead><tr>
+                                <th>${t('essentials.refining.colCity', 'City')}</th>
+                                <th>${t('essentials.refining.colResource', 'Resource')}</th>
+                                <th>${t('essentials.refining.colBonus', 'Bonus')}</th>
+                            </tr></thead>
+                            <tbody>${bonusHtml}</tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="essential-section">
+                    <h4>🔧 ${item.stepsTitle}</h4>
+                    <ol class="checklist">${stepsHtml}</ol>
+                </div>
+                ${tipsHtml ? `<div class="essential-section">
+                    <h4>💡 ${t('essentials.commonTips', 'Tips')}</h4>
+                    <ul class="essential-list">${tipsHtml}</ul>
+                </div>` : ''}
+            `;
+        }
+
+        panel.innerHTML = `
+            <div class="essential-header">
+                <span class="essential-icon">${item.icon}</span>
+                <div>
+                    <h3 class="essential-title">${item.title}</h3>
+                    ${item.subtitle ? `<p class="essential-subtitle">${item.subtitle}</p>` : ''}
+                </div>
+            </div>
+            <div class="essential-body">${body}</div>
+        `;
+        panels.appendChild(panel);
     });
 }
 

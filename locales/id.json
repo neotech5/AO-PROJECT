@@ -10,6 +10,11 @@
   },
   "sidebar": {
     "title": "Menu",
+    "essentialsGroup": "Panduan Dasar",
+    "essentialFirstHour": "Checklist Jam Pertama",
+    "essentialMount": "Panduan Mount",
+    "essentialFood": "Food & Potion",
+    "essentialRefining": "Refining 101",
     "guideGroup": "Panduan Pemain",
     "guideBeginner": "Pemula (Beginner)",
     "guideMidgame": "Mid Game",
@@ -49,6 +54,116 @@
     "title": "Kitab Pemula Albion Online",
     "description": "Khusus buat player Albion East (Server Asia). Spot spesifik T2–T6 di Royal Continent, plus T7–T8 di Outlands, dengan gear meta paling update.",
     "cta": "Mulai Farming"
+  },
+  "essentials": {
+    "title": "Panduan Dasar",
+    "description": "Hal-hal penting yang sering bikin pemula bingung — mount, food, refining, dan checklist jam pertama main.",
+    "commonTips": "Tips",
+    "firstHour": {
+      "title": "Checklist Jam Pertama",
+      "subtitle": "Step-by-step buat 1 jam pertama main Albion",
+      "intro": "Baru bikin akun? Ikutin urutan ini. Selesai checklist ini, kamu udah punya karakter siap, tool gathering, dan arah jelas mau ngapain.",
+      "steps": [
+        { "title": "Selesain tutorial", "detail": "Jalanin starter quest di kota awal — ngajarin gerakan, combat, dan basic gathering." },
+        { "title": "Pilih kota awal", "detail": "Lymhurst (Kayu/Forest), Fort Sterling (Bijih/Mountain), Bridgewatch (Kulit/Steppe), Martlock (Batu/Highland), Thetford (Serat/Swamp). Pilih sesuai mau gather apa." },
+        { "title": "Buka Destiny Board", "detail": "Pencet 'J'. Ini skill tree kamu — setiap aksi naikin node tertentu. Fokusin satu jalur gathering aja dulu." },
+        { "title": "Beli tool gathering basic", "detail": "Ke Marketplace, beli T3 Journeyman tool sesuai resource pilihan (sekitar 200–500 silver)." },
+        { "title": "Gather di Blue Zone dulu", "detail": "Blue zone = aman, kalau mati gak kehilangan barang. Cari node di map (icon kapak = kayu, beliung = bijih, sabit = serat, pisau = kulit, palu = batu)." },
+        { "title": "Pakai Learning Point (LP) dengan bener", "detail": "Pencet 'J' → klik node mana aja → spend LP buat skip setengah grindnya. Simpan LP buat jalur gathering utama." },
+        { "title": "Beli Pork Omelette", "detail": "Pork Omelette ngedobeli kapasitas bawa barang berat. Murah dan wajib banget." },
+        { "title": "Dapetin Riding Horse (mount T3)", "detail": "Jalan kaki itu lambat banget. T3 horse aja udah cepet dan murah." },
+        { "title": "Gather, deposit, ulang", "detail": "Tas penuh → balik kota → deposit ke bank atau jual di marketplace. Target T4 gathering dalam beberapa jam." },
+        { "title": "Join Adventurer's Challenge", "detail": "Pencet 'Y'. Ada daily quest dengan reward silver, gear, dan Backpack of Insight — XP gampang. Lakuin tiap hari." }
+      ],
+      "tips": [
+        "Jangan beli Premium sebelum main 5–10 jam dan yakin suka sama gamenya.",
+        "Prime time server Asia jam 13:00–15:00 UTC (21:00 WIB). Off-peak lebih sepi saingan.",
+        "Tetap di Blue/Yellow zone sampai bisa gather T4 dengan nyaman.",
+        "Jangan bawa barang berharga waktu eksplorasi zona baru — scouting dulu."
+      ]
+    },
+    "mount": {
+      "title": "Panduan Mount",
+      "subtitle": "Pilih mount yang sesuai sama aktivitas",
+      "intro": "Mount itu penting banget — kecepatan = survival. Tiap mount beda stat: speed (kabur), HP (durability), dan carry capacity (bawa loot lebih banyak). Cocokin mount sama kerjaan.",
+      "tableHeaders": ["Mount", "Tier", "Cocok Untuk", "Catatan"],
+      "rows": [
+        { "name": "Riding Horse", "tier": "T3", "bestFor": "Pemula, perjalanan murah", "note": "Mount paling murah. Pelan tapi mending daripada jalan kaki." },
+        { "name": "Transport Ox", "tier": "T3 / T5 / T7", "bestFor": "Bawa resource banyak di zona aman", "note": "Carry capacity tertinggi — tapi pelan banget dan gampang digank. Cuma pakai di Blue/Yellow." },
+        { "name": "Swiftclaw", "tier": "T5", "bestFor": "Escape solo gathering", "note": "Mount cepet + 1 burst speed skill. Mount escape T5 yang terjangkau." },
+        { "name": "Direwolf", "tier": "T6", "bestFor": "Solo gathering + combat ringan", "note": "Cepet + ada skill slow yang bisa ngehenti pengejar. Pilihan favorit gatherer." },
+        { "name": "Spectral Bonehorse", "tier": "T6", "bestFor": "Black Zone gathering, grup", "note": "HP tinggi, bisa summon dinding buat ngeblock musuh. Mantap buat kabur dari gank grup." },
+        { "name": "Saddled Eagle", "tier": "T7", "bestFor": "Travel jauh, grup", "note": "Mount terbang — lewatin medan dengan gampang. Bagus buat logistik guild." },
+        { "name": "Stalker Horse", "tier": "T7", "bestFor": "Stealth gathering", "note": "Punya cast invisibility — gather terus menghilang." },
+        { "name": "Mistwolf / Moose / Dire Boar", "tier": "T8", "bestFor": "End-game spesialisasi", "note": "Mount T8 buat role PvP/PvE spesifik. Mahal dan crafted dari material langka." }
+      ],
+      "tips": [
+        "Selalu bawa cadangan mount waktu gathering — mount utama bisa mati.",
+        "Cocokin tier mount sama tier gear — jangan naik T6 mount pakai gear T4, ganker bakal nargetin.",
+        "Direwolf atau Spectral Bonehorse itu sweet spot buat solo Black Zone gathering.",
+        "Mount yang condition rendah bisa repair di Repair Station kota mana aja, murah."
+      ]
+    },
+    "food": {
+      "title": "Food & Potion",
+      "subtitle": "Buff wajib buat gatherer",
+      "intro": "Food dan potion ngasih buff gede — tapi pemula sering ngeskip ini. Selalu eat sebelum gather dan jaga potion di slot consumable.",
+      "foodTitle": "Food (Belly Buff)",
+      "foods": [
+        { "name": "Pork Omelette", "tier": "T4+", "effect": "+load capacity (bawa resource lebih banyak per trip)", "useCase": "Semua gatherer — WAJIB" },
+        { "name": "Pork Pie", "tier": "T3+", "effect": "+load capacity (lebih rendah dari Omelette)", "useCase": "Alternatif murah buat gatherer T2–T4" },
+        { "name": "Beef Sandwich", "tier": "T6+", "effect": "Flat physical & magical resistance buff", "useCase": "Solo gatherer di Red/Black Zone buat survive" },
+        { "name": "Goose Pie", "tier": "T7+", "effect": "+max HP", "useCase": "Tank gatherer atau main grup" },
+        { "name": "Roast Chicken", "tier": "T2+", "effect": "+HP regen out of combat", "useCase": "Heal murah antar pertarungan" }
+      ],
+      "potionTitle": "Potion (Slot Consumable)",
+      "potions": [
+        { "name": "Healing Potion", "tier": "T2+", "effect": "Restore HP selama 3 detik", "useCase": "Combat healing — buat fighter" },
+        { "name": "Resurrection Mage Potion", "tier": "T4+", "effect": "Auto-revive waktu mati (HP 60%)", "useCase": "WAJIB buat gatherer — nyelametin gear dari ganker" },
+        { "name": "Sticky Potion", "tier": "T5+", "effect": "Lemparin ke tanah, slow musuh", "useCase": "Escape dari pengejar di PvP" },
+        { "name": "Invisibility Potion", "tier": "T6+", "effect": "Invisible 7 detik", "useCase": "Scout zona bahaya atau escape ambush" },
+        { "name": "Gigantify Potion", "tier": "T5+", "effect": "+HP, +damage, movement pelan", "useCase": "Duel 1v1 atau tanking gank" }
+      ],
+      "tips": [
+        "SELALU bawa Pork Omelette di slot consumable. Eat sebelum masuk area node.",
+        "Resurrection Mage Potion itu non-negotiable kalau gather di Red/Black Zone — bisa nyelametin satu set loadout.",
+        "Sticky Potion itu cara paling murah escape dari pengejar — lempar di belakang sambil lari.",
+        "Beli food/potion di Marketplace kota. Jangan crafting sendiri kecuali kamu emang spesialisasi cooking."
+      ]
+    },
+    "refining": {
+      "title": "Refining 101",
+      "subtitle": "Cara dapet bonus 21–43% dari city specialty",
+      "intro": "Jual raw resource itu okay. Tapi jual REFINED resource itu untungnya 5–20× lipat. Tiap kota Royal punya spesialisasi yang ngasih bonus GEDE waktu refining resource yang cocok di situ. Trik silver gampang yang sering dilewatin pemula.",
+      "bonusTitle": "City Specialty Bonus",
+      "bonusRows": [
+        { "city": "Lymhurst (Forest)", "resource": "Kayu → Plank", "bonus": "+25% return" },
+        { "city": "Fort Sterling (Mountain)", "resource": "Bijih → Metal Bar", "bonus": "+25% return" },
+        { "city": "Bridgewatch (Steppe)", "resource": "Batu → Stone Block", "bonus": "+25% return" },
+        { "city": "Martlock (Highland)", "resource": "Kulit → Leather", "bonus": "+25% return" },
+        { "city": "Thetford (Swamp)", "resource": "Serat → Cloth", "bonus": "+25% return" },
+        { "city": "Caerleon (Black Market)", "resource": "Semua refined goods", "bonus": "Harga lebih tinggi (Black Market)" }
+      ],
+      "stepsTitle": "Cara Refine",
+      "steps": [
+        { "title": "Gather raw resource dulu", "detail": "Wood Log, Iron Ore, Stone, Hide, Fiber — pilih satu dan kumpulin T4–T6." },
+        { "title": "Travel ke kota specialty-nya", "detail": "Buat kayu → Lymhurst. Bijih → Fort Sterling. Cek tabel di atas." },
+        { "title": "Cari Refining Station", "detail": "Tiap kota punya bangunan buat specialty-nya: Sawmill (kayu), Smelter (bijih), Stonemason (batu), Tanner (kulit), Weaver (serat)." },
+        { "title": "Bawa material refined tier bawah kalau perlu", "detail": "Refining T5+ WAJIB pakai material tier sebelumnya. Contoh: T5 Steel Bar = T5 Iron Ore + T4 Steel Bar. Beli yang gak punya di Marketplace." },
+        { "title": "Refine — klaim bonusnya", "detail": "City specialty bonus otomatis di kota yang bener. Bakal keliatan +25% return di UI refining." },
+        { "title": "Jual material yang udah refined", "detail": "Jual di Marketplace kota yang sama ATAU transport ke Caerleon Black Market buat harga lebih tinggi (tapi perjalanan beresiko)." }
+      ],
+      "colCity": "Kota",
+      "colResource": "Resource",
+      "colBonus": "Bonus",
+      "tips": [
+        "Refining ngasih Fame lebih banyak per resource daripada cuma gather — double benefit.",
+        "Caerleon Black Market BELI item dari NPC dengan harga tinggi — silver gampang buat refined goods.",
+        "Pakai Travel Planner mod / map buat cari rute paling aman ke kota specialty.",
+        "JANGAN refine di kota asal kalau kotamu bukan kota specialty — bonusnya ke-skip.",
+        "Kumpulin dalam jumlah gede (200+ material) sebelum refining biar nge-minimize jumlah trip."
+      ]
+    }
   },
   "guides": {
     "title": "Panduan Progresi Pemain",

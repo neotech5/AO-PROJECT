@@ -504,6 +504,256 @@ body.sidebar-open {
 }
 
 /* ============================================
+   BEGINNER ESSENTIALS
+   ============================================ */
+.essential-card {
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.95), rgba(15, 15, 30, 0.95));
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 14px;
+    padding: var(--spacing-lg);
+    color: var(--text);
+}
+
+.essential-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+}
+
+.essential-icon {
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+.essential-title {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: var(--accent);
+}
+
+.essential-subtitle {
+    margin: 0.2rem 0 0;
+    color: rgba(232, 232, 240, 0.7);
+    font-size: 0.92rem;
+}
+
+.essential-intro {
+    margin: 0 0 1.25rem;
+    color: rgba(232, 232, 240, 0.85);
+    line-height: 1.6;
+}
+
+.essential-section {
+    margin-top: 1.5rem;
+}
+
+.essential-section h4 {
+    margin: 0 0 0.75rem;
+    font-size: 1rem;
+    color: var(--accent);
+    letter-spacing: 0.02em;
+}
+
+.essential-list {
+    margin: 0;
+    padding-left: 1.25rem;
+    line-height: 1.7;
+}
+
+.essential-list li {
+    margin-bottom: 0.35rem;
+    color: rgba(232, 232, 240, 0.88);
+}
+
+/* Checklist (used in First Hour & Refining) */
+.checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.checklist-item {
+    display: flex;
+    gap: 0.85rem;
+    align-items: flex-start;
+    padding: 0.7rem 0.9rem;
+    background: rgba(15, 15, 30, 0.55);
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    border-radius: 10px;
+    transition: border-color 0.18s ease, background 0.18s ease, transform 0.18s ease;
+}
+
+.checklist-item:hover {
+    border-color: rgba(212, 175, 55, 0.45);
+    background: rgba(20, 20, 40, 0.7);
+    transform: translateX(2px);
+}
+
+.checklist-num {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.85), rgba(180, 140, 30, 0.85));
+    color: #0f0f1e;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    box-shadow: 0 2px 6px rgba(212, 175, 55, 0.25);
+}
+
+.checklist-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    line-height: 1.5;
+}
+
+.checklist-text strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.checklist-detail {
+    color: rgba(232, 232, 240, 0.7);
+    font-size: 0.88rem;
+}
+
+/* Table */
+.essential-table-wrap {
+    overflow-x: auto;
+    margin-top: 0.25rem;
+}
+
+.essential-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 480px;
+    font-size: 0.92rem;
+}
+
+.essential-table thead {
+    background: rgba(212, 175, 55, 0.1);
+}
+
+.essential-table th {
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.essential-table td {
+    padding: 0.6rem 0.8rem;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.08);
+    color: rgba(232, 232, 240, 0.9);
+    vertical-align: top;
+}
+
+.essential-table tbody tr:hover {
+    background: rgba(212, 175, 55, 0.04);
+}
+
+.essential-bonus {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    background: rgba(81, 207, 102, 0.18);
+    color: #6ee07a;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* Row cards (Food & Potion) */
+.essential-rows {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0.6rem;
+}
+
+.essential-row-card {
+    padding: 0.7rem 0.9rem;
+    background: rgba(15, 15, 30, 0.55);
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    border-radius: 10px;
+    transition: border-color 0.18s ease, transform 0.18s ease;
+}
+
+.essential-row-card:hover {
+    border-color: rgba(212, 175, 55, 0.45);
+    transform: translateY(-1px);
+}
+
+.essential-row-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.35rem;
+}
+
+.essential-row-header strong {
+    color: var(--text);
+}
+
+.essential-tag {
+    display: inline-block;
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+    background: rgba(212, 175, 55, 0.18);
+    color: var(--accent);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.essential-row-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    font-size: 0.9rem;
+}
+
+.essential-row-effect {
+    color: rgba(232, 232, 240, 0.85);
+}
+
+.essential-row-use {
+    color: rgba(212, 175, 55, 0.85);
+    font-style: italic;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 640px) {
+    .essential-card {
+        padding: 1rem;
+    }
+    .essential-icon {
+        font-size: 1.8rem;
+    }
+    .essential-title {
+        font-size: 1.3rem;
+    }
+    .essential-rows {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================
    GUIDE PHASES
    ============================================ */
 .guide-phases-grid {

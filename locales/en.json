@@ -10,6 +10,11 @@
   },
   "sidebar": {
     "title": "Menu",
+    "essentialsGroup": "Beginner Essentials",
+    "essentialFirstHour": "First Hour Checklist",
+    "essentialMount": "Mount Guide",
+    "essentialFood": "Food & Potion",
+    "essentialRefining": "Refining 101",
     "guideGroup": "Player Guide",
     "guideBeginner": "Beginner (Pemula)",
     "guideMidgame": "Mid Game",
@@ -49,6 +54,116 @@
     "title": "Albion Online Beginner's Codex",
     "description": "Master resource gathering for Albion East (Asia server). Specific spots for T2–T6 in Royal Continent and T7–T8 in the Outlands, with up-to-date gear meta.",
     "cta": "Start Farming"
+  },
+  "essentials": {
+    "title": "Beginner Essentials",
+    "description": "The things every new player needs to know — mount, food, refining, and a checklist for your first hour.",
+    "commonTips": "Tips",
+    "firstHour": {
+      "title": "First Hour Checklist",
+      "subtitle": "Step-by-step for your very first hour in Albion",
+      "intro": "Brand new account? Follow these steps in order. After this checklist you'll have a working character, gathering tools, and a clear path forward.",
+      "steps": [
+        { "title": "Finish the tutorial", "detail": "Run through the starter quest in your first town — it teaches movement, combat, gathering basics." },
+        { "title": "Pick a starter city", "detail": "Lymhurst (Wood/Forest), Fort Sterling (Ore/Mountain), Bridgewatch (Hide/Steppe), Martlock (Stone/Highland), Thetford (Fiber/Swamp). Pick what you want to gather." },
+        { "title": "Open the Destiny Board", "detail": "Press 'J'. This is your skill tree — every action levels nodes. Focus on ONE gathering line." },
+        { "title": "Buy basic gathering tools", "detail": "Visit the Marketplace, buy the T3 Journeyman tool for your chosen resource (around 200–500 silver)." },
+        { "title": "Gather in Blue Zones first", "detail": "Blue zones = no PvP loss. Find nodes on the map (axe icon = wood, pickaxe = ore, sickle = fiber, knife = hide, hammer = stone)." },
+        { "title": "Spend Learning Points (LP) wisely", "detail": "Press 'J' → click any node → spend LP to skip half the grind. Save LP for your main gathering line." },
+        { "title": "Buy Pork Omelette food", "detail": "Pork Omelette doubles your carry capacity for heavy resources. Cheap and essential." },
+        { "title": "Get a Riding Horse (T3 mount)", "detail": "Walking is slow. Even a T3 horse is fast and cheap." },
+        { "title": "Gather, deposit, repeat", "detail": "Fill bag → return to town → deposit in bank or sell at marketplace. Aim for T4 gathering within a few hours." },
+        { "title": "Join the Adventurer's Challenge", "detail": "Press 'Y'. Daily quest list with FREE silver, gear, and a Backpack of Insight — easy XP. Do these every day." }
+      ],
+      "tips": [
+        "Don't buy Premium until you've played 5–10 hours and confirmed you enjoy the game.",
+        "Asia server prime time is 13:00–15:00 UTC (9 PM WIB). Off-peak hours have less competition.",
+        "Stay in Blue/Yellow zones until you've gathered T4 resources comfortably.",
+        "Don't carry valuables when exploring new zones — scout first."
+      ]
+    },
+    "mount": {
+      "title": "Mount Guide",
+      "subtitle": "Pick the right mount for your activity",
+      "intro": "Mounts are essential — speed is survival. Each mount has different stats: speed (escape), HP (durability), and carry capacity (haul more loot). Match the mount to your task.",
+      "tableHeaders": ["Mount", "Tier", "Best For", "Note"],
+      "rows": [
+        { "name": "Riding Horse", "tier": "T3", "bestFor": "Beginners, cheap travel", "note": "Cheapest mount. Slow speed but better than walking." },
+        { "name": "Transport Ox", "tier": "T3 / T5 / T7", "bestFor": "Hauling resources in safe zones", "note": "Highest carry capacity — but very slow and easy to gank. Only use in Blue/Yellow." },
+        { "name": "Swiftclaw", "tier": "T5", "bestFor": "Solo gathering escape", "note": "Fast mount + 1 burst speed skill. Affordable T5 escape mount." },
+        { "name": "Direwolf", "tier": "T6", "bestFor": "Solo gathering + light combat", "note": "Fast + has a slow skill that can stop chasers. Popular gatherer choice." },
+        { "name": "Spectral Bonehorse", "tier": "T6", "bestFor": "Black Zone gathering, group", "note": "High HP, can summon a wall to block enemies. Great for escape from group ganks." },
+        { "name": "Saddled Eagle", "tier": "T7", "bestFor": "Long-distance travel, group", "note": "Air mount — passes terrain easily. Excellent for guild logistics." },
+        { "name": "Stalker Horse", "tier": "T7", "bestFor": "Stealth gathering", "note": "Has stealth invisibility cast — gather and disappear from view." },
+        { "name": "Mistwolf / Moose / Dire Boar", "tier": "T8", "bestFor": "End-game specialty", "note": "T8 mounts for specialized PvP/PvE roles. Expensive and crafted from rare materials." }
+      ],
+      "tips": [
+        "Always bring a backup mount when gathering — your main mount can get killed.",
+        "Match mount tier to your gear tier — don't ride a T6 mount with T4 gear, gankers will target you.",
+        "Direwolf or Spectral Bonehorse is the sweet spot for solo Black Zone gathering.",
+        "Spent-condition mounts can be repaired at any city's Repair Station for cheap."
+      ]
+    },
+    "food": {
+      "title": "Food & Potion",
+      "subtitle": "Buffs every gatherer must use",
+      "intro": "Food and potions give massive buffs — but most beginners ignore them. Always eat before gathering and keep potions in your consumable slots.",
+      "foodTitle": "Food (Belly Buff)",
+      "foods": [
+        { "name": "Pork Omelette", "tier": "T4+", "effect": "+load capacity (more resources per trip)", "useCase": "All gatherers — MANDATORY" },
+        { "name": "Pork Pie", "tier": "T3+", "effect": "+load capacity (lower than Omelette)", "useCase": "Cheaper alternative for T2–T4 gatherers" },
+        { "name": "Beef Sandwich", "tier": "T6+", "effect": "Flat physical & magical resistance buff", "useCase": "Solo gatherer in Red/Black Zones for survival" },
+        { "name": "Goose Pie", "tier": "T7+", "effect": "+max HP", "useCase": "Tank gatherers or group play" },
+        { "name": "Roast Chicken", "tier": "T2+", "effect": "+HP regen out of combat", "useCase": "Cheap heal between fights" }
+      ],
+      "potionTitle": "Potions (Consumable Slot)",
+      "potions": [
+        { "name": "Healing Potion", "tier": "T2+", "effect": "Restore HP over 3 sec", "useCase": "Combat healing — for fighters" },
+        { "name": "Resurrection Mage Potion", "tier": "T4+", "effect": "Auto-revive you when killed (60% HP)", "useCase": "Gatherer ESSENTIAL — saves your gear from gankers" },
+        { "name": "Sticky Potion", "tier": "T5+", "effect": "Throw on ground, slow enemies", "useCase": "Escape from chasers in PvP" },
+        { "name": "Invisibility Potion", "tier": "T6+", "effect": "Invisible for 7 sec", "useCase": "Scout dangerous zones or escape ambush" },
+        { "name": "Gigantify Potion", "tier": "T5+", "effect": "+HP, +damage, slow movement", "useCase": "1v1 fights or tanking ganks" }
+      ],
+      "tips": [
+        "ALWAYS carry Pork Omelette in your consumable slot. Eat before entering a node area.",
+        "Resurrection Mage Potion is non-negotiable when gathering in Red/Black Zone — it can save your full loadout.",
+        "Sticky Potion is the cheapest way to escape a chaser — toss it behind you while sprinting.",
+        "Buy food/potions from city Marketplaces. Don't craft yourself unless you specialize in cooking."
+      ]
+    },
+    "refining": {
+      "title": "Refining 101",
+      "subtitle": "How to earn 21–43% bonus from city specialty",
+      "intro": "Selling raw resources is okay. Selling REFINED resources is 5–20× more profit. Every Royal city has a specialty that gives a HUGE bonus when refining the matching resource there. This is THE easy money trick most beginners miss.",
+      "bonusTitle": "City Specialty Bonus",
+      "bonusRows": [
+        { "city": "Lymhurst (Forest)", "resource": "Wood → Planks", "bonus": "+25% return" },
+        { "city": "Fort Sterling (Mountain)", "resource": "Ore → Metal Bars", "bonus": "+25% return" },
+        { "city": "Bridgewatch (Steppe)", "resource": "Stone → Stone Blocks", "bonus": "+25% return" },
+        { "city": "Martlock (Highland)", "resource": "Hide → Leather", "bonus": "+25% return" },
+        { "city": "Thetford (Swamp)", "resource": "Fiber → Cloth", "bonus": "+25% return" },
+        { "city": "Caerleon (Black Market)", "resource": "Any refined goods", "bonus": "Higher prices (Black Market)" }
+      ],
+      "stepsTitle": "How to Refine",
+      "steps": [
+        { "title": "Gather raw resources", "detail": "Wood Log, Iron Ore, Stone, Hide, Fiber — pick one and stack T4–T6." },
+        { "title": "Travel to the matching specialty city", "detail": "For wood → Lymhurst. For ore → Fort Sterling. Check the bonus table above." },
+        { "title": "Find the Refining Station", "detail": "Each city has a building for its specialty: Sawmill (wood), Smelter (ore), Stonemason (stone), Tanner (hide), Weaver (fiber)." },
+        { "title": "Bring lower-tier refined material if needed", "detail": "T5+ refining REQUIRES the previous tier's material. Example: T5 Steel Bar = T5 Iron Ore + T4 Steel Bar. Buy what you don't have at Marketplace." },
+        { "title": "Refine — claim your bonus", "detail": "City specialty bonus is automatic in the right city. You'll see +25% return shown in the refining UI." },
+        { "title": "Sell refined material", "detail": "Sell at the same city's Marketplace OR transport to Caerleon Black Market for higher prices (but risky travel)." }
+      ],
+      "colCity": "City",
+      "colResource": "Resource",
+      "colBonus": "Bonus",
+      "tips": [
+        "Refining gives more Fame per resource than gathering — double benefit.",
+        "Caerleon Black Market BUYS items from NPC at high prices — easy silver for refined goods.",
+        "Use Travel Planner mod / map to find the safest route to your specialty city.",
+        "DON'T refine in your home city if it isn't the specialty city — you waste the bonus.",
+        "Stack large quantities before refining (200+ raw materials) to minimize trips."
+      ]
+    }
   },
   "guides": {
     "title": "Player Progression Guide",

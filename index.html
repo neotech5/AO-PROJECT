@@ -38,6 +38,21 @@
             <button class="sidebar-close" id="sidebarClose" aria-label="Close menu">×</button>
         </div>
         <nav class="sidebar-nav">
+            <!-- Beginner Essentials group -->
+            <div class="sidebar-group">
+                <button class="sidebar-group-toggle" data-target="group-essentials" aria-expanded="true">
+                    <span class="sidebar-group-icon">📚</span>
+                    <span class="sidebar-group-label" data-i18n="sidebar.essentialsGroup">Beginner Essentials</span>
+                    <span class="sidebar-chevron">▾</span>
+                </button>
+                <ul class="sidebar-group-items" id="group-essentials">
+                    <li><a href="#essential-first-hour" class="sidebar-link" data-i18n="sidebar.essentialFirstHour">First Hour Checklist</a></li>
+                    <li><a href="#essential-mount" class="sidebar-link" data-i18n="sidebar.essentialMount">Mount Guide</a></li>
+                    <li><a href="#essential-food" class="sidebar-link" data-i18n="sidebar.essentialFood">Food &amp; Potion</a></li>
+                    <li><a href="#essential-refining" class="sidebar-link" data-i18n="sidebar.essentialRefining">Refining 101</a></li>
+                </ul>
+            </div>
+
             <!-- Player Guide group -->
             <div class="sidebar-group">
                 <button class="sidebar-group-toggle" data-target="group-guide" aria-expanded="true">
@@ -139,6 +154,18 @@
     <!-- Main Content -->
     <section class="main-content">
         <div class="container">
+
+            <!-- Beginner Essentials Section -->
+            <div class="section-block" id="essentials">
+                <div class="section-header">
+                    <h2>📚 <span data-i18n="essentials.title">Beginner Essentials</span></h2>
+                    <p data-i18n="essentials.description">Hal paling penting buat pemula yang sering bikin bingung — mount, food, refining, dan checklist jam pertama.</p>
+                </div>
+                <div class="tabs" id="essentialsTabs">
+                    <div class="tabs-row" id="essentialsTabsRow" role="tablist"></div>
+                    <div class="tabs-panels" id="essentialsGrid"></div>
+                </div>
+            </div>
 
             <!-- Player Guide Section -->
             <div class="section-block" id="guides">
