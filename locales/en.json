@@ -30,7 +30,7 @@
     "builds": "Builds",
     "events": "Events",
     "protips": "Pro Tips",
-    "footer": "Albion East · Asia Server"
+    "footer": "Albion Online · Server Asia"
   },
   "tracker": {
     "title": "🕐 Asia Server Status",
@@ -493,6 +493,7 @@
   },
   "footer": {
     "text": "Albion Online Farming Guide 2026 · Asia Server · Last Updated: May 2026",
-    "author": "Author: ABID"
+    "author": "Author: ABID",
+    "authorLabel": "Author:"
   }
 }

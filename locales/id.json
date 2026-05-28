@@ -30,7 +30,7 @@
     "builds": "Build",
     "events": "Event",
     "protips": "Pro Tips",
-    "footer": "Albion East · Server Asia"
+    "footer": "Albion Online · Server Asia"
   },
   "tracker": {
     "title": "🕐 Status Server Asia",
@@ -493,6 +493,7 @@
   },
   "footer": {
     "text": "Panduan Farming Albion Online 2026 · Server Asia · Terakhir Update: Mei 2026",
-    "author": "Penulis: ABID"
+    "author": "Penulis: ABID",
+    "authorLabel": "Penulis:"
   }
 }

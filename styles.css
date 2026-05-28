@@ -1767,6 +1767,29 @@ body.sidebar-open {
     color: var(--accent);
 }
 
+.footer-author-link {
+    color: var(--accent);
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(212, 175, 55, 0.5);
+    padding-bottom: 1px;
+    transition: color 0.18s ease, border-color 0.18s ease, text-shadow 0.18s ease;
+}
+
+.footer-author-link:hover,
+.footer-author-link:focus {
+    color: #fff;
+    border-bottom-color: #fff;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.6);
+    outline: none;
+}
+
+.footer-author-link::after {
+    content: " ↗";
+    font-size: 0.85em;
+    opacity: 0.7;
+}
+
 /* ============================================
    ANIMATIONS
    ============================================ */
