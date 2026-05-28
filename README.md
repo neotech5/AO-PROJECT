@@ -10,9 +10,30 @@
 
 ## Fitur
 
-- 📖 **Player Guide** — 3 fasa (Pemula / Mid Game / End Game) dalam tabbed UI
+Susunan **newbie → pro** dengan 4 tier section:
+
+**🟢 Foundations** (mulai di sini)
+- 📚 **Beginner Essentials** — 4 tab: First Hour Checklist, Mount Guide, Food & Potion, Refining 101
+- 📖 **Player Guide** — 3 fasa tabbed (Pemula / Mid Game / End Game)
+- 🗺️ **Zone Types Manual** — 7 zone (Blue/Yellow/Red/Black/Mists/Roads/Hellgate)
+- ❌ **JANGAN-DO List** — 14 kesalahan biasa pemula
+
+**🟡 Pick Your Path**
+- 🌿 **Biome Distribution** — 5 bioma Royal
 - 🛠️ **6 Gathering Professions** — Lumberjack, Ore Miner, Skinner, Stone Quarrier, Fiber Harvester, Fisherman
+- 📈 **Tier Progression** — T1 → T8 strategi per tier
+
+**🟠 Survive & Thrive**
+- 🛡️ **Gank Avoidance & Escape Manual** — 6 sub-section (checklist, spotting, escape kit table, Q-Swap, dst.)
 - 🗺️ **Spot Spesifik T2-T6** di Royal Continent + **T7-T8** di Outlands
+- ⚔️ **Gathering Builds** — 3 build meta 2026 (Solo / Tank / Balanced)
+
+**🔴 Optimize**
+- 📅 **Asia Server Event Schedule** — prime time, world boss, dst.
+- 🧰 **Tools & Apps (Pro Toolkit)** — 8 tool wajib (Data Project, AlbionMap2D, Murder Ledger, dst.)
+- 💡 **Pro Tips** — efisiensi, keamanan, profitability
+
+**Sistem**
 - 🌐 **Dwi-bahasa** — EN / ID (Bahasa Indonesia santai)
 - 🕐 **Asia Server Status** — real-time clock + danger level indicator
 - 📱 **Responsive** — mobile, tablet, desktop
@@ -46,13 +67,13 @@ Quick steps (Cloudflare Pages via Git):
 
 ```
 AO-PROJECT/
-├── index.html                  # Entry point
-├── styles.css                  # Styling (1833 baris, CSS variables, responsive)
-├── script.js                   # Logic (i18n, sidebar, tabs, data, render)
+├── index.html                  # Entry point (352 baris)
+├── styles.css                  # Styling (2487 baris, CSS variables, responsive)
+├── script.js                   # Logic (1515 baris: i18n, sidebar, tabs, data, render)
 ├── _headers                    # Cloudflare custom HTTP headers
 ├── locales/
-│   ├── en.json                 # English translations
-│   └── id.json                 # Bahasa Indonesia translations
+│   ├── en.json                 # English translations (880 baris)
+│   └── id.json                 # Bahasa Indonesia translations (880 baris)
 ├── README.md                   # File ini
 ├── PROJECT_DOCUMENTATION.md    # Dokumentasi lengkap
 └── DEPLOY_CLOUDFLARE_PAGES.md  # Panduan deploy
@@ -78,5 +99,5 @@ Open source. Bebas pakai dan modifikasi.
 
 ---
 
-**Versi**: 2.0 (Mei 2026)
+**Versi**: 3.0 (Mei 2026 — + Beginner Essentials, Zone Types, JANGAN-DO List, Gank Avoidance, Pro Toolkit, newbie→pro reorder)
 **Last Updated**: Mei 2026

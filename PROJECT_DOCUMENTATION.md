@@ -3,7 +3,7 @@
 **Nama Project**: Kitab Pemula Albion Online (Albion Online Beginner's Codex)
 **Penulis**: ABID
 **Repo**: https://github.com/neotech5/AO-PROJECT
-**Versi Dokumentasi**: 2.0 (Mei 2026 — termasuk Sidebar Drawer, Tabbed UI, Profession Guide)
+**Versi Dokumentasi**: 3.0 (Mei 2026 — termasuk Sidebar Drawer, Tabbed UI, Profession Guide, Beginner Essentials, Foundation Sections, Survival Manual, Pro Toolkit, newbie→pro section order)
 **Lisensi**: Open source — bebas pakai & modifikasi
 
 ---
@@ -15,11 +15,29 @@ Situs panduan farming Albion Online berbahasa dwi-bahasa (Inggris / Bahasa Indon
 **Konsep utama**:
 
 - Dark fantasy aesthetic dengan accent emas (`#d4af37`).
-- Panduan langkah demi langkah dari pemula → mid game → end game.
+- Susunan section ikut alur **newbie → pro** (Foundations → Pick Your Path → Survive & Thrive → Optimize).
 - 6 profesi gathering rasmi Albion (Lumberjack, Ore Miner, Skinner, Stone Quarrier, Fiber Harvester, Fisherman) dengan spot spesifik T2-T6 Royal Continent dan T7-T8 Outlands.
 - UI rapi: sidebar drawer + tabbed sections untuk kurangkan scroll panjang.
 - Dwi-bahasa penuh dengan i18n custom — preferensi disimpan di `localStorage`.
 - Optimasi sepenuhnya untuk server Asia (Albion East): timing 13:00–15:00 UTC peak, status server real-time.
+
+**Susunan Section (newbie → pro)**:
+
+| Tier | Section | Tujuan |
+|---|---|---|
+| 🟢 Foundations | 📚 Panduan Dasar (Essentials) | First Hour, Mount, Food & Potion, Refining 101 |
+| 🟢 Foundations | 📖 Panduan Pemain (Player Guide) | 3 fasa: Pemula / Mid Game / End Game |
+| 🟢 Foundations | 🗺️ Zone Types Manual | Blue / Yellow / Red / Black / Mists / Roads / Hellgate |
+| 🟢 Foundations | ❌ JANGAN-DO List | 14 kesalahan biasa pemula |
+| 🟡 Pick Your Path | Distribusi Bioma | 5 kota Royal dan resource utama |
+| 🟡 Pick Your Path | 🛠️ Profesi Gathering | 6 profesi rasmi + Gatherer Overview |
+| 🟡 Pick Your Path | Panduan Progresi Tier | T1 → T8 progression |
+| 🟠 Survive & Thrive | 🛡️ Gank Avoidance & Escape Manual | Checklist, spotting, escape kit, Q-Swap, recovery |
+| 🟠 Survive & Thrive | Lokasi Farming T8 | Outlands map spesifik per resource |
+| 🟠 Survive & Thrive | ⚔️ Rekomendasi Build (T8) | Solo / Tank / Balanced meta 2026 |
+| 🔴 Optimize | 📅 Event & Jadwal | Asia server prime time, world boss, dst. |
+| 🔴 Optimize | 🧰 Tools & Apps (Pro Toolkit) | 8 tool wajib: Data Project, Maps, Murder Ledger, dst. |
+| 🔴 Optimize | 💡 Pro Tips | Efisiensi, keamanan, profitability |
 
 ---
 
@@ -27,12 +45,17 @@ Situs panduan farming Albion Online berbahasa dwi-bahasa (Inggris / Bahasa Indon
 
 | Fitur | Penjelasan |
 |---|---|
-| **Sidebar Drawer** | Slide-in dari kanan, ada accordion menu: Player Guide, Profesi Gathering, Quick Links. Backdrop blur + ESC untuk tutup. |
-| **Tabbed UI** | 3 tab fasa pemain (Pemula / Mid Game / End Game) + 6 tab profesi (Lumberjack, Ore Miner, dll.). Klik tab → swap content. |
+| **Sidebar Drawer** | Slide-in dari kanan, 6 accordion: Panduan Dasar, Panduan Pemain, Foundation, Profesi Gathering, Survival & End-Game, Tautan Cepat. Backdrop blur + ESC untuk tutup. |
+| **Tabbed UI** | 4 tab Essentials (First Hour, Mount, Food, Refining) + 3 tab Guide (Pemula / Mid / End) + 6 tab Profesi. Klik tab → swap content. |
 | **Language Switcher** | Toggle EN ↔ ID, preferensi disimpan di `localStorage`. Semua konten dinamis ikut bertukar. |
 | **Asia Server Status** | Widget waktu real-time: waktu lokal + UTC, indikator danger level (Aman / Sedang / Ekstrem) berdasarkan jam aktivitas server Asia. |
-| **Profession Tabs** | Setiap profesi punya: bioma sesuai, tools per tier (T2-T8), spot Royal T2-T6, spot Outlands T7-T8, tips spesifik. |
-| **Guide Phases** | 3 fasa player journey: Pemula (T1-T4, 0-50 jam) → Mid Game (T5-T7, 50-300 jam) → End Game (T7-T8, 300+ jam). Setiap fasa ada tujuan, aktivitas, gear, tips. |
+| **📚 Beginner Essentials** | 4 tab terstruktur: ✅ First Hour Checklist (10 langkah), 🐎 Mount Guide (8 mount tier), 🍖 Food & Potion (5 food + 5 potion), 🏭 Refining 101 (tabel kota specialty +25%). |
+| **🗺️ Zone Types Manual** | 7 jenis zone (Blue/Yellow/Red/Black/Mists/Roads of Avalon/Hellgate) — color-coded card dengan badge bahaya, Pas Mati, Cocok Buat, Akses, fitur utama. |
+| **❌ JANGAN-DO List** | 14 kesalahan biasa pemula — card numbered tema merah dengan title + detail penjelasan. |
+| **🛡️ Gank Avoidance Manual** | 6 sub-section: Pre-Gathering Checklist (8), Cara Spot Ganker (6), Escape Kit Loadout (tabel 7 slot), Teknik Q-Swap (4), Kalau Udah Dikejar (6), Tips Lanjutan (5). |
+| **🧰 Tools & Apps (Pro Toolkit)** | 8 tool wajib link langsung: Albion Data Project, AlbionMap2D, Murder Ledger, Wiki, Galahad Map, Discord Resmi, Reddit, AlbionStatus. |
+| **Profession Tabs** | 6 profesi dengan: bioma sesuai, tools per tier (T2-T8), spot Royal T2-T6, spot Outlands T7-T8, tips spesifik. |
+| **Guide Phases** | 3 fasa player journey: Pemula (T1-T4, 0-50 jam) → Mid Game (T5-T7, 50-300 jam) → End Game (T7-T8, 300+ jam). |
 | **Biome Distribution** | 5 bioma Royal: Swamp (Thetford), Forest (Lymhurst), Mountain (Fort Sterling), Highland (Martlock), Steppe (Bridgewatch). |
 | **Tier Progression** | Strategi per tier — T1 zona pemula sampe T8 deepest Black Zone. |
 | **T8 Farming Maps** | Nama map Outlands spesifik untuk setiap resource T8. |
@@ -67,25 +90,30 @@ AO-PROJECT/
 
 ## 4. File-by-File Walkthrough
 
-### 4.1 `index.html` (255 baris)
+### 4.1 `index.html` (352 baris)
 
-Struktur HTML5 semantik. Bahagian utama:
+Struktur HTML5 semantik. Urutan section sudah disusun ikut alur **newbie → pro**:
 
-| Section | Fungsi |
-|---|---|
-| `<header class="sticky-header">` | Logo "Kitab Pemula Albion Online" + Language switcher (EN/ID) + hamburger menu button. |
-| `<aside class="sidebar">` | Drawer dari kanan dengan 3 accordion: Player Guide, Gathering Professions, Quick Links. |
-| `<section class="hero">` | Hero section dengan background image, badge, judul, deskripsi, CTA. |
-| `<section class="prime-time-tracker">` | Widget waktu lokal + UTC + status danger level. |
-| `<section id="guides">` | **Tabbed**: Player progression guide (3 fasa). Render via `renderGuides()`. |
-| `<div id="professions">` | **Tabbed**: 6 profesi gathering + Gatherer Overview card. Render via `renderProfessions()`. |
-| `<section id="builds">` | 3 build meta gathering. Render via `renderGatheringBuilds()`. |
-| `<section id="biomes">` | 5 biome card. Render via `renderBiomes()`. |
-| `<section id="tiers">` | Tier progression cards (T1, T4, T6, T7, T8). Render via `renderTiers()`. |
-| `<section id="t8-maps">` | T8 map names per resource. Render via `renderT8Maps()`. |
-| `<section id="events">` | Asia server event schedule. Render via `renderEventSchedule()`. |
-| `<section id="protips">` | Pro tips 3 kategori. Render via `renderProTips()`. |
-| `<footer>` | Footer text + Discord link ABID. |
+| Urutan | Section | Fungsi |
+|---|---|---|
+| - | `<header class="sticky-header">` | Logo "Kitab Pemula Albion Online" + Language switcher (EN/ID) + hamburger menu button. |
+| - | `<aside class="sidebar">` | Drawer dari kanan dengan 6 accordion: Panduan Dasar, Panduan Pemain, Foundation, Profesi Gathering, Survival & End-Game, Tautan Cepat. |
+| - | `<section class="hero">` | Hero section dengan background image, badge, judul, deskripsi, CTA. |
+| - | `<section class="prime-time-tracker">` | Widget waktu lokal + UTC + status danger level. |
+| 🟢 1 | `<section id="essentials">` | **Tabbed**: 4 panduan dasar (First Hour, Mount, Food & Potion, Refining). Render via `renderEssentials()`. |
+| 🟢 2 | `<section id="guides">` | **Tabbed**: Player progression guide (3 fasa). Render via `renderGuides()`. |
+| 🟢 3 | `<div id="zones">` | Zone Types Manual (7 zone card). Render via `renderZones()`. |
+| 🟢 4 | `<div id="mistakes">` | JANGAN-DO List (14 mistake card). Render via `renderMistakes()`. |
+| 🟡 5 | `<section id="biomes">` | 5 biome card. Render via `renderBiomes()`. |
+| 🟡 6 | `<div id="professions">` | **Tabbed**: 6 profesi gathering + Gatherer Overview card. Render via `renderProfessions()`. |
+| 🟡 7 | `<section id="tiers">` | Tier progression cards (T1, T4, T6, T7, T8). Render via `renderTiers()`. |
+| 🟠 8 | `<div id="survival">` | Gank Avoidance & Escape Manual (6 sub-section). Render via `renderSurvival()`. |
+| 🟠 9 | `<section id="t8maps">` | T8 map names per resource. Render via `renderT8Maps()`. |
+| 🟠 10 | `<section id="builds">` | 3 build meta gathering T8. Render via `renderGatheringBuilds()`. |
+| 🔴 11 | `<section id="events">` | Asia server event schedule. Render via `renderEventSchedule()`. |
+| 🔴 12 | `<div id="tools">` | Tools & Apps Pro Toolkit (8 tool card). Render via `renderTools()`. |
+| 🔴 13 | `<section id="protips">` | Pro tips 3 kategori. Render via `renderProTips()`. |
+| - | `<footer>` | Footer text + Discord link ABID. |
 
 **Mekanisme i18n**: Setiap elemen yang perlu translate ada attribute `data-i18n="keyPath"`. Contoh:
 ```html
@@ -93,7 +121,7 @@ Struktur HTML5 semantik. Bahagian utama:
 ```
 Saat language switch, fungsi `updatePageLanguage()` traverse semua `[data-i18n]` dan replace `textContent`.
 
-### 4.2 `styles.css` (1833 baris)
+### 4.2 `styles.css` (2487 baris)
 
 Semua styling website. Highlight:
 
@@ -101,35 +129,42 @@ Semua styling website. Highlight:
 - **Reset & Base** (line 41-100): box-sizing, font import.
 - **Header & Logo** (~line 100-200): sticky header dengan blur backdrop.
 - **Sidebar Drawer** (~line 250-400): slide-in animation, backdrop, accordion, responsive.
-- **Tabs** (~line 409-504): tabbed UI styling untuk guide dan profession.
-- **Hero / Sections** (~line 510-1700): semua section dengan card grids, glow effects, gradient borders.
+- **Tabs** (~line 409-504): tabbed UI styling untuk essentials, guide dan profession.
+- **Hero / Existing Sections** (~line 510-1900): card grids, glow effects, gradient borders.
 - **Footer + ABID Link** (~line 1741-1791): footer style + Discord link dengan dashed gold underline + ↗ icon.
 - **Animations** (~line 1793-1810): fadeInUp, slideIn, tabFade keyframes.
+- **Zone Types Manual** (~line 2085-2208): zone-card, zone-danger-badge, zone-features-list dengan color-coded border (safe=hijau, moderate=kuning, extreme=merah).
+- **Common Mistakes** (~line 2210-2280): mistake-card (red theme), mistake-num circle gradient, mistake-detail.
+- **Survival & Escape** (~line 2282-2390): survival-section, survival-table (escape kit), checklist-num, survival-tips italic.
+- **Tools & Apps** (~line 2392-2480): tool-card grid, tool-link button gold.
+- **Responsive 640px** (~line 2456-2487): mobile breakpoint untuk semua section baru.
 - **Media queries**: responsive breakpoints di `640px`, `768px`, `1024px`.
 
-### 4.3 `script.js` (1104 baris)
+### 4.3 `script.js` (1515 baris)
 
 Semua logika dinamis. Diorganisasi per section:
 
-| Bagian | Line | Fungsi |
+| Bagian | Line (approx) | Fungsi |
 |---|---|---|
-| **i18n core** | 1-78 | `t(key)`, `updatePageLanguage()`, `setLanguage()` — load locale JSON, replace text content. |
-| **Sidebar** | 80-118 | `openSidebar()`, `closeSidebar()`, `toggleSidebar()` — handle drawer state. |
+| **i18n core** | 1-79 | `t(key)`, `updatePageLanguage()`, `setLanguage()` — load locale JSON, replace text content. Memanggil semua render functions. |
+| **Sidebar** | 81-118 | `openSidebar()`, `closeSidebar()`, `toggleSidebar()` — handle drawer state. |
 | **Tabs** | 120-188 | `activeTab` state, `getActiveTabId()`, `setActiveTab()`, `setupTabs()`, `activateTabForHash()`. |
-| **Sidebar setup** | 190-258 | Event listeners untuk accordion, link click → activate tab + scroll. |
-| **Guide phases data** | 260-299 | `getGuidePhases()` — return array of 3 phases dengan tujuan/aktivitas/gear/tips. |
-| **Render guides** | 301-377 | `renderGuides()` — build tab buttons + panels. |
-| **Profession data** | 379-501 | `getProfessions()` — return array 6 profesi dengan resource, bioma, tools per tier, spot Royal & Outlands, tips. |
-| **Render profession overview** | 503-515 | `renderProfessionOverview()` — overview card di atas tabs. |
-| **Render professions** | 517-624 | `renderProfessions()` — build tab buttons + panel cards. |
-| **Biome data + render** | 626-724 | `getBiomeData()` + `renderBiomes()`. |
-| **Tier data + render** | 726-822 | `getTierData()` + `renderTiers()`. |
-| **T8 Maps data + render** | 824-860 | `getT8MapsData()` + `renderT8Maps()`. |
-| **Gathering Builds** | 862-927 | `getGatheringBuilds()` + `renderGatheringBuilds()`. |
-| **Event Schedule** | 929-982 | `getEventSchedule()` + `renderEventSchedule()`. |
-| **Prime Time Tracker** | 984-1041 | `updatePrimeTimeTracker()` — update setiap detik, hitung danger level. |
-| **Pro Tips** | 1043-1075 | `renderProTips()`. |
-| **DOMContentLoaded init** | 1075+ | Initialize semua: setup sidebar, setup tabs, render all, set language, start tracker. |
+| **Sidebar setup** | 190-280 | Event listeners untuk accordion, link click → activate tab + scroll ke section parent. |
+| **Essentials data + render** | 290-497 | `getEssentials()` + `renderEssentials()` — 4 tab: First Hour, Mount, Food, Refining. |
+| **Zone Types render** | 499-546 | `renderZones()` — 7 zone card dengan color-coded border + danger badge. |
+| **Common Mistakes render** | 548-565 | `renderMistakes()` — 14 mistake card numbered (red theme). |
+| **Survival render** | 567-647 | `renderSurvival()` — 6 sub-section: pre-gather, spotting, escape kit table, Q-Swap, chased, tips. |
+| **Tools render** | 649-672 | `renderTools()` — 8 tool card dengan kategori badge + link langsung. |
+| **Guide phases data + render** | 674-770 | `getGuidePhases()` + `renderGuides()` — 3 fasa player journey. |
+| **Profession data + render** | 772-1000 | `getProfessions()` + `renderProfessionOverview()` + `renderProfessions()` — 6 profesi gathering. |
+| **Biome data + render** | 1002-1098 | `getBiomeData()` + `renderBiomes()`. |
+| **Tier data + render** | 1100-1190 | `getTierData()` + `renderTiers()`. |
+| **T8 Maps data + render** | 1192-1230 | `getT8MapsData()` + `renderT8Maps()`. |
+| **Gathering Builds** | 1232-1297 | `getGatheringBuilds()` + `renderGatheringBuilds()`. |
+| **Event Schedule** | 1299-1352 | `getEventSchedule()` + `renderEventSchedule()`. |
+| **Prime Time Tracker** | 1354-1411 | `updatePrimeTimeTracker()` — update setiap detik, hitung danger level. |
+| **Pro Tips** | 1413-1445 | `renderProTips()`. |
+| **DOMContentLoaded init** | 1486-1515 | Initialize semua: setup sidebar, setup tabs, load translations, language switch listener, hero CTA. |
 
 **Pattern penting**:
 - Data DAN render dipisah → mudah update content tanpa sentuh DOM logic.
@@ -137,20 +172,34 @@ Semua logika dinamis. Diorganisasi per section:
 - Event delegation untuk tabs → satu listener di document, scan via `closest('.tab-btn')`.
 - Tab state via in-memory `activeTab` object — tidak persist antara reload.
 
-### 4.4 `locales/en.json` & `locales/id.json` (~499 baris each)
+### 4.4 `locales/en.json` & `locales/id.json` (880 baris each)
 
-Struktur JSON nested. Top-level keys:
+Struktur JSON nested. Top-level keys (mengikut urutan section newbie → pro):
 
 ```
 {
   "common":   { sidebar/footer common strings },
-  "nav":      { quick link labels, footer },
+  "sidebar":  { title, all menu labels (essentials, guide, foundation, profession, survival, quick), footer },
   "tracker":  { time labels, status text },
   "hero":     { badge, title, description, cta },
+
+  // 🟢 FOUNDATIONS
+  "essentials": { title, description, labels...,
+                  firstHour: { tag, title, items[] },
+                  mount: { tag, title, table[], tips[] },
+                  food:  { tag, title, foodTable[], potionTable[], tips[] },
+                  refining: { tag, title, cityTable[], steps[], tips[] } },
   "guides":   { title, labelGoal, labelActivities, labelEquipment, labelTips,
                 beginner: { tag, title, hours, goal, activities[], equipment[], tips[] },
                 midgame:  { ... },
                 endgame:  { ... } },
+  "zones":    { title, description, labels (Danger/Death/BestFor/Features/Access),
+                items[7]: [{ id, icon, name, danger, dangerLevel, death, bestFor, access, features[] }] },
+  "mistakes": { title, description,
+                items[14]: [{ title, detail }] },
+
+  // 🟡 PICK YOUR PATH
+  "biomes":   { title, description, swamp{}, forest{}, mountain{}, highland{}, steppe{} },
   "professions": { title, description, overview: { title, paragraph, tips[] },
                    labelResource, labelHub, labelBiomes, labelTools, labelRoyalSpots,
                    labelOutlandsSpots, labelTips,
@@ -160,13 +209,25 @@ Struktur JSON nested. Top-level keys:
                    stoneQuarrier: { ... },
                    fiberHarvester:{ ... },
                    fisherman:     { ... } },
-  "sidebar":  { title, all menu labels, footer },
-  "biomes":   { title, description, swamp{}, forest{}, mountain{}, highland{}, steppe{} },
   "tiers":    { title, description, tier1{}, tier4{}, tier6{}, tier7{}, tier8{} },
+
+  // 🟠 SURVIVE & THRIVE
+  "survival": { title, description,
+                preGatherTitle, preGather[8],
+                spottingTitle, spotting[6],
+                escapeKitTitle, escapeKitHeaders[3], escapeKit[7],
+                qSwapTitle, qSwap[4],
+                chasedTitle, chased[6],
+                tipsTitle, tips[5] },
   "t8maps":   { title, description, fiber[], wood[], hide[], stone[], ore[] },
   "builds":   { title, description, solo{}, tank{}, balanced{} },
+
+  // 🔴 OPTIMIZE
   "events":   { title, description, worldBoss{}, primeTime{}, dangerWindow{}, lowActivity{} },
+  "tools":    { title, description, labelCategory, labelOpen,
+                items[8]: [{ name, url, category, description }] },
   "protips":  { title, description, efficiency{}, safety{}, profit{} },
+
   "footer":   { text, author, authorLabel }
 }
 ```
@@ -372,13 +433,36 @@ Tidak ada blocking request — semua resource self-hosted kecuali Google Fonts (
 
 Future enhancements yang boleh dipertimbangkan:
 
-- **Search bar** — cari spot/profession by name.
-- **Resource price tracker** — integration dengan API harga market Albion (albion-online-data.com).
-- **Bookmark / favorite** — user pin profesi favourite ke top.
-- **Print-friendly CSS** — buat cetak guide jadi rapi.
-- **Dark/light theme toggle** — saat ini cuma dark.
-- **Offline support** — Service Worker untuk PWA install.
-- **More languages** — Malay, Filipino, Vietnamese (player base Asia).
+**Tier 2 — Profitability & Routine Harian** (sumber high-impact selepas Tier 1)
+- 💰 Marketplace 101 — Buy Order vs Sell Order, tax, harga antar kota.
+- 📋 Routine Harian Optimal — daily checklist pro: Adventurer's Challenge, fame potion, dst.
+- ⚔️ Faction Warfare Guide — silver source paling under-rated di Royal.
+- 💎 Premium Math — sebab vs jangan beli Premium, numbers actual.
+
+**Tier 3 — End Game Pathways**
+- 🏛️ Guild Guide — kenapa wajib join guild, cara cari guild sesuai.
+- 🌫️ Mists & Roads of Avalon — solo content T7-T8 less risk.
+- 🔥 Hellgate 2v2 / Corrupted Dungeons — alternatif content + silver.
+
+**Tier 4 — UX Polish**
+- 🔗 Open Graph + meta tags — preview cantik bila link di-share ke Discord/WA.
+- 🔍 Search bar — quick find by keyword.
+- ⬆️ Back-to-top button + tooltip on AO term (ZvZ/LP/BZ).
+- Resource price tracker — integration dengan API harga market Albion (albion-online-data.com).
+- Bookmark / favorite — user pin profesi favourite ke top.
+- Print-friendly CSS — buat cetak guide jadi rapi.
+- Dark/light theme toggle — saat ini cuma dark.
+- Offline support — Service Worker untuk PWA install.
+- More languages — Malay, Filipino, Vietnamese (player base Asia).
+
+**Selesai / Latest** ✓
+- ✓ Sidebar Drawer + Tabbed UI (PR #1 commit 1)
+- ✓ Beginner Essentials (First Hour, Mount, Food, Refining)
+- ✓ Zone Types Manual (7 zones)
+- ✓ Common Mistakes / JANGAN-DO List (14 items)
+- ✓ Gank Avoidance & Escape Manual (6 sub-sections)
+- ✓ Tools & Apps Pro Toolkit (8 tools)
+- ✓ Newbie → Pro section reordering
 
 ---
 
