@@ -64,13 +64,17 @@ function updatePageLanguage() {
     // Re-render dynamic content
     renderEssentials();
     renderGuides();
+    renderZones();
+    renderMistakes();
     renderProfessions();
     renderBiomes();
     renderTiers();
+    renderSurvival();
     renderT8Maps();
-    renderProTips();
     renderGatheringBuilds();
     renderEventSchedule();
+    renderTools();
+    renderProTips();
     updatePrimeTimeTracker();
 }
 
@@ -494,6 +498,170 @@ function renderEssentials() {
         `;
         panels.appendChild(panel);
     });
+}
+
+// ============================================
+// ZONE TYPES MANUAL
+// ============================================
+
+function renderZones() {
+    const grid = document.getElementById('zonesGrid');
+    if (!grid) return;
+    const items = t('zones.items') || [];
+    const labelDanger = t('zones.labelDanger', 'Danger');
+    const labelDeath = t('zones.labelDeath', 'On Death');
+    const labelBestFor = t('zones.labelBestFor', 'Best For');
+    const labelFeatures = t('zones.labelFeatures', 'Key Features');
+    const labelAccess = t('zones.labelAccess', 'Access');
+
+    grid.innerHTML = items.map(zone => {
+        const features = (zone.features || []).map(f => `<li>${f}</li>`).join('');
+        const dangerClass = zone.dangerLevel || 'moderate';
+        return `
+            <div class="zone-card zone-${dangerClass}">
+                <div class="zone-header">
+                    <span class="zone-icon">${zone.icon || ''}</span>
+                    <div class="zone-title-wrap">
+                        <h3 class="zone-name">${zone.name}</h3>
+                        <span class="zone-danger-badge zone-danger-${dangerClass}">${labelDanger}: ${zone.danger}</span>
+                    </div>
+                </div>
+                <div class="zone-body">
+                    <div class="zone-row">
+                        <span class="zone-label">💀 ${labelDeath}</span>
+                        <span class="zone-value">${zone.death}</span>
+                    </div>
+                    <div class="zone-row">
+                        <span class="zone-label">🎯 ${labelBestFor}</span>
+                        <span class="zone-value">${zone.bestFor}</span>
+                    </div>
+                    <div class="zone-row">
+                        <span class="zone-label">🚪 ${labelAccess}</span>
+                        <span class="zone-value">${zone.access || ''}</span>
+                    </div>
+                    <div class="zone-features">
+                        <span class="zone-label">✦ ${labelFeatures}</span>
+                        <ul class="zone-features-list">${features}</ul>
+                    </div>
+                </div>
+            </div>
+        `;
+    }).join('');
+}
+
+// ============================================
+// COMMON MISTAKES (DON'T list)
+// ============================================
+
+function renderMistakes() {
+    const list = document.getElementById('mistakesList');
+    if (!list) return;
+    const items = t('mistakes.items') || [];
+    list.innerHTML = items.map((m, idx) => `
+        <div class="mistake-card">
+            <div class="mistake-num">${idx + 1}</div>
+            <div class="mistake-body">
+                <h4 class="mistake-title"><span class="mistake-x">❌</span> ${m.title}</h4>
+                <p class="mistake-detail">${m.detail}</p>
+            </div>
+        </div>
+    `).join('');
+}
+
+// ============================================
+// GANK AVOIDANCE & ESCAPE MANUAL
+// ============================================
+
+function renderSurvival() {
+    const container = document.getElementById('survivalContainer');
+    if (!container) return;
+
+    const preGather = t('survival.preGather') || [];
+    const spotting = t('survival.spotting') || [];
+    const escapeKit = t('survival.escapeKit') || [];
+    const escapeHeaders = t('survival.escapeKitHeaders') || ['Slot', 'Item', 'Why'];
+    const qSwap = t('survival.qSwap') || [];
+    const chased = t('survival.chased') || [];
+    const tips = t('survival.tips') || [];
+
+    const renderList = (arr) => arr.map(s => `<li>${s}</li>`).join('');
+    const renderNumberedList = (arr) => arr.map((s, i) => `
+        <li class="checklist-item">
+            <div class="checklist-num">${i + 1}</div>
+            <div class="checklist-text">${s}</div>
+        </li>
+    `).join('');
+
+    const renderTable = () => `
+        <table class="survival-table">
+            <thead>
+                <tr>
+                    <th>${escapeHeaders[0]}</th>
+                    <th>${escapeHeaders[1]}</th>
+                    <th>${escapeHeaders[2]}</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${escapeKit.map(row => `
+                    <tr>
+                        <td class="survival-slot">${row.slot}</td>
+                        <td class="survival-item">${row.item}</td>
+                        <td class="survival-why">${row.why}</td>
+                    </tr>
+                `).join('')}
+            </tbody>
+        </table>
+    `;
+
+    container.innerHTML = `
+        <div class="survival-section">
+            <h3 class="survival-h">✅ ${t('survival.preGatherTitle', 'Pre-Gathering Checklist')}</h3>
+            <ul class="survival-list">${renderList(preGather)}</ul>
+        </div>
+        <div class="survival-section">
+            <h3 class="survival-h">🔎 ${t('survival.spottingTitle', 'How to Spot a Ganker')}</h3>
+            <ul class="survival-list">${renderList(spotting)}</ul>
+        </div>
+        <div class="survival-section">
+            <h3 class="survival-h">🎒 ${t('survival.escapeKitTitle', 'Escape Kit Loadout')}</h3>
+            <div class="survival-table-wrap">${renderTable()}</div>
+        </div>
+        <div class="survival-section">
+            <h3 class="survival-h">⚡ ${t('survival.qSwapTitle', 'Q-Swap Technique')}</h3>
+            <ol class="checklist">${renderNumberedList(qSwap)}</ol>
+        </div>
+        <div class="survival-section">
+            <h3 class="survival-h">🏃 ${t('survival.chasedTitle', 'If You Are Already Being Chased')}</h3>
+            <ol class="checklist">${renderNumberedList(chased)}</ol>
+        </div>
+        <div class="survival-section">
+            <h3 class="survival-h">💡 ${t('survival.tipsTitle', 'Advanced Tips')}</h3>
+            <ul class="survival-list survival-tips">${renderList(tips)}</ul>
+        </div>
+    `;
+}
+
+// ============================================
+// TOOLS & APPS (Pro Toolkit)
+// ============================================
+
+function renderTools() {
+    const grid = document.getElementById('toolsGrid');
+    if (!grid) return;
+    const items = t('tools.items') || [];
+    const labelCategory = t('tools.labelCategory', 'Category');
+    const labelOpen = t('tools.labelOpen', 'Open');
+
+    grid.innerHTML = items.map(tool => `
+        <div class="tool-card">
+            <div class="tool-header">
+                <h3 class="tool-name">${tool.name}</h3>
+                <span class="tool-category">${labelCategory}: ${tool.category}</span>
+            </div>
+            <p class="tool-description">${tool.description}</p>
+            <a href="${tool.url}" target="_blank" rel="noopener noreferrer" class="tool-link">${labelOpen} ↗</a>
+        </div>
+    `).join('');
 }
 
 // ============================================

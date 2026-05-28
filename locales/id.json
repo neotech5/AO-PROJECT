@@ -27,6 +27,13 @@
     "stoneQuarrier": "Stone Quarrier (Batu)",
     "fiberHarvester": "Fiber Harvester (Serat)",
     "fisherman": "Fisherman (Mancing)",
+    "foundationGroup": "Foundation",
+    "foundationZones": "Zone Types",
+    "foundationMistakes": "JANGAN-DO List",
+    "survivalGroup": "Survival & End-Game",
+    "survivalGank": "Gank Avoidance",
+    "survivalT8Maps": "Peta T8",
+    "survivalBuilds": "Build (T8)",
     "quickGroup": "Tautan Cepat",
     "home": "Home",
     "biomes": "Bioma",
@@ -34,6 +41,7 @@
     "t8maps": "Peta T8",
     "builds": "Build",
     "events": "Event",
+    "tools": "Tools & Apps",
     "protips": "Pro Tips",
     "footer": "Albion Online · Server Asia"
   },
@@ -164,6 +172,264 @@
         "Kumpulin dalam jumlah gede (200+ material) sebelum refining biar nge-minimize jumlah trip."
       ]
     }
+  },
+  "zones": {
+    "title": "Manual Zone Types",
+    "description": "Pahami dunia Albion sebelum keluar farming. Tiap zone beda aturan PvP, beda konsekuensi mati, dan beda peluang farming.",
+    "labelDanger": "Bahaya",
+    "labelDeath": "Pas Mati",
+    "labelBestFor": "Cocok Buat",
+    "labelFeatures": "Fitur Utama",
+    "labelAccess": "Akses",
+    "items": [
+      {
+        "id": "zone-blue",
+        "icon": "🟦",
+        "name": "Blue Zone (Aman)",
+        "danger": "Aman",
+        "dangerLevel": "safe",
+        "death": "Gak kehilangan apa-apa. Mati = respawn di kota terdekat. PvP gak diizinin — yang nyerang dapet penalti reputasi gede.",
+        "bestFor": "Pemain baru, tutorial, gather T2–T4, latihan crafting, belajar kontrol dasar.",
+        "access": "Di sekeliling 5 kota Royal (Lymhurst, Fort Sterling, Bridgewatch, Martlock, Thetford) sama Caerleon.",
+        "features": [
+          "Mob & resource node T2–T4",
+          "Gak ada PvP, gak ada full-loot",
+          "Spot aman buat AFK / main santai",
+          "Bank, marketplace, repair station semua di sini"
+        ]
+      },
+      {
+        "id": "zone-yellow",
+        "icon": "🟨",
+        "name": "Yellow Zone (Knockdown)",
+        "danger": "Rendah",
+        "dangerLevel": "moderate",
+        "death": "Cuma knockdown — gear cuma kena durability damage, semua barang aman. PvP udah diizinin.",
+        "bestFor": "Latihan PvP tanpa kehilangan gear, gather T3–T5, belajar mekanik escape.",
+        "access": "Satu ring keluar dari kota Royal (antara Blue sama Red zone).",
+        "features": [
+          "Mob & resource node T3–T5",
+          "PvP diizinin — tapi gak ada item loss",
+          "Yang nyerang dapet penalti reputasi berat",
+          "Zona paling pas buat test escape kit"
+        ]
+      },
+      {
+        "id": "zone-red",
+        "icon": "🟥",
+        "name": "Red Zone (Full Loot)",
+        "danger": "Tinggi",
+        "dangerLevel": "extreme",
+        "death": "FULL LOOT. Semua di inventory bisa di-pickup sama yang ngebunuh. Gear yang dipake jadi hancur.",
+        "bestFor": "Gather T4–T6, solo Hellgate, PvP intermediate, faction warfare.",
+        "access": "Ring terluar Royal Continent, antara Yellow sama Black zone.",
+        "features": [
+          "Mob & resource node T4–T6",
+          "PvP full-loot — bawa cuma yang sanggup hilang",
+          "Yang nyerang dapet penalti reputasi (beda sama Black Zone)",
+          "Faction warfare buat silver sama token"
+        ]
+      },
+      {
+        "id": "zone-black",
+        "icon": "⬛",
+        "name": "Black Zone (Outlands)",
+        "danger": "Ekstrem",
+        "dangerLevel": "extreme",
+        "death": "FULL LOOT. Yang ngebunuh GAK kena penalti reputasi. Zona paling bahaya di game.",
+        "bestFor": "Gather T6–T8, PvP skala gede (ZvZ), perang Castle / Territory, Hellgate, Avalon raid.",
+        "access": "Lewat portal dari Royal Continent atau Cluster portal di dalam Outlands.",
+        "features": [
+          "Mob & resource node T6–T8 (loot terbaik di game)",
+          "Full-loot PvP tanpa penalti apa-apa",
+          "Mayoritas pemain travel rame-rame (guild, gang)",
+          "Territory / Castle dikuasai guild buat akses resource"
+        ]
+      },
+      {
+        "id": "zone-mists",
+        "icon": "🌫️",
+        "name": "The Mists",
+        "danger": "Variabel",
+        "dangerLevel": "moderate",
+        "death": "Tergantung tier Mist — Lethal Mist = full-loot, Mist tier rendah = cuma knockdown.",
+        "bestFor": "Solo gathering T5–T7, farming Mist Boss, solo PvP tanpa risiko grup gede.",
+        "access": "Portal Mist random spawn di zone manapun — masuk buat instance solo.",
+        "features": [
+          "Zone instance solo-only (1 player per Mist)",
+          "Lethal Mist = setara full-loot",
+          "Roaming Mist Boss dengan drop langka (Vanity, T8 chest)",
+          "Exit lewat portal Mist balik ke zone asal"
+        ]
+      },
+      {
+        "id": "zone-roads",
+        "icon": "🛤️",
+        "name": "Roads of Avalon",
+        "danger": "Full Loot",
+        "dangerLevel": "extreme",
+        "death": "Full loot. Aturan sama kayak Black Zone.",
+        "bestFor": "Group gathering T7–T8, group PvP, eksplorasi dinamis, ambush ZvZ.",
+        "access": "Portal Avalonian buka random di cluster Royal sama Outlands.",
+        "features": [
+          "Connection map dinamis — refresh tiap hari",
+          "PvP bebas faction — semua bisa nyerang semua",
+          "Node T6–T8 + mob Avalonian unik sama chest",
+          "Road nyambungin zone jauh — bagus buat shortcut travel"
+        ]
+      },
+      {
+        "id": "zone-hellgate",
+        "icon": "🔥",
+        "name": "Hellgate",
+        "danger": "Full Loot",
+        "dangerLevel": "extreme",
+        "death": "Full loot di dalam gate. PvP-nya instance (1v1, 2v2, atau 5v5).",
+        "bestFor": "Konten PvP solo / small-group, demonic shard, sumber fame & silver buat non-gatherer.",
+        "access": "Portal Hellgate spawn di Red sama Black zone — masuk buat arena PvP instance.",
+        "features": [
+          "Corrupted Dungeon 1v1, Hellgate 2v2 / 5v5",
+          "Lawan boss iblis sambil siap-siap di-invade tim musuh",
+          "Demonic Core + token buat gear langka",
+          "Closed Hellgate = gak ada invader (PvE only); Open = PvP aktif"
+        ]
+      }
+    ]
+  },
+  "mistakes": {
+    "title": "JANGAN-DO List (Silap Biasa)",
+    "description": "Kesalahan paling sering dilakuin pemula — setiap salah satunya bikin frustrasi berjam-jam atau buang silver gede. Hindari semua ini = skip 80% rasa sakit pemula.",
+    "items": [
+      { "title": "Bagi Learning Point ke semua line", "detail": "Boros LP. Fokusin SATU jalur gathering (misal Lumberjack) sampe T6 dulu, baru cabang lain. Spesialisasi > sebar tipis." },
+      { "title": "Bawa gear berharga ke Black Zone", "detail": "Kalau mati, hilang SEMUA. Bawa cuma loadout yang sanggup kamu hilangin 5–10 kali." },
+      { "title": "Beli Premium hari pertama", "detail": "Main 5–10 jam gratis dulu. Premium baru worth kalau kamu emang commit sama game ini. Sering nyesel kalau quit cepet." },
+      { "title": "Solo gather pas prime time (13:00–15:00 UTC)", "detail": "Server Asia padat ganker. Off-peak (21:00–09:00 UTC) jauh lebih aman buat solo." },
+      { "title": "Skip Resurrection Mage Potion", "detail": "Resurrection = nyelametin seluruh loadout dari satu gank. Wajib di Red dan Black zone." },
+      { "title": "Refine di kota yang salah", "detail": "Bonus +25% specialty ke-skip. Refine wood selalu di Lymhurst, ore di Fort Sterling, dst." },
+      { "title": "Pake gear tier tinggi buat gather resource tier rendah", "detail": "Boros. Cocokin tier gear sama tier resource — gear T6 buat node T6, gear T4 buat node T4." },
+      { "title": "Solo terus selamanya (gak join guild)", "detail": "Guild = konten grup, akses Castle/Territory, belajar lebih cepet, ada proteksi. Ceiling solo jauh lebih rendah." },
+      { "title": "Travel tanpa mount cadangan", "detail": "Mount utama bisa mati di tengah gank. Selalu bawa minimum 2 mount di bag." },
+      { "title": "Bawa silver banyak waktu travel", "detail": "Silver juga ke-drop pas mati di Red/Black. Simpan di bank sebelum travel berisiko." },
+      { "title": "Masuk zone baru tanpa scouting", "detail": "Selalu scout zone depan pake Invisibility Potion / mount cepet sebelum commit. Hemat banyak kematian." },
+      { "title": "Tunnel-vision di node — abaikan mini-map", "detail": "Ganker masuk diam-diam. Cek mini-map tiap 5 detik. Titik merah = musuh; baru satu titik aja udah keluar cepet." },
+      { "title": "Lupa daily Adventurer's Challenge", "detail": "Silver gratis + Backpack of Insight + reputasi. Cuma 10 menit. Skip = hilang ratusan ribu silver per minggu." },
+      { "title": "Pake combat gear di Blue Zone", "detail": "Blue Zone gak ada PvP. Pake gathering set (Hellion, Hunter) buat yield bonus — combat gear cuma slot kebuang." }
+    ]
+  },
+  "survival": {
+    "title": "Manual Gank Avoidance & Escape",
+    "description": "Solo gathering = solo survival. Pro gak ngehindarin bahaya — mereka siap-siap buat itu. Ini beda antara hilang satu loadout per minggu vs sepuluh per hari.",
+    "preGatherTitle": "Checklist Sebelum Gathering",
+    "preGather": [
+      "Mount HP 100% — repair dulu sebelum keluar kota",
+      "Slot food: Pork Omelette aktif (eat SEBELUM gather)",
+      "Slot consumable: Resurrection Mage Potion (non-negotiable di Red/Black)",
+      "Escape kit equipped di slot 2 (Stalker Hood + Assassin Shoes)",
+      "Mount cadangan di inventory (Riding Horse minimum)",
+      "Silver dan barang langka udah disimpan di bank — bawa cuma yang dibutuhin",
+      "Plan rute exit SEBELUM masuk — catat cluster portal terdekat",
+      "Scout cluster dulu pake Invisibility Potion atau mount cepet"
+    ],
+    "spottingTitle": "Cara Spot Ganker",
+    "spotting": [
+      "Player asing pake gear set + mount skull = siap combat, bukan gatherer",
+      "Player nongkrong di chokepoint (portal, edge cluster) tanpa gathering",
+      "Beberapa player di cluster tanpa grup keliatan (gang diam-diam)",
+      "Player nyoba 'temenan' atau follow kamu terus-terusan — bait klasik",
+      "Tiba-tiba teleport masuk lewat Invisibility Shrine atau cape stealth",
+      "Titik merah mini-map gerakan koordinasi ke arah node kamu"
+    ],
+    "escapeKitTitle": "Loadout Escape Kit",
+    "escapeKitHeaders": ["Slot", "Item", "Kenapa"],
+    "escapeKit": [
+      { "slot": "Head (Swap)", "item": "Stalker Hood", "why": "Cast Invisibility — putus tracking langsung" },
+      { "slot": "Chest (Swap)", "item": "Assassin Jacket", "why": "Burst movement speed 6 detik" },
+      { "slot": "Boots (Swap)", "item": "Assassin Boots", "why": "Stance buff movement — speed sustained" },
+      { "slot": "Cape", "item": "Spectral Bonehorse Cape", "why": "Wall aktif buat ngeblock pengejar" },
+      { "slot": "Consumable", "item": "Sticky Potion", "why": "Lempar di belakang — slow pengejar significant" },
+      { "slot": "Consumable (Alt)", "item": "Invisibility Potion", "why": "Invisibility 7 detik — last resort exit" },
+      { "slot": "Mount", "item": "Direwolf atau Swiftclaw (T5–T6)", "why": "Speed burst + slow pengejar" }
+    ],
+    "qSwapTitle": "Teknik Q-Swap (Wajib)",
+    "qSwap": [
+      "Setup: Gathering gear di slot utama, Escape Kit di slot 2",
+      "Pas lagi gather: Tekan Q buat instant swap ke Escape Kit",
+      "Mount up + cast Invisibility (Stalker Hood) pas ganker muncul",
+      "Lari ke portal — begitu udah mount, kamu 80% lebih aman"
+    ],
+    "chasedTitle": "Kalau Udah Dikejar",
+    "chased": [
+      "Mount UP langsung — bahkan Riding Horse lebih cepet daripada lari",
+      "Trigger Stalker Hood Invisibility buat putus target lock musuh",
+      "Drop Sticky Potion di belakang buat slow pengejar",
+      "Sprint ke cluster portal terdekat (bukan masuk lebih dalem ke BZ)",
+      "Kalau di-dismount: pake cape active (Spectral Bonehorse wall, dll.)",
+      "Z-out (turun mount) dan lari kaki kalau mount mau mati — kadang lebih cepet"
+    ],
+    "tipsTitle": "Tips Lanjutan",
+    "tips": [
+      "Selalu setup Q-Swap sebelum masuk zone di atas Yellow.",
+      "Tier mount harus ≥ tier gear — jangan T3 mount pake T6 gear (ganker bakal nargetin).",
+      "Jangan rakus node terakhir — keluar pas inventory 70% penuh, bukan 100%.",
+      "Cluster exit timer ~5 menit setelah masuk — siap-siap exit cepet pas digank.",
+      "Pake cluster Z buat escape silver burden — mekanik wall ngeblock pengejar."
+    ]
+  },
+  "tools": {
+    "title": "Tools & Apps (Pro Toolkit)",
+    "description": "Setiap pro Albion pake tools ini. Bookmark semua — ngerubah usaha mentah jadi main pinter.",
+    "labelCategory": "Kategori",
+    "labelOpen": "Buka",
+    "items": [
+      {
+        "name": "Albion Online Data Project",
+        "url": "https://www.albion-online-data.com/",
+        "category": "Data Market",
+        "description": "Harga marketplace real-time semua server. Bandingin buy/sell order, hitung profit margin, cari peluang arbitrage."
+      },
+      {
+        "name": "AlbionMap2D",
+        "url": "https://albiononline2d.com/",
+        "category": "Map",
+        "description": "Map interaktif dengan overlay resource, spot dungeon, lokasi portal. Wajib buat planning rute gather."
+      },
+      {
+        "name": "Murder Ledger",
+        "url": "https://murderledger.com/",
+        "category": "Tracker Pemain",
+        "description": "Cek history PvP, stat kill, dan gear umum player manapun. Bisa cek apakah player yang 'ramah' ternyata ganker terkenal."
+      },
+      {
+        "name": "Albion Online Wiki",
+        "url": "https://wiki.albiononline.com/",
+        "category": "Referensi",
+        "description": "Wiki resmi — setiap item, mob, skill, mekanik dijelasin lengkap. Tempat pertama buat pertanyaan 'ini apa sih?'"
+      },
+      {
+        "name": "Galahad's Map",
+        "url": "https://galahadmaps.com/",
+        "category": "Map",
+        "description": "Map Outlands alternatif dengan koneksi cluster, tracking Roads of Avalon, dan portal Mist."
+      },
+      {
+        "name": "Discord Resmi Albion",
+        "url": "https://discord.gg/albiononline",
+        "category": "Komunitas",
+        "description": "Discord komunitas resmi. News, patch notes, recruitment guild, Q&A dev. Pin notif buat hari patch."
+      },
+      {
+        "name": "r/albiononline (Reddit)",
+        "url": "https://www.reddit.com/r/albiononline/",
+        "category": "Komunitas",
+        "description": "Subreddit dengan build guide, analisis market, diskusi patch, dan screenshot. Search dulu sebelum nanya."
+      },
+      {
+        "name": "AlbionStatus",
+        "url": "https://www.albiononline.com/en/status",
+        "category": "Status Server",
+        "description": "Halaman status server resmi. Cek dulu sebelum login kalau ada downtime, lag, atau maintenance terjadwal."
+      }
+    ]
   },
   "guides": {
     "title": "Panduan Progresi Pemain",

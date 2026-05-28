@@ -67,6 +67,19 @@
                 </ul>
             </div>
 
+            <!-- Foundation group (Zone Types + Mistakes) -->
+            <div class="sidebar-group">
+                <button class="sidebar-group-toggle" data-target="group-foundation" aria-expanded="true">
+                    <span class="sidebar-group-icon">🗺️</span>
+                    <span class="sidebar-group-label" data-i18n="sidebar.foundationGroup">Foundation</span>
+                    <span class="sidebar-chevron">▾</span>
+                </button>
+                <ul class="sidebar-group-items" id="group-foundation">
+                    <li><a href="#zones" class="sidebar-link" data-i18n="sidebar.foundationZones">Zone Types</a></li>
+                    <li><a href="#mistakes" class="sidebar-link" data-i18n="sidebar.foundationMistakes">Common Mistakes</a></li>
+                </ul>
+            </div>
+
             <!-- Profession group -->
             <div class="sidebar-group">
                 <button class="sidebar-group-toggle" data-target="group-profession" aria-expanded="true">
@@ -85,6 +98,20 @@
                 </ul>
             </div>
 
+            <!-- Survival & End-Game group -->
+            <div class="sidebar-group">
+                <button class="sidebar-group-toggle" data-target="group-survival" aria-expanded="true">
+                    <span class="sidebar-group-icon">🛡️</span>
+                    <span class="sidebar-group-label" data-i18n="sidebar.survivalGroup">Survival &amp; End-Game</span>
+                    <span class="sidebar-chevron">▾</span>
+                </button>
+                <ul class="sidebar-group-items" id="group-survival">
+                    <li><a href="#survival" class="sidebar-link" data-i18n="sidebar.survivalGank">Gank Avoidance</a></li>
+                    <li><a href="#t8maps" class="sidebar-link" data-i18n="sidebar.survivalT8Maps">T8 Maps</a></li>
+                    <li><a href="#builds" class="sidebar-link" data-i18n="sidebar.survivalBuilds">Builds (T8)</a></li>
+                </ul>
+            </div>
+
             <!-- Quick links group -->
             <div class="sidebar-group">
                 <button class="sidebar-group-toggle" data-target="group-quick" aria-expanded="true">
@@ -96,9 +123,8 @@
                     <li><a href="#home" class="sidebar-link" data-i18n="sidebar.home">Home</a></li>
                     <li><a href="#biomes" class="sidebar-link" data-i18n="sidebar.biomes">Biomes</a></li>
                     <li><a href="#tiers" class="sidebar-link" data-i18n="sidebar.tiers">Tier Guide</a></li>
-                    <li><a href="#t8maps" class="sidebar-link" data-i18n="sidebar.t8maps">T8 Maps</a></li>
-                    <li><a href="#builds" class="sidebar-link" data-i18n="sidebar.builds">Builds</a></li>
                     <li><a href="#events" class="sidebar-link" data-i18n="sidebar.events">Events</a></li>
+                    <li><a href="#tools" class="sidebar-link" data-i18n="sidebar.tools">Tools &amp; Apps</a></li>
                     <li><a href="#protips" class="sidebar-link" data-i18n="sidebar.protips">Pro Tips</a></li>
                 </ul>
             </div>
@@ -155,6 +181,8 @@
     <section class="main-content">
         <div class="container">
 
+            <!-- ====== FOUNDATIONS (Newbie) ====== -->
+
             <!-- Beginner Essentials Section -->
             <div class="section-block" id="essentials">
                 <div class="section-header">
@@ -179,6 +207,35 @@
                 </div>
             </div>
 
+            <!-- Zone Types Section -->
+            <div class="section-block" id="zones">
+                <div class="section-header">
+                    <h2>🗺️ <span data-i18n="zones.title">Zone Types Manual</span></h2>
+                    <p data-i18n="zones.description">Understand the world before you step out. Each zone type has different PvP rules, loot consequences, and farming opportunities.</p>
+                </div>
+                <div class="zones-grid" id="zonesGrid"></div>
+            </div>
+
+            <!-- Common Mistakes Section -->
+            <div class="section-block" id="mistakes">
+                <div class="section-header">
+                    <h2>❌ <span data-i18n="mistakes.title">Common Mistakes (DON'T)</span></h2>
+                    <p data-i18n="mistakes.description">Kesalahan paling sering dilakuin pemula — setiap salah satunya bikin frustrasi atau buang silver gede.</p>
+                </div>
+                <div class="mistakes-list" id="mistakesList"></div>
+            </div>
+
+            <!-- ====== PICK YOUR PATH (Intermediate) ====== -->
+
+            <!-- Biomes Section -->
+            <div class="section-block" id="biomes">
+                <div class="section-header">
+                    <h2 data-i18n="biomes.title">Biome Distribution</h2>
+                    <p data-i18n="biomes.description">Each city specializes in different resources. Choose your farming location based on what you need.</p>
+                </div>
+                <div class="biomes-grid" id="biomesGrid"></div>
+            </div>
+
             <!-- Profession Section -->
             <div class="section-block" id="professions">
                 <div class="section-header">
@@ -192,15 +249,6 @@
                 </div>
             </div>
 
-            <!-- Biomes Section -->
-            <div class="section-block" id="biomes">
-                <div class="section-header">
-                    <h2 data-i18n="biomes.title">Biome Distribution</h2>
-                    <p data-i18n="biomes.description">Each city specializes in different resources. Choose your farming location based on what you need.</p>
-                </div>
-                <div class="biomes-grid" id="biomesGrid"></div>
-            </div>
-
             <!-- Tier Guide Section -->
             <div class="section-block" id="tiers">
                 <div class="section-header">
@@ -208,6 +256,17 @@
                     <p data-i18n="tiers.description">Learn the best strategies for each tier level, from safe beginner zones to dangerous T8 Outlands.</p>
                 </div>
                 <div class="tiers-container" id="tiersContainer"></div>
+            </div>
+
+            <!-- ====== SURVIVE & THRIVE (Advanced) ====== -->
+
+            <!-- Gank Avoidance & Escape Manual -->
+            <div class="section-block" id="survival">
+                <div class="section-header">
+                    <h2>🛡️ <span data-i18n="survival.title">Gank Avoidance & Escape Manual</span></h2>
+                    <p data-i18n="survival.description">Solo gathering = solo survival. Pros don't avoid danger — they prepare for it.</p>
+                </div>
+                <div class="survival-container" id="survivalContainer"></div>
             </div>
 
             <!-- T8 Maps Section -->
@@ -219,7 +278,7 @@
                 <div class="t8-maps-grid" id="t8MapsGrid"></div>
             </div>
 
-            <!-- Gathering Builds Section (T8 focused — placed after T8 Maps) -->
+            <!-- Gathering Builds Section (T8 focused) -->
             <div class="section-block" id="builds">
                 <div class="section-header">
                     <h2>⚔️ <span data-i18n="builds.title">Recommended Gathering Builds</span></h2>
@@ -228,6 +287,8 @@
                 <div class="builds-grid" id="buildsGrid"></div>
             </div>
 
+            <!-- ====== OPTIMIZE (Pro) ====== -->
+
             <!-- Event Schedule Section -->
             <div class="section-block" id="events">
                 <div class="section-header">
@@ -235,6 +296,15 @@
                     <p data-i18n="events.description">Important events and timings for Asia server farming activities.</p>
                 </div>
                 <div class="events-grid" id="eventsGrid"></div>
+            </div>
+
+            <!-- Tools & Apps Section -->
+            <div class="section-block" id="tools">
+                <div class="section-header">
+                    <h2>🧰 <span data-i18n="tools.title">Tools & Apps (Pro Toolkit)</span></h2>
+                    <p data-i18n="tools.description">Setiap pro Albion pake tools ini. Bookmark semua — ngerubah usaha mentah jadi main pinter.</p>
+                </div>
+                <div class="tools-grid" id="toolsGrid"></div>
             </div>
 
             <!-- Pro Tips Section -->

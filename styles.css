@@ -2081,3 +2081,407 @@ body.sidebar-open {
         font-size: 1.25rem;
     }
 }
+
+/* ============================================
+   ZONE TYPES MANUAL
+   ============================================ */
+.zones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.zone-card {
+    background: linear-gradient(160deg, rgba(26, 26, 46, 0.95), rgba(15, 15, 30, 0.95));
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.zone-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--accent);
+}
+
+.zone-card.zone-safe::before { background: #4ade80; }
+.zone-card.zone-moderate::before { background: #fbbf24; }
+.zone-card.zone-extreme::before { background: #ef4444; }
+
+.zone-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    box-shadow: 0 8px 24px rgba(212, 175, 55, 0.12);
+}
+
+.zone-header {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: center;
+    padding-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--border);
+}
+
+.zone-icon {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.zone-title-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.zone-name {
+    margin: 0;
+    color: var(--accent);
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.zone-danger-badge {
+    display: inline-block;
+    width: fit-content;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.zone-danger-safe { background: rgba(74, 222, 128, 0.18); color: #4ade80; }
+.zone-danger-moderate { background: rgba(251, 191, 36, 0.18); color: #fbbf24; }
+.zone-danger-extreme { background: rgba(239, 68, 68, 0.18); color: #ef4444; }
+
+.zone-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.zone-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.zone-label {
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.zone-value {
+    color: var(--foreground);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.zone-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.zone-features-list {
+    margin: 0;
+    padding-left: 1.2rem;
+    color: var(--foreground-muted);
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+.zone-features-list li {
+    margin-bottom: 0.25rem;
+}
+
+/* ============================================
+   COMMON MISTAKES (DON'T)
+   ============================================ */
+.mistakes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.mistake-card {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+    background: linear-gradient(160deg, rgba(46, 26, 26, 0.5), rgba(20, 15, 15, 0.85));
+    border: 1px solid rgba(239, 68, 68, 0.25);
+    border-radius: var(--radius);
+    padding: var(--spacing-md) var(--spacing-lg);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.mistake-card:hover {
+    transform: translateX(3px);
+    border-color: #ef4444;
+}
+
+.mistake-num {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ef4444, #b91c1c);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.35);
+}
+
+.mistake-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.mistake-title {
+    margin: 0;
+    color: var(--foreground);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.mistake-x {
+    color: #ef4444;
+    margin-right: 0.25rem;
+}
+
+.mistake-detail {
+    margin: 0;
+    color: var(--foreground-muted);
+    font-size: 0.88rem;
+    line-height: 1.55;
+}
+
+/* ============================================
+   GANK AVOIDANCE & ESCAPE MANUAL
+   ============================================ */
+.survival-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.survival-section {
+    background: linear-gradient(160deg, rgba(26, 26, 46, 0.85), rgba(15, 15, 30, 0.95));
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius);
+    padding: var(--spacing-lg);
+}
+
+.survival-h {
+    margin: 0 0 var(--spacing-md) 0;
+    color: var(--accent);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.survival-list {
+    margin: 0;
+    padding-left: 1.4rem;
+    color: var(--foreground);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.survival-list li {
+    margin-bottom: 0.4rem;
+}
+
+.survival-tips li {
+    color: var(--foreground-muted);
+    font-style: italic;
+}
+
+.survival-table-wrap {
+    overflow-x: auto;
+    border-radius: var(--radius-md);
+}
+
+.survival-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(15, 15, 30, 0.6);
+}
+
+.survival-table thead {
+    background: rgba(212, 175, 55, 0.12);
+}
+
+.survival-table th {
+    text-align: left;
+    padding: 0.75rem 1rem;
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--border);
+}
+
+.survival-table td {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid rgba(42, 42, 62, 0.6);
+    color: var(--foreground);
+    font-size: 0.9rem;
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+.survival-table tr:last-child td {
+    border-bottom: none;
+}
+
+.survival-table tr:hover td {
+    background: rgba(212, 175, 55, 0.06);
+}
+
+.survival-slot {
+    color: var(--foreground-muted);
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.survival-item {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.survival-why {
+    color: var(--foreground-muted);
+    font-size: 0.85rem;
+}
+
+/* ============================================
+   TOOLS & APPS
+   ============================================ */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.tool-card {
+    background: linear-gradient(160deg, rgba(26, 26, 46, 0.95), rgba(15, 15, 30, 0.95));
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    box-shadow: 0 8px 24px rgba(212, 175, 55, 0.12);
+}
+
+.tool-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--border);
+}
+
+.tool-name {
+    margin: 0;
+    color: var(--accent);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.tool-category {
+    color: var(--foreground-muted);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.tool-description {
+    margin: 0;
+    color: var(--foreground);
+    font-size: 0.92rem;
+    line-height: 1.55;
+    flex: 1;
+}
+
+.tool-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.5rem 1rem;
+    background: rgba(212, 175, 55, 0.12);
+    border: 1px solid var(--accent);
+    border-radius: var(--radius-md);
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    width: fit-content;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.tool-link:hover {
+    background: var(--accent);
+    color: var(--accent-foreground);
+    transform: translateY(-1px);
+}
+
+/* ============================================
+   FOUNDATION/SURVIVAL/TOOLS - MOBILE
+   ============================================ */
+@media (max-width: 640px) {
+    .zones-grid,
+    .mistakes-list,
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .zone-card,
+    .tool-card,
+    .survival-section {
+        padding: var(--spacing-md);
+    }
+
+    .zone-name,
+    .tool-name,
+    .survival-h {
+        font-size: 1rem;
+    }
+
+    .mistake-card {
+        padding: var(--spacing-md);
+    }
+
+    .survival-table th,
+    .survival-table td {
+        padding: 0.5rem 0.6rem;
+        font-size: 0.82rem;
+    }
+}
