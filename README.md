@@ -1,192 +1,115 @@
-# Albion Online Farming Guide - Simplified Version
+# Kitab Pemula Albion Online
 
-A modern, responsive farming guide for Albion Online built with pure HTML, CSS, and JavaScript. No frameworks, no build tools—just clean, fast code ready for Netlify deployment.
+> **Albion Online Beginner's Codex** — Panduan farming Albion Online untuk server Asia (Albion East). Vanilla HTML/CSS/JS, dwi-bahasa EN/ID, dark fantasy theme.
 
-## Features
-
-✨ **Modern Design**
-- Dark fantasy theme with gold accents
-- Fully responsive (mobile, tablet, desktop)
-- Smooth animations and transitions
-- Professional typography
-
-🌐 **Bilingual Support**
-- English and Bahasa Indonesia
-- Language preference saved to localStorage
-- Easy to add more languages
-
-📱 **Responsive Layout**
-- Mobile-first design
-- Optimized for all screen sizes
-- Touch-friendly interface
-
-⚡ **Performance**
-- No dependencies or build process
-- Fast load times
-- Lazy loading for images
-- Minimal CSS and JavaScript
-
-## Project Structure
-
-```
-albion-simplified/
-├── index.html          # Main HTML file
-├── styles.css          # All styling
-├── script.js           # JavaScript for interactivity
-├── locales/
-│   ├── en.json        # English translations
-│   └── id.json        # Indonesian translations
-└── README.md          # This file
-```
-
-## Deployment to Netlify
-
-### Option 1: Using Netlify UI
-
-1. **Prepare the folder**
-   - Ensure all files are in the `albion-simplified` folder
-
-2. **Deploy via Drag & Drop**
-   - Go to [Netlify](https://netlify.com)
-   - Sign in or create an account
-   - Drag and drop the `albion-simplified` folder into the deploy area
-   - Your site will be live in seconds!
-
-3. **Set up a custom domain** (optional)
-   - In Netlify dashboard, go to Site settings
-   - Add your custom domain
-
-### Option 2: Using Git (Recommended)
-
-1. **Push to GitHub**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git remote add origin https://github.com/yourusername/albion-farming-guide.git
-   git push -u origin main
-   ```
-
-2. **Connect to Netlify**
-   - Go to [Netlify](https://netlify.com)
-   - Click "New site from Git"
-   - Connect your GitHub repository
-   - Deploy settings:
-     - Build command: (leave empty)
-     - Publish directory: `.` (or the folder name)
-   - Click Deploy
-
-### Option 3: Using Netlify CLI
-
-```bash
-# Install Netlify CLI
-npm install -g netlify-cli
-
-# Navigate to project folder
-cd albion-simplified
-
-# Deploy
-netlify deploy --prod
-```
-
-## Local Development
-
-Simply open `index.html` in your browser. No server needed!
-
-For better development experience, use a local server:
-
-```bash
-# Using Python 3
-python -m http.server 8000
-
-# Using Node.js (if you have http-server installed)
-npx http-server
-
-# Using PHP
-php -S localhost:8000
-```
-
-Then visit `http://localhost:8000` in your browser.
-
-## Customization
-
-### Change Colors
-
-Edit the CSS variables in `styles.css`:
-
-```css
-:root {
-    --primary: #d4af37;           /* Gold color */
-    --background: #0f0f1e;        /* Dark background */
-    --accent: #d4af37;            /* Accent color */
-    /* ... more variables */
-}
-```
-
-### Add More Languages
-
-1. Create a new JSON file in `locales/` (e.g., `fr.json`)
-2. Copy the structure from `en.json` and translate
-3. Update `script.js` to load the new language
-
-### Modify Content
-
-- **Hero section**: Edit `index.html` hero section and update translations
-- **Biomes**: Update biome data in `script.js` `getBiomeData()` function
-- **Tiers**: Update tier data in `script.js` `getTierData()` function
-- **T8 Maps**: Update maps in `script.js` `getT8MapsData()` function
-
-## Browser Support
-
-- Chrome/Edge: ✅ Full support
-- Firefox: ✅ Full support
-- Safari: ✅ Full support
-- Mobile browsers: ✅ Full support
-
-## Performance Metrics
-
-- **Page Size**: ~50KB (HTML + CSS + JS)
-- **Load Time**: < 1 second on 4G
-- **Lighthouse Score**: 95+
-
-## File Sizes
-
-- `index.html`: ~8KB
-- `styles.css`: ~15KB
-- `script.js`: ~8KB
-- `locales/en.json`: ~3KB
-- `locales/id.json`: ~3KB
-
-## Troubleshooting
-
-### Translations not loading
-- Check browser console for errors
-- Ensure `locales/en.json` and `locales/id.json` exist
-- Check CORS settings if hosting on a different domain
-
-### Images not showing
-- Verify image URLs are correct
-- Check internet connection
-- Images are loaded from CDN (cloudfront.net)
-
-### Styling looks off
-- Clear browser cache (Ctrl+Shift+Delete)
-- Check browser zoom level (should be 100%)
-- Ensure CSS file is loading (check Network tab in DevTools)
-
-## License
-
-This project is open source. Feel free to use and modify for your needs.
-
-## Support
-
-For questions or issues:
-1. Check the browser console for error messages
-2. Verify all files are in the correct locations
-3. Try clearing browser cache and reloading
+**Live**: deploy via Cloudflare Pages → lihat [DEPLOY_CLOUDFLARE_PAGES.md](DEPLOY_CLOUDFLARE_PAGES.md)
+**Repo**: https://github.com/neotech5/AO-PROJECT
+**Penulis**: ABID — [Discord](https://discord.com/users/987184688324030474)
 
 ---
 
-**Last Updated**: May 2026
-**Version**: 1.0 (Simplified)
-**Author**: ABID
+## Fitur
+
+Susunan **newbie → pro** dengan 4 tier section:
+
+**🟢 Foundations** (mulai di sini)
+- 📚 **Beginner Essentials** — 4 tab: First Hour Checklist, Mount Guide, Food & Potion, Refining 101
+- 📖 **Player Guide** — 3 fasa tabbed (Pemula / Mid Game / End Game)
+- 🗺️ **Zone Types Manual** — 7 zone (Blue/Yellow/Red/Black/Mists/Roads/Hellgate)
+- ❌ **JANGAN-DO List** — 14 kesalahan biasa pemula
+- 💬 **FAQ Pemula** — 15 Q&A collapsible (Premium wajib gak? Mati BZ? LP buat apa? dst.)
+
+**🟡 Pick Your Path**
+- 🌿 **Biome Distribution** — 5 bioma Royal
+- 🛠️ **6 Gathering Professions** — Lumberjack, Ore Miner, Skinner, Stone Quarrier, Fiber Harvester, Fisherman
+- 📈 **Tier Progression** — T1 → T8 strategi per tier
+
+**🟠 Survive & Thrive**
+- 🛡️ **Gank Avoidance & Escape Manual** — 6 sub-section (checklist, spotting, escape kit table, Q-Swap, dst.)
+- 🌫️ **Mists & Roads of Avalon Deep Dive** — solo T4-T8, Knightfall Abbey, portal types, Avalonian Energy
+- 🗺️ **Spot Spesifik T2-T6** di Royal Continent + **T7-T8** di Outlands
+- ⚔️ **Gathering Builds** — 3 build meta 2026 (Solo / Tank / Balanced)
+
+**🔴 Optimize**
+- 📅 **Asia Server Event Schedule** — prime time, world boss, dst.
+- 💰 **Marketplace 101** — Buy/Sell Order, tax breakdown, arbitrage antar kota
+- 📋 **Routine Harian Pro** — daily login checklist + weekly goals + anti-burnout
+- 💎 **Itungan Premium** — comparison table, breakeven math, scenarios
+- 🧰 **Tools & Apps (Pro Toolkit)** — 8 tool wajib (Data Project, AlbionMap2D, Murder Ledger, dst.)
+- 💡 **Pro Tips** — efisiensi, keamanan, profitability
+
+**Sistem**
+- 🌐 **Dwi-bahasa** — EN / ID (Bahasa Indonesia santai)
+- 🕐 **Asia Server Status** — real-time clock + danger level indicator
+- 📱 **Responsive** — mobile, tablet, desktop
+- ⚡ **No build step** — pure HTML/CSS/JS, langsung deploy
+- 🔗 **Open Graph + Twitter Card** — preview cantik di Discord/WhatsApp/Twitter/Telegram saat link di-share
+- 🔍 **SEO-optimized** — canonical URL, hreflang, JSON-LD structured data (4 schema: WebSite, Article, FAQPage, BreadcrumbList), robots.txt, sitemap.xml, rich snippet ready
+
+## Quick Start (local dev)
+
+```bash
+# Clone repo
+git clone https://github.com/neotech5/AO-PROJECT.git
+cd AO-PROJECT
+
+# Start local server
+python3 -m http.server 8088
+# Atau: npx http-server -p 8088
+
+# Buka http://localhost:8088
+```
+
+## Deploy
+
+Lihat panduan lengkap di **[DEPLOY_CLOUDFLARE_PAGES.md](DEPLOY_CLOUDFLARE_PAGES.md)**.
+
+Quick steps (Cloudflare Pages via Git):
+1. Login [Cloudflare Dashboard](https://dash.cloudflare.com/)
+2. **Workers & Pages → Create application → Pages → Connect to Git**
+3. Pilih repo `AO-PROJECT` → **Framework preset: None**, Build command: kosong, Build output: `/`
+4. **Save and Deploy** → done!
+
+## Struktur
+
+```
+AO-PROJECT/
+├── index.html                  # Entry point (~570 baris) + OG meta tags + JSON-LD
+├── styles.css                  # Styling (~3150 baris, CSS variables, responsive)
+├── script.js                   # Logic (~1700 baris: i18n, sidebar, tabs, data, render)
+├── og-preview.png              # 1200x630 social share preview image
+├── og-preview.svg              # Source SVG buat og-preview.png
+├── robots.txt                  # Search engine crawl rules + sitemap pointer
+├── sitemap.xml                 # XML sitemap untuk Google/Bing
+├── _headers                    # Cloudflare custom HTTP headers
+├── locales/
+│   ├── en.json                 # English translations (~1400 baris)
+│   └── id.json                 # Bahasa Indonesia translations (~1400 baris)
+├── README.md                   # File ini
+├── PROJECT_DOCUMENTATION.md    # Dokumentasi lengkap
+├── DEPLOY_CLOUDFLARE_PAGES.md  # Panduan deploy
+└── SEO_GUIDE.md                # Panduan SEO + Google Search Console setup
+```
+
+Detail per file ada di **[PROJECT_DOCUMENTATION.md](PROJECT_DOCUMENTATION.md)**.
+
+## Customization
+
+- **Ubah warna**: edit CSS variable `--primary`, `--accent`, dll. di awal `styles.css`.
+- **Edit konten gathering**: edit `locales/en.json` + `locales/id.json` (sinkron!).
+- **Tambah bahasa**: copy salah satu JSON locale, terjemah, tambah di `script.js` + button di `index.html`.
+
+Lengkap di PROJECT_DOCUMENTATION.md.
+
+## Browser Support
+
+Chrome / Edge / Firefox / Safari modern (2021+). Mobile Safari iOS 14+, Chrome Android. No polyfill.
+
+## License
+
+Open source. Bebas pakai dan modifikasi.
+
+---
+
+**Versi**: 3.3 (Mei 2026 — + SEO complete: JSON-LD structured data, canonical, hreflang, robots.txt, sitemap.xml, FAQ rich snippet, footer keyword variations)
+**Last Updated**: Mei 2026

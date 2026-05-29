@@ -8,6 +8,49 @@
     "extreme": "Extreme",
     "dangerous": "Dangerous"
   },
+  "sidebar": {
+    "title": "Menu",
+    "essentialsGroup": "Beginner Essentials",
+    "essentialFirstHour": "First Hour Checklist",
+    "essentialMount": "Mount Guide",
+    "essentialFood": "Food & Potion",
+    "essentialRefining": "Refining 101",
+    "guideGroup": "Player Guide",
+    "guideBeginner": "Beginner (Pemula)",
+    "guideMidgame": "Mid Game",
+    "guideEndgame": "End Game",
+    "professionGroup": "Gathering Professions",
+    "professionOverview": "Gatherer Overview",
+    "lumberjack": "Lumberjack (Wood)",
+    "oreMiner": "Ore Miner (Ore)",
+    "skinner": "Skinner (Hide)",
+    "stoneQuarrier": "Stone Quarrier (Stone)",
+    "fiberHarvester": "Fiber Harvester (Fiber)",
+    "fisherman": "Fisherman (Fishing)",
+    "foundationGroup": "Foundation",
+    "foundationZones": "Zone Types",
+    "foundationMistakes": "Common Mistakes",
+    "foundationFaq": "Beginner FAQ",
+    "survivalGroup": "Survival & End-Game",
+    "survivalGank": "Gank Avoidance",
+    "survivalMists": "Mists & Roads of Avalon",
+    "survivalT8Maps": "T8 Maps",
+    "survivalBuilds": "Builds (T8)",
+    "optimizeGroup": "Optimize Pro",
+    "optimizeMarketplace": "Marketplace 101",
+    "optimizeRoutine": "Daily Routine",
+    "optimizePremium": "Premium Math",
+    "quickGroup": "Quick Links",
+    "home": "Home",
+    "biomes": "Biomes",
+    "tiers": "Tier Guide",
+    "t8maps": "T8 Maps",
+    "builds": "Builds",
+    "events": "Events",
+    "tools": "Tools & Apps",
+    "protips": "Pro Tips",
+    "footer": "Albion Online · Server Asia"
+  },
   "tracker": {
     "title": "🕐 Asia Server Status",
     "peakTime": "Peak Time:",
@@ -21,24 +64,945 @@
     "extremeStatus": "🔴 EXTREME DANGER - Peak PvP Time"
   },
   "hero": {
-    "badge": "2026 FARMING GUIDE",
-    "title": "Albion Online Farming Guide",
-    "description": "Master the art of resource gathering across all tiers. From beginner zones to the most dangerous T8 Outlands, discover the best farming spots and strategies.",
+    "badge": "2026 FARMING CODEX · ASIA SERVER",
+    "title": "Albion Online Beginner's Codex",
+    "description": "Master resource gathering for Albion East (Asia server). Specific spots for T2–T6 in Royal Continent and T7–T8 in the Outlands, with up-to-date gear meta.",
     "cta": "Start Farming"
   },
+  "essentials": {
+    "title": "Beginner Essentials",
+    "description": "The things every new player needs to know — mount, food, refining, and a checklist for your first hour.",
+    "commonTips": "Tips",
+    "firstHour": {
+      "title": "First Hour Checklist",
+      "subtitle": "Step-by-step for your very first hour in Albion",
+      "intro": "Brand new account? Follow these steps in order. After this checklist you'll have a working character, gathering tools, and a clear path forward.",
+      "steps": [
+        { "title": "Finish the tutorial", "detail": "Run through the starter quest in your first town — it teaches movement, combat, gathering basics." },
+        { "title": "Pick a starter city", "detail": "Lymhurst (Wood/Forest), Fort Sterling (Ore/Mountain), Bridgewatch (Hide/Steppe), Martlock (Stone/Highland), Thetford (Fiber/Swamp). Pick what you want to gather." },
+        { "title": "Open the Destiny Board", "detail": "Press 'J'. This is your skill tree — every action levels nodes. Focus on ONE gathering line." },
+        { "title": "Buy basic gathering tools", "detail": "Visit the Marketplace, buy the T3 Journeyman tool for your chosen resource (around 200–500 silver)." },
+        { "title": "Gather in Blue Zones first", "detail": "Blue zones = no PvP loss. Find nodes on the map (axe icon = wood, pickaxe = ore, sickle = fiber, knife = hide, hammer = stone)." },
+        { "title": "Spend Learning Points (LP) wisely", "detail": "Press 'J' → click any node → spend LP to skip half the grind. Save LP for your main gathering line." },
+        { "title": "Buy Pork Omelette food", "detail": "Pork Omelette doubles your carry capacity for heavy resources. Cheap and essential." },
+        { "title": "Get a Riding Horse (T3 mount)", "detail": "Walking is slow. Even a T3 horse is fast and cheap." },
+        { "title": "Gather, deposit, repeat", "detail": "Fill bag → return to town → deposit in bank or sell at marketplace. Aim for T4 gathering within a few hours." },
+        { "title": "Join the Adventurer's Challenge", "detail": "Press 'Y'. Daily quest list with FREE silver, gear, and a Backpack of Insight — easy XP. Do these every day." }
+      ],
+      "tips": [
+        "Don't buy Premium until you've played 5–10 hours and confirmed you enjoy the game.",
+        "Asia server prime time is 13:00–15:00 UTC (9 PM WIB). Off-peak hours have less competition.",
+        "Stay in Blue/Yellow zones until you've gathered T4 resources comfortably.",
+        "Don't carry valuables when exploring new zones — scout first."
+      ]
+    },
+    "mount": {
+      "title": "Mount Guide",
+      "subtitle": "Pick the right mount for your activity",
+      "intro": "Mounts are essential — speed is survival. Each mount has different stats: speed (escape), HP (durability), and carry capacity (haul more loot). Match the mount to your task.",
+      "tableHeaders": ["Mount", "Tier", "Best For", "Note"],
+      "rows": [
+        { "name": "Riding Horse", "tier": "T3", "bestFor": "Beginners, cheap travel", "note": "Cheapest mount. Slow speed but better than walking." },
+        { "name": "Transport Ox", "tier": "T3 / T5 / T7", "bestFor": "Hauling resources in safe zones", "note": "Highest carry capacity — but very slow and easy to gank. Only use in Blue/Yellow." },
+        { "name": "Swiftclaw", "tier": "T5", "bestFor": "Solo gathering escape", "note": "Fast mount + 1 burst speed skill. Affordable T5 escape mount." },
+        { "name": "Direwolf", "tier": "T6", "bestFor": "Solo gathering + light combat", "note": "Fast + has a slow skill that can stop chasers. Popular gatherer choice." },
+        { "name": "Spectral Bonehorse", "tier": "T6", "bestFor": "Black Zone gathering, group", "note": "High HP, can summon a wall to block enemies. Great for escape from group ganks." },
+        { "name": "Saddled Eagle", "tier": "T7", "bestFor": "Long-distance travel, group", "note": "Air mount — passes terrain easily. Excellent for guild logistics." },
+        { "name": "Stalker Horse", "tier": "T7", "bestFor": "Stealth gathering", "note": "Has stealth invisibility cast — gather and disappear from view." },
+        { "name": "Mistwolf / Moose / Dire Boar", "tier": "T8", "bestFor": "End-game specialty", "note": "T8 mounts for specialized PvP/PvE roles. Expensive and crafted from rare materials." }
+      ],
+      "tips": [
+        "Always bring a backup mount when gathering — your main mount can get killed.",
+        "Match mount tier to your gear tier — don't ride a T6 mount with T4 gear, gankers will target you.",
+        "Direwolf or Spectral Bonehorse is the sweet spot for solo Black Zone gathering.",
+        "Spent-condition mounts can be repaired at any city's Repair Station for cheap."
+      ]
+    },
+    "food": {
+      "title": "Food & Potion",
+      "subtitle": "Buffs every gatherer must use",
+      "intro": "Food and potions give massive buffs — but most beginners ignore them. Always eat before gathering and keep potions in your consumable slots.",
+      "foodTitle": "Food (Belly Buff)",
+      "foods": [
+        { "name": "Pork Omelette", "tier": "T4+", "effect": "+load capacity (more resources per trip)", "useCase": "All gatherers — MANDATORY" },
+        { "name": "Pork Pie", "tier": "T3+", "effect": "+load capacity (lower than Omelette)", "useCase": "Cheaper alternative for T2–T4 gatherers" },
+        { "name": "Beef Sandwich", "tier": "T6+", "effect": "Flat physical & magical resistance buff", "useCase": "Solo gatherer in Red/Black Zones for survival" },
+        { "name": "Goose Pie", "tier": "T7+", "effect": "+max HP", "useCase": "Tank gatherers or group play" },
+        { "name": "Roast Chicken", "tier": "T2+", "effect": "+HP regen out of combat", "useCase": "Cheap heal between fights" }
+      ],
+      "potionTitle": "Potions (Consumable Slot)",
+      "potions": [
+        { "name": "Healing Potion", "tier": "T2+", "effect": "Restore HP over 3 sec", "useCase": "Combat healing — for fighters" },
+        { "name": "Resurrection Mage Potion", "tier": "T4+", "effect": "Auto-revive you when killed (60% HP)", "useCase": "Gatherer ESSENTIAL — saves your gear from gankers" },
+        { "name": "Sticky Potion", "tier": "T5+", "effect": "Throw on ground, slow enemies", "useCase": "Escape from chasers in PvP" },
+        { "name": "Invisibility Potion", "tier": "T6+", "effect": "Invisible for 7 sec", "useCase": "Scout dangerous zones or escape ambush" },
+        { "name": "Gigantify Potion", "tier": "T5+", "effect": "+HP, +damage, slow movement", "useCase": "1v1 fights or tanking ganks" }
+      ],
+      "tips": [
+        "ALWAYS carry Pork Omelette in your consumable slot. Eat before entering a node area.",
+        "Resurrection Mage Potion is non-negotiable when gathering in Red/Black Zone — it can save your full loadout.",
+        "Sticky Potion is the cheapest way to escape a chaser — toss it behind you while sprinting.",
+        "Buy food/potions from city Marketplaces. Don't craft yourself unless you specialize in cooking."
+      ]
+    },
+    "refining": {
+      "title": "Refining 101",
+      "subtitle": "How to earn 21–43% bonus from city specialty",
+      "intro": "Selling raw resources is okay. Selling REFINED resources is 5–20× more profit. Every Royal city has a specialty that gives a HUGE bonus when refining the matching resource there. This is THE easy money trick most beginners miss.",
+      "bonusTitle": "City Specialty Bonus",
+      "bonusRows": [
+        { "city": "Lymhurst (Forest)", "resource": "Wood → Planks", "bonus": "+25% return" },
+        { "city": "Fort Sterling (Mountain)", "resource": "Ore → Metal Bars", "bonus": "+25% return" },
+        { "city": "Bridgewatch (Steppe)", "resource": "Stone → Stone Blocks", "bonus": "+25% return" },
+        { "city": "Martlock (Highland)", "resource": "Hide → Leather", "bonus": "+25% return" },
+        { "city": "Thetford (Swamp)", "resource": "Fiber → Cloth", "bonus": "+25% return" },
+        { "city": "Caerleon (Black Market)", "resource": "Any refined goods", "bonus": "Higher prices (Black Market)" }
+      ],
+      "stepsTitle": "How to Refine",
+      "steps": [
+        { "title": "Gather raw resources", "detail": "Wood Log, Iron Ore, Stone, Hide, Fiber — pick one and stack T4–T6." },
+        { "title": "Travel to the matching specialty city", "detail": "For wood → Lymhurst. For ore → Fort Sterling. Check the bonus table above." },
+        { "title": "Find the Refining Station", "detail": "Each city has a building for its specialty: Sawmill (wood), Smelter (ore), Stonemason (stone), Tanner (hide), Weaver (fiber)." },
+        { "title": "Bring lower-tier refined material if needed", "detail": "T5+ refining REQUIRES the previous tier's material. Example: T5 Steel Bar = T5 Iron Ore + T4 Steel Bar. Buy what you don't have at Marketplace." },
+        { "title": "Refine — claim your bonus", "detail": "City specialty bonus is automatic in the right city. You'll see +25% return shown in the refining UI." },
+        { "title": "Sell refined material", "detail": "Sell at the same city's Marketplace OR transport to Caerleon Black Market for higher prices (but risky travel)." }
+      ],
+      "colCity": "City",
+      "colResource": "Resource",
+      "colBonus": "Bonus",
+      "tips": [
+        "Refining gives more Fame per resource than gathering — double benefit.",
+        "Caerleon Black Market BUYS items from NPC at high prices — easy silver for refined goods.",
+        "Use Travel Planner mod / map to find the safest route to your specialty city.",
+        "DON'T refine in your home city if it isn't the specialty city — you waste the bonus.",
+        "Stack large quantities before refining (200+ raw materials) to minimize trips."
+      ]
+    }
+  },
+  "zones": {
+    "title": "Zone Types Manual",
+    "description": "Understand the world before you step out. Each zone type has different PvP rules, loot consequences, and farming opportunities.",
+    "labelDanger": "Danger",
+    "labelDeath": "On Death",
+    "labelBestFor": "Best For",
+    "labelFeatures": "Key Features",
+    "labelAccess": "Access",
+    "items": [
+      {
+        "id": "zone-blue",
+        "icon": "🟦",
+        "name": "Blue Zone (Safe)",
+        "danger": "Safe",
+        "dangerLevel": "safe",
+        "death": "No item loss. Just respawn at the nearest city. PvP is not allowed — attackers get heavy reputation penalty.",
+        "bestFor": "Brand new players, tutorial, T2–T4 gathering, crafting practice, learning controls.",
+        "access": "Around all 5 Royal cities (Lymhurst, Fort Sterling, Bridgewatch, Martlock, Thetford) and Caerleon.",
+        "features": [
+          "Mob & resource nodes T2–T4",
+          "No PvP, no full-loot",
+          "Safe spot for AFK / casual play",
+          "Bank, marketplace, repair stations all here"
+        ]
+      },
+      {
+        "id": "zone-yellow",
+        "icon": "🟨",
+        "name": "Yellow Zone (Knockdown)",
+        "danger": "Low",
+        "dangerLevel": "moderate",
+        "death": "Knockdown only. Gear takes durability damage but you keep everything. PvP is allowed.",
+        "bestFor": "Practicing PvP without losing gear, T3–T5 gathering, learning escape mechanics.",
+        "access": "One ring out from Royal cities (between Blue and Red zones).",
+        "features": [
+          "Mob & resource nodes T3–T5",
+          "Full PvP allowed — but no item loss",
+          "Killer takes heavy reputation hit",
+          "Perfect zone to test escape kits"
+        ]
+      },
+      {
+        "id": "zone-red",
+        "icon": "🟥",
+        "name": "Red Zone (Full Loot)",
+        "danger": "High",
+        "dangerLevel": "extreme",
+        "death": "FULL LOOT. Every item in your inventory can be picked up by the killer. Equipped gear is destroyed.",
+        "bestFor": "T4–T6 gathering, solo Hellgates, intermediate PvP, faction warfare.",
+        "access": "Outer ring of Royal Continent, between Yellow and Black zones.",
+        "features": [
+          "Mob & resource nodes T4–T6",
+          "Full-loot PvP enabled — bring only what you can afford to lose",
+          "Killer takes reputation penalty (unlike Black Zone)",
+          "Faction warfare for silver and tokens"
+        ]
+      },
+      {
+        "id": "zone-black",
+        "icon": "⬛",
+        "name": "Black Zone (Outlands)",
+        "danger": "Extreme",
+        "dangerLevel": "extreme",
+        "death": "FULL LOOT. No reputation penalty for the killer. The most dangerous zone in the game.",
+        "bestFor": "T6–T8 gathering, large-scale PvP (ZvZ), Castle / Territory fights, Hellgates, Avalon raids.",
+        "access": "Through portals from Royal Continent or Cluster portals inside the Outlands.",
+        "features": [
+          "Mob & resource nodes T6–T8 (best loot in the game)",
+          "Full-loot PvP with zero penalty",
+          "Most players travel in groups (guilds, gangs)",
+          "Territory / Castle controlled by guilds for resource access"
+        ]
+      },
+      {
+        "id": "zone-mists",
+        "icon": "🌫️",
+        "name": "The Mists",
+        "danger": "Variable",
+        "dangerLevel": "moderate",
+        "death": "Depends on Mist tier — Lethal Mists are full-loot, lower Mists are knockdown.",
+        "bestFor": "Solo gathering T5–T7, Mist Boss farming, solo PvP without large-group risk.",
+        "access": "Random Mist portals spawn in any zone — enter for solo-only instances.",
+        "features": [
+          "Solo-only instanced zones (1 player per Mist)",
+          "Lethal Mists = full-loot equivalent",
+          "Roaming Mist Boss with rare drops (Vanity items, T8 chests)",
+          "Exit through Mist portal back to original zone"
+        ]
+      },
+      {
+        "id": "zone-roads",
+        "icon": "🛤️",
+        "name": "Roads of Avalon",
+        "danger": "Full Loot",
+        "dangerLevel": "extreme",
+        "death": "Full loot. Same rules as Black Zone.",
+        "bestFor": "Group gathering T7–T8, group PvP, dynamic exploration, ZvZ ambushes.",
+        "access": "Avalonian portals open randomly in Royal and Outlands clusters.",
+        "features": [
+          "Dynamic random connection map — refreshes daily",
+          "Faction-free PvP — anyone can attack anyone",
+          "T6–T8 nodes + unique Avalonian mobs and chests",
+          "Roads connect distant zones — great for shortcut travel"
+        ]
+      },
+      {
+        "id": "zone-hellgate",
+        "icon": "🔥",
+        "name": "Hellgate",
+        "danger": "Full Loot",
+        "dangerLevel": "extreme",
+        "death": "Full loot inside the gate. PvP is instanced (1v1, 2v2, or 5v5).",
+        "bestFor": "Solo / small-group PvP content, demonic shards, fame & silver source for non-gatherers.",
+        "access": "Hellgate portals spawn in Red and Black zones — enter for instanced PvP arena.",
+        "features": [
+          "1v1 Corrupted Dungeons, 2v2 / 5v5 Hellgates",
+          "Fight a demon boss while watching for invading enemy team",
+          "Demonic Cores + tokens for rare gear",
+          "Closed Hellgate = no invader (PvE only); Open = PvP enabled"
+        ]
+      }
+    ]
+  },
+  "mistakes": {
+    "title": "Common Mistakes (DON'T)",
+    "description": "The biggest mistakes new players make — every one of them costs hours of frustration or silver. Avoid these and you skip past 80% of beginner pain.",
+    "items": [
+      { "title": "Spread Learning Points across every line", "detail": "Wastes LP. Focus ONE gathering line (e.g. Lumberjack) to T6 first, then branch out. Specialization > spread thin." },
+      { "title": "Carry valuable gear into Black Zone", "detail": "If you die, you lose EVERYTHING. Bring only the loadout you can afford to replace 5–10 times." },
+      { "title": "Buy Premium on day one", "detail": "Play 5–10 hours free first. Premium pays off only if you actually commit to the game. Easy regret if you quit early." },
+      { "title": "Solo gather during prime time (13:00–15:00 UTC)", "detail": "Asia server is packed with gankers. Off-peak (21:00–09:00 UTC) is way safer for solo." },
+      { "title": "Skip the Resurrection Mage Potion", "detail": "Resurrection = saves your entire loadout from a single gank. Mandatory in Red and Black zones." },
+      { "title": "Refine in the wrong city", "detail": "You skip the +25% specialty bonus. Always refine wood in Lymhurst, ore in Fort Sterling, etc." },
+      { "title": "Use high-tier gear to gather low-tier resources", "detail": "Wasteful. Match gear tier to resource tier — T6 gear for T6 nodes, T4 gear for T4 nodes." },
+      { "title": "Stay solo forever (no guild)", "detail": "Guilds = group content, Castle/Territory access, faster learning, protection. Solo only ceiling is much lower." },
+      { "title": "Travel without a backup mount", "detail": "Your main mount can die mid-gank. Always carry at least 2 mounts in your bag." },
+      { "title": "Carry stacks of silver while traveling", "detail": "Silver also drops on death in Red/Black. Store in bank before risky travel." },
+      { "title": "Enter a new zone without scouting", "detail": "Always scout the next zone with Invisibility Potion / fast mount before committing. Saves countless deaths." },
+      { "title": "Tunnel-vision on the node — ignore mini-map", "detail": "Gankers approach silently. Check mini-map every 5 seconds. Red dots = enemies; even one new dot = exit immediately." },
+      { "title": "Forget the daily Adventurer's Challenge", "detail": "Free silver + Backpack of Insight + reputation. Takes 10 minutes. Skip it = lose hundreds of thousands of silver per week." },
+      { "title": "Use combat gear in Blue Zone", "detail": "Blue Zone has no PvP. Wear gathering set (Hellion, Hunter) for yield bonus — combat gear is wasted slots." }
+    ]
+  },
+  "survival": {
+    "title": "Gank Avoidance & Escape Manual",
+    "description": "Solo gathering = solo survival. Pros don't avoid danger — they prepare for it. This is the difference between losing one loadout per week vs ten per day.",
+    "preGatherTitle": "Pre-Gathering Checklist",
+    "preGather": [
+      "Mount HP at 100% — repair before leaving city",
+      "Food slot: Pork Omelette active (eat BEFORE gathering)",
+      "Consumable slot: Resurrection Mage Potion (non-negotiable in Red/Black)",
+      "Escape kit equipped in slot 2 (Stalker Hood + Assassin Shoes)",
+      "Backup mount in inventory (Riding Horse minimum)",
+      "Silver and rare items deposited at bank — bring only what you need",
+      "Plan exit route BEFORE entering — note the nearest portal cluster",
+      "Scout the cluster first with Invisibility Potion or fast mount"
+    ],
+    "spottingTitle": "How to Spot a Ganker",
+    "spotting": [
+      "Unfamiliar player gear set + skull mount = combat-ready, not a gatherer",
+      "Player lingering at chokepoints (portals, cluster edges) without gathering",
+      "Multiple players in a cluster without forming a visible group (silent gang)",
+      "Player tries to 'befriend' or follow you persistently — classic bait",
+      "Sudden teleport-in via Invisibility Shrine or stealth cape",
+      "Mini-map red dots moving in a coordinated formation toward your node"
+    ],
+    "escapeKitTitle": "Escape Kit Loadout",
+    "escapeKitHeaders": ["Slot", "Item", "Why"],
+    "escapeKit": [
+      { "slot": "Head (Swap)", "item": "Stalker Hood", "why": "Cast Invisibility — break tracking instantly" },
+      { "slot": "Chest (Swap)", "item": "Assassin Jacket", "why": "Burst movement speed for 6 seconds" },
+      { "slot": "Boots (Swap)", "item": "Assassin Boots", "why": "Movement-buff stance — sustained speed" },
+      { "slot": "Cape", "item": "Spectral Bonehorse Cape", "why": "Active wall to block pursuers" },
+      { "slot": "Consumable", "item": "Sticky Potion", "why": "Throw behind you — slows chasers significantly" },
+      { "slot": "Consumable (Alt)", "item": "Invisibility Potion", "why": "7 seconds of invisibility — last resort exit" },
+      { "slot": "Mount", "item": "Direwolf or Swiftclaw (T5–T6)", "why": "Speed burst + slow on pursuer" }
+    ],
+    "qSwapTitle": "Q-Swap Technique (Essential)",
+    "qSwap": [
+      "Setup: Gathering gear in main slot, Escape Kit in slot 2",
+      "While gathering: Press Q to instantly swap to Escape Kit",
+      "Mount up + cast Invisibility (Stalker Hood) the moment ganker appears",
+      "Run to portal — once on mount, you're 80% safer"
+    ],
+    "chasedTitle": "If You Are Already Being Chased",
+    "chased": [
+      "Mount UP immediately — even a Riding Horse is faster than running",
+      "Trigger Stalker Hood Invisibility to break their target lock",
+      "Drop Sticky Potion behind you to slow chasers",
+      "Sprint toward the nearest portal cluster (not deeper into BZ)",
+      "If dismounted: use cape active (Spectral Bonehorse Cape wall, etc.)",
+      "Z-out (dismount) and run on foot if mount is about to die — sometimes faster"
+    ],
+    "tipsTitle": "Advanced Tips",
+    "tips": [
+      "Always set up Q-Swap before entering any zone above Yellow.",
+      "Mount tier should be ≥ gear tier — never ride T3 mount in T6 gear (gankers will target).",
+      "Don't be greedy with the last node — exit when inventory is 70% full, not 100%.",
+      "Cluster exit timer is ~5 minutes after entry — plan for early exit during gank attempts.",
+      "Use cluster Z to escape silver burden — the wall mechanic blocks pursuers."
+    ]
+  },
+  "mists": {
+    "title": "Mists & Roads of Avalon",
+    "description": "The most under-rated content in Albion. Solo gathering and PvP T4-T8 with way less risk than open Black Zone. Perfect for newbies bridging from Yellow Zone to T8 farming.",
+    "intro": "Mists are personal instanced cluster — when you enter, you only meet other solo players (1v1 or duo). Roads of Avalon are dimensional shortcuts connecting Royal Continent ↔ Outlands with permanent and shifting portals.",
+    "mistsTitle": "🌫️ The Mists — Solo Instanced Content",
+    "mistsHeaders": ["Tier", "Danger", "Loot", "Exit", "Best For"],
+    "mistsRows": [
+      { "tier": "T4 Mists (Bright Mists)", "danger": "Low", "loot": "T4-T5 nodes, low-tier mobs", "exit": "Wisp portal", "best": "Newbie solo gather practice + first PvP exposure" },
+      { "tier": "T5 Mists (Dim Mists)", "danger": "Low-Moderate", "loot": "T5-T6 nodes, Tome of Insight drops", "exit": "Wisp + occasional skull portal", "best": "Build LP + T5-6 fame solo without ganker risk" },
+      { "tier": "T6 Mists (Twilight Mists)", "danger": "Moderate", "loot": "T6-T7 nodes, Avalonian shards", "exit": "Various portals", "best": "Real silver income from T6-7 ore/hide/fiber" },
+      { "tier": "T7-T8 Mists (Deep/Brilliant Mists)", "danger": "High", "loot": "T7-T8 enchanted nodes, rare Avalonian gear", "exit": "Skull/special portal", "best": "End-game solo farming, best ROI for solo players" }
+    ],
+    "knightfallTitle": "⚔️ Knightfall Abbey (T7+ Mists Boss)",
+    "knightfall": [
+      "Spawns randomly in T7+ Mists clusters (~30-45 min interval).",
+      "Solo boss fight — drops unique Avalonian artifact + tome chest.",
+      "Recommended gear: T6+ self-heal build (Hallowfall, Carving Sword, or Bloodletter Off-Hand).",
+      "Don't engage with gear below T6 — wipe risk is high.",
+      "Post-kill loot: Avalonian Shards (craft Avalonian gear), Tome of Insight, rare artifact."
+    ],
+    "roadsTitle": "🛣️ Roads of Avalon — Dimensional Highways",
+    "roads": [
+      "Shifting portal clusters connecting Royal ↔ Outlands ↔ random Mists.",
+      "Permanent portals in Royal cities (Caerleon T6 portal) stay stable.",
+      "Random portals in Outlands create shortcuts between zones — pros use them to avoid known gank routes.",
+      "Avalonian energy nodes spawn randomly in Roads — gather them for Avalonian gear refining.",
+      "Cluster types: Tunnel (long path), Hub (multi-portal node), Camp (loot + mobs)."
+    ],
+    "portalTypesTitle": "🌀 Portal Types You'll See",
+    "portalTypes": [
+      "🌟 Wisp Portal (white): exits back to nearest Royal city. Safe.",
+      "💀 Skull Portal (red glow): exits to random Outlands — high risk, high reward gear.",
+      "🟣 Avalonian Portal (purple): enters Roads of Avalon — connection to special content.",
+      "🟢 Static Portal (green ring): consistent exit to specific zone (usually marked on mini-map).",
+      "If unsure which portal is safe, check mini-map first — exit destination is usually marked."
+    ],
+    "energyTitle": "⚡ Avalonian Energy",
+    "energy": [
+      "Special resource from Roads of Avalon + T6+ Mists.",
+      "Used to refine Avalonian gear (T4-T8 enchanted version) — the second-highest tier of gear in the game.",
+      "Drops from Avalonian mobs (Avalonian Mage, Avalonian Knight) + energy nodes.",
+      "Stack and sell at Caerleon Black Market for max profit."
+    ],
+    "tipsTitle": "💡 Mists & Roads Pro Tips",
+    "tips": [
+      "Mists = YOU ONLY FACE 1-2 OPPONENTS. Way different from Black Zone where 5v1 gank squads roam.",
+      "Bring Sticky Potion + Stalker Hood + Royal Shoes — cheap but effective escape kit.",
+      "Every time you enter Mists, scout the mini-map before gathering. Other players show as red dots.",
+      "Mists reward solo activity — pro-gathering here is more profitable per hour than BZ gathering in groups.",
+      "Roads of Avalon = shortcuts. Plan your route in advance — saves 5-10 min of travel per session.",
+      "Knightfall Abbey loot worth 100k+ silver per kill — if you find one, engage with a T6+ self-heal build."
+    ]
+  },
+
+  "faq": {
+    "title": "Beginner FAQ",
+    "description": "Most common questions newbies ask. Click each question to expand the answer.",
+    "items": [
+      {
+        "q": "Do I need Premium to play Albion?",
+        "a": "No, you don't. Albion is genuinely F2P viable — many pro players run pure F2P. But if you play > 20 hours/week or actively trade > 1M silver/week, Premium pays itself back via fame/silver/tax bonuses. Suggestion: play 50 hours as F2P first, then decide. See 💎 Premium Math in the Optimize tier for details."
+      },
+      {
+        "q": "I died in Black Zone with T6 gear, what now?",
+        "a": "Unfortunately gear is lost — full loot is the BZ norm. Lesson: DON'T bring gear you can't afford to lose. Use T4-T5 gear in BZ until you're confident, and always remember the pro rule: 'if you're not ready to die, don't enter Black Zone'. See 🛡️ Gank Avoidance section for escape tips."
+      },
+      {
+        "q": "What are Learning Points (LP) for?",
+        "a": "LP is a catalyst to master nodes in Destiny Board (gear, gathering, crafting) without farming full fame. 1 LP usually skips hundreds of thousands of fame. Pro tip: SPECIALIZE — focus LP on only 1-2 nodes (e.g. Skinner spec + Hide refining), DON'T spread thin across paths. LP regenerates 1 per 24h (Free) or 1 per 12h (Premium)."
+      },
+      {
+        "q": "Asia vs Global server — can I switch?",
+        "a": "Albion has 2 main servers: Albion East (Asia/SEA) and Albion West (NA/EU). Characters are server-locked — you can't transfer between servers. Asia (East) peak time is 13:00-15:00 UTC (21:00 WIB). If you're in Indonesia, Asia server is smoothest (50-100ms ping vs West's 200-300ms)."
+      },
+      {
+        "q": "How long from zero to T8?",
+        "a": "Depends on playtime + specialization. Casual player (10-15 hours/week): 3-4 months to T8. Hardcore (40+ hours/week): 6-8 weeks. Premium adds +50% fame so it can be faster. Suggestion: don't rush to T8 — enjoy progression at each tier. T6-T7 is enough for most content."
+      },
+      {
+        "q": "I'm a solo player, can I enjoy Albion without a guild?",
+        "a": "Yes, many active solo players in Albion. But joining a guild gives you: tax bonus, free knowledge sharing, Mists/Hellgate party, group mat-buying. Suggestion: go solo first for 50 hours, then join a casual guild active in your time zone. Avoid ZvZ guilds if you just want chill gathering."
+      },
+      {
+        "q": "What's the difference between Yellow Zone, Red Zone, Black Zone?",
+        "a": "Yellow Zone: safe, only lose durability on death. Red Zone: lose gear if killed by player (PvP allowed). Black Zone: FULL LOOT even from mob/environment death, highest reward and risk. Newbies should stick to Yellow Zone until T5-T6. See 🗺️ Zone Types Manual for full detail."
+      },
+      {
+        "q": "I gather but keep dying to ganks, what do I do?",
+        "a": "1) Bring escape kit (Stalker Hood + Royal Shoes + T4 Sticky Potion). 2) Gather in Yellow Zone first until T5. 3) Avoid peak time (13:00-15:00 UTC Asia server). 4) Scout cluster before opening full inventory. 5) Logout safe in a hidden spot if ganker is nearby. See 🛡️ Gank Avoidance Manual for full guide."
+      },
+      {
+        "q": "Which mount is worth buying first?",
+        "a": "Riding Horse T3 at starting city — cheap and gives you a basic speed boost. After T4, target Swiftclaw (faster escape) or Transport Ox (hauling). T6 Direwolf optional, T8 mounts for veterans. See 🐎 Mount Guide in Beginner Essentials."
+      },
+      {
+        "q": "What food is mandatory for gathering?",
+        "a": "Pork Omelette T4 — best for gathering (boosts gather yield + extra weight capacity). Use before every session. Higher tier if you can afford it. Healing Potion for emergency, Resurrection Potion MANDATORY in BZ. See 🍖 Food & Potion guide for full list."
+      },
+      {
+        "q": "My account got banned / hijacked, what now?",
+        "a": "Contact official Albion support via support.albiononline.com (response 24-72h typically). Enable 2FA NOW if you haven't — most important way to protect your account. NEVER share login with anyone, including 'GM'/'admin' who DMs you (those are scammers)."
+      },
+      {
+        "q": "Where do I pick up daily quest? Which NPC?",
+        "a": "Talk to the Mage NPC in each Royal city (Lymhurst, Fort Sterling, Bridgewatch, Martlock, Thetford). Usually standing near city entrance or marketplace. Quest types: gather X resource, kill Y mobs, refine Z material. Reward: 30-50k silver + fame + crate. See ⏰ Daily Routine Pro for details."
+      },
+      {
+        "q": "What's the most profitable resource to gather right now?",
+        "a": "Depends on real-time market conditions — check Albion Data Project. General rule: T6-T7 ore is always high-demand (for T7 gear), refined T6 Plank (Lymhurst specialty) often profitable. Avoid hoarding T8 resource if you can't afford to wait for market shifts. See 🧰 Tools & Apps for Albion Data Project link."
+      },
+      {
+        "q": "Fastest way to get silver as a newbie?",
+        "a": "Newbie progression: 1) Quest line + Adventurer's Challenge (free 100-200k silver). 2) Gather T4-T5 in Yellow Zone (safe, slow but consistent). 3) Sell at marketplace daily. 4) Refine resource at specialty city for +25% bonus. 5) Don't buy T6+ gear early — focus on repairing T4-T5 gear first."
+      },
+      {
+        "q": "Is Albion really pay-to-win?",
+        "a": "Honest answer: NO. Premium gives +50% (fame/silver) bonuses but doesn't change your PvP ability. Skill, knowledge, and dedication matter way more. Many F2P players rank top in GvG/Hellgate. Albion is a 'skill + time investment' game, not 'pay to win'."
+      }
+    ]
+  },
+
+  "marketplace": {
+    "title": "Marketplace 101",
+    "description": "Marketplace is where 80% of player money is made. Master the difference between buy/sell orders, taxes, and city arbitrage — this is the universal pro skill.",
+    "labelOrderType": "Order Type",
+    "labelHow": "How it works",
+    "labelWhen": "When to use",
+    "orders": [
+      {
+        "type": "📤 Sell Order (Instant Sell)",
+        "how": "You list an item at your price. It waits in the queue until someone buys it. Higher tax but you pick the price.",
+        "when": "When you have time and want max profit. Best for stacks of refined resources, gear, and rare items."
+      },
+      {
+        "type": "📥 Buy Order (Instant Buy)",
+        "how": "You buy from someone else's sell order at their listed price. Pay full price immediately, no waiting.",
+        "when": "When you need an item NOW (gear before a fight, food before gather session). Cost is higher but instant."
+      },
+      {
+        "type": "💼 Sell to Buy Order (Quick Sell)",
+        "how": "Someone posted a Buy Order at a lower price. You sell to them instantly — they get the item, you get silver fast.",
+        "when": "When you need silver NOW and don't want to wait. Lower profit but immediate. Good for clearing inventory."
+      },
+      {
+        "type": "🎯 Post Buy Order (Bargain Hunt)",
+        "how": "You post the price you're willing to pay. Sellers fulfill at your price. Patience pays — you set the rate.",
+        "when": "When you want bulk resources cheap (e.g. T6 wood for crafting). Wait days but save 20-30% vs Sell Orders."
+      }
+    ],
+    "taxTitle": "Tax Breakdown",
+    "taxHeaders": ["Fee", "Without Premium", "With Premium", "Note"],
+    "taxRows": [
+      { "fee": "Setup Fee (post order)", "free": "1.5%", "premium": "1.5%", "note": "Paid when you place a Sell Order or Buy Order, regardless of sale outcome." },
+      { "fee": "Sales Tax (on completed sale)", "free": "8%", "premium": "4%", "note": "Premium cuts this in HALF. Biggest reason traders justify Premium." },
+      { "fee": "Total cost (typical sell)", "free": "~9.5%", "premium": "~5.5%", "note": "Calculate this into your profit margin BEFORE listing." }
+    ],
+    "cityTitle": "City Arbitrage — Price Differences",
+    "city": [
+      "💎 Caerleon = highest demand for almost everything, but highest risk to travel (Black Zone access).",
+      "🌲 Lymhurst (Wood) usually sells refined Plank cheaper here — buy here, sell in Caerleon for +20-30%.",
+      "⛰️ Fort Sterling (Ore) usually has cheap Stone Block and Metal Bar.",
+      "🌊 Bridgewatch (Stone) cheap Stone resources, expensive Hide.",
+      "🍃 Martlock (Hide) cheap Hide and Leather, expensive Fiber.",
+      "🌿 Thetford (Fiber) cheap Fiber and Cloth, expensive Ore.",
+      "📊 Use Albion Data Project to check live prices across cities BEFORE traveling.",
+      "🚨 Black Market (Caerleon) buys all T4-T8 gear/consumables — sometimes 2-3x marketplace price. Mob loot tax. Best dump for crafted gear."
+    ],
+    "tipsTitle": "Marketplace Pro Tips",
+    "tips": [
+      "Don't list at round numbers (10000). List at 9999 — you become first in queue.",
+      "Refresh prices every 6h — markets shift daily based on patch news and ZvZ activity.",
+      "Premium pays itself if you trade > 1M silver/week. Below that, free is fine.",
+      "Never panic sell. If prices crash, wait 2-3 days — they normalize.",
+      "Big spread Caerleon vs Royal? Travel risk is real. Use Transport Ox + scout cluster first."
+    ]
+  },
+
+  "routine": {
+    "title": "Pro Daily Routine",
+    "description": "Every pro Albion player has a daily ritual. Follow this checklist each login — even just 30 minutes — to compound silver, fame, and progress without burnout.",
+    "checklistTitle": "Daily Login Checklist",
+    "checklist": [
+      { "time": "0:00–0:05", "task": "Claim Login Bonus", "detail": "Free silver + tomes daily. Click it FIRST before anything else." },
+      { "time": "0:05–0:15", "task": "Adventurer's Challenge", "detail": "Open Challenge UI, claim available rewards, plan today's progress. Weekly chest at 100% — never skip." },
+      { "time": "0:15–0:20", "task": "Daily Quest at NPC", "detail": "Talk to Mage NPC in city. 1 daily quest = free 30-50k silver + fame + loot crate." },
+      { "time": "0:20–0:25", "task": "Repair Gear & Restock", "detail": "Check gear durability. Refill food, potions, and ammo at marketplace before heading out." },
+      { "time": "0:25–0:35", "task": "Activate Fame Boost", "detail": "Eat Pork Omelette (or higher) and drink Healing/Resurrection potions. Premium players get +50% fame buff during this window." },
+      { "time": "0:35–2:00+", "task": "Main Activity Block", "detail": "Gather/PvE/PvP your main money-maker. Stay in this ONE activity — context switching costs efficiency." },
+      { "time": "End of session", "task": "Bank Everything", "detail": "Deposit silver, refined resources, and rare items. NEVER log off with valuables in inventory if next session might be days away." },
+      { "time": "Weekly", "task": "Weekly Activity Check", "detail": "Sunday: complete weekly Adventurer's Challenge chest (huge silver + tomes). Check guild contribution. Sell hoarded mats." },
+      { "time": "Daily Bonus", "task": "Faction Warfare Quest", "detail": "If you're in a faction (Royal cities), grab 1 faction quest. 5 minutes, free reputation token + silver." },
+      { "time": "Optional", "task": "Mist Run (T7+)", "detail": "If you have time, jump in Mists for 30 min. Solo content = chill PvP gathering. Reset every 24h." }
+    ],
+    "weeklyTitle": "Weekly Goals (Sun/Mon Reset)",
+    "weekly": [
+      "Complete Adventurer's Challenge weekly chest (huge tome+silver reward).",
+      "Refine at least 1 batch of resources for specialty bonus (cycle cities).",
+      "Sell hoarded gear/resources to flat marketplace (avoid hoarding > 2 weeks).",
+      "Check Murder Ledger for any new ganker in your zone.",
+      "Patch day check: read patch notes for build meta changes."
+    ],
+    "burnoutTitle": "Avoid Burnout",
+    "burnout": [
+      "Don't try to do EVERYTHING in one session. Pick 1-2 activities and execute well.",
+      "Take 1 day off per week — your character doesn't lose anything from rest.",
+      "If you find yourself frustrated for > 30 min, log off. Bad mood = bad decisions = lost gear.",
+      "Use Sticky Notes app or phone reminder for daily quest pickup — easy to forget.",
+      "Set a weekly silver/fame goal, not a 'play every day' goal. Quality > quantity."
+    ]
+  },
+
+  "premium": {
+    "title": "Premium Math",
+    "description": "Should you buy Premium? Most newbies overpay or skip when they shouldn't. Here's the actual math, broken down — decide based on YOUR commitment level, not hype.",
+    "benefitsTitle": "What Premium Actually Gives You",
+    "benefitsHeaders": ["Benefit", "Without Premium", "With Premium", "Real Impact"],
+    "benefits": [
+      { "benefit": "Fame Gain", "free": "100%", "premium": "+50%", "impact": "T6 → T7 = ~40h vs 60h. Massive on long grinds." },
+      { "benefit": "Silver Loot Drop", "free": "100%", "premium": "+50%", "impact": "Most under-rated. Solo gathering = +50% silver per session." },
+      { "benefit": "Marketplace Tax", "free": "8%", "premium": "4%", "impact": "Halved! 1M silver sale: save 40k silver/sale. Big for traders." },
+      { "benefit": "Island Plots", "free": "Tier 1 only", "premium": "Tier 1–6", "impact": "Bigger island = more farm slots, more mounts, more crafting stations." },
+      { "benefit": "Refining Speed", "free": "Standard", "premium": "+50%", "impact": "Refine 100 batches in 1h instead of 1h30. Time saved compounds." },
+      { "benefit": "Crafting Focus", "free": "Standard regen", "premium": "+50% regen", "impact": "Focus = free crafted items. More Focus = more profit." },
+      { "benefit": "Marketplace Slots", "free": "5 slots", "premium": "15 slots", "impact": "3x more orders = 3x more passive income for traders." }
+    ],
+    "costTitle": "Cost & Worth-It Threshold",
+    "cost": [
+      "🪙 Buy Premium with Gold (in-game currency): ~10 days = 1,500 gold ≈ 200-300k silver depending on rate.",
+      "💵 Buy Premium with real money: $9.99 USD/month (or cheaper via 3/6/12 month bundles).",
+      "⏰ Premium ALWAYS active 24h/7d — fame & silver bonus stack even AFK on Island.",
+      "💡 Rule of Thumb: If you play > 20 hours/week → Premium pays itself in fame + silver bonus."
+    ],
+    "scenariosTitle": "When Premium IS Worth It",
+    "scenariosYes": [
+      "✅ You play > 20h/week — fame bonus alone covers cost.",
+      "✅ You trade > 1M silver/week — halved tax pays itself.",
+      "✅ You're grinding to T7-T8 — saves dozens of hours.",
+      "✅ You actively use Focus crafting — +50% focus regen is huge.",
+      "✅ You want T2-T6 Island plots for farm/laborer income."
+    ],
+    "scenariosNoTitle": "When Premium ISN'T Worth It",
+    "scenariosNo": [
+      "❌ You play < 10h/week — bonus doesn't compound enough.",
+      "❌ You're testing the game (first 50 hours).",
+      "❌ You only PvP or solo Mists casually — no economy interaction.",
+      "❌ You haven't decided if you'll stick with the game — wait 50h gameplay first."
+    ],
+    "tipsTitle": "Smart Premium Strategies",
+    "tips": [
+      "Start with 10 days (1500 gold) FIRST — test if bonus actually impacts you.",
+      "Bulk-buy 6 or 12 months for 10-20% discount IF you've already played 100+ hours.",
+      "Don't fall for 'Premium = required' propaganda. Free F2P is viable for casual players.",
+      "Convert silver → gold → Premium = pure F2P route. Calculate gold price vs silver value first.",
+      "Premium = QoL boost, not pay-to-win. You can compete without it if you play smart."
+    ]
+  },
+
+  "tools": {
+    "title": "Tools & Apps (Pro Toolkit)",
+    "description": "Every Albion pro uses these tools. Bookmark them all — they turn raw effort into smart play.",
+    "labelCategory": "Category",
+    "labelOpen": "Open",
+    "items": [
+      {
+        "name": "Albion Online Data Project",
+        "url": "https://www.albion-online-data.com/",
+        "category": "Market Data",
+        "description": "Real-time market prices across all servers. Compare buy/sell orders, calculate profit margins, find arbitrage opportunities."
+      },
+      {
+        "name": "AlbionMap2D",
+        "url": "https://albiononline2d.com/",
+        "category": "Map",
+        "description": "Interactive map with resource overlays, dungeon spots, portal locations. Essential for planning gather routes."
+      },
+      {
+        "name": "Murder Ledger",
+        "url": "https://murderledger.com/",
+        "category": "Player Tracker",
+        "description": "Check any player's PvP history, kill stats, common gear. Spot if a 'friendly' player is actually a known ganker."
+      },
+      {
+        "name": "Albion Online Wiki",
+        "url": "https://wiki.albiononline.com/",
+        "category": "Reference",
+        "description": "Official wiki — every item, mob, skill, mechanic explained. First stop for any 'what does this do?' question."
+      },
+      {
+        "name": "Galahad's Map",
+        "url": "https://galahadmaps.com/",
+        "category": "Map",
+        "description": "Alternative Outlands map with cluster connections, Avalonian Roads tracking, and Mist portals."
+      },
+      {
+        "name": "Official Albion Discord",
+        "url": "https://discord.gg/albiononline",
+        "category": "Community",
+        "description": "Official community Discord. News, patch notes, guild recruitment, dev Q&A. Pin notifications for patch days."
+      },
+      {
+        "name": "r/albiononline (Reddit)",
+        "url": "https://www.reddit.com/r/albiononline/",
+        "category": "Community",
+        "description": "Subreddit with build guides, market analyses, patch discussions, and screenshots. Search before you ask."
+      },
+      {
+        "name": "AlbionStatus",
+        "url": "https://www.albiononline.com/en/status",
+        "category": "Server Status",
+        "description": "Official server status page. Check before login if there's downtime, lag, or scheduled maintenance."
+      }
+    ]
+  },
+  "guides": {
+    "title": "Player Progression Guide",
+    "description": "Step-by-step path from your first hour to end-game farming. Choose the phase that matches your current progress.",
+    "labelGoal": "Goal",
+    "labelActivities": "Main Activities",
+    "labelEquipment": "Equipment",
+    "labelTips": "Key Tips",
+    "beginner": {
+      "tag": "PHASE 1",
+      "title": "Beginner (Pemula)",
+      "hours": "0 – 50 hours",
+      "goal": "Learn the controls, level up your Destiny Board, and gather T2–T4 resources in safe Royal Continent zones around your starter city.",
+      "activities": [
+        "Finish the tutorial and starter quests at your starter city",
+        "Gather and craft in Blue Zones (no PvP loss)",
+        "Use the in-game map: axe icon = wood, pickaxe = ore, sickle = fiber, knife = hide, hammer = stone",
+        "Travel to your chosen Royal hub (Lymhurst, Fort Sterling, Bridgewatch, Martlock, or Thetford)",
+        "Spend Learning Points (LP) on ONE gathering branch to fast-track to T6"
+      ],
+      "equipment": [
+        "Gathering Tools — match your tier: T3 Adept's at level ~30, T4 Adept's enchanted .1 at ~50",
+        "Adept's Bag (T4) and Adept's Cape (T4) — extra inventory slots",
+        "Adept's Riding Horse (T3 mount) — cheap, faster than walking",
+        "Pork Omelette food — +load capacity for heavy resources",
+        "Minor Healing Potion + Resurrection Potion in slots"
+      ],
+      "tips": [
+        "Don't buy Premium until you understand the gameplay loop — try the free trial first",
+        "Stay in Blue/Yellow zones — Blue = no loss, Yellow = only durability damage",
+        "Focus LP on ONE gathering line first (e.g. Lumberjack only) — specialization > spreading thin",
+        "Buy a Backpack of Insight from the Adventurer's Challenge for daily silver",
+        "Asia server prime time is 13:00–15:00 UTC — gather during off-peak (21:00–09:00 UTC) for less competition"
+      ]
+    },
+    "midgame": {
+      "tag": "PHASE 2",
+      "title": "Mid Game",
+      "hours": "50 – 300 hours",
+      "goal": "Push one gathering line to T6, start farming Red Zones, dip into shallow Black Zones, and learn the market.",
+      "activities": [
+        "Farm T5 in Red Zones (lower competition than Black Zones)",
+        "Try the Mists (solo) or Avalonian Roads for quick-escape gathering",
+        "Join a small guild and group-gather in T6 Black Zones",
+        "Refine your own raw resources at the matching city for the specialty bonus",
+        "Run group Hellgates 2v2 / 5v5 for silver, fame and meta gear"
+      ],
+      "equipment": [
+        "T5 / T6 Gathering Tools with .1 / .2 enchant — yield bonus per node",
+        "Mercenary Jacket — cast Heroic Charge on yourself for resistance + speed",
+        "Stalker Hood (solo invisibility) OR Hunter Hood (cleanse + mana)",
+        "Assassin Shoes — Ambush sprint reset for chase escape",
+        "Swiftclaw or Direwolf mount (T5/T6) — best speed-to-cost ratio",
+        "Resurrection Mage Potion + Sticky Potion — auto-revive + slow chasers",
+        "Beef Sandwich food — flat resistance buff"
+      ],
+      "tips": [
+        "Specialize ONE resource to T6 before opening a second branch",
+        "ALWAYS carry escape gear in your second weapon slot (Q-swap)",
+        "Sell raw resources at the matching biome city (best demand → Lymhurst for wood, Fort Sterling for ore, etc.)",
+        "Avoid solo Black Zone gathering during 13:00–15:00 UTC peak — go at night (21:00 UTC+)",
+        "Check the Killboard before entering a new Black Zone — see who's active there"
+      ]
+    },
+    "endgame": {
+      "tag": "PHASE 3",
+      "title": "End Game",
+      "hours": "300+ hours",
+      "goal": "Farm T7–T8 in deep Black Zone, contribute to guild content (ZvZ / Crystal League), and master the meta.",
+      "activities": [
+        "Group gathering inside Watchtower / Castle territories with guild backup",
+        "Solo or duo gather in the Mists / Avalonian Roads for quick exits",
+        "Refine T8 with Focus for huge ROI — never sell raw if you have Focus",
+        "Run Mist Bosses, Avalonian Dungeons, or Crystal League for premium loot",
+        "Use scout/spotter alt on the world map for early gank warnings"
+      ],
+      "equipment": [
+        "Full T7 / T8 gathering set with .3 / .4 enchant — affordable mid-end game",
+        "Stalker Hood (solo) OR Specter Hood (group invisibility for team gathering)",
+        "Mercenary Jacket OR Stalker Jacket (Q sprint reset)",
+        "Royal Boots (stamina + speed) OR Assassin Shoes (Ambush burst)",
+        "Mount: Saddled Eagle (mage-server hop), Direwolf (combat), or Spectral Bonehorse (top speed)",
+        "Major Healing Potion + Resurrection Mage Potion + Frost Bomb (instant CC escape)",
+        "Pork Omelette (load) + Wisdom of the Sphinx (focus boost for refining)"
+      ],
+      "tips": [
+        "Avoid solo T8 gathering during 13:00–15:00 UTC — ganker density is extreme on Asia server",
+        "Watchtower / Castle T8 spots are guild-only — get a group or expect to die",
+        "Refine T8 with Focus → 5–20× the silver of selling raw",
+        "Always have a return plan: mount + escape gear + city portal location",
+        "Carry 1× Invisibility Potion as backup — chained with Stalker Hood = double escape"
+      ]
+    }
+  },
+  "professions": {
+    "title": "Gathering Professions",
+    "description": "Pick a profession on the Destiny Board. Each has its biome, tools, Royal spots (T2–T6), and Outlands hunting grounds (T7–T8).",
+    "labelResource": "Resource",
+    "labelHub": "City Hub",
+    "labelBiomes": "Best Biomes",
+    "labelTools": "Tools by Tier",
+    "labelToolName": "Tool",
+    "labelRoyalSpots": "Royal Continent Spots (T2–T6)",
+    "labelOutlandsSpots": "Outlands Spots (T7–T8)",
+    "labelTips": "Tips",
+    "overview": {
+      "title": "Gatherer Overview",
+      "description": "Gatherers form the backbone of Albion's economy. Every weapon, armor, and consumable starts from raw materials. Pick a path on the Destiny Board, level its tools, and choose your biome wisely.",
+      "points": [
+        "Specialize ONE branch to T6 before opening a second",
+        "Bonus yield per tier from the Destiny Board (Tracking, Stealthy Collector, etc.)",
+        "Higher tier tools = faster cluster clearing time + chance for enchanted nodes",
+        "Match biome to resource for maximum yield (Forest = Wood best, Mountain = Ore best)",
+        "T5+ enchanted resources sell for 5–20× the raw tier"
+      ]
+    },
+    "lumberjack": {
+      "name": "Lumberjack (Penebang Kayu)",
+      "tagline": "Chop wood from Forest, Highland, and Swamp biomes.",
+      "royalSpots": [
+        { "tier": "T2", "zoneType": "Blue", "zone": "Lymhurst home zones (Boarwood, Wildwood)" },
+        { "tier": "T3", "zoneType": "Blue", "zone": "Three-Tree Hill, Northway" },
+        { "tier": "T4", "zoneType": "Yellow", "zone": "Wildleaf, Bracken Way" },
+        { "tier": "T5", "zoneType": "Red", "zone": "Lupus Glade, Whitebough" },
+        { "tier": "T6", "zoneType": "Red (deep)", "zone": "Bridgeoak, Holdwood (limited T6 in Royal — most is BZ)" }
+      ],
+      "outlandsSpots": [
+        { "tier": "T7", "zoneType": "Black Zone", "zone": "Whitebank Ridge, Highbole Glen" },
+        { "tier": "T8", "zoneType": "Black Zone", "zone": "Whitebank Wall, Timberscar Dell" }
+      ],
+      "tips": [
+        "Pair with Lymhurst (Forest) — refining wood there gets the city bonus",
+        "Use Stalker Hood for instant escape — wood spots are heavily targeted",
+        "Logs are the HEAVIEST resource — Pork Omelette + max bag/cape tier essential",
+        "T7-T8 wood is usually in Forest BZ — go with guild backup",
+        "Sell planks (refined) at Lymhurst Black Market for highest profit"
+      ]
+    },
+    "oreMiner": {
+      "name": "Ore Miner (Penambang)",
+      "tagline": "Mine ore from Mountain and Highland biomes.",
+      "royalSpots": [
+        { "tier": "T2", "zoneType": "Blue", "zone": "Fort Sterling home zones (Stoneway, Mountain Cross)" },
+        { "tier": "T3", "zoneType": "Blue", "zone": "Driftwood Hills, Coalfist" },
+        { "tier": "T4", "zoneType": "Yellow", "zone": "Frostback Hills, Steepsides" },
+        { "tier": "T5", "zoneType": "Red", "zone": "Iceworth Cleft, Snowscree" },
+        { "tier": "T6", "zoneType": "Red (deep)", "zone": "Frostpeak Tundra (rare T6 Royal)" }
+      ],
+      "outlandsSpots": [
+        { "tier": "T7", "zoneType": "Black Zone", "zone": "Shaleheath Hills, Birken Fell" },
+        { "tier": "T8", "zoneType": "Black Zone", "zone": "Blackthorn Quarry, Munten Fell" }
+      ],
+      "tips": [
+        "Fort Sterling refines ore with city specialty bonus",
+        "T8 Meteorite Ore has the highest raw silver value of any resource",
+        "Mountain biome is open / exposed — keep Stalker Hood ready for cover",
+        "Pair with Knight set (Tank build) — ore zones get heavily camped",
+        "Use Cleric Robe to cleanse focus drain debuffs from gankers"
+      ]
+    },
+    "skinner": {
+      "name": "Skinner (Penguliti)",
+      "tagline": "Skin hides from animals in Steppe, Forest, and Highland.",
+      "royalSpots": [
+        { "tier": "T2", "zoneType": "Blue", "zone": "Bridgewatch home zones (Sandwall, Mistwater Steppe)" },
+        { "tier": "T3", "zoneType": "Blue", "zone": "Sands of Sun, Driftwood Steppe" },
+        { "tier": "T4", "zoneType": "Yellow", "zone": "Sandbend, Skullcove" },
+        { "tier": "T5", "zoneType": "Red", "zone": "Sunbear Outback, Sandborne" },
+        { "tier": "T6", "zoneType": "Red (deep)", "zone": "Sandfall Outback (T6 Royal limited)" }
+      ],
+      "outlandsSpots": [
+        { "tier": "T7", "zoneType": "Black Zone", "zone": "Sandrift Dunes, Dryvein Oasis" },
+        { "tier": "T8", "zoneType": "Black Zone", "zone": "Sandmount Ascent, Sandmount Desert" }
+      ],
+      "tips": [
+        "Bridgewatch refines hide with city specialty bonus",
+        "Skinning animals adds to Killing Track too — double fame XP",
+        "T8 Direwolf Hide → end-game tank armor (Royal Plate, Specter Jacket)",
+        "Steppe is OPEN terrain — easy to spot enemies but no cover to escape",
+        "Hide is medium-weight — Master's Bag is enough"
+      ]
+    },
+    "stoneQuarrier": {
+      "name": "Stone Quarrier (Pemecah Batu)",
+      "tagline": "Quarry stone from Highland and Mountain biomes.",
+      "royalSpots": [
+        { "tier": "T2", "zoneType": "Blue", "zone": "Martlock home zones (Highbridge, Highstead)" },
+        { "tier": "T3", "zoneType": "Blue", "zone": "Mosshollow, Mosswater" },
+        { "tier": "T4", "zoneType": "Yellow", "zone": "Bracken Lurch, Vested Heath" },
+        { "tier": "T5", "zoneType": "Red", "zone": "Munten Heath, Heretic's Highbluff" },
+        { "tier": "T6", "zoneType": "Red (deep)", "zone": "Maelstrom Pass" }
+      ],
+      "outlandsSpots": [
+        { "tier": "T7", "zoneType": "Black Zone", "zone": "Frostpeak Ascent, Whitepeak Tundra" },
+        { "tier": "T8", "zoneType": "Black Zone", "zone": "Everwinter Peak, Glacierfall Valley" }
+      ],
+      "tips": [
+        "Martlock refines stone with city specialty bonus",
+        "Stone has the LOWEST PvP competition — best profession for solo Asia farmers",
+        "T8 Adamantium Stone is required for top-tier crafting buildings",
+        "Stone is the second-heaviest resource — Pork Omelette + extra bag tier wajib",
+        "Highland zones have Shrines (yield/speed buffs) while gathering"
+      ]
+    },
+    "fiberHarvester": {
+      "name": "Fiber Harvester (Pemanen Serat)",
+      "tagline": "Harvest fiber from Swamp and Steppe biomes.",
+      "royalSpots": [
+        { "tier": "T2", "zoneType": "Blue", "zone": "Thetford home zones (Greenfen, Thetford Vale)" },
+        { "tier": "T3", "zoneType": "Blue", "zone": "Lonewood, Wisp Mire" },
+        { "tier": "T4", "zoneType": "Yellow", "zone": "Greenpaw Vale, Black Spore" },
+        { "tier": "T5", "zoneType": "Red", "zone": "Drownfield Marsh, Wisp Lurch" },
+        { "tier": "T6", "zoneType": "Red (deep)", "zone": "Sluggish Mire, Lonewood Fen" }
+      ],
+      "outlandsSpots": [
+        { "tier": "T7", "zoneType": "Black Zone", "zone": "Drownfield Mire, Wispwhisper Marsh" },
+        { "tier": "T8", "zoneType": "Black Zone", "zone": "Willow Wood, Nightcreak Marsh" }
+      ],
+      "tips": [
+        "Thetford refines cloth with city specialty bonus",
+        "T8 Ghoul Yarrow → Robe of Purity and end-game cloth armor",
+        "Fiber is the LIGHTEST resource — carry max bags / silver bag",
+        "Use Cleric Robe (Purge) to cleanse root mobs in swamps",
+        "Watch for ambush mobs (snakes, vines) — they slow you for gankers"
+      ]
+    },
+    "fisherman": {
+      "name": "Fisherman (Pemancing)",
+      "tagline": "Fish in lakes, ponds, and rivers across every biome.",
+      "hub": "Caerleon (best Black Market for rare fish) or any city with water",
+      "royalSpots": [
+        { "tier": "T3–T4", "zoneType": "Blue / Yellow", "zone": "Royal Continent rivers near any starter city" },
+        { "tier": "T5", "zoneType": "Yellow / Red", "zone": "Larger lakes around Royal portals" },
+        { "tier": "T6", "zoneType": "Red (deep)", "zone": "Royal deep-zone lakes (limited spawns)" }
+      ],
+      "outlandsSpots": [
+        { "tier": "T7", "zoneType": "Black Zone", "zone": "Mid-depth BZ lakes (Hooked Box loot)" },
+        { "tier": "T8", "zoneType": "Black Zone (deep)", "zone": "Deep BZ lakes — rare fish + treasure chests" }
+      ],
+      "tips": [
+        "Fishing rod is 1-handed — pair with Bag (off-hand) for max load",
+        "Use Bait (crafted from caught fish) for higher-tier catches",
+        "Spots refresh — move around, don't camp one tile",
+        "Lowest ganker risk of all professions — great for solo",
+        "Caerleon Black Market buys rare fish (Specter Carp, etc.) for big silver"
+      ]
+    },
+    "tools": {
+      "t2": {
+        "axe": "Journeyman's Axe",
+        "pickaxe": "Journeyman's Pickaxe",
+        "skinning": "Journeyman's Skinning Knife",
+        "stonehammer": "Journeyman's Stone Hammer",
+        "sickle": "Journeyman's Sickle"
+      },
+      "t3": {
+        "axe": "Journeyman's Axe (T3 enchant)",
+        "pickaxe": "Journeyman's Pickaxe (T3)",
+        "skinning": "Journeyman's Skinning Knife (T3)",
+        "stonehammer": "Journeyman's Stone Hammer (T3)",
+        "sickle": "Journeyman's Sickle (T3)",
+        "fishingrod": "Journeyman's Fishing Rod"
+      },
+      "t4": {
+        "axe": "Adept's Axe",
+        "pickaxe": "Adept's Pickaxe",
+        "skinning": "Adept's Skinning Knife",
+        "stonehammer": "Adept's Stone Hammer",
+        "sickle": "Adept's Sickle",
+        "fishingrod": "Adept's Fishing Rod"
+      },
+      "t5": {
+        "axe": "Expert's Axe",
+        "pickaxe": "Expert's Pickaxe",
+        "skinning": "Expert's Skinning Knife",
+        "stonehammer": "Expert's Stone Hammer",
+        "sickle": "Expert's Sickle",
+        "fishingrod": "Expert's Fishing Rod"
+      },
+      "t6": {
+        "axe": "Master's Axe",
+        "pickaxe": "Master's Pickaxe",
+        "skinning": "Master's Skinning Knife",
+        "stonehammer": "Master's Stone Hammer",
+        "sickle": "Master's Sickle",
+        "fishingrod": "Master's Fishing Rod"
+      },
+      "t8": {
+        "axe": "Elder's Axe",
+        "pickaxe": "Elder's Pickaxe",
+        "skinning": "Elder's Skinning Knife",
+        "stonehammer": "Elder's Stone Hammer",
+        "sickle": "Elder's Sickle",
+        "fishingrod": "Elder's Fishing Rod"
+      }
+    }
+  },
   "builds": {
-    "title": "⚔️ Recommended Gathering Builds",
-    "description": "Optimize your equipment for maximum efficiency and safety while gathering T8 resources.",
-    "solo": "Solo Gatherer (Speed)",
-    "tank": "Tank Gatherer (Safe)",
+    "title": "Recommended Gathering Builds (2026 Meta)",
+    "description": "Optimize your gear for the latest Albion meta. Speed-escape for solo, tanky for group, balanced for versatility.",
+    "solo": "Solo Gatherer (Speed Escape)",
+    "tank": "Tank Gatherer (Group / Defense)",
     "balanced": "Balanced Gatherer",
-    "typeSolo": "Solo/Fast",
-    "typeGroup": "Group/Safe",
+    "typeSolo": "Solo / Fast",
+    "typeGroup": "Group / Safe",
     "typeVersatile": "Versatile"
   },
   "biomes": {
     "title": "Biome Distribution",
-    "description": "Each city specializes in different resources. Choose your farming location based on what you need.",
+    "description": "Each Royal city specializes in different resources. Choose your farming hub based on what you need.",
     "primaryResource": "Primary Resource",
     "secondaryResource": "Secondary",
     "tertiaryResource": "Tertiary"
@@ -59,7 +1023,7 @@
   },
   "tiers": {
     "title": "Tier Progression Guide",
-    "description": "Learn the best strategies for each tier level, from safe beginner zones to dangerous T8 Outlands.",
+    "description": "Best strategies for each tier — from safe Royal beginner zones to dangerous T8 Outlands.",
     "location": "Location",
     "zoneType": "Zone Type",
     "resources": "Available Resources",
@@ -72,52 +1036,52 @@
       "location": "Beginner Zone (Royal Continent)",
       "zoneType": "Blue Zone",
       "tips": [
-        "Focus on leveling up your gathering tools quickly",
-        "Use Learning Points to speed up progression",
-        "Don't spend too much time here - move to T2-T3 ASAP"
+        "Focus on leveling up your gathering tools fast — Journeyman → Adept",
+        "Use Learning Points (LP) to speed up Destiny Board progression",
+        "Don't spend too much time here — push to T3-T4 within first few hours"
       ]
     },
     "tier4": {
-      "location": "Royal Continent - Yellow & Red Zones",
-      "zoneType": "Yellow/Red Zone",
+      "location": "Royal Continent — Yellow & Red Zones",
+      "zoneType": "Yellow / Red Zone",
       "tips": [
-        "Red zones offer better resource yields but higher risk",
-        "Always use Pork Pie to increase carry capacity",
-        "Consider gathering gear for yield bonuses"
+        "Red zones give higher yields but you can lose gear — bring backup",
+        "Always use Pork Omelette for max carry capacity",
+        "Gathering set (Hellion / Hunter) gives yield bonus — wear them to gather"
       ]
     },
     "tier6": {
-      "location": "Outlands - Black Zone",
+      "location": "Outlands — Black Zone (shallow)",
       "zoneType": "Black Zone",
       "tips": [
-        "Use Invisibility Shrines for safe travel to deeper zones",
-        "Farm during off-peak hours to avoid gankers",
-        "Always plan an escape route"
+        "Use Invisibility Shrines for safe travel into deeper zones",
+        "Farm off-peak (21:00–09:00 UTC) on Asia server to avoid gankers",
+        "Always plan an escape route BEFORE entering — note nearest portal"
       ]
     },
     "tier7": {
-      "location": "Outlands - Deep Black Zone",
+      "location": "Outlands — Deep Black Zone",
       "zoneType": "Black Zone",
       "tips": [
-        "Consider farming in Gold Mists for solo players",
-        "Use Roads of Avalon for group farming",
-        "High competition - timing is key"
+        "Gold Mists is great for solo T7 with quick safe exit",
+        "Avalonian Roads → group gathering with random map connections",
+        "High competition — pre-21:00 UTC is when guild groups roam"
       ]
     },
     "tier8": {
-      "location": "Outlands - Deepest Black Zone",
+      "location": "Outlands — Deepest Black Zone",
       "zoneType": "Black Zone",
       "tips": [
-        "Watchtower territories are the best T8 sources",
-        "Farm with guild support or in hidden spots",
-        "Expect extreme competition and constant danger",
-        "Use premium gear and mounts for survival"
+        "Watchtower / Castle territories are the best T8 sources — guild needed",
+        "Farm with guild backup or in hidden spots (off-meta map corners)",
+        "Expect extreme competition and constant gank attempts",
+        "T8 .3/.4 gear + Specter/Stalker Hood + escape kit is mandatory"
       ]
     }
   },
   "t8Maps": {
-    "title": "T8 Farming Locations",
-    "description": "Specific map names for each resource type in the Outlands (Black Zone). These are the most valuable farming spots.",
+    "title": "T8 Farming Locations (Outlands Black Zone)",
+    "description": "Specific Outlands maps for each T8 resource. These are the most valuable farming spots — and the most contested.",
     "fiber": "Fiber",
     "wood": "Wood",
     "hide": "Hide",
@@ -125,53 +1089,55 @@
     "ore": "Ore"
   },
   "events": {
-    "title": "📅 Asia Server Events & Schedule",
-    "description": "Important events and timings for Asia server farming activities.",
+    "title": "Asia Server Events & Schedule",
+    "description": "Key events and timings for Asia server (Albion East) farming.",
     "worldBoss": "World Boss Spawn",
     "worldBossDesc": "World Bosses spawn every even-numbered hour (00:00, 02:00, 04:00, etc.) on Asia server to avoid maintenance collision.",
-    "worldBossNote": "High risk, high reward farming opportunity",
+    "worldBossNote": "High risk, high reward — bring a group",
     "primeTime": "Asia Prime Time",
-    "primeTimeDesc": "Peak activity period for PvP and guild activities. Extreme danger in black zones.",
-    "primeTimeNote": "Best time for group farming with guild protection",
+    "primeTimeDesc": "Peak PvP and guild activity. Extreme danger in Black Zones — best done with guild.",
+    "primeTimeNote": "Best time for group content (HG, ZvZ, Mists Boss)",
     "dangerWindow": "Peak Danger Window",
-    "dangerWindowDesc": "Highest concentration of gankers and PvP players. Avoid solo gathering in black zones.",
-    "dangerWindowNote": "Stick to blue/yellow zones or farm with group",
+    "dangerWindowDesc": "Highest concentration of gankers and roaming groups. Solo gathering NOT recommended in BZ.",
+    "dangerWindowNote": "Stick to Royal Continent or farm with group",
     "lowActivity": "Low Activity Period",
-    "lowActivityDesc": "Safest time for solo farming with reduced competition and ganking risk.",
-    "lowActivityNote": "Best for new players and solo farmers"
+    "lowActivityDesc": "Safest time for solo farming — lowest competition and gank risk.",
+    "lowActivityNote": "Best for new players and solo gatherers"
   },
   "proTips": {
+    "title": "Pro Tips",
     "efficiency": {
       "title": "Efficiency Tips",
       "tips": [
-        "Use Pork Pie to increase carry capacity",
-        "Gather in biomes matching your resource type",
-        "Focus on one resource to T8 for max profit",
-        "Use Learning Points to speed up leveling"
+        "Pork Omelette for carry capacity (better than Pork Pie at T6+)",
+        "Match biome to resource (Forest = Wood, Mountain = Ore, etc.)",
+        "Push ONE resource to T8 before splitting LP",
+        "Use Learning Points on the same line for fastest progression"
       ],
-      "radiantTip": "💡 Tip: Use the new Loot All button from Radiant Wilds for faster PvE farming!"
+      "radiantTip": "💡 Tip: The Loot All button in Radiant Wilds speeds up PvE drop pickup!"
     },
     "safety": {
       "title": "Safety Strategies",
       "tips": [
-        "Use Invisibility Shrines for safe travel",
-        "Farm during off-peak server hours",
-        "Always have escape gear ready",
-        "Travel with guild members when possible"
+        "Use Invisibility Shrines to scout deeper zones safely",
+        "Farm 21:00–09:00 UTC on Asia server for lowest ganker activity",
+        "Keep escape gear (Stalker Hood + Assassin Shoes) in slot 2 — Q-swap",
+        "Travel with guild members when possible — duo gathering is 4× safer"
       ]
     },
     "profitability": {
       "title": "Resource Profitability",
       "tips": [
-        "Stone: Low competition, stable profit",
-        "Fishing: High profit, requires patience",
-        "Ore: Medium competition, good returns",
-        "Hide & Fiber: High competition, varied profit"
+        "Stone: Lowest competition, stable profit (great solo)",
+        "Fishing: Patient profit + rare loot bonus (Hooked Box)",
+        "Ore: Medium competition, Meteorite T8 = top silver",
+        "Hide & Fiber: High competition, swings with armor meta"
       ]
     }
   },
   "footer": {
-    "text": "Albion Online Farming Guide 2026 • Last Updated: May 2026",
-    "author": "Author: ABID"
+    "text": "Albion Online Farming Guide 2026 · Asia Server · Last Updated: May 2026",
+    "author": "Author: ABID",
+    "authorLabel": "Author:"
   }
 }

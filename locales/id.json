@@ -6,172 +6,1138 @@
     "safe": "Aman",
     "moderate": "Sedang",
     "extreme": "Ekstrem",
-    "dangerous": "Berbahaya"
+    "dangerous": "Bahaya"
+  },
+  "sidebar": {
+    "title": "Menu",
+    "essentialsGroup": "Panduan Dasar",
+    "essentialFirstHour": "Checklist Jam Pertama",
+    "essentialMount": "Panduan Mount",
+    "essentialFood": "Food & Potion",
+    "essentialRefining": "Refining 101",
+    "guideGroup": "Panduan Pemain",
+    "guideBeginner": "Pemula (Beginner)",
+    "guideMidgame": "Mid Game",
+    "guideEndgame": "End Game",
+    "professionGroup": "Profesi Gathering",
+    "professionOverview": "Ringkasan Gatherer",
+    "lumberjack": "Lumberjack (Kayu)",
+    "oreMiner": "Ore Miner (Bijih)",
+    "skinner": "Skinner (Kulit)",
+    "stoneQuarrier": "Stone Quarrier (Batu)",
+    "fiberHarvester": "Fiber Harvester (Serat)",
+    "fisherman": "Fisherman (Mancing)",
+    "foundationGroup": "Foundation",
+    "foundationZones": "Zone Types",
+    "foundationMistakes": "JANGAN-DO List",
+    "foundationFaq": "FAQ Pemula",
+    "survivalGroup": "Survival & End-Game",
+    "survivalGank": "Gank Avoidance",
+    "survivalMists": "Mists & Roads of Avalon",
+    "survivalT8Maps": "Peta T8",
+    "survivalBuilds": "Build (T8)",
+    "optimizeGroup": "Optimize Pro",
+    "optimizeMarketplace": "Marketplace 101",
+    "optimizeRoutine": "Routine Harian",
+    "optimizePremium": "Itungan Premium",
+    "quickGroup": "Tautan Cepat",
+    "home": "Home",
+    "biomes": "Bioma",
+    "tiers": "Panduan Tier",
+    "t8maps": "Peta T8",
+    "builds": "Build",
+    "events": "Event",
+    "tools": "Tools & Apps",
+    "protips": "Pro Tips",
+    "footer": "Albion Online · Server Asia"
   },
   "tracker": {
     "title": "🕐 Status Server Asia",
-    "peakTime": "Waktu Puncak:",
+    "peakTime": "Peak Time:",
     "status": "Status:",
     "calculating": "Menghitung...",
     "peakTimeInfo": "14:00 UTC (21:00 WIB)",
-    "localTime": "Waktu Anda",
+    "localTime": "Waktu Lokal",
     "serverTime": "Waktu Server (UTC)",
-    "safeStatus": "🟢 Aktivitas Rendah - Aman untuk Farming",
-    "moderateStatus": "🟡 Aktivitas Sedang - Tetap Waspada",
-    "extremeStatus": "🔴 BAHAYA EKSTREM - Waktu Puncak PvP"
+    "safeStatus": "🟢 Aktivitas Rendah - Aman buat Farm",
+    "moderateStatus": "🟡 Aktivitas Sedang - Hati-hati",
+    "extremeStatus": "🔴 BAHAYA EKSTREM - Peak PvP Time"
   },
   "hero": {
-    "badge": "PANDUAN PENGUMPULAN 2026",
-    "title": "Panduan Pengumpulan Albion Online",
-    "description": "Kuasai seni pengumpulan sumber daya di semua tier. Dari zona pemula hingga Outlands T8 paling berbahaya, temukan spot pengumpulan terbaik dan strategi.",
-    "cta": "Mulai Mengumpul"
+    "badge": "KITAB PEMULA 2026 · SERVER ASIA",
+    "title": "Kitab Pemula Albion Online",
+    "description": "Khusus buat player Albion East (Server Asia). Spot spesifik T2–T6 di Royal Continent, plus T7–T8 di Outlands, dengan gear meta paling update.",
+    "cta": "Mulai Farming"
+  },
+  "essentials": {
+    "title": "Panduan Dasar",
+    "description": "Hal-hal penting yang sering bikin pemula bingung — mount, food, refining, dan checklist jam pertama main.",
+    "commonTips": "Tips",
+    "firstHour": {
+      "title": "Checklist Jam Pertama",
+      "subtitle": "Step-by-step buat 1 jam pertama main Albion",
+      "intro": "Baru bikin akun? Ikutin urutan ini. Selesai checklist ini, kamu udah punya karakter siap, tool gathering, dan arah jelas mau ngapain.",
+      "steps": [
+        { "title": "Selesain tutorial", "detail": "Jalanin starter quest di kota awal — ngajarin gerakan, combat, dan basic gathering." },
+        { "title": "Pilih kota awal", "detail": "Lymhurst (Kayu/Forest), Fort Sterling (Bijih/Mountain), Bridgewatch (Kulit/Steppe), Martlock (Batu/Highland), Thetford (Serat/Swamp). Pilih sesuai mau gather apa." },
+        { "title": "Buka Destiny Board", "detail": "Pencet 'J'. Ini skill tree kamu — setiap aksi naikin node tertentu. Fokusin satu jalur gathering aja dulu." },
+        { "title": "Beli tool gathering basic", "detail": "Ke Marketplace, beli T3 Journeyman tool sesuai resource pilihan (sekitar 200–500 silver)." },
+        { "title": "Gather di Blue Zone dulu", "detail": "Blue zone = aman, kalau mati gak kehilangan barang. Cari node di map (icon kapak = kayu, beliung = bijih, sabit = serat, pisau = kulit, palu = batu)." },
+        { "title": "Pakai Learning Point (LP) dengan bener", "detail": "Pencet 'J' → klik node mana aja → spend LP buat skip setengah grindnya. Simpan LP buat jalur gathering utama." },
+        { "title": "Beli Pork Omelette", "detail": "Pork Omelette ngedobeli kapasitas bawa barang berat. Murah dan wajib banget." },
+        { "title": "Dapetin Riding Horse (mount T3)", "detail": "Jalan kaki itu lambat banget. T3 horse aja udah cepet dan murah." },
+        { "title": "Gather, deposit, ulang", "detail": "Tas penuh → balik kota → deposit ke bank atau jual di marketplace. Target T4 gathering dalam beberapa jam." },
+        { "title": "Join Adventurer's Challenge", "detail": "Pencet 'Y'. Ada daily quest dengan reward silver, gear, dan Backpack of Insight — XP gampang. Lakuin tiap hari." }
+      ],
+      "tips": [
+        "Jangan beli Premium sebelum main 5–10 jam dan yakin suka sama gamenya.",
+        "Prime time server Asia jam 13:00–15:00 UTC (21:00 WIB). Off-peak lebih sepi saingan.",
+        "Tetap di Blue/Yellow zone sampai bisa gather T4 dengan nyaman.",
+        "Jangan bawa barang berharga waktu eksplorasi zona baru — scouting dulu."
+      ]
+    },
+    "mount": {
+      "title": "Panduan Mount",
+      "subtitle": "Pilih mount yang sesuai sama aktivitas",
+      "intro": "Mount itu penting banget — kecepatan = survival. Tiap mount beda stat: speed (kabur), HP (durability), dan carry capacity (bawa loot lebih banyak). Cocokin mount sama kerjaan.",
+      "tableHeaders": ["Mount", "Tier", "Cocok Untuk", "Catatan"],
+      "rows": [
+        { "name": "Riding Horse", "tier": "T3", "bestFor": "Pemula, perjalanan murah", "note": "Mount paling murah. Pelan tapi mending daripada jalan kaki." },
+        { "name": "Transport Ox", "tier": "T3 / T5 / T7", "bestFor": "Bawa resource banyak di zona aman", "note": "Carry capacity tertinggi — tapi pelan banget dan gampang digank. Cuma pakai di Blue/Yellow." },
+        { "name": "Swiftclaw", "tier": "T5", "bestFor": "Escape solo gathering", "note": "Mount cepet + 1 burst speed skill. Mount escape T5 yang terjangkau." },
+        { "name": "Direwolf", "tier": "T6", "bestFor": "Solo gathering + combat ringan", "note": "Cepet + ada skill slow yang bisa ngehenti pengejar. Pilihan favorit gatherer." },
+        { "name": "Spectral Bonehorse", "tier": "T6", "bestFor": "Black Zone gathering, grup", "note": "HP tinggi, bisa summon dinding buat ngeblock musuh. Mantap buat kabur dari gank grup." },
+        { "name": "Saddled Eagle", "tier": "T7", "bestFor": "Travel jauh, grup", "note": "Mount terbang — lewatin medan dengan gampang. Bagus buat logistik guild." },
+        { "name": "Stalker Horse", "tier": "T7", "bestFor": "Stealth gathering", "note": "Punya cast invisibility — gather terus menghilang." },
+        { "name": "Mistwolf / Moose / Dire Boar", "tier": "T8", "bestFor": "End-game spesialisasi", "note": "Mount T8 buat role PvP/PvE spesifik. Mahal dan crafted dari material langka." }
+      ],
+      "tips": [
+        "Selalu bawa cadangan mount waktu gathering — mount utama bisa mati.",
+        "Cocokin tier mount sama tier gear — jangan naik T6 mount pakai gear T4, ganker bakal nargetin.",
+        "Direwolf atau Spectral Bonehorse itu sweet spot buat solo Black Zone gathering.",
+        "Mount yang condition rendah bisa repair di Repair Station kota mana aja, murah."
+      ]
+    },
+    "food": {
+      "title": "Food & Potion",
+      "subtitle": "Buff wajib buat gatherer",
+      "intro": "Food dan potion ngasih buff gede — tapi pemula sering ngeskip ini. Selalu eat sebelum gather dan jaga potion di slot consumable.",
+      "foodTitle": "Food (Belly Buff)",
+      "foods": [
+        { "name": "Pork Omelette", "tier": "T4+", "effect": "+load capacity (bawa resource lebih banyak per trip)", "useCase": "Semua gatherer — WAJIB" },
+        { "name": "Pork Pie", "tier": "T3+", "effect": "+load capacity (lebih rendah dari Omelette)", "useCase": "Alternatif murah buat gatherer T2–T4" },
+        { "name": "Beef Sandwich", "tier": "T6+", "effect": "Flat physical & magical resistance buff", "useCase": "Solo gatherer di Red/Black Zone buat survive" },
+        { "name": "Goose Pie", "tier": "T7+", "effect": "+max HP", "useCase": "Tank gatherer atau main grup" },
+        { "name": "Roast Chicken", "tier": "T2+", "effect": "+HP regen out of combat", "useCase": "Heal murah antar pertarungan" }
+      ],
+      "potionTitle": "Potion (Slot Consumable)",
+      "potions": [
+        { "name": "Healing Potion", "tier": "T2+", "effect": "Restore HP selama 3 detik", "useCase": "Combat healing — buat fighter" },
+        { "name": "Resurrection Mage Potion", "tier": "T4+", "effect": "Auto-revive waktu mati (HP 60%)", "useCase": "WAJIB buat gatherer — nyelametin gear dari ganker" },
+        { "name": "Sticky Potion", "tier": "T5+", "effect": "Lemparin ke tanah, slow musuh", "useCase": "Escape dari pengejar di PvP" },
+        { "name": "Invisibility Potion", "tier": "T6+", "effect": "Invisible 7 detik", "useCase": "Scout zona bahaya atau escape ambush" },
+        { "name": "Gigantify Potion", "tier": "T5+", "effect": "+HP, +damage, movement pelan", "useCase": "Duel 1v1 atau tanking gank" }
+      ],
+      "tips": [
+        "SELALU bawa Pork Omelette di slot consumable. Eat sebelum masuk area node.",
+        "Resurrection Mage Potion itu non-negotiable kalau gather di Red/Black Zone — bisa nyelametin satu set loadout.",
+        "Sticky Potion itu cara paling murah escape dari pengejar — lempar di belakang sambil lari.",
+        "Beli food/potion di Marketplace kota. Jangan crafting sendiri kecuali kamu emang spesialisasi cooking."
+      ]
+    },
+    "refining": {
+      "title": "Refining 101",
+      "subtitle": "Cara dapet bonus 21–43% dari city specialty",
+      "intro": "Jual raw resource itu okay. Tapi jual REFINED resource itu untungnya 5–20× lipat. Tiap kota Royal punya spesialisasi yang ngasih bonus GEDE waktu refining resource yang cocok di situ. Trik silver gampang yang sering dilewatin pemula.",
+      "bonusTitle": "City Specialty Bonus",
+      "bonusRows": [
+        { "city": "Lymhurst (Forest)", "resource": "Kayu → Plank", "bonus": "+25% return" },
+        { "city": "Fort Sterling (Mountain)", "resource": "Bijih → Metal Bar", "bonus": "+25% return" },
+        { "city": "Bridgewatch (Steppe)", "resource": "Batu → Stone Block", "bonus": "+25% return" },
+        { "city": "Martlock (Highland)", "resource": "Kulit → Leather", "bonus": "+25% return" },
+        { "city": "Thetford (Swamp)", "resource": "Serat → Cloth", "bonus": "+25% return" },
+        { "city": "Caerleon (Black Market)", "resource": "Semua refined goods", "bonus": "Harga lebih tinggi (Black Market)" }
+      ],
+      "stepsTitle": "Cara Refine",
+      "steps": [
+        { "title": "Gather raw resource dulu", "detail": "Wood Log, Iron Ore, Stone, Hide, Fiber — pilih satu dan kumpulin T4–T6." },
+        { "title": "Travel ke kota specialty-nya", "detail": "Buat kayu → Lymhurst. Bijih → Fort Sterling. Cek tabel di atas." },
+        { "title": "Cari Refining Station", "detail": "Tiap kota punya bangunan buat specialty-nya: Sawmill (kayu), Smelter (bijih), Stonemason (batu), Tanner (kulit), Weaver (serat)." },
+        { "title": "Bawa material refined tier bawah kalau perlu", "detail": "Refining T5+ WAJIB pakai material tier sebelumnya. Contoh: T5 Steel Bar = T5 Iron Ore + T4 Steel Bar. Beli yang gak punya di Marketplace." },
+        { "title": "Refine — klaim bonusnya", "detail": "City specialty bonus otomatis di kota yang bener. Bakal keliatan +25% return di UI refining." },
+        { "title": "Jual material yang udah refined", "detail": "Jual di Marketplace kota yang sama ATAU transport ke Caerleon Black Market buat harga lebih tinggi (tapi perjalanan beresiko)." }
+      ],
+      "colCity": "Kota",
+      "colResource": "Resource",
+      "colBonus": "Bonus",
+      "tips": [
+        "Refining ngasih Fame lebih banyak per resource daripada cuma gather — double benefit.",
+        "Caerleon Black Market BELI item dari NPC dengan harga tinggi — silver gampang buat refined goods.",
+        "Pakai Travel Planner mod / map buat cari rute paling aman ke kota specialty.",
+        "JANGAN refine di kota asal kalau kotamu bukan kota specialty — bonusnya ke-skip.",
+        "Kumpulin dalam jumlah gede (200+ material) sebelum refining biar nge-minimize jumlah trip."
+      ]
+    }
+  },
+  "zones": {
+    "title": "Manual Zone Types",
+    "description": "Pahami dunia Albion sebelum keluar farming. Tiap zone beda aturan PvP, beda konsekuensi mati, dan beda peluang farming.",
+    "labelDanger": "Bahaya",
+    "labelDeath": "Pas Mati",
+    "labelBestFor": "Cocok Buat",
+    "labelFeatures": "Fitur Utama",
+    "labelAccess": "Akses",
+    "items": [
+      {
+        "id": "zone-blue",
+        "icon": "🟦",
+        "name": "Blue Zone (Aman)",
+        "danger": "Aman",
+        "dangerLevel": "safe",
+        "death": "Gak kehilangan apa-apa. Mati = respawn di kota terdekat. PvP gak diizinin — yang nyerang dapet penalti reputasi gede.",
+        "bestFor": "Pemain baru, tutorial, gather T2–T4, latihan crafting, belajar kontrol dasar.",
+        "access": "Di sekeliling 5 kota Royal (Lymhurst, Fort Sterling, Bridgewatch, Martlock, Thetford) sama Caerleon.",
+        "features": [
+          "Mob & resource node T2–T4",
+          "Gak ada PvP, gak ada full-loot",
+          "Spot aman buat AFK / main santai",
+          "Bank, marketplace, repair station semua di sini"
+        ]
+      },
+      {
+        "id": "zone-yellow",
+        "icon": "🟨",
+        "name": "Yellow Zone (Knockdown)",
+        "danger": "Rendah",
+        "dangerLevel": "moderate",
+        "death": "Cuma knockdown — gear cuma kena durability damage, semua barang aman. PvP udah diizinin.",
+        "bestFor": "Latihan PvP tanpa kehilangan gear, gather T3–T5, belajar mekanik escape.",
+        "access": "Satu ring keluar dari kota Royal (antara Blue sama Red zone).",
+        "features": [
+          "Mob & resource node T3–T5",
+          "PvP diizinin — tapi gak ada item loss",
+          "Yang nyerang dapet penalti reputasi berat",
+          "Zona paling pas buat test escape kit"
+        ]
+      },
+      {
+        "id": "zone-red",
+        "icon": "🟥",
+        "name": "Red Zone (Full Loot)",
+        "danger": "Tinggi",
+        "dangerLevel": "extreme",
+        "death": "FULL LOOT. Semua di inventory bisa di-pickup sama yang ngebunuh. Gear yang dipake jadi hancur.",
+        "bestFor": "Gather T4–T6, solo Hellgate, PvP intermediate, faction warfare.",
+        "access": "Ring terluar Royal Continent, antara Yellow sama Black zone.",
+        "features": [
+          "Mob & resource node T4–T6",
+          "PvP full-loot — bawa cuma yang sanggup hilang",
+          "Yang nyerang dapet penalti reputasi (beda sama Black Zone)",
+          "Faction warfare buat silver sama token"
+        ]
+      },
+      {
+        "id": "zone-black",
+        "icon": "⬛",
+        "name": "Black Zone (Outlands)",
+        "danger": "Ekstrem",
+        "dangerLevel": "extreme",
+        "death": "FULL LOOT. Yang ngebunuh GAK kena penalti reputasi. Zona paling bahaya di game.",
+        "bestFor": "Gather T6–T8, PvP skala gede (ZvZ), perang Castle / Territory, Hellgate, Avalon raid.",
+        "access": "Lewat portal dari Royal Continent atau Cluster portal di dalam Outlands.",
+        "features": [
+          "Mob & resource node T6–T8 (loot terbaik di game)",
+          "Full-loot PvP tanpa penalti apa-apa",
+          "Mayoritas pemain travel rame-rame (guild, gang)",
+          "Territory / Castle dikuasai guild buat akses resource"
+        ]
+      },
+      {
+        "id": "zone-mists",
+        "icon": "🌫️",
+        "name": "The Mists",
+        "danger": "Variabel",
+        "dangerLevel": "moderate",
+        "death": "Tergantung tier Mist — Lethal Mist = full-loot, Mist tier rendah = cuma knockdown.",
+        "bestFor": "Solo gathering T5–T7, farming Mist Boss, solo PvP tanpa risiko grup gede.",
+        "access": "Portal Mist random spawn di zone manapun — masuk buat instance solo.",
+        "features": [
+          "Zone instance solo-only (1 player per Mist)",
+          "Lethal Mist = setara full-loot",
+          "Roaming Mist Boss dengan drop langka (Vanity, T8 chest)",
+          "Exit lewat portal Mist balik ke zone asal"
+        ]
+      },
+      {
+        "id": "zone-roads",
+        "icon": "🛤️",
+        "name": "Roads of Avalon",
+        "danger": "Full Loot",
+        "dangerLevel": "extreme",
+        "death": "Full loot. Aturan sama kayak Black Zone.",
+        "bestFor": "Group gathering T7–T8, group PvP, eksplorasi dinamis, ambush ZvZ.",
+        "access": "Portal Avalonian buka random di cluster Royal sama Outlands.",
+        "features": [
+          "Connection map dinamis — refresh tiap hari",
+          "PvP bebas faction — semua bisa nyerang semua",
+          "Node T6–T8 + mob Avalonian unik sama chest",
+          "Road nyambungin zone jauh — bagus buat shortcut travel"
+        ]
+      },
+      {
+        "id": "zone-hellgate",
+        "icon": "🔥",
+        "name": "Hellgate",
+        "danger": "Full Loot",
+        "dangerLevel": "extreme",
+        "death": "Full loot di dalam gate. PvP-nya instance (1v1, 2v2, atau 5v5).",
+        "bestFor": "Konten PvP solo / small-group, demonic shard, sumber fame & silver buat non-gatherer.",
+        "access": "Portal Hellgate spawn di Red sama Black zone — masuk buat arena PvP instance.",
+        "features": [
+          "Corrupted Dungeon 1v1, Hellgate 2v2 / 5v5",
+          "Lawan boss iblis sambil siap-siap di-invade tim musuh",
+          "Demonic Core + token buat gear langka",
+          "Closed Hellgate = gak ada invader (PvE only); Open = PvP aktif"
+        ]
+      }
+    ]
+  },
+  "mistakes": {
+    "title": "JANGAN-DO List (Silap Biasa)",
+    "description": "Kesalahan paling sering dilakuin pemula — setiap salah satunya bikin frustrasi berjam-jam atau buang silver gede. Hindari semua ini = skip 80% rasa sakit pemula.",
+    "items": [
+      { "title": "Bagi Learning Point ke semua line", "detail": "Boros LP. Fokusin SATU jalur gathering (misal Lumberjack) sampe T6 dulu, baru cabang lain. Spesialisasi > sebar tipis." },
+      { "title": "Bawa gear berharga ke Black Zone", "detail": "Kalau mati, hilang SEMUA. Bawa cuma loadout yang sanggup kamu hilangin 5–10 kali." },
+      { "title": "Beli Premium hari pertama", "detail": "Main 5–10 jam gratis dulu. Premium baru worth kalau kamu emang commit sama game ini. Sering nyesel kalau quit cepet." },
+      { "title": "Solo gather pas prime time (13:00–15:00 UTC)", "detail": "Server Asia padat ganker. Off-peak (21:00–09:00 UTC) jauh lebih aman buat solo." },
+      { "title": "Skip Resurrection Mage Potion", "detail": "Resurrection = nyelametin seluruh loadout dari satu gank. Wajib di Red dan Black zone." },
+      { "title": "Refine di kota yang salah", "detail": "Bonus +25% specialty ke-skip. Refine wood selalu di Lymhurst, ore di Fort Sterling, dst." },
+      { "title": "Pake gear tier tinggi buat gather resource tier rendah", "detail": "Boros. Cocokin tier gear sama tier resource — gear T6 buat node T6, gear T4 buat node T4." },
+      { "title": "Solo terus selamanya (gak join guild)", "detail": "Guild = konten grup, akses Castle/Territory, belajar lebih cepet, ada proteksi. Ceiling solo jauh lebih rendah." },
+      { "title": "Travel tanpa mount cadangan", "detail": "Mount utama bisa mati di tengah gank. Selalu bawa minimum 2 mount di bag." },
+      { "title": "Bawa silver banyak waktu travel", "detail": "Silver juga ke-drop pas mati di Red/Black. Simpan di bank sebelum travel berisiko." },
+      { "title": "Masuk zone baru tanpa scouting", "detail": "Selalu scout zone depan pake Invisibility Potion / mount cepet sebelum commit. Hemat banyak kematian." },
+      { "title": "Tunnel-vision di node — abaikan mini-map", "detail": "Ganker masuk diam-diam. Cek mini-map tiap 5 detik. Titik merah = musuh; baru satu titik aja udah keluar cepet." },
+      { "title": "Lupa daily Adventurer's Challenge", "detail": "Silver gratis + Backpack of Insight + reputasi. Cuma 10 menit. Skip = hilang ratusan ribu silver per minggu." },
+      { "title": "Pake combat gear di Blue Zone", "detail": "Blue Zone gak ada PvP. Pake gathering set (Hellion, Hunter) buat yield bonus — combat gear cuma slot kebuang." }
+    ]
+  },
+  "survival": {
+    "title": "Manual Gank Avoidance & Escape",
+    "description": "Solo gathering = solo survival. Pro gak ngehindarin bahaya — mereka siap-siap buat itu. Ini beda antara hilang satu loadout per minggu vs sepuluh per hari.",
+    "preGatherTitle": "Checklist Sebelum Gathering",
+    "preGather": [
+      "Mount HP 100% — repair dulu sebelum keluar kota",
+      "Slot food: Pork Omelette aktif (eat SEBELUM gather)",
+      "Slot consumable: Resurrection Mage Potion (non-negotiable di Red/Black)",
+      "Escape kit equipped di slot 2 (Stalker Hood + Assassin Shoes)",
+      "Mount cadangan di inventory (Riding Horse minimum)",
+      "Silver dan barang langka udah disimpan di bank — bawa cuma yang dibutuhin",
+      "Plan rute exit SEBELUM masuk — catat cluster portal terdekat",
+      "Scout cluster dulu pake Invisibility Potion atau mount cepet"
+    ],
+    "spottingTitle": "Cara Spot Ganker",
+    "spotting": [
+      "Player asing pake gear set + mount skull = siap combat, bukan gatherer",
+      "Player nongkrong di chokepoint (portal, edge cluster) tanpa gathering",
+      "Beberapa player di cluster tanpa grup keliatan (gang diam-diam)",
+      "Player nyoba 'temenan' atau follow kamu terus-terusan — bait klasik",
+      "Tiba-tiba teleport masuk lewat Invisibility Shrine atau cape stealth",
+      "Titik merah mini-map gerakan koordinasi ke arah node kamu"
+    ],
+    "escapeKitTitle": "Loadout Escape Kit",
+    "escapeKitHeaders": ["Slot", "Item", "Kenapa"],
+    "escapeKit": [
+      { "slot": "Head (Swap)", "item": "Stalker Hood", "why": "Cast Invisibility — putus tracking langsung" },
+      { "slot": "Chest (Swap)", "item": "Assassin Jacket", "why": "Burst movement speed 6 detik" },
+      { "slot": "Boots (Swap)", "item": "Assassin Boots", "why": "Stance buff movement — speed sustained" },
+      { "slot": "Cape", "item": "Spectral Bonehorse Cape", "why": "Wall aktif buat ngeblock pengejar" },
+      { "slot": "Consumable", "item": "Sticky Potion", "why": "Lempar di belakang — slow pengejar significant" },
+      { "slot": "Consumable (Alt)", "item": "Invisibility Potion", "why": "Invisibility 7 detik — last resort exit" },
+      { "slot": "Mount", "item": "Direwolf atau Swiftclaw (T5–T6)", "why": "Speed burst + slow pengejar" }
+    ],
+    "qSwapTitle": "Teknik Q-Swap (Wajib)",
+    "qSwap": [
+      "Setup: Gathering gear di slot utama, Escape Kit di slot 2",
+      "Pas lagi gather: Tekan Q buat instant swap ke Escape Kit",
+      "Mount up + cast Invisibility (Stalker Hood) pas ganker muncul",
+      "Lari ke portal — begitu udah mount, kamu 80% lebih aman"
+    ],
+    "chasedTitle": "Kalau Udah Dikejar",
+    "chased": [
+      "Mount UP langsung — bahkan Riding Horse lebih cepet daripada lari",
+      "Trigger Stalker Hood Invisibility buat putus target lock musuh",
+      "Drop Sticky Potion di belakang buat slow pengejar",
+      "Sprint ke cluster portal terdekat (bukan masuk lebih dalem ke BZ)",
+      "Kalau di-dismount: pake cape active (Spectral Bonehorse wall, dll.)",
+      "Z-out (turun mount) dan lari kaki kalau mount mau mati — kadang lebih cepet"
+    ],
+    "tipsTitle": "Tips Lanjutan",
+    "tips": [
+      "Selalu setup Q-Swap sebelum masuk zone di atas Yellow.",
+      "Tier mount harus ≥ tier gear — jangan T3 mount pake T6 gear (ganker bakal nargetin).",
+      "Jangan rakus node terakhir — keluar pas inventory 70% penuh, bukan 100%.",
+      "Cluster exit timer ~5 menit setelah masuk — siap-siap exit cepet pas digank.",
+      "Pake cluster Z buat escape silver burden — mekanik wall ngeblock pengejar."
+    ]
+  },
+  "mists": {
+    "title": "Mists & Roads of Avalon",
+    "description": "Content paling under-rated di Albion. Solo gathering dan PvP T4-T8 dengan risiko JAUH lebih kecil dari Black Zone terbuka. Perfect buat newbie yang mau jembatani Yellow Zone ke T8 farming.",
+    "intro": "Mists itu cluster instanced personal — pas masuk, kamu cuma ketemu pemain solo lain (1v1 atau duo). Roads of Avalon adalah shortcut dimensional yang nyambungin Royal Continent ↔ Outlands lewat portal permanen dan shifting.",
+    "mistsTitle": "🌫️ The Mists — Konten Solo Instanced",
+    "mistsHeaders": ["Tier", "Bahaya", "Loot", "Exit", "Cocok Buat"],
+    "mistsRows": [
+      { "tier": "T4 Mists (Bright Mists)", "danger": "Rendah", "loot": "Node T4-T5, mob low-tier", "exit": "Wisp portal", "best": "Latihan solo gather newbie + exposure PvP pertama" },
+      { "tier": "T5 Mists (Dim Mists)", "danger": "Rendah-Sedang", "loot": "Node T5-T6, drop Tome of Insight", "exit": "Wisp + sekali-sekali skull portal", "best": "Build LP + fame T5-6 solo tanpa risiko ganker" },
+      { "tier": "T6 Mists (Twilight Mists)", "danger": "Sedang", "loot": "Node T6-T7, Avalonian shards", "exit": "Berbagai portal", "best": "Income silver beneran dari T6-7 ore/hide/fiber" },
+      { "tier": "T7-T8 Mists (Deep/Brilliant Mists)", "danger": "Tinggi", "loot": "Node enchanted T7-T8, gear Avalonian langka", "exit": "Skull/special portal", "best": "Solo farming end-game, ROI paling besar buat solo player" }
+    ],
+    "knightfallTitle": "⚔️ Knightfall Abbey (Boss Mists T7+)",
+    "knightfall": [
+      "Spawn random di cluster Mists T7+ (~30-45 menit interval).",
+      "Solo boss fight — drop Avalonian artifact unik + chest tome.",
+      "Gear yang disaranin: T6+ self-heal build (Hallowfall, Carving Sword, atau Bloodletter Off-Hand).",
+      "Jangan engage kalau gear < T6 — risiko wipe tinggi.",
+      "Loot abis kill: Avalonian Shards (buat craft gear Avalonian), Tome of Insight, artifact langka."
+    ],
+    "roadsTitle": "🛣️ Roads of Avalon — Jalan Tol Dimensional",
+    "roads": [
+      "Cluster portal shifting yang nyambungin Royal ↔ Outlands ↔ Mists random.",
+      "Portal permanen di kota Royal (Caerleon T6 portal) tetep stabil.",
+      "Portal random di Outlands bikin shortcut antar zone — pro players pake buat ngehindarin rute gank yang udah dikenal.",
+      "Node Avalonian energy spawn random di Roads — gather buat refining gear Avalonian.",
+      "Jenis cluster: Tunnel (jalan panjang), Hub (multi-portal node), Camp (loot + mob)."
+    ],
+    "portalTypesTitle": "🌀 Jenis Portal yang Bakal Kamu Lihat",
+    "portalTypes": [
+      "🌟 Wisp Portal (putih): exit balik ke kota Royal terdekat. Aman.",
+      "💀 Skull Portal (kilau merah): exit ke Outlands random — risiko tinggi, reward gear gede.",
+      "🟣 Avalonian Portal (ungu): masuk Roads of Avalon — koneksi ke konten spesial.",
+      "🟢 Static Portal (cincin hijau): exit konsisten ke zone tertentu (biasanya ditandain di mini-map).",
+      "Kalo gak yakin portal mana yang aman, cek mini-map dulu — destination exit biasanya ditandai."
+    ],
+    "energyTitle": "⚡ Avalonian Energy",
+    "energy": [
+      "Resource spesial dari Roads of Avalon + Mists T6+.",
+      "Dipake buat refine gear Avalonian (versi enchanted T4-T8) — gear top-tier kedua di game.",
+      "Drop dari mob Avalonian (Avalonian Mage, Avalonian Knight) + node energy.",
+      "Stack & jual di Caerleon Black Market buat profit maksimal."
+    ],
+    "tipsTitle": "💡 Tips Pro Mists & Roads",
+    "tips": [
+      "Mists = MUSUH KAMU CUMA 1-2 ORANG. Beda banget sama Black Zone yang bisa kena gank squad 5v1.",
+      "Bawa Sticky Potion + Stalker Hood + Royal Shoes — escape kit murah tapi efektif.",
+      "Setiap kali masuk Mists, scout dulu mini-map sebelum gather. Pemain lain muncul as red dot.",
+      "Mists reward solo activity — pro-gathering di sini lebih profitable per jam daripada BZ gathering keroyokan.",
+      "Roads of Avalon = shortcut. Plan rute kamu sebelumnya — bisa hemat 5-10 menit travel time per sesi.",
+      "Loot Knightfall Abbey worth 100k+ silver per kill — kalo ketemu, engage dengan T6+ self-heal build."
+    ]
+  },
+
+  "faq": {
+    "title": "FAQ Pemula",
+    "description": "Pertanyaan yang paling sering ditanyain newbie. Klik tiap pertanyaan buat lihat jawabannya.",
+    "items": [
+      {
+        "q": "Wajib beli Premium gak buat main Albion?",
+        "a": "Gak wajib. Albion F2P beneran viable — banyak pemain pro yang main pure F2P. Tapi kalau kamu main > 20 jam/minggu atau aktif trading > 1M silver/minggu, Premium bayar dirinya sendiri lewat bonus fame/silver/tax. Saran: main 50 jam dulu sebagai F2P, baru putusin. Lihat 💎 Premium Math di tier Optimize buat detailnya."
+      },
+      {
+        "q": "Saya mati di Black Zone bawa gear T6, gimana?",
+        "a": "Sayangnya gear hilang full-loot. Ini norma di Albion BZ. Pelajaran: JANGAN bawa gear yang kamu gak siap kehilangan. Pakai gear T4-T5 di BZ sampai kamu confident, dan selalu inget rule pro: 'kalau gak siap mati, jangan masuk Black Zone'. Lihat 🛡️ Gank Avoidance section buat tips escape."
+      },
+      {
+        "q": "Learning Points (LP) itu buat apa sih?",
+        "a": "LP adalah catalyst untuk masterin node di Destiny Board (gear, gathering, crafting) tanpa harus farm fame penuh. 1 LP biasanya skip ratusan ribu fame. Saran pro: SPECIALISE — fokus LP cuma di 1-2 node (misal: Skinner spec + Hide refining), JANGAN spread tipis ke banyak path. LP regen 1 per 24 jam (Free) atau 1 per 12 jam (Premium)."
+      },
+      {
+        "q": "Server Asia vs Global gimana? Bisa pindah-pindah?",
+        "a": "Albion ada 2 server utama: Albion East (Asia/SEA) dan Albion West (NA/EU). Karakter di server beda terpisah — gak bisa pindah karakter antar server. Asia (East) peak time 13:00-15:00 UTC (21:00 WIB). Kalau kamu di Indonesia, server Asia paling smooth (ping 50-100ms vs West yang 200-300ms)."
+      },
+      {
+        "q": "Berapa lama dari nol sampai T8?",
+        "a": "Tergantung waktu main + spec. Casual player (10-15 jam/minggu): 3-4 bulan ke T8. Hardcore (40+ jam/minggu): 6-8 minggu. Plus Premium kasih +50% fame jadi bisa lebih cepet. Saran: jangan rush ke T8 — enjoy progression di tiap tier. T6-T7 udah cukup buat sebagian besar content."
+      },
+      {
+        "q": "Saya solo player, bisa enjoy Albion gak tanpa guild?",
+        "a": "Bisa, banyak solo player aktif di Albion. Tapi join guild bakal kasih kamu: tax bonus, free knowledge sharing, Mists/Hellgate party, group buying mats. Saran: solo dulu 50 jam, terus join guild casual yang aktif di waktu kamu. Hindari guild ZvZ kalau kamu cuma mau santai gather."
+      },
+      {
+        "q": "Apa beda Yellow Zone, Red Zone, Black Zone?",
+        "a": "Yellow Zone: aman, lose durability aja kalau mati. Red Zone: lose gear kalau dibunuh player (PvP allowed). Black Zone: FULL LOOT bahkan dari mob/environment death, paling tinggi reward dan risk. Pemula PALING enak di Yellow Zone sampai T5-T6. Lihat 🗺️ Zone Types Manual buat detail lengkap."
+      },
+      {
+        "q": "Saya gathering aja tapi mati terus digank, gimana?",
+        "a": "1) Bawa escape kit (Stalker Hood + Royal Shoes + Sticky Potion T4). 2) Gather di Yellow Zone dulu sampai T5. 3) Avoid peak time (13:00-15:00 UTC server Asia). 4) Scout cluster dulu sebelum buka full inventory. 5) Logout safe di tempat tersembunyi kalau ada ganker dekat. Lihat 🛡️ Gank Avoidance Manual buat full guide."
+      },
+      {
+        "q": "Mount mana yang paling worth dibeli pertama kali?",
+        "a": "Riding Horse T3 di kota awal — murah dan kasih kamu speed boost dasar. Setelah T4, target Swiftclaw (faster escape) atau Transport Ox (hauling resource). T6 Direwolf optional, T8 mounts buat veteran. Lihat 🐎 Mount Guide di Beginner Essentials."
+      },
+      {
+        "q": "Food yang wajib buat gathering apa?",
+        "a": "Pork Omelette T4 — paling cocok buat gathering (boost gather yield + extra weight capacity). Pakai sebelum tiap session. Tier lebih tinggi kalau dapet duit lebih. Healing Potion buat emergency, Resurrection Potion WAJIB di BZ. Lihat 🍖 Food & Potion guide buat full list."
+      },
+      {
+        "q": "Saya kena ban / akun di-hijack, gimana?",
+        "a": "Kontak support Albion resmi via support.albiononline.com (response 24-72 jam biasanya). Aktivkan 2FA SEKARANG kalau belum — paling penting buat protect akun. JANGAN share login ke siapapun, termasuk 'GM'/'admin' yang dm kamu (itu scammer)."
+      },
+      {
+        "q": "Daily quest dimana ambil? NPC mana?",
+        "a": "Talk ke NPC Mage di setiap kota Royal (Lymhurst, Fort Sterling, Bridgewatch, Martlock, Thetford). Biasanya berdiri dekat pintu masuk kota atau marketplace. Quest type: gather X resource, kill Y mob, refine Z material. Reward: 30-50k silver + fame + crate. Lihat ⏰ Daily Routine Pro buat detail."
+      },
+      {
+        "q": "Resource paling profitable buat gather sekarang?",
+        "a": "Tergantung kondisi market real-time — cek Albion Data Project. Tapi rule umum: T6-T7 ore selalu tinggi demand (buat T7 gear), refined Plank T6 (Lymhurst specialty) sering profit. Avoid hoard T8 resource kalau belum punya silver buat tunggu market move. Lihat 🧰 Tools & Apps buat link Albion Data Project."
+      },
+      {
+        "q": "Gimana cara dapet silver paling cepet sebagai pemula?",
+        "a": "Newbie progression: 1) Quest line + Adventurer's Challenge (free 100-200k silver). 2) Gathering T4-T5 di Yellow Zone (safe, slow but consistent). 3) Sell at marketplace daily. 4) Refine resource di kota specialty untuk +25% bonus. 5) Hindari beli gear T6+ di awal — focus repair gear T4-T5 dulu."
+      },
+      {
+        "q": "Apakah Albion benar-benar pay-to-win?",
+        "a": "Jawaban jujur: TIDAK. Premium kasih bonus +50% (fame/silver) tapi gak ngerubah kemampuan kamu di-PvP. Skill, knowledge, dan dedication jauh lebih penting. Banyak F2P player rank atas di GvG/Hellgate. Albion adalah game 'skill + time investment' bukan 'pay to win'."
+      }
+    ]
+  },
+
+  "marketplace": {
+    "title": "Marketplace 101",
+    "description": "Marketplace = tempat 80% duit player dihasilkan. Kuasai beda Buy Order vs Sell Order, pajak, dan harga antar kota — ini skill universal yang dipake semua pro.",
+    "labelOrderType": "Jenis Order",
+    "labelHow": "Cara kerjanya",
+    "labelWhen": "Pas kapan dipake",
+    "orders": [
+      {
+        "type": "📤 Sell Order (Pasang Jual)",
+        "how": "Kamu pasang barang di harga kamu. Nunggu di antrian sampe ada yang beli. Pajak lebih tinggi tapi kamu yang nentuin harga.",
+        "when": "Pas punya waktu dan mau profit max. Cocok buat stack resource refined, gear, dan barang langka."
+      },
+      {
+        "type": "📥 Buy Order (Beli Langsung)",
+        "how": "Kamu beli dari Sell Order orang lain di harga mereka. Bayar full price langsung, gak nunggu.",
+        "when": "Pas butuh barang SEKARANG (gear sebelum fight, food sebelum gather). Mahal dikit tapi instant."
+      },
+      {
+        "type": "💼 Jual ke Buy Order (Quick Sell)",
+        "how": "Ada orang yang pasang Buy Order di harga lebih rendah. Kamu jual ke mereka langsung — dapet silver cepet.",
+        "when": "Pas butuh silver SEKARANG gak mau nunggu. Profit kurang tapi instant. Bagus buat clearing inventory."
+      },
+      {
+        "type": "🎯 Pasang Buy Order (Nawar)",
+        "how": "Kamu pasang harga yang kamu mau bayar. Seller yang masuk fulfill di harga kamu. Sabar = untung — kamu yang set rate.",
+        "when": "Pas mau resource bulk murah (misal T6 wood buat crafting). Nunggu berhari-hari tapi hemat 20-30% vs Sell Order."
+      }
+    ],
+    "taxTitle": "Breakdown Pajak Marketplace",
+    "taxHeaders": ["Fee", "Tanpa Premium", "Sama Premium", "Catatan"],
+    "taxRows": [
+      { "fee": "Setup Fee (pasang order)", "free": "1.5%", "premium": "1.5%", "note": "Dibayar pas kamu pasang Sell/Buy Order, terlepas jadi laku atau gak." },
+      { "fee": "Sales Tax (pas laku)", "free": "8%", "premium": "4%", "note": "Premium potong SETENGAH. Alasan utama trader beli Premium." },
+      { "fee": "Total biaya (sell biasa)", "free": "~9.5%", "premium": "~5.5%", "note": "Itung ini ke profit margin kamu SEBELUM listing." }
+    ],
+    "cityTitle": "Arbitrage Antar Kota — Beda Harga",
+    "city": [
+      "💎 Caerleon = demand tertinggi buat hampir semua, tapi risiko travel paling tinggi (akses Black Zone).",
+      "🌲 Lymhurst (Wood) biasanya jual Plank refined paling murah — beli di sini, jual di Caerleon untung +20-30%.",
+      "⛰️ Fort Sterling (Ore) biasanya Stone Block dan Metal Bar murah.",
+      "🌊 Bridgewatch (Stone) resource Stone murah, Hide mahal.",
+      "🍃 Martlock (Hide) Hide dan Leather murah, Fiber mahal.",
+      "🌿 Thetford (Fiber) Fiber dan Cloth murah, Ore mahal.",
+      "📊 Pake Albion Data Project buat cek harga live antar kota SEBELUM travel.",
+      "🚨 Black Market (Caerleon) beli semua T4-T8 gear/consumable — kadang 2-3x harga marketplace. Dapet dari mob loot. Tempat dump gear hasil crafting."
+    ],
+    "tipsTitle": "Tips Marketplace Pro",
+    "tips": [
+      "Jangan pasang di angka bulat (10000). Pasang 9999 — kamu jadi paling depan di antrian.",
+      "Refresh harga tiap 6 jam — market shift harian ngikutin patch news dan aktivitas ZvZ.",
+      "Premium bayar dirinya sendiri kalo trading > 1M silver/minggu. Di bawah itu, free aja udah cukup.",
+      "Jangan panic sell. Kalo harga crash, sabar 2-3 hari — biasanya balik normal.",
+      "Spread gede Caerleon vs Royal? Risiko travel beneran ada. Pake Transport Ox + scout cluster dulu."
+    ]
+  },
+
+  "routine": {
+    "title": "Routine Harian Pro",
+    "description": "Setiap pro Albion punya ritual harian. Ikutin checklist ini tiap login — bahkan 30 menit pun cukup — biar silver, fame, dan progress kompound tanpa burnout.",
+    "checklistTitle": "Daily Login Checklist",
+    "checklist": [
+      { "time": "0:00–0:05", "task": "Claim Login Bonus", "detail": "Silver + tome gratis tiap hari. Klik PALING DULU sebelum apapun." },
+      { "time": "0:05–0:15", "task": "Adventurer's Challenge", "detail": "Buka Challenge UI, claim reward yang available, planning progress hari ini. Weekly chest di 100% — JANGAN PERNAH skip." },
+      { "time": "0:15–0:20", "task": "Daily Quest di NPC", "detail": "Ngobrol sama Mage NPC di kota. 1 daily quest = silver gratis 30-50k + fame + loot crate." },
+      { "time": "0:20–0:25", "task": "Repair Gear & Restock", "detail": "Cek durability gear. Refill food, potion, dan ammo di marketplace sebelum keluar kota." },
+      { "time": "0:25–0:35", "task": "Aktifkan Fame Boost", "detail": "Makan Pork Omelette (atau yang lebih tinggi) dan minum potion Healing/Resurrection. Premium dapet +50% fame buff selama window ini." },
+      { "time": "0:35–2:00+", "task": "Main Activity Block", "detail": "Gather/PvE/PvP main money-maker kamu. Stay di SATU aktivitas — switching context boros efisiensi." },
+      { "time": "Akhir sesi", "task": "Bank Semua", "detail": "Setor silver, refined resource, dan barang langka. JANGAN log off bawa barang berharga di inventory kalo sesi berikutnya bisa berhari-hari." },
+      { "time": "Weekly", "task": "Weekly Activity Check", "detail": "Minggu: complete weekly Adventurer's Challenge chest (silver + tome banyak). Cek kontribusi guild. Jual mats yang ditimbun." },
+      { "time": "Bonus Harian", "task": "Faction Warfare Quest", "detail": "Kalo lagi di faction (kota Royal), ambil 1 faction quest. 5 menit, free reputation token + silver." },
+      { "time": "Optional", "task": "Mist Run (T7+)", "detail": "Kalo ada waktu, masuk Mist 30 menit. Solo content = PvP gathering santai. Reset tiap 24 jam." }
+    ],
+    "weeklyTitle": "Goals Weekly (Reset Minggu/Senin)",
+    "weekly": [
+      "Complete weekly chest Adventurer's Challenge (reward tome+silver gede).",
+      "Refine minimal 1 batch resource buat specialty bonus (rotasi kota).",
+      "Jual gear/resource yang ditimbun di marketplace (jangan timbun > 2 minggu).",
+      "Cek Murder Ledger buat ganker baru di zone kamu.",
+      "Patch day check: baca patch notes buat perubahan build meta."
+    ],
+    "burnoutTitle": "Hindari Burnout",
+    "burnout": [
+      "Jangan coba SEMUA aktivitas dalam 1 sesi. Pilih 1-2 aktivitas dan eksekusi dengan baik.",
+      "Libur 1 hari/minggu — karakter kamu gak rugi apa-apa kalo istirahat.",
+      "Kalo frustrasi > 30 menit, log off aja. Mood jelek = decision jelek = gear hilang.",
+      "Pake Sticky Notes atau reminder HP buat ambil daily quest — gampang lupa.",
+      "Set goal weekly silver/fame, bukan 'main tiap hari'. Quality > quantity."
+    ]
+  },
+
+  "premium": {
+    "title": "Itungan Premium",
+    "description": "Harus beli Premium gak? Banyak pemula overpay atau skip pas sebenernya harus. Berikut itungan beneran, dipecah — putusin berdasarkan KOMITMEN kamu, bukan hype.",
+    "benefitsTitle": "Apa Premium Beneran Kasih Kamu",
+    "benefitsHeaders": ["Benefit", "Tanpa Premium", "Sama Premium", "Impact Nyata"],
+    "benefits": [
+      { "benefit": "Fame Gain", "free": "100%", "premium": "+50%", "impact": "T6 → T7 = ~40 jam vs 60 jam. Gede banget di grind panjang." },
+      { "benefit": "Silver Loot Drop", "free": "100%", "premium": "+50%", "impact": "Yang paling under-rated. Solo gathering = +50% silver per sesi." },
+      { "benefit": "Pajak Marketplace", "free": "8%", "premium": "4%", "impact": "Setengah! Sale 1M silver: hemat 40k silver/sale. Gede buat trader." },
+      { "benefit": "Island Plot", "free": "Tier 1 doang", "premium": "Tier 1–6", "impact": "Island gede = lebih banyak farm slot, mount, crafting station." },
+      { "benefit": "Refining Speed", "free": "Standard", "premium": "+50%", "impact": "Refine 100 batch dalam 1 jam bukan 1.5 jam. Waktu yang dihemat kompound." },
+      { "benefit": "Crafting Focus", "free": "Regen standard", "premium": "+50% regen", "impact": "Focus = barang crafting gratis. Focus lebih banyak = profit lebih." },
+      { "benefit": "Slot Marketplace", "free": "5 slot", "premium": "15 slot", "impact": "3x lebih banyak order = 3x lebih banyak passive income buat trader." }
+    ],
+    "costTitle": "Cost & Threshold Worth-It",
+    "cost": [
+      "🪙 Beli Premium pake Gold (in-game): ~10 hari = 1500 gold ≈ 200-300k silver tergantung rate.",
+      "💵 Beli Premium pake duit asli: $9.99 USD/bulan (atau lebih murah lewat bundle 3/6/12 bulan).",
+      "⏰ Premium AKTIF SELALU 24h/7d — bonus fame & silver tetep jalan walau AFK di Island.",
+      "💡 Rule of Thumb: Kalo main > 20 jam/minggu → Premium bayar dirinya sendiri lewat bonus fame + silver."
+    ],
+    "scenariosTitle": "Premium WORTH IT Kalo",
+    "scenariosYes": [
+      "✅ Main > 20 jam/minggu — bonus fame doang udah cover cost.",
+      "✅ Trading > 1M silver/minggu — pajak setengah bayar dirinya.",
+      "✅ Lagi grinding ke T7-T8 — hemat puluhan jam.",
+      "✅ Aktif pake Focus crafting — +50% focus regen GEDE BANGET.",
+      "✅ Mau plot Island T2-T6 buat income farm/laborer."
+    ],
+    "scenariosNoTitle": "Premium GAK WORTH IT Kalo",
+    "scenariosNo": [
+      "❌ Main < 10 jam/minggu — bonus gak cukup kompound.",
+      "❌ Lagi nyobain game (50 jam pertama).",
+      "❌ Cuma PvP atau solo Mist santai — gak interaksi ekonomi.",
+      "❌ Belum yakin lanjut main — tunggu 50 jam gameplay dulu."
+    ],
+    "tipsTitle": "Strategi Premium yang Pintar",
+    "tips": [
+      "Mulai dari 10 hari (1500 gold) DULU — test apakah bonus beneran ngaruh.",
+      "Bulk-buy 6 atau 12 bulan dapet diskon 10-20% KALO udah main 100+ jam.",
+      "Jangan ketipu propaganda 'Premium = wajib'. F2P pure tetep viable buat casual.",
+      "Convert silver → gold → Premium = jalur F2P murni. Itung harga gold vs value silver dulu.",
+      "Premium = QoL boost, bukan pay-to-win. Bisa compete tanpa Premium kalo main pinter."
+    ]
+  },
+
+  "tools": {
+    "title": "Tools & Apps (Pro Toolkit)",
+    "description": "Setiap pro Albion pake tools ini. Bookmark semua — ngerubah usaha mentah jadi main pinter.",
+    "labelCategory": "Kategori",
+    "labelOpen": "Buka",
+    "items": [
+      {
+        "name": "Albion Online Data Project",
+        "url": "https://www.albion-online-data.com/",
+        "category": "Data Market",
+        "description": "Harga marketplace real-time semua server. Bandingin buy/sell order, hitung profit margin, cari peluang arbitrage."
+      },
+      {
+        "name": "AlbionMap2D",
+        "url": "https://albiononline2d.com/",
+        "category": "Map",
+        "description": "Map interaktif dengan overlay resource, spot dungeon, lokasi portal. Wajib buat planning rute gather."
+      },
+      {
+        "name": "Murder Ledger",
+        "url": "https://murderledger.com/",
+        "category": "Tracker Pemain",
+        "description": "Cek history PvP, stat kill, dan gear umum player manapun. Bisa cek apakah player yang 'ramah' ternyata ganker terkenal."
+      },
+      {
+        "name": "Albion Online Wiki",
+        "url": "https://wiki.albiononline.com/",
+        "category": "Referensi",
+        "description": "Wiki resmi — setiap item, mob, skill, mekanik dijelasin lengkap. Tempat pertama buat pertanyaan 'ini apa sih?'"
+      },
+      {
+        "name": "Galahad's Map",
+        "url": "https://galahadmaps.com/",
+        "category": "Map",
+        "description": "Map Outlands alternatif dengan koneksi cluster, tracking Roads of Avalon, dan portal Mist."
+      },
+      {
+        "name": "Discord Resmi Albion",
+        "url": "https://discord.gg/albiononline",
+        "category": "Komunitas",
+        "description": "Discord komunitas resmi. News, patch notes, recruitment guild, Q&A dev. Pin notif buat hari patch."
+      },
+      {
+        "name": "r/albiononline (Reddit)",
+        "url": "https://www.reddit.com/r/albiononline/",
+        "category": "Komunitas",
+        "description": "Subreddit dengan build guide, analisis market, diskusi patch, dan screenshot. Search dulu sebelum nanya."
+      },
+      {
+        "name": "AlbionStatus",
+        "url": "https://www.albiononline.com/en/status",
+        "category": "Status Server",
+        "description": "Halaman status server resmi. Cek dulu sebelum login kalau ada downtime, lag, atau maintenance terjadwal."
+      }
+    ]
+  },
+  "guides": {
+    "title": "Panduan Progresi Pemain",
+    "description": "Step-by-step dari jam pertama main sampai end-game farming. Pilih fase yang sesuai progress kamu sekarang.",
+    "labelGoal": "Tujuan",
+    "labelActivities": "Aktivitas Utama",
+    "labelEquipment": "Gear / Perlengkapan",
+    "labelTips": "Tips Penting",
+    "beginner": {
+      "tag": "FASE 1",
+      "title": "Pemula (Beginner)",
+      "hours": "0 – 50 jam",
+      "goal": "Belajar kontrol dasar, level up Destiny Board, dan farm resource T2–T4 di zona aman Royal Continent sekitar kota start kamu.",
+      "activities": [
+        "Selesain tutorial dan quest awal di kota start",
+        "Farm dan crafting di Blue Zone (gak ada full-loss PvP)",
+        "Pakai map in-game: ikon kapak = wood, pickaxe = ore, sickle = fiber, knife = hide, hammer = stone",
+        "Pindah ke hub Royal pilihan: Lymhurst, Fort Sterling, Bridgewatch, Martlock, atau Thetford",
+        "Pakai Learning Points (LP) buat SATU cabang gathering aja biar cepet sampe T6"
+      ],
+      "equipment": [
+        "Gathering Tool sesuai tier: T3 Adept's di level ~30, T4 Adept's enchant .1 di ~50",
+        "Adept's Bag (T4) sama Adept's Cape (T4) — nambah slot inventory",
+        "Adept's Riding Horse (mount T3) — murah, lebih cepet dari jalan kaki",
+        "Pork Omelette — buff load capacity buat resource berat",
+        "Minor Healing Potion + Resurrection Potion di slot konsumabel"
+      ],
+      "tips": [
+        "JANGAN beli Premium sebelum paham gameplay loop — cobain free trial dulu",
+        "Stay di Blue / Yellow zone — Blue = gak ada loss, Yellow = cuma durability damage",
+        "Fokus LP ke SATU line gathering (misal Lumberjack aja) — specialization > sebar tipis",
+        "Beli Backpack of Insight dari Adventurer's Challenge buat silver harian",
+        "Prime time server Asia 13:00–15:00 UTC — gather off-peak (21:00–09:00 UTC) biar kompetisi rendah"
+      ]
+    },
+    "midgame": {
+      "tag": "FASE 2",
+      "title": "Mid Game",
+      "hours": "50 – 300 jam",
+      "goal": "Push satu cabang gathering ke T6, mulai farm Red Zone, masuk Black Zone tepi, dan belajar pasar.",
+      "activities": [
+        "Farm T5 di Red Zone (kompetisi lebih sepi dibanding Black Zone)",
+        "Cobain Mists (solo) atau Avalonian Roads buat gathering dengan escape cepet",
+        "Gabung guild kecil, group gather ke Black Zone T6",
+        "Refine resource mentah sendiri di kota matching biome buat dapet city bonus",
+        "Main Hellgates 2v2 / 5v5 grup buat silver, fame, sama gear meta"
+      ],
+      "equipment": [
+        "Gathering Tool T5 / T6 dengan enchant .1 / .2 — yield bonus per node",
+        "Mercenary Jacket — cast Heroic Charge ke diri sendiri buat resistance + speed",
+        "Stalker Hood (invis solo) ATAU Hunter Hood (cleanse + mana)",
+        "Assassin Shoes — Ambush sprint reset buat lari dari ganker",
+        "Mount Swiftclaw atau Direwolf (T5 / T6) — speed terbaik di harga segini",
+        "Resurrection Mage Potion + Sticky Potion — auto-revive + slow chaser",
+        "Beef Sandwich — buff resistance flat"
+      ],
+      "tips": [
+        "Spesialisasi SATU resource sampe T6 dulu sebelum buka cabang kedua",
+        "SELALU bawa escape gear di slot weapon kedua (Q-swap)",
+        "Jual resource mentah di kota matching biome (demand tertinggi → Lymhurst buat wood, Fort Sterling buat ore, dst.)",
+        "Hindari Black Zone solo waktu 13:00–15:00 UTC peak — pergi malem (21:00 UTC+)",
+        "Cek Killboard sebelum masuk Black Zone baru — liat siapa yang aktif di sana"
+      ]
+    },
+    "endgame": {
+      "tag": "FASE 3",
+      "title": "End Game",
+      "hours": "300+ jam",
+      "goal": "Farm T7–T8 di Black Zone dalam buat profit maksimal, kontribusi ke guild (ZvZ / Crystal League), dan kuasai meta.",
+      "activities": [
+        "Group gathering di territory Watchtower / Castle bareng guild",
+        "Solo atau duo gather di Mists / Avalonian Roads buat exit cepet",
+        "Refine T8 pake Focus buat ROI gede — jangan jual mentah kalau punya Focus",
+        "Main Mist Boss, Avalonian Dungeon, atau Crystal League buat loot premium",
+        "Pakai alt scout / spotter di world map buat early warning gank"
+      ],
+      "equipment": [
+        "Full T7 / T8 gathering set dengan enchant .3 / .4 — affordable di mid-end",
+        "Stalker Hood (solo) ATAU Specter Hood (group invis buat team gathering)",
+        "Mercenary Jacket ATAU Stalker Jacket (Q sprint reset)",
+        "Royal Boots (stamina + speed) ATAU Assassin Shoes (Ambush burst)",
+        "Mount: Saddled Eagle (hop server), Direwolf (combat), atau Spectral Bonehorse (top speed)",
+        "Major Healing Potion + Resurrection Mage Potion + Frost Bomb (CC escape instant)",
+        "Pork Omelette (load) + Wisdom of the Sphinx (focus boost buat refining)"
+      ],
+      "tips": [
+        "Jangan solo T8 waktu 13:00–15:00 UTC — densiti ganker di Asia ekstrem",
+        "Spot Watchtower / Castle T8 cuma buat guild — pergi grup atau siap mati",
+        "Refine T8 pake Focus → 5–20× silver dibanding jual mentah",
+        "Selalu punya rencana pulang: mount + escape gear + lokasi portal kota",
+        "Bawa 1× Invisibility Potion cadangan — kombo sama Stalker Hood = double escape"
+      ]
+    }
+  },
+  "professions": {
+    "title": "Profesi Gathering",
+    "description": "Pilih satu profesi di Destiny Board. Tiap profesi punya bioma, tool, spot Royal (T2–T6), dan spot Outlands (T7–T8) sendiri.",
+    "labelResource": "Resource",
+    "labelHub": "Kota Hub",
+    "labelBiomes": "Bioma Terbaik",
+    "labelTools": "Tool per Tier",
+    "labelToolName": "Tool",
+    "labelRoyalSpots": "Spot Royal Continent (T2–T6)",
+    "labelOutlandsSpots": "Spot Outlands (T7–T8)",
+    "labelTips": "Tips",
+    "overview": {
+      "title": "Ringkasan Gatherer",
+      "description": "Gatherer adalah tulang punggung ekonomi Albion. Setiap senjata, armor, dan consumable mulai dari raw material. Pilih satu cabang di Destiny Board, level up tool-nya, dan pilih bioma yang pas.",
+      "points": [
+        "Spesialisasi SATU cabang sampe T6 sebelum buka cabang kedua",
+        "Bonus yield per tier dari Destiny Board (Tracking, Stealthy Collector, dll.)",
+        "Tool tier lebih tinggi = clearing cluster lebih cepet + chance enchanted node",
+        "Matching bioma ke resource buat yield maksimal (Forest = Wood terbaik, Mountain = Ore terbaik)",
+        "Resource enchanted T5+ dijual 5–20× harga raw tier"
+      ]
+    },
+    "lumberjack": {
+      "name": "Lumberjack (Penebang Kayu)",
+      "tagline": "Tebang kayu di bioma Forest, Highland, sama Swamp.",
+      "royalSpots": [
+        { "tier": "T2", "zoneType": "Blue", "zone": "Zona kandang Lymhurst (Boarwood, Wildwood)" },
+        { "tier": "T3", "zoneType": "Blue", "zone": "Three-Tree Hill, Northway" },
+        { "tier": "T4", "zoneType": "Yellow", "zone": "Wildleaf, Bracken Way" },
+        { "tier": "T5", "zoneType": "Red", "zone": "Lupus Glade, Whitebough" },
+        { "tier": "T6", "zoneType": "Red (dalam)", "zone": "Bridgeoak, Holdwood (T6 di Royal terbatas — kebanyakan di BZ)" }
+      ],
+      "outlandsSpots": [
+        { "tier": "T7", "zoneType": "Black Zone", "zone": "Whitebank Ridge, Highbole Glen" },
+        { "tier": "T8", "zoneType": "Black Zone", "zone": "Whitebank Wall, Timberscar Dell" }
+      ],
+      "tips": [
+        "Pas banget sama Lymhurst (Forest) — refine wood di sana dapet city bonus",
+        "Pake Stalker Hood buat escape instant — spot wood sering diincer",
+        "Log itu resource PALING berat — Pork Omelette + bag/cape max tier wajib",
+        "Wood T7-T8 biasanya di Forest BZ — pergi bareng guild ya",
+        "Jual planks (refined) di Lymhurst Black Market buat profit maksimal"
+      ]
+    },
+    "oreMiner": {
+      "name": "Ore Miner (Penambang)",
+      "tagline": "Tambang bijih di bioma Mountain sama Highland.",
+      "royalSpots": [
+        { "tier": "T2", "zoneType": "Blue", "zone": "Zona kandang Fort Sterling (Stoneway, Mountain Cross)" },
+        { "tier": "T3", "zoneType": "Blue", "zone": "Driftwood Hills, Coalfist" },
+        { "tier": "T4", "zoneType": "Yellow", "zone": "Frostback Hills, Steepsides" },
+        { "tier": "T5", "zoneType": "Red", "zone": "Iceworth Cleft, Snowscree" },
+        { "tier": "T6", "zoneType": "Red (dalam)", "zone": "Frostpeak Tundra (T6 di Royal langka)" }
+      ],
+      "outlandsSpots": [
+        { "tier": "T7", "zoneType": "Black Zone", "zone": "Shaleheath Hills, Birken Fell" },
+        { "tier": "T8", "zoneType": "Black Zone", "zone": "Blackthorn Quarry, Munten Fell" }
+      ],
+      "tips": [
+        "Fort Sterling refine ore dengan city bonus",
+        "T8 Meteorite Ore = silver mentah tertinggi dari semua resource",
+        "Bioma Mountain itu open / kebuka — Stalker Hood wajib siap",
+        "Pair sama Knight set (Tank build) — zona ore sering dikampung",
+        "Pakai Cleric Robe buat cleanse debuff focus drain dari ganker"
+      ]
+    },
+    "skinner": {
+      "name": "Skinner (Penguliti)",
+      "tagline": "Kuliti hewan di bioma Steppe, Forest, sama Highland.",
+      "royalSpots": [
+        { "tier": "T2", "zoneType": "Blue", "zone": "Zona kandang Bridgewatch (Sandwall, Mistwater Steppe)" },
+        { "tier": "T3", "zoneType": "Blue", "zone": "Sands of Sun, Driftwood Steppe" },
+        { "tier": "T4", "zoneType": "Yellow", "zone": "Sandbend, Skullcove" },
+        { "tier": "T5", "zoneType": "Red", "zone": "Sunbear Outback, Sandborne" },
+        { "tier": "T6", "zoneType": "Red (dalam)", "zone": "Sandfall Outback (T6 Royal terbatas)" }
+      ],
+      "outlandsSpots": [
+        { "tier": "T7", "zoneType": "Black Zone", "zone": "Sandrift Dunes, Dryvein Oasis" },
+        { "tier": "T8", "zoneType": "Black Zone", "zone": "Sandmount Ascent, Sandmount Desert" }
+      ],
+      "tips": [
+        "Bridgewatch refine hide dengan city bonus",
+        "Skinning hewan masuk ke Killing Track juga — double fame XP",
+        "T8 Direwolf Hide → armor tank end-game (Royal Plate, Specter Jacket)",
+        "Steppe itu terrain TERBUKA — gampang liat musuh tapi gak ada cover buat lari",
+        "Hide berat sedang — Master's Bag udah cukup"
+      ]
+    },
+    "stoneQuarrier": {
+      "name": "Stone Quarrier (Pemecah Batu)",
+      "tagline": "Pecah batu di bioma Highland sama Mountain.",
+      "royalSpots": [
+        { "tier": "T2", "zoneType": "Blue", "zone": "Zona kandang Martlock (Highbridge, Highstead)" },
+        { "tier": "T3", "zoneType": "Blue", "zone": "Mosshollow, Mosswater" },
+        { "tier": "T4", "zoneType": "Yellow", "zone": "Bracken Lurch, Vested Heath" },
+        { "tier": "T5", "zoneType": "Red", "zone": "Munten Heath, Heretic's Highbluff" },
+        { "tier": "T6", "zoneType": "Red (dalam)", "zone": "Maelstrom Pass" }
+      ],
+      "outlandsSpots": [
+        { "tier": "T7", "zoneType": "Black Zone", "zone": "Frostpeak Ascent, Whitepeak Tundra" },
+        { "tier": "T8", "zoneType": "Black Zone", "zone": "Everwinter Peak, Glacierfall Valley" }
+      ],
+      "tips": [
+        "Martlock refine stone dengan city bonus",
+        "Stone kompetisi PvP PALING rendah — profesi terbaik buat solo Asia",
+        "T8 Adamantium Stone dipakai buat bangunan crafting tertinggi",
+        "Stone resource paling berat kedua — Pork Omelette + bag tier ekstra wajib",
+        "Zona Highland ada Shrines (buff yield / speed) waktu gather"
+      ]
+    },
+    "fiberHarvester": {
+      "name": "Fiber Harvester (Pemanen Serat)",
+      "tagline": "Panen serat di bioma Swamp sama Steppe.",
+      "royalSpots": [
+        { "tier": "T2", "zoneType": "Blue", "zone": "Zona kandang Thetford (Greenfen, Thetford Vale)" },
+        { "tier": "T3", "zoneType": "Blue", "zone": "Lonewood, Wisp Mire" },
+        { "tier": "T4", "zoneType": "Yellow", "zone": "Greenpaw Vale, Black Spore" },
+        { "tier": "T5", "zoneType": "Red", "zone": "Drownfield Marsh, Wisp Lurch" },
+        { "tier": "T6", "zoneType": "Red (dalam)", "zone": "Sluggish Mire, Lonewood Fen" }
+      ],
+      "outlandsSpots": [
+        { "tier": "T7", "zoneType": "Black Zone", "zone": "Drownfield Mire, Wispwhisper Marsh" },
+        { "tier": "T8", "zoneType": "Black Zone", "zone": "Willow Wood, Nightcreak Marsh" }
+      ],
+      "tips": [
+        "Thetford refine cloth dengan city bonus",
+        "T8 Ghoul Yarrow → Robe of Purity sama armor cloth end-game",
+        "Fiber resource PALING ringan — bawa bag max / silver bag",
+        "Pakai Cleric Robe (Purge) buat cleanse root mob di rawa",
+        "Hati-hati ambush mob (ular, sulur) — mereka slow kamu buat ganker"
+      ]
+    },
+    "fisherman": {
+      "name": "Fisherman (Pemancing)",
+      "tagline": "Mancing di danau, kolam, sama sungai semua bioma.",
+      "hub": "Caerleon (Black Market terbaik buat ikan rare) atau kota mana aja yang ada air",
+      "royalSpots": [
+        { "tier": "T3–T4", "zoneType": "Blue / Yellow", "zone": "Sungai Royal Continent deket kota starter mana aja" },
+        { "tier": "T5", "zoneType": "Yellow / Red", "zone": "Danau besar sekitar portal Royal" },
+        { "tier": "T6", "zoneType": "Red (dalam)", "zone": "Danau zona dalam Royal (spawn terbatas)" }
+      ],
+      "outlandsSpots": [
+        { "tier": "T7", "zoneType": "Black Zone", "zone": "Danau BZ mid-depth (loot Hooked Box)" },
+        { "tier": "T8", "zoneType": "Black Zone (dalam)", "zone": "Danau BZ dalam — ikan rare + treasure chest" }
+      ],
+      "tips": [
+        "Fishing rod itu 1-handed — pair sama Bag (off-hand) buat load maksimal",
+        "Pakai Bait (di-craft dari ikan tangkapan) buat catch tier lebih tinggi",
+        "Spot refresh — geser-geser, jangan kemping satu tile",
+        "Risiko ganker PALING rendah dari semua profesi — bagus buat solo",
+        "Caerleon Black Market beli ikan rare (Specter Carp, dll.) buat silver gede"
+      ]
+    },
+    "tools": {
+      "t2": {
+        "axe": "Journeyman's Axe",
+        "pickaxe": "Journeyman's Pickaxe",
+        "skinning": "Journeyman's Skinning Knife",
+        "stonehammer": "Journeyman's Stone Hammer",
+        "sickle": "Journeyman's Sickle"
+      },
+      "t3": {
+        "axe": "Journeyman's Axe (T3 enchant)",
+        "pickaxe": "Journeyman's Pickaxe (T3)",
+        "skinning": "Journeyman's Skinning Knife (T3)",
+        "stonehammer": "Journeyman's Stone Hammer (T3)",
+        "sickle": "Journeyman's Sickle (T3)",
+        "fishingrod": "Journeyman's Fishing Rod"
+      },
+      "t4": {
+        "axe": "Adept's Axe",
+        "pickaxe": "Adept's Pickaxe",
+        "skinning": "Adept's Skinning Knife",
+        "stonehammer": "Adept's Stone Hammer",
+        "sickle": "Adept's Sickle",
+        "fishingrod": "Adept's Fishing Rod"
+      },
+      "t5": {
+        "axe": "Expert's Axe",
+        "pickaxe": "Expert's Pickaxe",
+        "skinning": "Expert's Skinning Knife",
+        "stonehammer": "Expert's Stone Hammer",
+        "sickle": "Expert's Sickle",
+        "fishingrod": "Expert's Fishing Rod"
+      },
+      "t6": {
+        "axe": "Master's Axe",
+        "pickaxe": "Master's Pickaxe",
+        "skinning": "Master's Skinning Knife",
+        "stonehammer": "Master's Stone Hammer",
+        "sickle": "Master's Sickle",
+        "fishingrod": "Master's Fishing Rod"
+      },
+      "t8": {
+        "axe": "Elder's Axe",
+        "pickaxe": "Elder's Pickaxe",
+        "skinning": "Elder's Skinning Knife",
+        "stonehammer": "Elder's Stone Hammer",
+        "sickle": "Elder's Sickle",
+        "fishingrod": "Elder's Fishing Rod"
+      }
+    }
   },
   "builds": {
-    "title": "⚔️ Rekomendasi Build Pengumpul",
-    "description": "Optimalkan perlengkapan Anda untuk efisiensi dan keamanan maksimal saat mengumpulkan sumber daya T8.",
-    "solo": "Pengumpul Solo (Kecepatan)",
-    "tank": "Pengumpul Tank (Aman)",
-    "balanced": "Pengumpul Seimbang",
-    "typeSolo": "Solo/Cepat",
-    "typeGroup": "Grup/Aman",
+    "title": "Rekomendasi Build Gathering (Meta 2026)",
+    "description": "Optimalin gear sesuai meta Albion terbaru. Speed-escape buat solo, tanky buat grup, balanced buat fleksibel.",
+    "solo": "Solo Gatherer (Speed Escape)",
+    "tank": "Tank Gatherer (Grup / Defense)",
+    "balanced": "Gatherer Balanced",
+    "typeSolo": "Solo / Cepet",
+    "typeGroup": "Grup / Aman",
     "typeVersatile": "Serbaguna"
   },
   "biomes": {
     "title": "Distribusi Bioma",
-    "description": "Setiap kota mengkhususkan diri pada sumber daya yang berbeda. Pilih lokasi pengumpulan Anda berdasarkan apa yang Anda butuhkan.",
-    "primaryResource": "Sumber Daya Utama",
+    "description": "Tiap kota Royal punya spesialisasi resource beda. Pilih hub farming kamu sesuai resource yang dibutuhin.",
+    "primaryResource": "Resource Utama",
     "secondaryResource": "Sekunder",
     "tertiaryResource": "Tersier"
   },
   "biome_names": {
-    "swamp": "Rawa (Swamp)",
-    "forest": "Hutan (Forest)",
-    "mountain": "Gunung (Mountain)",
-    "highland": "Dataran Tinggi (Highland)",
-    "steppe": "Stepa (Stepe)"
+    "swamp": "Swamp (Rawa)",
+    "forest": "Forest (Hutan)",
+    "mountain": "Mountain (Gunung)",
+    "highland": "Highland (Dataran Tinggi)",
+    "steppe": "Steppe (Stepa)"
   },
   "biome_descriptions": {
-    "swamp": "Rawa mistis dengan sumber daya serat (fiber) yang melimpah dan bahaya tersembunyi di kabut.",
-    "forest": "Hutan kuno penuh dengan pohon menjulang dan sumber daya kayu yang kaya.",
-    "mountain": "Puncak megah dengan deposit bijih (ore) bercahaya dan medan berbahaya.",
-    "highland": "Dataran tinggi berbatu dengan batu melimpah dan deposit mineral berharga.",
-    "steppe": "Padang luas di mana pemburu mengumpulkan kulit (hide) dan serat di bawah matahari terbenam."
+    "swamp": "Rawa mistis penuh resource fiber dan bahaya tersembunyi di kabut.",
+    "forest": "Hutan tua penuh pohon menjulang dan resource wood melimpah.",
+    "mountain": "Puncak megah dengan deposit ore berkilau dan medan susah.",
+    "highland": "Dataran tinggi berbatu dengan stone melimpah dan deposit mineral berharga.",
+    "steppe": "Padang luas tempat hunter ngumpulin hide dan fiber di bawah matahari terbenam."
   },
   "tiers": {
-    "title": "Panduan Perkembangan Tier",
-    "description": "Pelajari strategi terbaik untuk setiap level tier, dari zona pemula yang aman hingga Outlands T8 yang berbahaya.",
+    "title": "Panduan Progresi Tier",
+    "description": "Strategi terbaik per tier — dari zona pemula Royal yang aman sampe T8 Outlands yang bahaya.",
     "location": "Lokasi",
     "zoneType": "Tipe Zona",
-    "resources": "Sumber Daya Tersedia",
-    "tips": "Tips Pro",
+    "resources": "Resource Tersedia",
+    "tips": "Pro Tips",
     "danger": "Bahaya",
     "safe": "Aman",
     "moderate": "Sedang",
-    "dangerous": "Berbahaya",
+    "dangerous": "Bahaya",
     "tier1": {
       "location": "Zona Pemula (Royal Continent)",
-      "zoneType": "Zona Biru",
+      "zoneType": "Blue Zone",
       "tips": [
-        "Fokus pada peningkatan level alat pengumpul dengan cepat",
-        "Gunakan Learning Points untuk mempercepat perkembangan",
-        "Jangan habiskan terlalu banyak waktu di sini - pindah ke T2-T3 sesegera mungkin"
+        "Fokus level up gathering tool cepet — Journeyman → Adept",
+        "Pakai Learning Points (LP) biar progress Destiny Board lebih cepet",
+        "Jangan kelamaan di sini — push T3-T4 dalam beberapa jam pertama"
       ]
     },
     "tier4": {
-      "location": "Royal Continent - Zona Kuning & Merah",
-      "zoneType": "Zona Kuning/Merah",
+      "location": "Royal Continent — Yellow & Red Zone",
+      "zoneType": "Yellow / Red Zone",
       "tips": [
-        "Zona merah menawarkan hasil sumber daya yang lebih baik tetapi risiko lebih tinggi",
-        "Selalu gunakan Pork Pie untuk meningkatkan kapasitas angkut",
-        "Pertimbangkan perlengkapan pengumpul untuk bonus hasil"
+        "Red zone yield lebih tinggi tapi bisa lose gear — bawa cadangan",
+        "Selalu pakai Pork Omelette buat max carry capacity",
+        "Gathering set (Hellion / Hunter) kasih yield bonus — pake ini waktu gather"
       ]
     },
     "tier6": {
-      "location": "Outlands - Zona Hitam",
-      "zoneType": "Zona Hitam",
+      "location": "Outlands — Black Zone (tepi)",
+      "zoneType": "Black Zone",
       "tips": [
-        "Gunakan Invisibility Shrines untuk bepergian aman ke zona yang lebih dalam",
-        "Kumpulkan selama jam-jam sepi untuk menghindari ganker",
-        "Selalu rencanakan rute pelarian"
+        "Pakai Invisibility Shrine buat travel aman ke zona dalam",
+        "Farm off-peak (21:00–09:00 UTC) di server Asia biar gak ada ganker",
+        "Selalu rencanain escape route SEBELUM masuk — catet portal terdekat"
       ]
     },
     "tier7": {
-      "location": "Outlands - Zona Hitam Dalam",
-      "zoneType": "Zona Hitam",
+      "location": "Outlands — Black Zone Dalam",
+      "zoneType": "Black Zone",
       "tips": [
-        "Pertimbangkan pengumpulan di Gold Mists untuk pemain solo",
-        "Gunakan Roads of Avalon untuk pengumpulan grup",
-        "Kompetisi tinggi - waktu adalah kunci"
+        "Gold Mists oke buat solo T7 dengan exit cepet",
+        "Avalonian Roads → group gathering dengan koneksi map random",
+        "Kompetisi tinggi — pre-21:00 UTC waktunya grup guild jalan"
       ]
     },
     "tier8": {
-      "location": "Outlands - Zona Hitam Terdalam",
-      "zoneType": "Zona Hitam",
+      "location": "Outlands — Black Zone Terdalam",
+      "zoneType": "Black Zone",
       "tips": [
-        "Wilayah Watchtower adalah sumber T8 terbaik",
-        "Kumpulkan dengan dukungan guild atau di tempat tersembunyi",
-        "Harapkan kompetisi ekstrem dan bahaya konstan",
-        "Gunakan perlengkapan premium dan mount untuk kelangsungan hidup"
+        "Territory Watchtower / Castle = sumber T8 terbaik — butuh guild",
+        "Farm bareng guild backup atau di spot tersembunyi (corner map off-meta)",
+        "Siap kompetisi ekstrem sama gank attempt terus-terusan",
+        "Gear T8 .3/.4 + Specter/Stalker Hood + escape kit wajib"
       ]
     }
   },
   "t8Maps": {
-    "title": "Lokasi Pengumpulan T8",
-    "description": "Nama peta spesifik untuk setiap tipe sumber daya di Outlands (Zona Hitam). Ini adalah spot pengumpulan paling berharga.",
-    "fiber": "Serat (Fiber)",
-    "wood": "Kayu (Wood)",
-    "hide": "Kulit (Hide)",
-    "stone": "Batu (Stone)",
-    "ore": "Bijih (Ore)"
+    "title": "Lokasi Farming T8 (Outlands Black Zone)",
+    "description": "Nama map Outlands spesifik buat tiap resource T8. Spot paling berharga — juga paling diperebutin.",
+    "fiber": "Fiber",
+    "wood": "Wood",
+    "hide": "Hide",
+    "stone": "Stone",
+    "ore": "Ore"
   },
   "events": {
-    "title": "📅 Jadwal & Event Server Asia",
-    "description": "Event penting dan pengaturan waktu untuk aktivitas pengumpulan di server Asia.",
+    "title": "Event & Jadwal Server Asia",
+    "description": "Event penting sama timing buat farming di server Asia (Albion East).",
     "worldBoss": "Spawn World Boss",
-    "worldBossDesc": "World Boss muncul setiap jam genap UTC (00:00, 02:00, 04:00, dst) di server Asia untuk menghindari bentrokan maintenance.",
-    "worldBossNote": "Peluang pengumpulan risiko tinggi, imbalan tinggi",
-    "primeTime": "Waktu Puncak Asia",
-    "primeTimeDesc": "Periode aktivitas puncak untuk PvP dan aktivitas guild. Bahaya ekstrem di zona hitam.",
-    "primeTimeNote": "Waktu terbaik untuk pengumpulan grup dengan perlindungan guild",
-    "dangerWindow": "Jendela Bahaya Puncak",
-    "dangerWindowDesc": "Konsentrasi tertinggi ganker dan pemain PvP. Hindari pengumpulan solo di zona hitam.",
-    "dangerWindowNote": "Tetap di zona biru/kuning atau mengumpul dengan grup",
+    "worldBossDesc": "World Boss spawn tiap jam genap (00:00, 02:00, 04:00, dst.) di server Asia buat hindari bentrok maintenance.",
+    "worldBossNote": "Risiko tinggi, reward gede — bawa grup",
+    "primeTime": "Asia Prime Time",
+    "primeTimeDesc": "Aktivitas PvP & guild puncak. Black Zone ekstrem bahaya — paling oke main grup guild.",
+    "primeTimeNote": "Waktu terbaik buat konten grup (HG, ZvZ, Mists Boss)",
+    "dangerWindow": "Window Bahaya Puncak",
+    "dangerWindowDesc": "Konsentrasi ganker & grup roaming tertinggi. Solo gathering di BZ JANGAN.",
+    "dangerWindowNote": "Stay di Royal Continent atau gather sama grup",
     "lowActivity": "Periode Aktivitas Rendah",
-    "lowActivityDesc": "Waktu teraman untuk pengumpulan solo dengan risiko ganking dan kompetisi yang berkurang.",
-    "lowActivityNote": "Terbaik untuk pemain baru dan pengumpul solo"
+    "lowActivityDesc": "Waktu paling aman buat solo farming — kompetisi & risiko gank paling rendah.",
+    "lowActivityNote": "Cocok buat pemain baru sama solo gatherer"
   },
   "proTips": {
+    "title": "Pro Tips",
     "efficiency": {
       "title": "Tips Efisiensi",
       "tips": [
-        "Gunakan Pork Pie untuk meningkatkan kapasitas angkut",
-        "Kumpulkan di bioma yang sesuai dengan tipe sumber daya Anda",
-        "Fokus pada satu sumber daya hingga T8 untuk profit maksimal",
-        "Gunakan Learning Points untuk mempercepat level"
+        "Pork Omelette buat carry capacity (lebih baik dari Pork Pie di T6+)",
+        "Matching bioma ke resource (Forest = Wood, Mountain = Ore, dst.)",
+        "Push SATU resource sampe T8 sebelum bagi LP",
+        "Pakai Learning Points di line yang sama biar progress paling cepet"
       ],
-      "radiantTip": "💡 Tips: Gunakan tombol 'Loot All' baru dari Radiant Wilds untuk pengumpulan PvE yang lebih cepat!"
+      "radiantTip": "💡 Tip: Tombol Loot All di Radiant Wilds bikin pickup drop PvE jauh lebih cepet!"
     },
     "safety": {
       "title": "Strategi Keamanan",
       "tips": [
-        "Gunakan Invisibility Shrines untuk perjalanan aman",
-        "Kumpulkan selama jam-jam server sepi",
-        "Selalu siapkan perlengkapan pelarian",
-        "Bepergian dengan anggota guild jika memungkinkan"
+        "Pakai Invisibility Shrine buat scout zona dalam aman",
+        "Farm 21:00–09:00 UTC di server Asia biar aktivitas ganker minim",
+        "Simpen escape gear (Stalker Hood + Assassin Shoes) di slot 2 — Q-swap",
+        "Travel bareng anggota guild kalau bisa — duo gathering 4× lebih aman"
       ]
     },
     "profitability": {
-      "title": "Profitabilitas Sumber Daya",
+      "title": "Profitability Resource",
       "tips": [
-        "Batu: Kompetisi rendah, profit stabil",
-        "Memancing: Profit tinggi, memerlukan kesabaran",
-        "Bijih: Kompetisi sedang, return bagus",
-        "Kulit & Serat: Kompetisi tinggi, profit bervariasi"
+        "Stone: Kompetisi paling rendah, profit stabil (oke buat solo)",
+        "Fishing: Profit sabar + bonus loot rare (Hooked Box)",
+        "Ore: Kompetisi sedang, Meteorite T8 = silver top",
+        "Hide & Fiber: Kompetisi tinggi, profit naik-turun ikut meta armor"
       ]
     }
   },
   "footer": {
-    "text": "Panduan Pengumpulan Albion Online 2026 • Terakhir Diperbarui: Mei 2026",
-    "author": "Penulis: ABID"
+    "text": "Panduan Farming Albion Online 2026 · Server Asia · Terakhir Update: Mei 2026",
+    "author": "Penulis: ABID",
+    "authorLabel": "Penulis:"
   }
 }
