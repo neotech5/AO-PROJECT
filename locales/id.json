@@ -30,8 +30,10 @@
     "foundationGroup": "Foundation",
     "foundationZones": "Zone Types",
     "foundationMistakes": "JANGAN-DO List",
+    "foundationFaq": "FAQ Pemula",
     "survivalGroup": "Survival & End-Game",
     "survivalGank": "Gank Avoidance",
+    "survivalMists": "Mists & Roads of Avalon",
     "survivalT8Maps": "Peta T8",
     "survivalBuilds": "Build (T8)",
     "optimizeGroup": "Optimize Pro",
@@ -379,6 +381,127 @@
       "Pake cluster Z buat escape silver burden — mekanik wall ngeblock pengejar."
     ]
   },
+  "mists": {
+    "title": "Mists & Roads of Avalon",
+    "description": "Content paling under-rated di Albion. Solo gathering dan PvP T4-T8 dengan risiko JAUH lebih kecil dari Black Zone terbuka. Perfect buat newbie yang mau jembatani Yellow Zone ke T8 farming.",
+    "intro": "Mists itu cluster instanced personal — pas masuk, kamu cuma ketemu pemain solo lain (1v1 atau duo). Roads of Avalon adalah shortcut dimensional yang nyambungin Royal Continent ↔ Outlands lewat portal permanen dan shifting.",
+    "mistsTitle": "🌫️ The Mists — Konten Solo Instanced",
+    "mistsHeaders": ["Tier", "Bahaya", "Loot", "Exit", "Cocok Buat"],
+    "mistsRows": [
+      { "tier": "T4 Mists (Bright Mists)", "danger": "Rendah", "loot": "Node T4-T5, mob low-tier", "exit": "Wisp portal", "best": "Latihan solo gather newbie + exposure PvP pertama" },
+      { "tier": "T5 Mists (Dim Mists)", "danger": "Rendah-Sedang", "loot": "Node T5-T6, drop Tome of Insight", "exit": "Wisp + sekali-sekali skull portal", "best": "Build LP + fame T5-6 solo tanpa risiko ganker" },
+      { "tier": "T6 Mists (Twilight Mists)", "danger": "Sedang", "loot": "Node T6-T7, Avalonian shards", "exit": "Berbagai portal", "best": "Income silver beneran dari T6-7 ore/hide/fiber" },
+      { "tier": "T7-T8 Mists (Deep/Brilliant Mists)", "danger": "Tinggi", "loot": "Node enchanted T7-T8, gear Avalonian langka", "exit": "Skull/special portal", "best": "Solo farming end-game, ROI paling besar buat solo player" }
+    ],
+    "knightfallTitle": "⚔️ Knightfall Abbey (Boss Mists T7+)",
+    "knightfall": [
+      "Spawn random di cluster Mists T7+ (~30-45 menit interval).",
+      "Solo boss fight — drop Avalonian artifact unik + chest tome.",
+      "Gear yang disaranin: T6+ self-heal build (Hallowfall, Carving Sword, atau Bloodletter Off-Hand).",
+      "Jangan engage kalau gear < T6 — risiko wipe tinggi.",
+      "Loot abis kill: Avalonian Shards (buat craft gear Avalonian), Tome of Insight, artifact langka."
+    ],
+    "roadsTitle": "🛣️ Roads of Avalon — Jalan Tol Dimensional",
+    "roads": [
+      "Cluster portal shifting yang nyambungin Royal ↔ Outlands ↔ Mists random.",
+      "Portal permanen di kota Royal (Caerleon T6 portal) tetep stabil.",
+      "Portal random di Outlands bikin shortcut antar zone — pro players pake buat ngehindarin rute gank yang udah dikenal.",
+      "Node Avalonian energy spawn random di Roads — gather buat refining gear Avalonian.",
+      "Jenis cluster: Tunnel (jalan panjang), Hub (multi-portal node), Camp (loot + mob)."
+    ],
+    "portalTypesTitle": "🌀 Jenis Portal yang Bakal Kamu Lihat",
+    "portalTypes": [
+      "🌟 Wisp Portal (putih): exit balik ke kota Royal terdekat. Aman.",
+      "💀 Skull Portal (kilau merah): exit ke Outlands random — risiko tinggi, reward gear gede.",
+      "🟣 Avalonian Portal (ungu): masuk Roads of Avalon — koneksi ke konten spesial.",
+      "🟢 Static Portal (cincin hijau): exit konsisten ke zone tertentu (biasanya ditandain di mini-map).",
+      "Kalo gak yakin portal mana yang aman, cek mini-map dulu — destination exit biasanya ditandai."
+    ],
+    "energyTitle": "⚡ Avalonian Energy",
+    "energy": [
+      "Resource spesial dari Roads of Avalon + Mists T6+.",
+      "Dipake buat refine gear Avalonian (versi enchanted T4-T8) — gear top-tier kedua di game.",
+      "Drop dari mob Avalonian (Avalonian Mage, Avalonian Knight) + node energy.",
+      "Stack & jual di Caerleon Black Market buat profit maksimal."
+    ],
+    "tipsTitle": "💡 Tips Pro Mists & Roads",
+    "tips": [
+      "Mists = MUSUH KAMU CUMA 1-2 ORANG. Beda banget sama Black Zone yang bisa kena gank squad 5v1.",
+      "Bawa Sticky Potion + Stalker Hood + Royal Shoes — escape kit murah tapi efektif.",
+      "Setiap kali masuk Mists, scout dulu mini-map sebelum gather. Pemain lain muncul as red dot.",
+      "Mists reward solo activity — pro-gathering di sini lebih profitable per jam daripada BZ gathering keroyokan.",
+      "Roads of Avalon = shortcut. Plan rute kamu sebelumnya — bisa hemat 5-10 menit travel time per sesi.",
+      "Loot Knightfall Abbey worth 100k+ silver per kill — kalo ketemu, engage dengan T6+ self-heal build."
+    ]
+  },
+
+  "faq": {
+    "title": "FAQ Pemula",
+    "description": "Pertanyaan yang paling sering ditanyain newbie. Klik tiap pertanyaan buat lihat jawabannya.",
+    "items": [
+      {
+        "q": "Wajib beli Premium gak buat main Albion?",
+        "a": "Gak wajib. Albion F2P beneran viable — banyak pemain pro yang main pure F2P. Tapi kalau kamu main > 20 jam/minggu atau aktif trading > 1M silver/minggu, Premium bayar dirinya sendiri lewat bonus fame/silver/tax. Saran: main 50 jam dulu sebagai F2P, baru putusin. Lihat 💎 Premium Math di tier Optimize buat detailnya."
+      },
+      {
+        "q": "Saya mati di Black Zone bawa gear T6, gimana?",
+        "a": "Sayangnya gear hilang full-loot. Ini norma di Albion BZ. Pelajaran: JANGAN bawa gear yang kamu gak siap kehilangan. Pakai gear T4-T5 di BZ sampai kamu confident, dan selalu inget rule pro: 'kalau gak siap mati, jangan masuk Black Zone'. Lihat 🛡️ Gank Avoidance section buat tips escape."
+      },
+      {
+        "q": "Learning Points (LP) itu buat apa sih?",
+        "a": "LP adalah catalyst untuk masterin node di Destiny Board (gear, gathering, crafting) tanpa harus farm fame penuh. 1 LP biasanya skip ratusan ribu fame. Saran pro: SPECIALISE — fokus LP cuma di 1-2 node (misal: Skinner spec + Hide refining), JANGAN spread tipis ke banyak path. LP regen 1 per 24 jam (Free) atau 1 per 12 jam (Premium)."
+      },
+      {
+        "q": "Server Asia vs Global gimana? Bisa pindah-pindah?",
+        "a": "Albion ada 2 server utama: Albion East (Asia/SEA) dan Albion West (NA/EU). Karakter di server beda terpisah — gak bisa pindah karakter antar server. Asia (East) peak time 13:00-15:00 UTC (21:00 WIB). Kalau kamu di Indonesia, server Asia paling smooth (ping 50-100ms vs West yang 200-300ms)."
+      },
+      {
+        "q": "Berapa lama dari nol sampai T8?",
+        "a": "Tergantung waktu main + spec. Casual player (10-15 jam/minggu): 3-4 bulan ke T8. Hardcore (40+ jam/minggu): 6-8 minggu. Plus Premium kasih +50% fame jadi bisa lebih cepet. Saran: jangan rush ke T8 — enjoy progression di tiap tier. T6-T7 udah cukup buat sebagian besar content."
+      },
+      {
+        "q": "Saya solo player, bisa enjoy Albion gak tanpa guild?",
+        "a": "Bisa, banyak solo player aktif di Albion. Tapi join guild bakal kasih kamu: tax bonus, free knowledge sharing, Mists/Hellgate party, group buying mats. Saran: solo dulu 50 jam, terus join guild casual yang aktif di waktu kamu. Hindari guild ZvZ kalau kamu cuma mau santai gather."
+      },
+      {
+        "q": "Apa beda Yellow Zone, Red Zone, Black Zone?",
+        "a": "Yellow Zone: aman, lose durability aja kalau mati. Red Zone: lose gear kalau dibunuh player (PvP allowed). Black Zone: FULL LOOT bahkan dari mob/environment death, paling tinggi reward dan risk. Pemula PALING enak di Yellow Zone sampai T5-T6. Lihat 🗺️ Zone Types Manual buat detail lengkap."
+      },
+      {
+        "q": "Saya gathering aja tapi mati terus digank, gimana?",
+        "a": "1) Bawa escape kit (Stalker Hood + Royal Shoes + Sticky Potion T4). 2) Gather di Yellow Zone dulu sampai T5. 3) Avoid peak time (13:00-15:00 UTC server Asia). 4) Scout cluster dulu sebelum buka full inventory. 5) Logout safe di tempat tersembunyi kalau ada ganker dekat. Lihat 🛡️ Gank Avoidance Manual buat full guide."
+      },
+      {
+        "q": "Mount mana yang paling worth dibeli pertama kali?",
+        "a": "Riding Horse T3 di kota awal — murah dan kasih kamu speed boost dasar. Setelah T4, target Swiftclaw (faster escape) atau Transport Ox (hauling resource). T6 Direwolf optional, T8 mounts buat veteran. Lihat 🐎 Mount Guide di Beginner Essentials."
+      },
+      {
+        "q": "Food yang wajib buat gathering apa?",
+        "a": "Pork Omelette T4 — paling cocok buat gathering (boost gather yield + extra weight capacity). Pakai sebelum tiap session. Tier lebih tinggi kalau dapet duit lebih. Healing Potion buat emergency, Resurrection Potion WAJIB di BZ. Lihat 🍖 Food & Potion guide buat full list."
+      },
+      {
+        "q": "Saya kena ban / akun di-hijack, gimana?",
+        "a": "Kontak support Albion resmi via support.albiononline.com (response 24-72 jam biasanya). Aktivkan 2FA SEKARANG kalau belum — paling penting buat protect akun. JANGAN share login ke siapapun, termasuk 'GM'/'admin' yang dm kamu (itu scammer)."
+      },
+      {
+        "q": "Daily quest dimana ambil? NPC mana?",
+        "a": "Talk ke NPC Mage di setiap kota Royal (Lymhurst, Fort Sterling, Bridgewatch, Martlock, Thetford). Biasanya berdiri dekat pintu masuk kota atau marketplace. Quest type: gather X resource, kill Y mob, refine Z material. Reward: 30-50k silver + fame + crate. Lihat ⏰ Daily Routine Pro buat detail."
+      },
+      {
+        "q": "Resource paling profitable buat gather sekarang?",
+        "a": "Tergantung kondisi market real-time — cek Albion Data Project. Tapi rule umum: T6-T7 ore selalu tinggi demand (buat T7 gear), refined Plank T6 (Lymhurst specialty) sering profit. Avoid hoard T8 resource kalau belum punya silver buat tunggu market move. Lihat 🧰 Tools & Apps buat link Albion Data Project."
+      },
+      {
+        "q": "Gimana cara dapet silver paling cepet sebagai pemula?",
+        "a": "Newbie progression: 1) Quest line + Adventurer's Challenge (free 100-200k silver). 2) Gathering T4-T5 di Yellow Zone (safe, slow but consistent). 3) Sell at marketplace daily. 4) Refine resource di kota specialty untuk +25% bonus. 5) Hindari beli gear T6+ di awal — focus repair gear T4-T5 dulu."
+      },
+      {
+        "q": "Apakah Albion benar-benar pay-to-win?",
+        "a": "Jawaban jujur: TIDAK. Premium kasih bonus +50% (fame/silver) tapi gak ngerubah kemampuan kamu di-PvP. Skill, knowledge, dan dedication jauh lebih penting. Banyak F2P player rank atas di GvG/Hellgate. Albion adalah game 'skill + time investment' bukan 'pay to win'."
+      }
+    ]
+  },
+
   "marketplace": {
     "title": "Marketplace 101",
     "description": "Marketplace = tempat 80% duit player dihasilkan. Kuasai beda Buy Order vs Sell Order, pajak, dan harga antar kota — ini skill universal yang dipake semua pro.",

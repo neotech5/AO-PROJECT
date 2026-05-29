@@ -66,10 +66,12 @@ function updatePageLanguage() {
     renderGuides();
     renderZones();
     renderMistakes();
+    renderFaq();
     renderProfessions();
     renderBiomes();
     renderTiers();
     renderSurvival();
+    renderMists();
     renderT8Maps();
     renderGatheringBuilds();
     renderEventSchedule();
@@ -884,6 +886,138 @@ function renderPremium() {
     `;
 
     container.innerHTML = benefitsHTML + costHTML + scenariosHTML + tipsHTML;
+}
+
+// ============================================
+// MISTS & ROADS OF AVALON
+// ============================================
+
+function renderMists() {
+    const container = document.getElementById('mistsContainer');
+    if (!container) return;
+
+    const intro = t('mists.intro', '');
+    const mistsTitle = t('mists.mistsTitle', 'The Mists');
+    const mistsHeaders = t('mists.mistsHeaders') || ['Tier', 'Danger', 'Loot', 'Exit', 'Best For'];
+    const mistsRows = t('mists.mistsRows') || [];
+
+    const knightfallTitle = t('mists.knightfallTitle', 'Knightfall Abbey');
+    const knightfall = t('mists.knightfall') || [];
+
+    const roadsTitle = t('mists.roadsTitle', 'Roads of Avalon');
+    const roads = t('mists.roads') || [];
+
+    const portalTypesTitle = t('mists.portalTypesTitle', 'Portal Types');
+    const portalTypes = t('mists.portalTypes') || [];
+
+    const energyTitle = t('mists.energyTitle', 'Avalonian Energy');
+    const energy = t('mists.energy') || [];
+
+    const tipsTitle = t('mists.tipsTitle', 'Pro Tips');
+    const tips = t('mists.tips') || [];
+
+    const dangerClass = d => {
+        const v = (d || '').toLowerCase();
+        if (v.includes('low') || v.includes('rendah')) return 'safe';
+        if (v.includes('moderate') || v.includes('sedang')) return 'moderate';
+        if (v.includes('high') || v.includes('tinggi')) return 'danger';
+        return 'moderate';
+    };
+
+    const mistsTableHTML = `
+        <div class="mists-block">
+            ${intro ? `<p class="mists-intro">${intro}</p>` : ''}
+            <h3 class="mists-block-title">${mistsTitle}</h3>
+            <div class="mists-table-wrapper">
+                <table class="mists-table">
+                    <thead>
+                        <tr>${mistsHeaders.map(h => `<th>${h}</th>`).join('')}</tr>
+                    </thead>
+                    <tbody>
+                        ${mistsRows.map(r => `
+                            <tr>
+                                <td class="mists-tier">${r.tier}</td>
+                                <td><span class="mists-danger mists-danger-${dangerClass(r.danger)}">${r.danger}</span></td>
+                                <td>${r.loot}</td>
+                                <td>${r.exit}</td>
+                                <td class="mists-best">${r.best}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
+
+    const knightfallHTML = `
+        <div class="mists-block">
+            <h3 class="mists-block-title">${knightfallTitle}</h3>
+            <ul class="mists-list mists-knightfall">
+                ${knightfall.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+        </div>
+    `;
+
+    const roadsHTML = `
+        <div class="mists-block">
+            <h3 class="mists-block-title">${roadsTitle}</h3>
+            <ul class="mists-list">
+                ${roads.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+        </div>
+    `;
+
+    const portalHTML = `
+        <div class="mists-block">
+            <h3 class="mists-block-title">${portalTypesTitle}</h3>
+            <ul class="mists-list mists-portals">
+                ${portalTypes.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+        </div>
+    `;
+
+    const energyHTML = `
+        <div class="mists-block">
+            <h3 class="mists-block-title">${energyTitle}</h3>
+            <ul class="mists-list mists-energy">
+                ${energy.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+        </div>
+    `;
+
+    const tipsHTML = `
+        <div class="mists-block">
+            <h3 class="mists-block-title">${tipsTitle}</h3>
+            <ul class="mists-list mists-tips">
+                ${tips.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+        </div>
+    `;
+
+    container.innerHTML = mistsTableHTML + knightfallHTML + roadsHTML + portalHTML + energyHTML + tipsHTML;
+}
+
+// ============================================
+// BEGINNER FAQ
+// ============================================
+
+function renderFaq() {
+    const container = document.getElementById('faqList');
+    if (!container) return;
+
+    const items = t('faq.items') || [];
+
+    container.innerHTML = items.map((item, i) => `
+        <details class="faq-item" ${i === 0 ? 'open' : ''}>
+            <summary class="faq-question">
+                <span class="faq-question-text">${item.q}</span>
+                <span class="faq-chevron" aria-hidden="true">▾</span>
+            </summary>
+            <div class="faq-answer">
+                <p>${item.a}</p>
+            </div>
+        </details>
+    `).join('');
 }
 
 // ============================================

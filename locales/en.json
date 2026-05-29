@@ -30,8 +30,10 @@
     "foundationGroup": "Foundation",
     "foundationZones": "Zone Types",
     "foundationMistakes": "Common Mistakes",
+    "foundationFaq": "Beginner FAQ",
     "survivalGroup": "Survival & End-Game",
     "survivalGank": "Gank Avoidance",
+    "survivalMists": "Mists & Roads of Avalon",
     "survivalT8Maps": "T8 Maps",
     "survivalBuilds": "Builds (T8)",
     "optimizeGroup": "Optimize Pro",
@@ -379,6 +381,127 @@
       "Use cluster Z to escape silver burden — the wall mechanic blocks pursuers."
     ]
   },
+  "mists": {
+    "title": "Mists & Roads of Avalon",
+    "description": "The most under-rated content in Albion. Solo gathering and PvP T4-T8 with way less risk than open Black Zone. Perfect for newbies bridging from Yellow Zone to T8 farming.",
+    "intro": "Mists are personal instanced cluster — when you enter, you only meet other solo players (1v1 or duo). Roads of Avalon are dimensional shortcuts connecting Royal Continent ↔ Outlands with permanent and shifting portals.",
+    "mistsTitle": "🌫️ The Mists — Solo Instanced Content",
+    "mistsHeaders": ["Tier", "Danger", "Loot", "Exit", "Best For"],
+    "mistsRows": [
+      { "tier": "T4 Mists (Bright Mists)", "danger": "Low", "loot": "T4-T5 nodes, low-tier mobs", "exit": "Wisp portal", "best": "Newbie solo gather practice + first PvP exposure" },
+      { "tier": "T5 Mists (Dim Mists)", "danger": "Low-Moderate", "loot": "T5-T6 nodes, Tome of Insight drops", "exit": "Wisp + occasional skull portal", "best": "Build LP + T5-6 fame solo without ganker risk" },
+      { "tier": "T6 Mists (Twilight Mists)", "danger": "Moderate", "loot": "T6-T7 nodes, Avalonian shards", "exit": "Various portals", "best": "Real silver income from T6-7 ore/hide/fiber" },
+      { "tier": "T7-T8 Mists (Deep/Brilliant Mists)", "danger": "High", "loot": "T7-T8 enchanted nodes, rare Avalonian gear", "exit": "Skull/special portal", "best": "End-game solo farming, best ROI for solo players" }
+    ],
+    "knightfallTitle": "⚔️ Knightfall Abbey (T7+ Mists Boss)",
+    "knightfall": [
+      "Spawns randomly in T7+ Mists clusters (~30-45 min interval).",
+      "Solo boss fight — drops unique Avalonian artifact + tome chest.",
+      "Recommended gear: T6+ self-heal build (Hallowfall, Carving Sword, or Bloodletter Off-Hand).",
+      "Don't engage with gear below T6 — wipe risk is high.",
+      "Post-kill loot: Avalonian Shards (craft Avalonian gear), Tome of Insight, rare artifact."
+    ],
+    "roadsTitle": "🛣️ Roads of Avalon — Dimensional Highways",
+    "roads": [
+      "Shifting portal clusters connecting Royal ↔ Outlands ↔ random Mists.",
+      "Permanent portals in Royal cities (Caerleon T6 portal) stay stable.",
+      "Random portals in Outlands create shortcuts between zones — pros use them to avoid known gank routes.",
+      "Avalonian energy nodes spawn randomly in Roads — gather them for Avalonian gear refining.",
+      "Cluster types: Tunnel (long path), Hub (multi-portal node), Camp (loot + mobs)."
+    ],
+    "portalTypesTitle": "🌀 Portal Types You'll See",
+    "portalTypes": [
+      "🌟 Wisp Portal (white): exits back to nearest Royal city. Safe.",
+      "💀 Skull Portal (red glow): exits to random Outlands — high risk, high reward gear.",
+      "🟣 Avalonian Portal (purple): enters Roads of Avalon — connection to special content.",
+      "🟢 Static Portal (green ring): consistent exit to specific zone (usually marked on mini-map).",
+      "If unsure which portal is safe, check mini-map first — exit destination is usually marked."
+    ],
+    "energyTitle": "⚡ Avalonian Energy",
+    "energy": [
+      "Special resource from Roads of Avalon + T6+ Mists.",
+      "Used to refine Avalonian gear (T4-T8 enchanted version) — the second-highest tier of gear in the game.",
+      "Drops from Avalonian mobs (Avalonian Mage, Avalonian Knight) + energy nodes.",
+      "Stack and sell at Caerleon Black Market for max profit."
+    ],
+    "tipsTitle": "💡 Mists & Roads Pro Tips",
+    "tips": [
+      "Mists = YOU ONLY FACE 1-2 OPPONENTS. Way different from Black Zone where 5v1 gank squads roam.",
+      "Bring Sticky Potion + Stalker Hood + Royal Shoes — cheap but effective escape kit.",
+      "Every time you enter Mists, scout the mini-map before gathering. Other players show as red dots.",
+      "Mists reward solo activity — pro-gathering here is more profitable per hour than BZ gathering in groups.",
+      "Roads of Avalon = shortcuts. Plan your route in advance — saves 5-10 min of travel per session.",
+      "Knightfall Abbey loot worth 100k+ silver per kill — if you find one, engage with a T6+ self-heal build."
+    ]
+  },
+
+  "faq": {
+    "title": "Beginner FAQ",
+    "description": "Most common questions newbies ask. Click each question to expand the answer.",
+    "items": [
+      {
+        "q": "Do I need Premium to play Albion?",
+        "a": "No, you don't. Albion is genuinely F2P viable — many pro players run pure F2P. But if you play > 20 hours/week or actively trade > 1M silver/week, Premium pays itself back via fame/silver/tax bonuses. Suggestion: play 50 hours as F2P first, then decide. See 💎 Premium Math in the Optimize tier for details."
+      },
+      {
+        "q": "I died in Black Zone with T6 gear, what now?",
+        "a": "Unfortunately gear is lost — full loot is the BZ norm. Lesson: DON'T bring gear you can't afford to lose. Use T4-T5 gear in BZ until you're confident, and always remember the pro rule: 'if you're not ready to die, don't enter Black Zone'. See 🛡️ Gank Avoidance section for escape tips."
+      },
+      {
+        "q": "What are Learning Points (LP) for?",
+        "a": "LP is a catalyst to master nodes in Destiny Board (gear, gathering, crafting) without farming full fame. 1 LP usually skips hundreds of thousands of fame. Pro tip: SPECIALIZE — focus LP on only 1-2 nodes (e.g. Skinner spec + Hide refining), DON'T spread thin across paths. LP regenerates 1 per 24h (Free) or 1 per 12h (Premium)."
+      },
+      {
+        "q": "Asia vs Global server — can I switch?",
+        "a": "Albion has 2 main servers: Albion East (Asia/SEA) and Albion West (NA/EU). Characters are server-locked — you can't transfer between servers. Asia (East) peak time is 13:00-15:00 UTC (21:00 WIB). If you're in Indonesia, Asia server is smoothest (50-100ms ping vs West's 200-300ms)."
+      },
+      {
+        "q": "How long from zero to T8?",
+        "a": "Depends on playtime + specialization. Casual player (10-15 hours/week): 3-4 months to T8. Hardcore (40+ hours/week): 6-8 weeks. Premium adds +50% fame so it can be faster. Suggestion: don't rush to T8 — enjoy progression at each tier. T6-T7 is enough for most content."
+      },
+      {
+        "q": "I'm a solo player, can I enjoy Albion without a guild?",
+        "a": "Yes, many active solo players in Albion. But joining a guild gives you: tax bonus, free knowledge sharing, Mists/Hellgate party, group mat-buying. Suggestion: go solo first for 50 hours, then join a casual guild active in your time zone. Avoid ZvZ guilds if you just want chill gathering."
+      },
+      {
+        "q": "What's the difference between Yellow Zone, Red Zone, Black Zone?",
+        "a": "Yellow Zone: safe, only lose durability on death. Red Zone: lose gear if killed by player (PvP allowed). Black Zone: FULL LOOT even from mob/environment death, highest reward and risk. Newbies should stick to Yellow Zone until T5-T6. See 🗺️ Zone Types Manual for full detail."
+      },
+      {
+        "q": "I gather but keep dying to ganks, what do I do?",
+        "a": "1) Bring escape kit (Stalker Hood + Royal Shoes + T4 Sticky Potion). 2) Gather in Yellow Zone first until T5. 3) Avoid peak time (13:00-15:00 UTC Asia server). 4) Scout cluster before opening full inventory. 5) Logout safe in a hidden spot if ganker is nearby. See 🛡️ Gank Avoidance Manual for full guide."
+      },
+      {
+        "q": "Which mount is worth buying first?",
+        "a": "Riding Horse T3 at starting city — cheap and gives you a basic speed boost. After T4, target Swiftclaw (faster escape) or Transport Ox (hauling). T6 Direwolf optional, T8 mounts for veterans. See 🐎 Mount Guide in Beginner Essentials."
+      },
+      {
+        "q": "What food is mandatory for gathering?",
+        "a": "Pork Omelette T4 — best for gathering (boosts gather yield + extra weight capacity). Use before every session. Higher tier if you can afford it. Healing Potion for emergency, Resurrection Potion MANDATORY in BZ. See 🍖 Food & Potion guide for full list."
+      },
+      {
+        "q": "My account got banned / hijacked, what now?",
+        "a": "Contact official Albion support via support.albiononline.com (response 24-72h typically). Enable 2FA NOW if you haven't — most important way to protect your account. NEVER share login with anyone, including 'GM'/'admin' who DMs you (those are scammers)."
+      },
+      {
+        "q": "Where do I pick up daily quest? Which NPC?",
+        "a": "Talk to the Mage NPC in each Royal city (Lymhurst, Fort Sterling, Bridgewatch, Martlock, Thetford). Usually standing near city entrance or marketplace. Quest types: gather X resource, kill Y mobs, refine Z material. Reward: 30-50k silver + fame + crate. See ⏰ Daily Routine Pro for details."
+      },
+      {
+        "q": "What's the most profitable resource to gather right now?",
+        "a": "Depends on real-time market conditions — check Albion Data Project. General rule: T6-T7 ore is always high-demand (for T7 gear), refined T6 Plank (Lymhurst specialty) often profitable. Avoid hoarding T8 resource if you can't afford to wait for market shifts. See 🧰 Tools & Apps for Albion Data Project link."
+      },
+      {
+        "q": "Fastest way to get silver as a newbie?",
+        "a": "Newbie progression: 1) Quest line + Adventurer's Challenge (free 100-200k silver). 2) Gather T4-T5 in Yellow Zone (safe, slow but consistent). 3) Sell at marketplace daily. 4) Refine resource at specialty city for +25% bonus. 5) Don't buy T6+ gear early — focus on repairing T4-T5 gear first."
+      },
+      {
+        "q": "Is Albion really pay-to-win?",
+        "a": "Honest answer: NO. Premium gives +50% (fame/silver) bonuses but doesn't change your PvP ability. Skill, knowledge, and dedication matter way more. Many F2P players rank top in GvG/Hellgate. Albion is a 'skill + time investment' game, not 'pay to win'."
+      }
+    ]
+  },
+
   "marketplace": {
     "title": "Marketplace 101",
     "description": "Marketplace is where 80% of player money is made. Master the difference between buy/sell orders, taxes, and city arbitrage — this is the universal pro skill.",
