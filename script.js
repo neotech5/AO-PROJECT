@@ -73,6 +73,9 @@ function updatePageLanguage() {
     renderT8Maps();
     renderGatheringBuilds();
     renderEventSchedule();
+    renderMarketplace();
+    renderRoutine();
+    renderPremium();
     renderTools();
     renderProTips();
     updatePrimeTimeTracker();
@@ -662,6 +665,225 @@ function renderTools() {
             <a href="${tool.url}" target="_blank" rel="noopener noreferrer" class="tool-link">${labelOpen} ↗</a>
         </div>
     `).join('');
+}
+
+// ============================================
+// MARKETPLACE 101
+// ============================================
+
+function renderMarketplace() {
+    const container = document.getElementById('marketplaceContainer');
+    if (!container) return;
+
+    const orders = t('marketplace.orders') || [];
+    const labelHow = t('marketplace.labelHow', 'How it works');
+    const labelWhen = t('marketplace.labelWhen', 'When to use');
+
+    const taxTitle = t('marketplace.taxTitle', 'Tax Breakdown');
+    const taxHeaders = t('marketplace.taxHeaders') || [];
+    const taxRows = t('marketplace.taxRows') || [];
+
+    const cityTitle = t('marketplace.cityTitle', 'City Arbitrage');
+    const cityItems = t('marketplace.city') || [];
+
+    const tipsTitle = t('marketplace.tipsTitle', 'Marketplace Pro Tips');
+    const tips = t('marketplace.tips') || [];
+
+    const ordersHTML = orders.map(o => `
+        <div class="marketplace-order-card">
+            <h4 class="marketplace-order-title">${o.type}</h4>
+            <div class="marketplace-order-row">
+                <span class="marketplace-order-label">${labelHow}</span>
+                <p class="marketplace-order-text">${o.how}</p>
+            </div>
+            <div class="marketplace-order-row">
+                <span class="marketplace-order-label">${labelWhen}</span>
+                <p class="marketplace-order-text">${o.when}</p>
+            </div>
+        </div>
+    `).join('');
+
+    const taxHTML = `
+        <div class="marketplace-block">
+            <h3 class="marketplace-block-title">💸 ${taxTitle}</h3>
+            <div class="marketplace-table-wrapper">
+                <table class="marketplace-table">
+                    <thead>
+                        <tr>${taxHeaders.map(h => `<th>${h}</th>`).join('')}</tr>
+                    </thead>
+                    <tbody>
+                        ${taxRows.map(r => `
+                            <tr>
+                                <td>${r.fee}</td>
+                                <td><span class="tag-free">${r.free}</span></td>
+                                <td><span class="tag-premium">${r.premium}</span></td>
+                                <td class="marketplace-note">${r.note}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
+
+    const cityHTML = `
+        <div class="marketplace-block">
+            <h3 class="marketplace-block-title">🏙️ ${cityTitle}</h3>
+            <ul class="marketplace-list">
+                ${cityItems.map(c => `<li>${c}</li>`).join('')}
+            </ul>
+        </div>
+    `;
+
+    const tipsHTML = `
+        <div class="marketplace-block">
+            <h3 class="marketplace-block-title">💡 ${tipsTitle}</h3>
+            <ul class="marketplace-list marketplace-tips">
+                ${tips.map(tip => `<li>${tip}</li>`).join('')}
+            </ul>
+        </div>
+    `;
+
+    container.innerHTML = `
+        <div class="marketplace-orders-grid">${ordersHTML}</div>
+        ${taxHTML}
+        ${cityHTML}
+        ${tipsHTML}
+    `;
+}
+
+// ============================================
+// DAILY ROUTINE PRO
+// ============================================
+
+function renderRoutine() {
+    const container = document.getElementById('routineContainer');
+    if (!container) return;
+
+    const checklist = t('routine.checklist') || [];
+    const checklistTitle = t('routine.checklistTitle', 'Daily Login Checklist');
+
+    const weeklyTitle = t('routine.weeklyTitle', 'Weekly Goals');
+    const weekly = t('routine.weekly') || [];
+
+    const burnoutTitle = t('routine.burnoutTitle', 'Avoid Burnout');
+    const burnout = t('routine.burnout') || [];
+
+    const checklistHTML = checklist.map((item, i) => `
+        <div class="routine-step">
+            <div class="routine-step-number">${i + 1}</div>
+            <div class="routine-step-body">
+                <div class="routine-step-meta">
+                    <span class="routine-time">⏰ ${item.time}</span>
+                    <span class="routine-task">${item.task}</span>
+                </div>
+                <p class="routine-detail">${item.detail}</p>
+            </div>
+        </div>
+    `).join('');
+
+    container.innerHTML = `
+        <div class="routine-block">
+            <h3 class="routine-block-title">✅ ${checklistTitle}</h3>
+            <div class="routine-checklist">${checklistHTML}</div>
+        </div>
+        <div class="routine-block">
+            <h3 class="routine-block-title">📆 ${weeklyTitle}</h3>
+            <ul class="routine-list routine-weekly">
+                ${weekly.map(w => `<li>${w}</li>`).join('')}
+            </ul>
+        </div>
+        <div class="routine-block">
+            <h3 class="routine-block-title">🧠 ${burnoutTitle}</h3>
+            <ul class="routine-list routine-burnout">
+                ${burnout.map(b => `<li>${b}</li>`).join('')}
+            </ul>
+        </div>
+    `;
+}
+
+// ============================================
+// PREMIUM MATH
+// ============================================
+
+function renderPremium() {
+    const container = document.getElementById('premiumContainer');
+    if (!container) return;
+
+    const benefitsTitle = t('premium.benefitsTitle', 'What Premium Gives You');
+    const benefitsHeaders = t('premium.benefitsHeaders') || [];
+    const benefits = t('premium.benefits') || [];
+
+    const costTitle = t('premium.costTitle', 'Cost & Worth-It Threshold');
+    const cost = t('premium.cost') || [];
+
+    const scenariosTitle = t('premium.scenariosTitle', 'When Premium IS Worth It');
+    const scenariosYes = t('premium.scenariosYes') || [];
+    const scenariosNoTitle = t('premium.scenariosNoTitle', "When Premium ISN'T Worth It");
+    const scenariosNo = t('premium.scenariosNo') || [];
+
+    const tipsTitle = t('premium.tipsTitle', 'Smart Premium Strategies');
+    const tips = t('premium.tips') || [];
+
+    const benefitsHTML = `
+        <div class="premium-block">
+            <h3 class="premium-block-title">✨ ${benefitsTitle}</h3>
+            <div class="premium-table-wrapper">
+                <table class="premium-table">
+                    <thead>
+                        <tr>${benefitsHeaders.map(h => `<th>${h}</th>`).join('')}</tr>
+                    </thead>
+                    <tbody>
+                        ${benefits.map(b => `
+                            <tr>
+                                <td class="premium-benefit-name">${b.benefit}</td>
+                                <td><span class="tag-free">${b.free}</span></td>
+                                <td><span class="tag-premium">${b.premium}</span></td>
+                                <td class="premium-impact">${b.impact}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
+
+    const costHTML = `
+        <div class="premium-block">
+            <h3 class="premium-block-title">💰 ${costTitle}</h3>
+            <ul class="premium-list">
+                ${cost.map(c => `<li>${c}</li>`).join('')}
+            </ul>
+        </div>
+    `;
+
+    const scenariosHTML = `
+        <div class="premium-scenarios-grid">
+            <div class="premium-scenario premium-scenario-yes">
+                <h3 class="premium-scenario-title">👍 ${scenariosTitle}</h3>
+                <ul class="premium-list">
+                    ${scenariosYes.map(s => `<li>${s}</li>`).join('')}
+                </ul>
+            </div>
+            <div class="premium-scenario premium-scenario-no">
+                <h3 class="premium-scenario-title">👎 ${scenariosNoTitle}</h3>
+                <ul class="premium-list">
+                    ${scenariosNo.map(s => `<li>${s}</li>`).join('')}
+                </ul>
+            </div>
+        </div>
+    `;
+
+    const tipsHTML = `
+        <div class="premium-block">
+            <h3 class="premium-block-title">🎯 ${tipsTitle}</h3>
+            <ul class="premium-list">
+                ${tips.map(tip => `<li>${tip}</li>`).join('')}
+            </ul>
+        </div>
+    `;
+
+    container.innerHTML = benefitsHTML + costHTML + scenariosHTML + tipsHTML;
 }
 
 // ============================================

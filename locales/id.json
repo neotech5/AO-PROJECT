@@ -34,6 +34,10 @@
     "survivalGank": "Gank Avoidance",
     "survivalT8Maps": "Peta T8",
     "survivalBuilds": "Build (T8)",
+    "optimizeGroup": "Optimize Pro",
+    "optimizeMarketplace": "Marketplace 101",
+    "optimizeRoutine": "Routine Harian",
+    "optimizePremium": "Itungan Premium",
     "quickGroup": "Tautan Cepat",
     "home": "Home",
     "biomes": "Bioma",
@@ -375,6 +379,142 @@
       "Pake cluster Z buat escape silver burden — mekanik wall ngeblock pengejar."
     ]
   },
+  "marketplace": {
+    "title": "Marketplace 101",
+    "description": "Marketplace = tempat 80% duit player dihasilkan. Kuasai beda Buy Order vs Sell Order, pajak, dan harga antar kota — ini skill universal yang dipake semua pro.",
+    "labelOrderType": "Jenis Order",
+    "labelHow": "Cara kerjanya",
+    "labelWhen": "Pas kapan dipake",
+    "orders": [
+      {
+        "type": "📤 Sell Order (Pasang Jual)",
+        "how": "Kamu pasang barang di harga kamu. Nunggu di antrian sampe ada yang beli. Pajak lebih tinggi tapi kamu yang nentuin harga.",
+        "when": "Pas punya waktu dan mau profit max. Cocok buat stack resource refined, gear, dan barang langka."
+      },
+      {
+        "type": "📥 Buy Order (Beli Langsung)",
+        "how": "Kamu beli dari Sell Order orang lain di harga mereka. Bayar full price langsung, gak nunggu.",
+        "when": "Pas butuh barang SEKARANG (gear sebelum fight, food sebelum gather). Mahal dikit tapi instant."
+      },
+      {
+        "type": "💼 Jual ke Buy Order (Quick Sell)",
+        "how": "Ada orang yang pasang Buy Order di harga lebih rendah. Kamu jual ke mereka langsung — dapet silver cepet.",
+        "when": "Pas butuh silver SEKARANG gak mau nunggu. Profit kurang tapi instant. Bagus buat clearing inventory."
+      },
+      {
+        "type": "🎯 Pasang Buy Order (Nawar)",
+        "how": "Kamu pasang harga yang kamu mau bayar. Seller yang masuk fulfill di harga kamu. Sabar = untung — kamu yang set rate.",
+        "when": "Pas mau resource bulk murah (misal T6 wood buat crafting). Nunggu berhari-hari tapi hemat 20-30% vs Sell Order."
+      }
+    ],
+    "taxTitle": "Breakdown Pajak Marketplace",
+    "taxHeaders": ["Fee", "Tanpa Premium", "Sama Premium", "Catatan"],
+    "taxRows": [
+      { "fee": "Setup Fee (pasang order)", "free": "1.5%", "premium": "1.5%", "note": "Dibayar pas kamu pasang Sell/Buy Order, terlepas jadi laku atau gak." },
+      { "fee": "Sales Tax (pas laku)", "free": "8%", "premium": "4%", "note": "Premium potong SETENGAH. Alasan utama trader beli Premium." },
+      { "fee": "Total biaya (sell biasa)", "free": "~9.5%", "premium": "~5.5%", "note": "Itung ini ke profit margin kamu SEBELUM listing." }
+    ],
+    "cityTitle": "Arbitrage Antar Kota — Beda Harga",
+    "city": [
+      "💎 Caerleon = demand tertinggi buat hampir semua, tapi risiko travel paling tinggi (akses Black Zone).",
+      "🌲 Lymhurst (Wood) biasanya jual Plank refined paling murah — beli di sini, jual di Caerleon untung +20-30%.",
+      "⛰️ Fort Sterling (Ore) biasanya Stone Block dan Metal Bar murah.",
+      "🌊 Bridgewatch (Stone) resource Stone murah, Hide mahal.",
+      "🍃 Martlock (Hide) Hide dan Leather murah, Fiber mahal.",
+      "🌿 Thetford (Fiber) Fiber dan Cloth murah, Ore mahal.",
+      "📊 Pake Albion Data Project buat cek harga live antar kota SEBELUM travel.",
+      "🚨 Black Market (Caerleon) beli semua T4-T8 gear/consumable — kadang 2-3x harga marketplace. Dapet dari mob loot. Tempat dump gear hasil crafting."
+    ],
+    "tipsTitle": "Tips Marketplace Pro",
+    "tips": [
+      "Jangan pasang di angka bulat (10000). Pasang 9999 — kamu jadi paling depan di antrian.",
+      "Refresh harga tiap 6 jam — market shift harian ngikutin patch news dan aktivitas ZvZ.",
+      "Premium bayar dirinya sendiri kalo trading > 1M silver/minggu. Di bawah itu, free aja udah cukup.",
+      "Jangan panic sell. Kalo harga crash, sabar 2-3 hari — biasanya balik normal.",
+      "Spread gede Caerleon vs Royal? Risiko travel beneran ada. Pake Transport Ox + scout cluster dulu."
+    ]
+  },
+
+  "routine": {
+    "title": "Routine Harian Pro",
+    "description": "Setiap pro Albion punya ritual harian. Ikutin checklist ini tiap login — bahkan 30 menit pun cukup — biar silver, fame, dan progress kompound tanpa burnout.",
+    "checklistTitle": "Daily Login Checklist",
+    "checklist": [
+      { "time": "0:00–0:05", "task": "Claim Login Bonus", "detail": "Silver + tome gratis tiap hari. Klik PALING DULU sebelum apapun." },
+      { "time": "0:05–0:15", "task": "Adventurer's Challenge", "detail": "Buka Challenge UI, claim reward yang available, planning progress hari ini. Weekly chest di 100% — JANGAN PERNAH skip." },
+      { "time": "0:15–0:20", "task": "Daily Quest di NPC", "detail": "Ngobrol sama Mage NPC di kota. 1 daily quest = silver gratis 30-50k + fame + loot crate." },
+      { "time": "0:20–0:25", "task": "Repair Gear & Restock", "detail": "Cek durability gear. Refill food, potion, dan ammo di marketplace sebelum keluar kota." },
+      { "time": "0:25–0:35", "task": "Aktifkan Fame Boost", "detail": "Makan Pork Omelette (atau yang lebih tinggi) dan minum potion Healing/Resurrection. Premium dapet +50% fame buff selama window ini." },
+      { "time": "0:35–2:00+", "task": "Main Activity Block", "detail": "Gather/PvE/PvP main money-maker kamu. Stay di SATU aktivitas — switching context boros efisiensi." },
+      { "time": "Akhir sesi", "task": "Bank Semua", "detail": "Setor silver, refined resource, dan barang langka. JANGAN log off bawa barang berharga di inventory kalo sesi berikutnya bisa berhari-hari." },
+      { "time": "Weekly", "task": "Weekly Activity Check", "detail": "Minggu: complete weekly Adventurer's Challenge chest (silver + tome banyak). Cek kontribusi guild. Jual mats yang ditimbun." },
+      { "time": "Bonus Harian", "task": "Faction Warfare Quest", "detail": "Kalo lagi di faction (kota Royal), ambil 1 faction quest. 5 menit, free reputation token + silver." },
+      { "time": "Optional", "task": "Mist Run (T7+)", "detail": "Kalo ada waktu, masuk Mist 30 menit. Solo content = PvP gathering santai. Reset tiap 24 jam." }
+    ],
+    "weeklyTitle": "Goals Weekly (Reset Minggu/Senin)",
+    "weekly": [
+      "Complete weekly chest Adventurer's Challenge (reward tome+silver gede).",
+      "Refine minimal 1 batch resource buat specialty bonus (rotasi kota).",
+      "Jual gear/resource yang ditimbun di marketplace (jangan timbun > 2 minggu).",
+      "Cek Murder Ledger buat ganker baru di zone kamu.",
+      "Patch day check: baca patch notes buat perubahan build meta."
+    ],
+    "burnoutTitle": "Hindari Burnout",
+    "burnout": [
+      "Jangan coba SEMUA aktivitas dalam 1 sesi. Pilih 1-2 aktivitas dan eksekusi dengan baik.",
+      "Libur 1 hari/minggu — karakter kamu gak rugi apa-apa kalo istirahat.",
+      "Kalo frustrasi > 30 menit, log off aja. Mood jelek = decision jelek = gear hilang.",
+      "Pake Sticky Notes atau reminder HP buat ambil daily quest — gampang lupa.",
+      "Set goal weekly silver/fame, bukan 'main tiap hari'. Quality > quantity."
+    ]
+  },
+
+  "premium": {
+    "title": "Itungan Premium",
+    "description": "Harus beli Premium gak? Banyak pemula overpay atau skip pas sebenernya harus. Berikut itungan beneran, dipecah — putusin berdasarkan KOMITMEN kamu, bukan hype.",
+    "benefitsTitle": "Apa Premium Beneran Kasih Kamu",
+    "benefitsHeaders": ["Benefit", "Tanpa Premium", "Sama Premium", "Impact Nyata"],
+    "benefits": [
+      { "benefit": "Fame Gain", "free": "100%", "premium": "+50%", "impact": "T6 → T7 = ~40 jam vs 60 jam. Gede banget di grind panjang." },
+      { "benefit": "Silver Loot Drop", "free": "100%", "premium": "+50%", "impact": "Yang paling under-rated. Solo gathering = +50% silver per sesi." },
+      { "benefit": "Pajak Marketplace", "free": "8%", "premium": "4%", "impact": "Setengah! Sale 1M silver: hemat 40k silver/sale. Gede buat trader." },
+      { "benefit": "Island Plot", "free": "Tier 1 doang", "premium": "Tier 1–6", "impact": "Island gede = lebih banyak farm slot, mount, crafting station." },
+      { "benefit": "Refining Speed", "free": "Standard", "premium": "+50%", "impact": "Refine 100 batch dalam 1 jam bukan 1.5 jam. Waktu yang dihemat kompound." },
+      { "benefit": "Crafting Focus", "free": "Regen standard", "premium": "+50% regen", "impact": "Focus = barang crafting gratis. Focus lebih banyak = profit lebih." },
+      { "benefit": "Slot Marketplace", "free": "5 slot", "premium": "15 slot", "impact": "3x lebih banyak order = 3x lebih banyak passive income buat trader." }
+    ],
+    "costTitle": "Cost & Threshold Worth-It",
+    "cost": [
+      "🪙 Beli Premium pake Gold (in-game): ~10 hari = 1500 gold ≈ 200-300k silver tergantung rate.",
+      "💵 Beli Premium pake duit asli: $9.99 USD/bulan (atau lebih murah lewat bundle 3/6/12 bulan).",
+      "⏰ Premium AKTIF SELALU 24h/7d — bonus fame & silver tetep jalan walau AFK di Island.",
+      "💡 Rule of Thumb: Kalo main > 20 jam/minggu → Premium bayar dirinya sendiri lewat bonus fame + silver."
+    ],
+    "scenariosTitle": "Premium WORTH IT Kalo",
+    "scenariosYes": [
+      "✅ Main > 20 jam/minggu — bonus fame doang udah cover cost.",
+      "✅ Trading > 1M silver/minggu — pajak setengah bayar dirinya.",
+      "✅ Lagi grinding ke T7-T8 — hemat puluhan jam.",
+      "✅ Aktif pake Focus crafting — +50% focus regen GEDE BANGET.",
+      "✅ Mau plot Island T2-T6 buat income farm/laborer."
+    ],
+    "scenariosNoTitle": "Premium GAK WORTH IT Kalo",
+    "scenariosNo": [
+      "❌ Main < 10 jam/minggu — bonus gak cukup kompound.",
+      "❌ Lagi nyobain game (50 jam pertama).",
+      "❌ Cuma PvP atau solo Mist santai — gak interaksi ekonomi.",
+      "❌ Belum yakin lanjut main — tunggu 50 jam gameplay dulu."
+    ],
+    "tipsTitle": "Strategi Premium yang Pintar",
+    "tips": [
+      "Mulai dari 10 hari (1500 gold) DULU — test apakah bonus beneran ngaruh.",
+      "Bulk-buy 6 atau 12 bulan dapet diskon 10-20% KALO udah main 100+ jam.",
+      "Jangan ketipu propaganda 'Premium = wajib'. F2P pure tetep viable buat casual.",
+      "Convert silver → gold → Premium = jalur F2P murni. Itung harga gold vs value silver dulu.",
+      "Premium = QoL boost, bukan pay-to-win. Bisa compete tanpa Premium kalo main pinter."
+    ]
+  },
+
   "tools": {
     "title": "Tools & Apps (Pro Toolkit)",
     "description": "Setiap pro Albion pake tools ini. Bookmark semua — ngerubah usaha mentah jadi main pinter.",

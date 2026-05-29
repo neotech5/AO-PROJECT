@@ -2485,3 +2485,362 @@ body.sidebar-open {
         font-size: 0.82rem;
     }
 }
+
+/* ============================================
+   MARKETPLACE 101
+   ============================================ */
+.marketplace-container,
+.routine-container,
+.premium-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl, 2rem);
+}
+
+.marketplace-orders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg, 1.5rem);
+}
+
+.marketplace-order-card {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.06) 0%, rgba(26, 26, 46, 0.5) 100%);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 12px;
+    padding: 1.25rem 1.35rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.marketplace-order-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(212, 175, 55, 0.55);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.marketplace-order-title {
+    color: #d4af37;
+    font-size: 1.05rem;
+    margin: 0 0 0.85rem 0;
+    font-weight: 700;
+}
+
+.marketplace-order-row {
+    margin-bottom: 0.7rem;
+}
+
+.marketplace-order-row:last-child { margin-bottom: 0; }
+
+.marketplace-order-label {
+    display: inline-block;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #9b8b5e;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.marketplace-order-text {
+    margin: 0;
+    color: #d4d4dc;
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.marketplace-block,
+.routine-block,
+.premium-block {
+    background: rgba(26, 26, 46, 0.6);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 14px;
+    padding: 1.5rem 1.6rem;
+}
+
+.marketplace-block-title,
+.routine-block-title,
+.premium-block-title {
+    color: #d4af37;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.22);
+    padding-bottom: 0.65rem;
+}
+
+.marketplace-table-wrapper,
+.premium-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.marketplace-table,
+.premium-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.marketplace-table thead th,
+.premium-table thead th {
+    text-align: left;
+    color: #d4af37;
+    font-weight: 600;
+    background: rgba(212, 175, 55, 0.08);
+    padding: 0.75rem 0.85rem;
+    border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.marketplace-table tbody td,
+.premium-table tbody td {
+    padding: 0.75rem 0.85rem;
+    color: #d4d4dc;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    vertical-align: top;
+}
+
+.marketplace-table tbody tr:last-child td,
+.premium-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.marketplace-table tbody tr:hover td,
+.premium-table tbody tr:hover td {
+    background: rgba(212, 175, 55, 0.04);
+}
+
+.tag-free,
+.tag-premium {
+    display: inline-block;
+    padding: 0.18rem 0.55rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.tag-free {
+    background: rgba(231, 76, 60, 0.15);
+    color: #ef9a9a;
+    border: 1px solid rgba(231, 76, 60, 0.35);
+}
+
+.tag-premium {
+    background: rgba(74, 222, 128, 0.15);
+    color: #86efac;
+    border: 1px solid rgba(74, 222, 128, 0.4);
+}
+
+.marketplace-note {
+    color: #9b9bb0;
+    font-size: 0.82rem;
+}
+
+.marketplace-list,
+.routine-list,
+.premium-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.marketplace-list li,
+.routine-list li,
+.premium-list li {
+    color: #d4d4dc;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.marketplace-list li::before,
+.routine-list li::before,
+.premium-list li::before {
+    content: "▸";
+    color: #d4af37;
+    position: absolute;
+    left: 0;
+}
+
+.marketplace-tips li::before { content: "💡"; left: -0.1rem; }
+
+.routine-weekly li::before { content: "📌"; left: -0.1rem; }
+
+.routine-burnout li::before { content: "🧘"; left: -0.1rem; }
+
+/* ============================================
+   DAILY ROUTINE PRO
+   ============================================ */
+.routine-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.routine-step {
+    display: flex;
+    gap: 1rem;
+    background: rgba(15, 15, 30, 0.5);
+    border: 1px solid rgba(212, 175, 55, 0.18);
+    border-radius: 10px;
+    padding: 0.95rem 1.1rem;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.routine-step:hover {
+    border-color: rgba(212, 175, 55, 0.45);
+    transform: translateX(4px);
+}
+
+.routine-step-number {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #d4af37, #b8941f);
+    color: #0f0f1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.35);
+}
+
+.routine-step-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.routine-step-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1rem;
+    align-items: baseline;
+    margin-bottom: 0.35rem;
+}
+
+.routine-time {
+    font-size: 0.78rem;
+    color: #9b8b5e;
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    background: rgba(212, 175, 55, 0.08);
+    padding: 0.15rem 0.55rem;
+    border-radius: 6px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.routine-task {
+    font-weight: 700;
+    color: #d4af37;
+    font-size: 0.98rem;
+}
+
+.routine-detail {
+    margin: 0;
+    color: #c8c8d4;
+    font-size: 0.88rem;
+    line-height: 1.55;
+}
+
+/* ============================================
+   PREMIUM MATH
+   ============================================ */
+.premium-benefit-name {
+    color: #e8e8f0;
+    font-weight: 600;
+}
+
+.premium-impact {
+    color: #c8c8d4;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.premium-scenarios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg, 1.5rem);
+}
+
+.premium-scenario {
+    border-radius: 14px;
+    padding: 1.4rem 1.5rem;
+    border: 1px solid transparent;
+    background: rgba(26, 26, 46, 0.6);
+}
+
+.premium-scenario-yes {
+    border-color: rgba(74, 222, 128, 0.35);
+    background: linear-gradient(135deg, rgba(74, 222, 128, 0.08) 0%, rgba(26, 26, 46, 0.7) 100%);
+}
+
+.premium-scenario-no {
+    border-color: rgba(231, 76, 60, 0.35);
+    background: linear-gradient(135deg, rgba(231, 76, 60, 0.08) 0%, rgba(26, 26, 46, 0.7) 100%);
+}
+
+.premium-scenario-title {
+    margin: 0 0 0.95rem 0;
+    font-size: 1.02rem;
+    font-weight: 700;
+    color: #d4af37;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.premium-scenario-yes .premium-list li::before { content: "✅"; left: -0.1rem; }
+.premium-scenario-no .premium-list li::before { content: "❌"; left: -0.1rem; }
+
+/* ============================================
+   RESPONSIVE — OPTIMIZE PRO
+   ============================================ */
+@media (max-width: 768px) {
+    .marketplace-block,
+    .routine-block,
+    .premium-block,
+    .premium-scenario {
+        padding: 1.1rem 1.15rem;
+    }
+
+    .marketplace-table,
+    .premium-table {
+        font-size: 0.82rem;
+    }
+
+    .marketplace-table thead th,
+    .premium-table thead th,
+    .marketplace-table tbody td,
+    .premium-table tbody td {
+        padding: 0.6rem 0.65rem;
+    }
+
+    .routine-step {
+        padding: 0.8rem 0.9rem;
+    }
+
+    .routine-step-number {
+        width: 32px;
+        height: 32px;
+        font-size: 0.88rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .marketplace-table thead,
+    .premium-table thead {
+        font-size: 0.72rem;
+    }
+
+    .marketplace-table,
+    .premium-table {
+        font-size: 0.78rem;
+    }
+}

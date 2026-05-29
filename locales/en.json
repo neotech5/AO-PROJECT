@@ -34,6 +34,10 @@
     "survivalGank": "Gank Avoidance",
     "survivalT8Maps": "T8 Maps",
     "survivalBuilds": "Builds (T8)",
+    "optimizeGroup": "Optimize Pro",
+    "optimizeMarketplace": "Marketplace 101",
+    "optimizeRoutine": "Daily Routine",
+    "optimizePremium": "Premium Math",
     "quickGroup": "Quick Links",
     "home": "Home",
     "biomes": "Biomes",
@@ -375,6 +379,142 @@
       "Use cluster Z to escape silver burden — the wall mechanic blocks pursuers."
     ]
   },
+  "marketplace": {
+    "title": "Marketplace 101",
+    "description": "Marketplace is where 80% of player money is made. Master the difference between buy/sell orders, taxes, and city arbitrage — this is the universal pro skill.",
+    "labelOrderType": "Order Type",
+    "labelHow": "How it works",
+    "labelWhen": "When to use",
+    "orders": [
+      {
+        "type": "📤 Sell Order (Instant Sell)",
+        "how": "You list an item at your price. It waits in the queue until someone buys it. Higher tax but you pick the price.",
+        "when": "When you have time and want max profit. Best for stacks of refined resources, gear, and rare items."
+      },
+      {
+        "type": "📥 Buy Order (Instant Buy)",
+        "how": "You buy from someone else's sell order at their listed price. Pay full price immediately, no waiting.",
+        "when": "When you need an item NOW (gear before a fight, food before gather session). Cost is higher but instant."
+      },
+      {
+        "type": "💼 Sell to Buy Order (Quick Sell)",
+        "how": "Someone posted a Buy Order at a lower price. You sell to them instantly — they get the item, you get silver fast.",
+        "when": "When you need silver NOW and don't want to wait. Lower profit but immediate. Good for clearing inventory."
+      },
+      {
+        "type": "🎯 Post Buy Order (Bargain Hunt)",
+        "how": "You post the price you're willing to pay. Sellers fulfill at your price. Patience pays — you set the rate.",
+        "when": "When you want bulk resources cheap (e.g. T6 wood for crafting). Wait days but save 20-30% vs Sell Orders."
+      }
+    ],
+    "taxTitle": "Tax Breakdown",
+    "taxHeaders": ["Fee", "Without Premium", "With Premium", "Note"],
+    "taxRows": [
+      { "fee": "Setup Fee (post order)", "free": "1.5%", "premium": "1.5%", "note": "Paid when you place a Sell Order or Buy Order, regardless of sale outcome." },
+      { "fee": "Sales Tax (on completed sale)", "free": "8%", "premium": "4%", "note": "Premium cuts this in HALF. Biggest reason traders justify Premium." },
+      { "fee": "Total cost (typical sell)", "free": "~9.5%", "premium": "~5.5%", "note": "Calculate this into your profit margin BEFORE listing." }
+    ],
+    "cityTitle": "City Arbitrage — Price Differences",
+    "city": [
+      "💎 Caerleon = highest demand for almost everything, but highest risk to travel (Black Zone access).",
+      "🌲 Lymhurst (Wood) usually sells refined Plank cheaper here — buy here, sell in Caerleon for +20-30%.",
+      "⛰️ Fort Sterling (Ore) usually has cheap Stone Block and Metal Bar.",
+      "🌊 Bridgewatch (Stone) cheap Stone resources, expensive Hide.",
+      "🍃 Martlock (Hide) cheap Hide and Leather, expensive Fiber.",
+      "🌿 Thetford (Fiber) cheap Fiber and Cloth, expensive Ore.",
+      "📊 Use Albion Data Project to check live prices across cities BEFORE traveling.",
+      "🚨 Black Market (Caerleon) buys all T4-T8 gear/consumables — sometimes 2-3x marketplace price. Mob loot tax. Best dump for crafted gear."
+    ],
+    "tipsTitle": "Marketplace Pro Tips",
+    "tips": [
+      "Don't list at round numbers (10000). List at 9999 — you become first in queue.",
+      "Refresh prices every 6h — markets shift daily based on patch news and ZvZ activity.",
+      "Premium pays itself if you trade > 1M silver/week. Below that, free is fine.",
+      "Never panic sell. If prices crash, wait 2-3 days — they normalize.",
+      "Big spread Caerleon vs Royal? Travel risk is real. Use Transport Ox + scout cluster first."
+    ]
+  },
+
+  "routine": {
+    "title": "Pro Daily Routine",
+    "description": "Every pro Albion player has a daily ritual. Follow this checklist each login — even just 30 minutes — to compound silver, fame, and progress without burnout.",
+    "checklistTitle": "Daily Login Checklist",
+    "checklist": [
+      { "time": "0:00–0:05", "task": "Claim Login Bonus", "detail": "Free silver + tomes daily. Click it FIRST before anything else." },
+      { "time": "0:05–0:15", "task": "Adventurer's Challenge", "detail": "Open Challenge UI, claim available rewards, plan today's progress. Weekly chest at 100% — never skip." },
+      { "time": "0:15–0:20", "task": "Daily Quest at NPC", "detail": "Talk to Mage NPC in city. 1 daily quest = free 30-50k silver + fame + loot crate." },
+      { "time": "0:20–0:25", "task": "Repair Gear & Restock", "detail": "Check gear durability. Refill food, potions, and ammo at marketplace before heading out." },
+      { "time": "0:25–0:35", "task": "Activate Fame Boost", "detail": "Eat Pork Omelette (or higher) and drink Healing/Resurrection potions. Premium players get +50% fame buff during this window." },
+      { "time": "0:35–2:00+", "task": "Main Activity Block", "detail": "Gather/PvE/PvP your main money-maker. Stay in this ONE activity — context switching costs efficiency." },
+      { "time": "End of session", "task": "Bank Everything", "detail": "Deposit silver, refined resources, and rare items. NEVER log off with valuables in inventory if next session might be days away." },
+      { "time": "Weekly", "task": "Weekly Activity Check", "detail": "Sunday: complete weekly Adventurer's Challenge chest (huge silver + tomes). Check guild contribution. Sell hoarded mats." },
+      { "time": "Daily Bonus", "task": "Faction Warfare Quest", "detail": "If you're in a faction (Royal cities), grab 1 faction quest. 5 minutes, free reputation token + silver." },
+      { "time": "Optional", "task": "Mist Run (T7+)", "detail": "If you have time, jump in Mists for 30 min. Solo content = chill PvP gathering. Reset every 24h." }
+    ],
+    "weeklyTitle": "Weekly Goals (Sun/Mon Reset)",
+    "weekly": [
+      "Complete Adventurer's Challenge weekly chest (huge tome+silver reward).",
+      "Refine at least 1 batch of resources for specialty bonus (cycle cities).",
+      "Sell hoarded gear/resources to flat marketplace (avoid hoarding > 2 weeks).",
+      "Check Murder Ledger for any new ganker in your zone.",
+      "Patch day check: read patch notes for build meta changes."
+    ],
+    "burnoutTitle": "Avoid Burnout",
+    "burnout": [
+      "Don't try to do EVERYTHING in one session. Pick 1-2 activities and execute well.",
+      "Take 1 day off per week — your character doesn't lose anything from rest.",
+      "If you find yourself frustrated for > 30 min, log off. Bad mood = bad decisions = lost gear.",
+      "Use Sticky Notes app or phone reminder for daily quest pickup — easy to forget.",
+      "Set a weekly silver/fame goal, not a 'play every day' goal. Quality > quantity."
+    ]
+  },
+
+  "premium": {
+    "title": "Premium Math",
+    "description": "Should you buy Premium? Most newbies overpay or skip when they shouldn't. Here's the actual math, broken down — decide based on YOUR commitment level, not hype.",
+    "benefitsTitle": "What Premium Actually Gives You",
+    "benefitsHeaders": ["Benefit", "Without Premium", "With Premium", "Real Impact"],
+    "benefits": [
+      { "benefit": "Fame Gain", "free": "100%", "premium": "+50%", "impact": "T6 → T7 = ~40h vs 60h. Massive on long grinds." },
+      { "benefit": "Silver Loot Drop", "free": "100%", "premium": "+50%", "impact": "Most under-rated. Solo gathering = +50% silver per session." },
+      { "benefit": "Marketplace Tax", "free": "8%", "premium": "4%", "impact": "Halved! 1M silver sale: save 40k silver/sale. Big for traders." },
+      { "benefit": "Island Plots", "free": "Tier 1 only", "premium": "Tier 1–6", "impact": "Bigger island = more farm slots, more mounts, more crafting stations." },
+      { "benefit": "Refining Speed", "free": "Standard", "premium": "+50%", "impact": "Refine 100 batches in 1h instead of 1h30. Time saved compounds." },
+      { "benefit": "Crafting Focus", "free": "Standard regen", "premium": "+50% regen", "impact": "Focus = free crafted items. More Focus = more profit." },
+      { "benefit": "Marketplace Slots", "free": "5 slots", "premium": "15 slots", "impact": "3x more orders = 3x more passive income for traders." }
+    ],
+    "costTitle": "Cost & Worth-It Threshold",
+    "cost": [
+      "🪙 Buy Premium with Gold (in-game currency): ~10 days = 1,500 gold ≈ 200-300k silver depending on rate.",
+      "💵 Buy Premium with real money: $9.99 USD/month (or cheaper via 3/6/12 month bundles).",
+      "⏰ Premium ALWAYS active 24h/7d — fame & silver bonus stack even AFK on Island.",
+      "💡 Rule of Thumb: If you play > 20 hours/week → Premium pays itself in fame + silver bonus."
+    ],
+    "scenariosTitle": "When Premium IS Worth It",
+    "scenariosYes": [
+      "✅ You play > 20h/week — fame bonus alone covers cost.",
+      "✅ You trade > 1M silver/week — halved tax pays itself.",
+      "✅ You're grinding to T7-T8 — saves dozens of hours.",
+      "✅ You actively use Focus crafting — +50% focus regen is huge.",
+      "✅ You want T2-T6 Island plots for farm/laborer income."
+    ],
+    "scenariosNoTitle": "When Premium ISN'T Worth It",
+    "scenariosNo": [
+      "❌ You play < 10h/week — bonus doesn't compound enough.",
+      "❌ You're testing the game (first 50 hours).",
+      "❌ You only PvP or solo Mists casually — no economy interaction.",
+      "❌ You haven't decided if you'll stick with the game — wait 50h gameplay first."
+    ],
+    "tipsTitle": "Smart Premium Strategies",
+    "tips": [
+      "Start with 10 days (1500 gold) FIRST — test if bonus actually impacts you.",
+      "Bulk-buy 6 or 12 months for 10-20% discount IF you've already played 100+ hours.",
+      "Don't fall for 'Premium = required' propaganda. Free F2P is viable for casual players.",
+      "Convert silver → gold → Premium = pure F2P route. Calculate gold price vs silver value first.",
+      "Premium = QoL boost, not pay-to-win. You can compete without it if you play smart."
+    ]
+  },
+
   "tools": {
     "title": "Tools & Apps (Pro Toolkit)",
     "description": "Every Albion pro uses these tools. Bookmark them all — they turn raw effort into smart play.",
