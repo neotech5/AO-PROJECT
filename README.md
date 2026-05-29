@@ -44,6 +44,7 @@ Susunan **newbie → pro** dengan 4 tier section:
 - 📱 **Responsive** — mobile, tablet, desktop
 - ⚡ **No build step** — pure HTML/CSS/JS, langsung deploy
 - 🔗 **Open Graph + Twitter Card** — preview cantik di Discord/WhatsApp/Twitter/Telegram saat link di-share
+- 🔍 **SEO-optimized** — canonical URL, hreflang, JSON-LD structured data (4 schema: WebSite, Article, FAQPage, BreadcrumbList), robots.txt, sitemap.xml, rich snippet ready
 
 ## Quick Start (local dev)
 
@@ -73,18 +74,21 @@ Quick steps (Cloudflare Pages via Git):
 
 ```
 AO-PROJECT/
-├── index.html                  # Entry point (~370 baris) + OG meta tags
-├── styles.css                  # Styling (~3100 baris, CSS variables, responsive)
+├── index.html                  # Entry point (~570 baris) + OG meta tags + JSON-LD
+├── styles.css                  # Styling (~3150 baris, CSS variables, responsive)
 ├── script.js                   # Logic (~1700 baris: i18n, sidebar, tabs, data, render)
 ├── og-preview.png              # 1200x630 social share preview image
 ├── og-preview.svg              # Source SVG buat og-preview.png
+├── robots.txt                  # Search engine crawl rules + sitemap pointer
+├── sitemap.xml                 # XML sitemap untuk Google/Bing
 ├── _headers                    # Cloudflare custom HTTP headers
 ├── locales/
 │   ├── en.json                 # English translations (~1400 baris)
 │   └── id.json                 # Bahasa Indonesia translations (~1400 baris)
 ├── README.md                   # File ini
 ├── PROJECT_DOCUMENTATION.md    # Dokumentasi lengkap
-└── DEPLOY_CLOUDFLARE_PAGES.md  # Panduan deploy
+├── DEPLOY_CLOUDFLARE_PAGES.md  # Panduan deploy
+└── SEO_GUIDE.md                # Panduan SEO + Google Search Console setup
 ```
 
 Detail per file ada di **[PROJECT_DOCUMENTATION.md](PROJECT_DOCUMENTATION.md)**.
@@ -107,5 +111,5 @@ Open source. Bebas pakai dan modifikasi.
 
 ---
 
-**Versi**: 3.2 (Mei 2026 — + Mists & Roads of Avalon, Beginner FAQ, Open Graph meta tags, Marketplace 101, Daily Routine Pro, Premium Math)
+**Versi**: 3.3 (Mei 2026 — + SEO complete: JSON-LD structured data, canonical, hreflang, robots.txt, sitemap.xml, FAQ rich snippet, footer keyword variations)
 **Last Updated**: Mei 2026

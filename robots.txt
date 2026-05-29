@@ -1,0 +1,18 @@
+# Kitab Albion — robots.txt
+# Allow all search engines to index everything
+
+User-agent: *
+Allow: /
+
+# Block common bot abuse
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://kitab-albion.iqooz-dev.web.id/sitemap.xml

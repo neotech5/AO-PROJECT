@@ -2040,6 +2040,39 @@ body.sidebar-open {
     opacity: 0.7;
 }
 
+.footer-keywords {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-md);
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.footer-keywords strong {
+    color: var(--accent);
+}
+
+.footer-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: var(--spacing-md);
+}
+
+.footer-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 999px;
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
 /* ============================================
    ANIMATIONS
    ============================================ */
