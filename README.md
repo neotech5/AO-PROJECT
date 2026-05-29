@@ -17,6 +17,7 @@ Susunan **newbie → pro** dengan 4 tier section:
 - 📖 **Player Guide** — 3 fasa tabbed (Pemula / Mid Game / End Game)
 - 🗺️ **Zone Types Manual** — 7 zone (Blue/Yellow/Red/Black/Mists/Roads/Hellgate)
 - ❌ **JANGAN-DO List** — 14 kesalahan biasa pemula
+- 💬 **FAQ Pemula** — 15 Q&A collapsible (Premium wajib gak? Mati BZ? LP buat apa? dst.)
 
 **🟡 Pick Your Path**
 - 🌿 **Biome Distribution** — 5 bioma Royal
@@ -25,11 +26,15 @@ Susunan **newbie → pro** dengan 4 tier section:
 
 **🟠 Survive & Thrive**
 - 🛡️ **Gank Avoidance & Escape Manual** — 6 sub-section (checklist, spotting, escape kit table, Q-Swap, dst.)
+- 🌫️ **Mists & Roads of Avalon Deep Dive** — solo T4-T8, Knightfall Abbey, portal types, Avalonian Energy
 - 🗺️ **Spot Spesifik T2-T6** di Royal Continent + **T7-T8** di Outlands
 - ⚔️ **Gathering Builds** — 3 build meta 2026 (Solo / Tank / Balanced)
 
 **🔴 Optimize**
 - 📅 **Asia Server Event Schedule** — prime time, world boss, dst.
+- 💰 **Marketplace 101** — Buy/Sell Order, tax breakdown, arbitrage antar kota
+- 📋 **Routine Harian Pro** — daily login checklist + weekly goals + anti-burnout
+- 💎 **Itungan Premium** — comparison table, breakeven math, scenarios
 - 🧰 **Tools & Apps (Pro Toolkit)** — 8 tool wajib (Data Project, AlbionMap2D, Murder Ledger, dst.)
 - 💡 **Pro Tips** — efisiensi, keamanan, profitability
 
@@ -38,6 +43,7 @@ Susunan **newbie → pro** dengan 4 tier section:
 - 🕐 **Asia Server Status** — real-time clock + danger level indicator
 - 📱 **Responsive** — mobile, tablet, desktop
 - ⚡ **No build step** — pure HTML/CSS/JS, langsung deploy
+- 🔗 **Open Graph + Twitter Card** — preview cantik di Discord/WhatsApp/Twitter/Telegram saat link di-share
 
 ## Quick Start (local dev)
 
@@ -67,13 +73,15 @@ Quick steps (Cloudflare Pages via Git):
 
 ```
 AO-PROJECT/
-├── index.html                  # Entry point (352 baris)
-├── styles.css                  # Styling (2487 baris, CSS variables, responsive)
-├── script.js                   # Logic (1515 baris: i18n, sidebar, tabs, data, render)
+├── index.html                  # Entry point (~370 baris) + OG meta tags
+├── styles.css                  # Styling (~3100 baris, CSS variables, responsive)
+├── script.js                   # Logic (~1700 baris: i18n, sidebar, tabs, data, render)
+├── og-preview.png              # 1200x630 social share preview image
+├── og-preview.svg              # Source SVG buat og-preview.png
 ├── _headers                    # Cloudflare custom HTTP headers
 ├── locales/
-│   ├── en.json                 # English translations (880 baris)
-│   └── id.json                 # Bahasa Indonesia translations (880 baris)
+│   ├── en.json                 # English translations (~1400 baris)
+│   └── id.json                 # Bahasa Indonesia translations (~1400 baris)
 ├── README.md                   # File ini
 ├── PROJECT_DOCUMENTATION.md    # Dokumentasi lengkap
 └── DEPLOY_CLOUDFLARE_PAGES.md  # Panduan deploy
@@ -99,5 +107,5 @@ Open source. Bebas pakai dan modifikasi.
 
 ---
 
-**Versi**: 3.0 (Mei 2026 — + Beginner Essentials, Zone Types, JANGAN-DO List, Gank Avoidance, Pro Toolkit, newbie→pro reorder)
+**Versi**: 3.2 (Mei 2026 — + Mists & Roads of Avalon, Beginner FAQ, Open Graph meta tags, Marketplace 101, Daily Routine Pro, Premium Math)
 **Last Updated**: Mei 2026

@@ -3,7 +3,7 @@
 **Nama Project**: Kitab Pemula Albion Online (Albion Online Beginner's Codex)
 **Penulis**: ABID
 **Repo**: https://github.com/neotech5/AO-PROJECT
-**Versi Dokumentasi**: 3.0 (Mei 2026 — termasuk Sidebar Drawer, Tabbed UI, Profession Guide, Beginner Essentials, Foundation Sections, Survival Manual, Pro Toolkit, newbie→pro section order)
+**Versi Dokumentasi**: 3.2 (Mei 2026 — termasuk Sidebar Drawer, Tabbed UI, Profession Guide, Beginner Essentials, Foundation Sections, Survival Manual, Pro Toolkit, Optimize Pro tier, Mists & Roads of Avalon, Beginner FAQ, Open Graph meta tags, newbie→pro section order)
 **Lisensi**: Open source — bebas pakai & modifikasi
 
 ---
@@ -29,13 +29,18 @@ Situs panduan farming Albion Online berbahasa dwi-bahasa (Inggris / Bahasa Indon
 | 🟢 Foundations | 📖 Panduan Pemain (Player Guide) | 3 fasa: Pemula / Mid Game / End Game |
 | 🟢 Foundations | 🗺️ Zone Types Manual | Blue / Yellow / Red / Black / Mists / Roads / Hellgate |
 | 🟢 Foundations | ❌ JANGAN-DO List | 14 kesalahan biasa pemula |
+| 🟢 Foundations | 💬 FAQ Pemula | 15 Q&A collapsible (Premium wajib? Mati BZ? LP buat apa? dst.) |
 | 🟡 Pick Your Path | Distribusi Bioma | 5 kota Royal dan resource utama |
 | 🟡 Pick Your Path | 🛠️ Profesi Gathering | 6 profesi rasmi + Gatherer Overview |
 | 🟡 Pick Your Path | Panduan Progresi Tier | T1 → T8 progression |
 | 🟠 Survive & Thrive | 🛡️ Gank Avoidance & Escape Manual | Checklist, spotting, escape kit, Q-Swap, recovery |
+| 🟠 Survive & Thrive | 🌫️ Mists & Roads of Avalon | Solo T4-T8, Knightfall Abbey, portal types, Avalonian Energy |
 | 🟠 Survive & Thrive | Lokasi Farming T8 | Outlands map spesifik per resource |
 | 🟠 Survive & Thrive | ⚔️ Rekomendasi Build (T8) | Solo / Tank / Balanced meta 2026 |
 | 🔴 Optimize | 📅 Event & Jadwal | Asia server prime time, world boss, dst. |
+| 🔴 Optimize | 💰 Marketplace 101 | Buy/Sell Order, tax breakdown, arbitrage antar kota |
+| 🔴 Optimize | 📋 Routine Harian Pro | Daily login checklist (10 step) + weekly goals + anti-burnout |
+| 🔴 Optimize | 💎 Itungan Premium | Feature comparison, breakeven math, scenarios |
 | 🔴 Optimize | 🧰 Tools & Apps (Pro Toolkit) | 8 tool wajib: Data Project, Maps, Murder Ledger, dst. |
 | 🔴 Optimize | 💡 Pro Tips | Efisiensi, keamanan, profitability |
 
@@ -53,6 +58,12 @@ Situs panduan farming Albion Online berbahasa dwi-bahasa (Inggris / Bahasa Indon
 | **🗺️ Zone Types Manual** | 7 jenis zone (Blue/Yellow/Red/Black/Mists/Roads of Avalon/Hellgate) — color-coded card dengan badge bahaya, Pas Mati, Cocok Buat, Akses, fitur utama. |
 | **❌ JANGAN-DO List** | 14 kesalahan biasa pemula — card numbered tema merah dengan title + detail penjelasan. |
 | **🛡️ Gank Avoidance Manual** | 6 sub-section: Pre-Gathering Checklist (8), Cara Spot Ganker (6), Escape Kit Loadout (tabel 7 slot), Teknik Q-Swap (4), Kalau Udah Dikejar (6), Tips Lanjutan (5). |
+| **🌫️ Mists & Roads of Avalon** | 6 sub-block: Mists tier table (T4-T8 dengan danger badges), Knightfall Abbey (T7+ boss), Roads of Avalon (dimensional clusters), Portal Types (Wisp/Skull/Avalonian/Static), Avalonian Energy economy, Pro Tips. |
+| **💬 FAQ Pemula** | 15 Q&A collapsible (HTML5 `<details>`): Premium wajib gak, mati di BZ, LP buat apa, Asia vs Global, T8 timeline, solo player, zone color, gank, mount, food, ban/hijack, daily quest NPC, profitable resource, silver pemula, P2W myth. Item pertama default open. |
+| **💰 Marketplace 101** | 4 order type cards (Sell/Buy/Quick Sell/Bargain), tax breakdown table (Premium vs no-Premium), 8 city arbitrage tips, 5 pro tips. |
+| **📋 Routine Harian Pro** | 10-step daily login checklist bertimer (0:00-0:05 hingga end of session), 5 weekly goals, 5 anti-burnout tips. |
+| **💎 Itungan Premium** | Comparison table 7 benefit (Fame, Silver, Tax, Island, Refining, Focus, MP slots), cost breakdown, 2 scenario cards (WORTH IT vs GAK WORTH IT), 5 smart strategies. |
+| **🔗 Open Graph + Twitter Card** | 27 baris meta tags di `<head>`: og:type/title/description/image/url/locale, twitter:card=summary_large_image, og-preview.png 1200x630, inline SVG favicon, theme-color. Preview cantik di Discord/WhatsApp/Twitter/Telegram/Facebook/LinkedIn. |
 | **🧰 Tools & Apps (Pro Toolkit)** | 8 tool wajib link langsung: Albion Data Project, AlbionMap2D, Murder Ledger, Wiki, Galahad Map, Discord Resmi, Reddit, AlbionStatus. |
 | **Profession Tabs** | 6 profesi dengan: bioma sesuai, tools per tier (T2-T8), spot Royal T2-T6, spot Outlands T7-T8, tips spesifik. |
 | **Guide Phases** | 3 fasa player journey: Pemula (T1-T4, 0-50 jam) → Mid Game (T5-T7, 50-300 jam) → End Game (T7-T8, 300+ jam). |

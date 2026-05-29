@@ -213,7 +213,19 @@ Setiap kali mau update, jalankan command yang sama. Wrangler akan re-deploy.
 
 ## CONFIGURATION SETELAH DEPLOY
 
-### A. Custom Domain (Opsional)
+### A. Update Open Graph URL setelah deploy (Recommended)
+
+Setelah project live di Cloudflare Pages, kamu dapet URL final (contoh: `https://kitab-pemula-albion.pages.dev/`). Biar OG preview di Discord/WhatsApp/Twitter pas dishare nge-link ke production URL, edit `index.html` lalu commit:
+
+1. Buka `index.html` → cari blok meta `<!-- Open Graph -->`.
+2. Ganti `og:url` dari placeholder `https://kitab-pemula-albion.pages.dev/` ke URL actual deployment kamu.
+3. Optional: ganti `og:image` + `og:image:secure_url` + `twitter:image` dari GitHub raw URL ke `https://yourdomain.pages.dev/og-preview.png` (kalo udah deploy, file `og-preview.png` udah ada di root).
+4. Commit + push → Cloudflare auto-deploy.
+5. Test pake validator: https://opengraph.dev/ — paste URL kamu, klik Check.
+
+Pas link kamu dishare ke Discord/WhatsApp/Telegram, bakal muncul card cantik dengan thumbnail + judul + deskripsi.
+
+### B. Custom Domain (Opsional)
 
 Mau pakai domain sendiri (misal `albion.namamu.com`) bukan `*.pages.dev`?
 
@@ -226,11 +238,11 @@ Mau pakai domain sendiri (misal `albion.namamu.com`) bukan `*.pages.dev`?
 5. Tunggu DNS propagate (5 menit – 24 jam).
 6. SSL certificate auto-generated oleh Cloudflare.
 
-### B. Environment Variables (Tidak diperlukan untuk project ini)
+### C. Environment Variables (Tidak diperlukan untuk project ini)
 
 Cuma diperlukan kalau project Anda pakai API key, dll. Project Kitab Pemula tidak butuh.
 
-### C. Build & Deploy Settings (Recommended pengaturan)
+### D. Build & Deploy Settings (Recommended pengaturan)
 
 Di tab **Settings → Builds & deployments**:
 
@@ -242,7 +254,7 @@ Di tab **Settings → Builds & deployments**:
   - Production branch: `main`
   - Preview branches: **All non-production branches** (default — bagus untuk PR preview)
 
-### D. _headers File (sudah ada di repo)
+### E. _headers File (sudah ada di repo)
 
 File `_headers` di root project mengontrol HTTP headers. Cloudflare Pages otomatis baca file ini saat deploy. Tidak perlu config apa-apa di dashboard.
 
