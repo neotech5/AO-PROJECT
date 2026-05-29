@@ -2,7 +2,7 @@
 
 **Target audience**: Pemula yang belum pernah deploy ke Cloudflare Pages.
 **Estimasi waktu**: 10–15 menit (sudah termasuk register kalau belum punya akun).
-**Hasil akhir**: Website "Kitab Pemula Albion Online" live di URL public gratis dari Cloudflare (contoh: `kitab-pemula-albion.pages.dev`).
+**Hasil akhir**: Website "Kitab Pemula Albion Online" live di URL public gratis dari Cloudflare (contoh: `kitab-albion.iqooz-dev.web.id`).
 
 ---
 
@@ -77,8 +77,8 @@ Kalau Anda pakai source dari ZIP backup — extract dulu ZIP-nya ke folder koson
 
 ### Step 1.2 — Buat project baru
 
-1. **Project name**: Isi nama project, misalnya `kitab-pemula-albion`. Nama ini akan jadi subdomain Anda:
-   - Contoh: nama `kitab-pemula-albion` → URL jadi `kitab-pemula-albion.pages.dev`
+1. **Project name**: Isi nama project, misalnya `kitab-albion`. Nama ini akan jadi subdomain default-nya:
+   - Contoh: nama `kitab-albion` → URL default jadi `kitab-albion.pages.dev` (sebelum custom domain di-attach)
    - Aturan: huruf kecil, angka, dan tanda dash (-) saja. Tidak boleh ada spasi.
 2. Klik **Create project**.
 
@@ -94,7 +94,7 @@ Kalau Anda pakai source dari ZIP backup — extract dulu ZIP-nya ke folder koson
 ### Step 1.4 — Selesai!
 
 1. Cloudflare akan build dan deploy (biasanya < 30 detik).
-2. Setelah selesai, Anda dapat link seperti `https://kitab-pemula-albion.pages.dev` — klik untuk buka website Anda.
+2. Setelah selesai, Anda dapat link seperti `https://kitab-albion.iqooz-dev.web.id` — klik untuk buka website Anda.
 3. **Done!** Website Anda sudah live di internet.
 
 > **Catatan**: Setiap kali ada update file, Anda harus re-upload semua file (drag-and-drop ulang). Kalau Anda mau auto-update setiap push GitHub, pakai **Method 2** di bawah.
@@ -140,7 +140,7 @@ Ini bagian yang **PENTING**. Isi sesuai screenshot berikut:
 
 | Field | Isi dengan | Penjelasan |
 |---|---|---|
-| **Project name** | `kitab-pemula-albion` | Akan jadi subdomain `kitab-pemula-albion.pages.dev`. Pakai huruf kecil + dash. |
+| **Project name** | `kitab-albion` | Akan jadi subdomain default `kitab-albion.pages.dev`. Pakai huruf kecil + dash. |
 | **Production branch** | `main` | Branch yang akan auto-deploy ke production URL. Biasanya `main`. |
 | **Framework preset** | **None** (atau "None / Static HTML") | Project ini tidak pakai framework. JANGAN pilih React/Vue/Next.js. |
 | **Build command** | **(kosong)** | Project ini static — tidak perlu build. Biarkan kosong. |
@@ -156,7 +156,7 @@ Ini bagian yang **PENTING**. Isi sesuai screenshot berikut:
 
 1. Cloudflare mulai build (sebenarnya cuma upload — tidak ada build step). Biasanya selesai < 1 menit.
 2. Anda lihat log deployment real-time. Tunggu sampai status **Success**.
-3. Setelah selesai, klik tombol **Visit site** atau buka URL `https://kitab-pemula-albion.pages.dev`.
+3. Setelah selesai, klik tombol **Visit site** atau buka URL `https://kitab-albion.iqooz-dev.web.id`.
 
 ### Step 2.7 — Done! Auto-deploy aktif
 
@@ -199,7 +199,7 @@ Browser akan terbuka — login ke Cloudflare → authorize.
 Dari folder project:
 ```bash
 cd /path/to/AO-PROJECT
-wrangler pages deploy . --project-name=kitab-pemula-albion
+wrangler pages deploy . --project-name=kitab-albion
 ```
 
 - Pertama kali jalankan, Wrangler akan tanya production branch — ketik `main`.
@@ -215,13 +215,15 @@ Setiap kali mau update, jalankan command yang sama. Wrangler akan re-deploy.
 
 ### A. Update Open Graph URL setelah deploy (Recommended)
 
-Setelah project live di Cloudflare Pages, kamu dapet URL final (contoh: `https://kitab-pemula-albion.pages.dev/`). Biar OG preview di Discord/WhatsApp/Twitter pas dishare nge-link ke production URL, edit `index.html` lalu commit:
+Project ini default udah di-set buat production URL `https://kitab-albion.iqooz-dev.web.id` di blok `<!-- Open Graph -->` `index.html`. Kalo kamu deploy ke URL yang **berbeda**, edit `index.html`:
 
 1. Buka `index.html` → cari blok meta `<!-- Open Graph -->`.
-2. Ganti `og:url` dari placeholder `https://kitab-pemula-albion.pages.dev/` ke URL actual deployment kamu.
-3. Optional: ganti `og:image` + `og:image:secure_url` + `twitter:image` dari GitHub raw URL ke `https://yourdomain.pages.dev/og-preview.png` (kalo udah deploy, file `og-preview.png` udah ada di root).
+2. Ganti `og:url` ke URL actual deployment kamu (contoh `https://kitab-albion.pages.dev/`).
+3. Ganti `og:image`, `og:image:secure_url`, `twitter:image` ke `https://YOURDOMAIN/og-preview.png` (file `og-preview.png` auto-deploy ke root).
 4. Commit + push → Cloudflare auto-deploy.
 5. Test pake validator: https://opengraph.dev/ — paste URL kamu, klik Check.
+
+**Penting**: pas validator pertama kali scrape, gambar mungkin belum ke-cache. Jalanin Facebook Sharing Debugger atau Twitter Card Validator buat force refresh.
 
 Pas link kamu dishare ke Discord/WhatsApp/Telegram, bakal muncul card cantik dengan thumbnail + judul + deskripsi.
 
@@ -234,7 +236,7 @@ Mau pakai domain sendiri (misal `albion.namamu.com`) bukan `*.pages.dev`?
 3. Isi domain Anda (misal `albion.namamu.com`) → klik **Continue**.
 4. Cloudflare kasih instruction DNS:
    - **Kalau domain Anda sudah di-manage Cloudflare**: Otomatis added — tunggu 1–5 menit.
-   - **Kalau domain di-host di provider lain**: Anda perlu tambah CNAME record di DNS provider Anda. Cloudflare akan kasih CNAME target (contoh `kitab-pemula-albion.pages.dev`).
+   - **Kalau domain di-host di provider lain**: Anda perlu tambah CNAME record di DNS provider Anda. Cloudflare akan kasih CNAME target (contoh `kitab-albion.iqooz-dev.web.id`).
 5. Tunggu DNS propagate (5 menit – 24 jam).
 6. SSL certificate auto-generated oleh Cloudflare.
 
@@ -333,7 +335,7 @@ Artinya: semua file di-cache 1 jam, plus security headers.
 
 ### Tip 1: Pakai branch `dev` untuk testing
 
-Buat branch `dev` di GitHub. Push perubahan dulu ke `dev` → preview URL muncul (`dev.kitab-pemula-albion.pages.dev`). Setelah OK, merge ke `main` untuk production deploy.
+Buat branch `dev` di GitHub. Push perubahan dulu ke `dev` → preview URL muncul (`dev.kitab-albion.iqooz-dev.web.id`). Setelah OK, merge ke `main` untuk production deploy.
 
 ### Tip 2: Monitor analytics
 
@@ -403,7 +405,7 @@ Untuk project "Kitab Pemula Albion Online":
    - Framework preset: **None**
    - Build command: kosong
    - Build output directory: `/`
-3. **URL hasil**: `https://kitab-pemula-albion.pages.dev` (atau custom domain).
+3. **URL hasil**: `https://kitab-albion.iqooz-dev.web.id` (atau custom domain).
 4. **Cost**: $0/bulan untuk personal use (free tier sangat generous).
 
 Kalau ada masalah saat deploy, cek **Troubleshooting section** di atas atau hubungi ABID di Discord.
