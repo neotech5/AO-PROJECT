@@ -279,7 +279,40 @@ body.intro-open { overflow: hidden; }
     border-top: 1px solid rgba(192, 22, 34, 0.25);
 }
 
+/* ============================================
+   RESPONSIVE HEADER (shared by all pages)
+   ============================================ */
+@media (max-width: 768px) {
+    .header-content {
+        flex-wrap: wrap;
+        row-gap: 0.4rem;
+    }
+    /* nav drops to its own full-width row, centered */
+    .header-content .header-nav,
+    .header-content .calc-nav {
+        order: 5;
+        width: 100%;
+        margin: 0.5rem 0 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.4rem 1.1rem;
+    }
+    /* keep language switcher on the top row, pinned right */
+    .header-content .language-switcher { margin-left: auto; }
+}
 @media (max-width: 600px) {
     .header-mark { width: 30px; height: 30px; }
-    .landing-body .logo { font-size: 1.15rem; }
+    .landing-body .logo,
+    .header-content .logo { font-size: 1.12rem; }
+    .header-nav-link,
+    .calc-nav .nav-link { font-size: 0.9rem; }
+    .lang-btn { padding: 0.35rem 0.7rem; font-size: 0.8rem; }
+}
+@media (max-width: 380px) {
+    .landing-body .logo,
+    .header-content .logo { font-size: 1rem; }
+    .header-nav-link,
+    .calc-nav .nav-link { font-size: 0.82rem; }
+    .header-content .header-nav,
+    .header-content .calc-nav { gap: 0.35rem 0.75rem; }
 }
