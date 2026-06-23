@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albion Online Refining Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">Albion Refining Calc</h1>
+                <nav class="calc-nav">
+                    <a href="index.html" class="nav-link"
+                       data-id="🏠 Panduan Farming" data-en="🏠 Farming Guide">🏠 Panduan Farming</a>
+                </nav>
+                <div class="language-switcher">
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn active" data-lang="id">ID</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="calc-hero">
+        <div class="container">
+            <div class="hero-badge"
+                 data-id="KALKULATOR REFINING & CRAFTING" data-en="REFINING & CRAFTING CALCULATOR">KALKULATOR REFINING & CRAFTING</div>
+            <h1 class="hero-title"
+                data-id="Kalkulator Untung Refining Albion Online"
+                data-en="Albion Online Refining Profit Calculator">Kalkulator Untung Refining Albion Online</h1>
+            <p class="hero-description"
+               data-id="Hitung untung/rugi sebelum kamu beli ore, refine jadi bar, dan jual. Akurat 1:1 dengan spreadsheet aslinya (v2.6)."
+               data-en="Calculate profit/loss before you buy ore, refine into bars, and sell. 1:1 accurate with the original spreadsheet (v2.6).">Hitung untung/rugi sebelum kamu beli ore, refine jadi bar, dan jual. Akurat 1:1 dengan spreadsheet aslinya (v2.6).</p>
+            <div class="headline-profit-wrap">
+                <span class="headline-profit-label"
+                      data-id="Untung bersih per batch:" data-en="Net profit per batch:">Untung bersih per batch:</span>
+                <span id="headlineProfit" class="headline-profit">0</span>
+                <span class="silver-unit">silver</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="calc-main">
+        <div class="container">
+
+        <!-- HOW TO USE -->
+        <div class="section-block howto">
+            <div class="section-header">
+                <h2 data-id="📘 Cara Pakai (untuk Pemula)" data-en="📘 How to Use (for Beginners)">📘 Cara Pakai (untuk Pemula)</h2>
+            </div>
+            <div class="howto-grid">
+                <div class="howto-card">
+                    <div class="howto-num">1</div>
+                    <p data-id="<strong>Isi kotak BIRU saja.</strong> Kotak biru = yang kamu ketik sendiri. Hasil (angka putih/hijau) terhitung otomatis — jangan diutak-atik."
+                       data-en="<strong>Only fill the BLUE boxes.</strong> Blue = you type it. Results (white/green numbers) are auto-calculated — don't touch them."><strong>Isi kotak BIRU saja.</strong> Kotak biru = yang kamu ketik sendiri. Hasil terhitung otomatis.</p>
+                </div>
+                <div class="howto-card">
+                    <div class="howto-num">2</div>
+                    <p data-id="<strong>Bagian I — Bahan mentah.</strong> Masukkan harga beli raw (mis. ore/hide), jumlah yang dibeli, dan bonus kota tempat kamu refine. Bisa sampai 4 resource sekaligus (mis. bar + leather untuk 1 senjata)."
+                       data-en="<strong>Section I — Raw materials.</strong> Enter raw buy price (e.g. ore/hide), quantity bought, and the refining city bonus. Up to 4 resources at once (e.g. bar + leather for one weapon)."><strong>Bagian I — Bahan mentah.</strong> Harga beli raw, jumlah dibeli, dan bonus kota. Sampai 4 resource sekaligus.</p>
+                </div>
+                <div class="howto-card">
+                    <div class="howto-num">3</div>
+                    <p data-id="<strong>Bonus kota.</strong> Isi total bonus refining kota (base 18% + spesialisasi 40% di kota yang benar = 58). Lihat tabel “Referensi Kota” di bawah. Centang Focus kalau kamu pakai focus."
+                       data-en="<strong>City bonus.</strong> Enter the total refining bonus (base 18% + 40% specialty in the right city = 58). See the “City Reference” table below. Tick Focus if you use focus."><strong>Bonus kota.</strong> Base 18% + spesialisasi 40% = 58 di kota yang benar. Lihat tabel di bawah.</p>
+                </div>
+                <div class="howto-card">
+                    <div class="howto-num">4</div>
+                    <p data-id="<strong>Bagian II–III — Crafting & artifact.</strong> Kalau cuma mau refine (jual bar), boleh dilewati: set bonus crafting 0 dan artifact ke No. Kalau bikin item jadi, isi bonus crafting kota + harga artifact (kalau perlu)."
+                       data-en="<strong>Section II–III — Crafting & artifact.</strong> If you only refine (sell bars), skip them: set craft bonus 0 and artifact to No. If you craft a finished item, fill the craft city bonus + artifact price (if needed)."><strong>Bagian II–III.</strong> Kalau cuma refine, lewati (bonus craft 0, artifact No). Kalau bikin item, isi bonus craft + artifact.</p>
+                </div>
+                <div class="howto-card">
+                    <div class="howto-num">5</div>
+                    <p data-id="<strong>Bagian V — Jual & pajak.</strong> Masukkan harga jual per item. Pajak otomatis: 4% kalau Premium, 8% kalau tidak. Setup fee default 2,5%."
+                       data-en="<strong>Section V — Sell & tax.</strong> Enter sale price per item. Tax is automatic: 4% with Premium, 8% without. Setup fee default 2.5%."><strong>Bagian V — Jual & pajak.</strong> Harga jual per item. Pajak otomatis 4% (Premium) / 8% (non).</p>
+                </div>
+                <div class="howto-card">
+                    <div class="howto-num">6</div>
+                    <p data-id="<strong>Baca hasilnya.</strong> Lihat “Untung bersih per batch” di atas: hijau = untung, merah = rugi. Bagian VII–VIII menunjukkan beda untung pakai Premium dan pakai Focus."
+                       data-en="<strong>Read the result.</strong> Check “Net profit per batch” at top: green = profit, red = loss. Sections VII–VIII show the profit difference from Premium and Focus."><strong>Baca hasilnya.</strong> “Untung bersih” di atas: hijau = untung, merah = rugi.</p>
+                </div>
+            </div>
+            <p class="howto-note"
+               data-id="💡 Tips pemula: untuk strategi refining-flip paling simpel, isi <em>satu</em> resource saja (mis. Stone), set bonus crafting = 0 dan artifact = No, lalu bandingkan harga raw vs harga jual block."
+               data-en="💡 Beginner tip: for the simplest refining-flip, fill in just <em>one</em> resource (e.g. Stone), set craft bonus = 0 and artifact = No, then compare raw price vs block sell price.">💡 Tips pemula: untuk refining-flip paling simpel, isi satu resource saja, set bonus crafting = 0 dan artifact = No.</p>
+        </div>
+
+        <form id="calcForm" autocomplete="off">
+
+        <!-- GLOBAL -->
+        <div class="section-block">
+            <div class="section-header">
+                <h2 data-id="0. Asumsi Global" data-en="0. Global Assumptions">0. Asumsi Global</h2>
+            </div>
+            <div class="field-row">
+                <label data-id="Bonus tambahan dari Focus (% LPB — estimasi komunitas, default 59)"
+                       data-en="Focus bonus increase (% LPB — community estimate, default 59)">Bonus tambahan dari Focus (% LPB, default 59)</label>
+                <input type="number" id="focusBonus" class="in-blue" value="59" step="any">
+            </div>
+            <p class="field-note"
+               data-id="Catatan: +59% adalah ESTIMASI komunitas, belum 100% diverifikasi. Kalibrasi manual setelah tes in-game disarankan."
+               data-en="Note: +59% is a COMMUNITY estimate, not 100% verified. Manual calibration after in-game testing is recommended.">Catatan: +59% adalah estimasi komunitas, belum 100% diverifikasi.</p>
+        </div>
+
+        <!-- SECTION I: RAW MATERIALS -->
+        <div class="section-block">
+            <div class="section-header">
+                <h2 data-id="I. Bahan Mentah (sampai 4 resource)" data-en="I. Raw Materials (up to 4 resources)">I. Bahan Mentah (sampai 4 resource)</h2>
+                <p data-id="Tiap resource punya kota refining & RRR sendiri. Isi yang kamu pakai saja; sisanya biarkan 0."
+                   data-en="Each resource has its own refining city & RRR. Fill only the ones you use; leave the rest at 0.">Tiap resource punya kota & RRR sendiri. Isi yang dipakai saja.</p>
+            </div>
+            <div class="table-scroll">
+            <table class="calc-table res-table">
+                <thead>
+                    <tr>
+                        <th class="param-col" data-id="Parameter" data-en="Parameter">Parameter</th>
+                        <th data-id="Resource 1" data-en="Resource 1">Resource 1</th>
+                        <th data-id="Resource 2" data-en="Resource 2">Resource 2</th>
+                        <th data-id="Resource 3" data-en="Resource 3">Resource 3</th>
+                        <th data-id="Resource 4" data-en="Resource 4">Resource 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-id="Nama material (resource)" data-en="Material name (resource)">Nama material (resource)</td>
+                        <td><input type="text" id="r1_name" class="in-blue" value="Metal Bar (Ore)"></td>
+                        <td><input type="text" id="r2_name" class="in-blue" value="Leather (Hide)"></td>
+                        <td><input type="text" id="r3_name" class="in-blue" value=""></td>
+                        <td><input type="text" id="r4_name" class="in-blue" value=""></td>
+                    </tr>
+                    <tr>
+                        <td data-id="Tier resource (T1–T8, label saja)" data-en="Resource tier (T1–T8, label only)">Tier resource (label saja)</td>
+                        <td><input type="text" id="r1_tier" class="in-blue" value="T4"></td>
+                        <td><input type="text" id="r2_tier" class="in-blue" value="T4"></td>
+                        <td><input type="text" id="r3_tier" class="in-blue" value=""></td>
+                        <td><input type="text" id="r4_tier" class="in-blue" value=""></td>
+                    </tr>
+                    <tr>
+                        <td data-id="Harga per unit raw (silver)" data-en="Price per raw unit (silver)">Harga per unit raw (silver)</td>
+                        <td><input type="number" id="r1_price" class="in-blue" value="100000" step="any"></td>
+                        <td><input type="number" id="r2_price" class="in-blue" value="60000" step="any"></td>
+                        <td><input type="number" id="r3_price" class="in-blue" value="0" step="any"></td>
+                        <td><input type="number" id="r4_price" class="in-blue" value="0" step="any"></td>
+                    </tr>
+                    <tr>
+                        <td data-id="Jumlah raw dibeli" data-en="Quantity of raw bought">Jumlah raw dibeli</td>
+                        <td><input type="number" id="r1_qty" class="in-blue" value="100" step="any"></td>
+                        <td><input type="number" id="r2_qty" class="in-blue" value="50" step="any"></td>
+                        <td><input type="number" id="r3_qty" class="in-blue" value="0" step="any"></td>
+                        <td><input type="number" id="r4_qty" class="in-blue" value="0" step="any"></td>
+                    </tr>
+                    <tr class="out-row">
+                        <td data-id="Total biaya bahan mentah" data-en="Total raw material cost">Total biaya bahan mentah</td>
+                        <td><span id="r1_rawcost" class="out">0</span></td>
+                        <td><span id="r2_rawcost" class="out">0</span></td>
+                        <td><span id="r3_rawcost" class="out">0</span></td>
+                        <td><span id="r4_rawcost" class="out">0</span></td>
+                    </tr>
+                    <tr>
+                        <td data-id="Total bonus refining kota (%)" data-en="TOTAL city refining bonus (%)">Total bonus refining kota (%)</td>
+                        <td><input type="number" id="r1_bonus" class="in-blue" value="58" step="any"></td>
+                        <td><input type="number" id="r2_bonus" class="in-blue" value="40" step="any"></td>
+                        <td><input type="number" id="r3_bonus" class="in-blue" value="0" step="any"></td>
+                        <td><input type="number" id="r4_bonus" class="in-blue" value="0" step="any"></td>
+                    </tr>
+                    <tr>
+                        <td data-id="Pakai Focus saat refining?" data-en="Use Focus while refining?">Pakai Focus saat refining?</td>
+                        <td><input type="checkbox" id="r1_focus" class="in-check"></td>
+                        <td><input type="checkbox" id="r2_focus" class="in-check"></td>
+                        <td><input type="checkbox" id="r3_focus" class="in-check"></td>
+                        <td><input type="checkbox" id="r4_focus" class="in-check"></td>
+                    </tr>
+                    <tr class="out-row">
+                        <td data-id="Bonus refining efektif (+Focus)" data-en="Effective refining bonus (+Focus)">Bonus refining efektif (+Focus)</td>
+                        <td><span id="r1_effbonus" class="out">0</span></td>
+                        <td><span id="r2_effbonus" class="out">0</span></td>
+                        <td><span id="r3_effbonus" class="out">0</span></td>
+                        <td><span id="r4_effbonus" class="out">0</span></td>
+                    </tr>
+                    <tr class="out-row">
+                        <td data-id="Resource Return Rate (RRR)" data-en="Resource Return Rate (RRR)">Resource Return Rate (RRR)</td>
+                        <td><span id="r1_rrr" class="out">0</span></td>
+                        <td><span id="r2_rrr" class="out">0</span></td>
+                        <td><span id="r3_rrr" class="out">0</span></td>
+                        <td><span id="r4_rrr" class="out">0</span></td>
+                    </tr>
+                    <tr>
+                        <td data-id="Item Value (untuk usage fee)" data-en="Item Value (for usage fee)">Item Value (untuk usage fee)</td>
+                        <td><input type="number" id="r1_itemvalue" class="in-blue" value="100" step="any"></td>
+                        <td><input type="number" id="r2_itemvalue" class="in-blue" value="100" step="any"></td>
+                        <td><input type="number" id="r3_itemvalue" class="in-blue" value="100" step="any"></td>
+                        <td><input type="number" id="r4_itemvalue" class="in-blue" value="100" step="any"></td>
+                    </tr>
+                    <tr>
+                        <td data-id="Fee station per 100 nutrition (silver)" data-en="Station fee per 100 nutrition (silver)">Fee station per 100 nutrition</td>
+                        <td><input type="number" id="r1_fee" class="in-blue" value="1000" step="any"></td>
+                        <td><input type="number" id="r2_fee" class="in-blue" value="1000" step="any"></td>
+                        <td><input type="number" id="r3_fee" class="in-blue" value="1000" step="any"></td>
+                        <td><input type="number" id="r4_fee" class="in-blue" value="1000" step="any"></td>
+                    </tr>
+                    <tr class="out-row">
+                        <td data-id="Hasil refined (unit, efek RRR)" data-en="Refined output (units, result of RRR)">Hasil refined (unit)</td>
+                        <td><span id="r1_output" class="out">0</span></td>
+                        <td><span id="r2_output" class="out">0</span></td>
+                        <td><span id="r3_output" class="out">0</span></td>
+                        <td><span id="r4_output" class="out">0</span></td>
+                    </tr>
+                    <tr class="out-row">
+                        <td data-id="Biaya efektif per unit refined" data-en="Effective cost per unit refined">Biaya efektif per unit refined</td>
+                        <td><span id="r1_effcost" class="out">0</span></td>
+                        <td><span id="r2_effcost" class="out">0</span></td>
+                        <td><span id="r3_effcost" class="out">0</span></td>
+                        <td><span id="r4_effcost" class="out">0</span></td>
+                    </tr>
+                    <tr>
+                        <td data-id="Refined dibutuhkan per batch (dari resep)" data-en="Refined units needed per batch (from recipe)">Refined dibutuhkan per batch</td>
+                        <td><input type="number" id="r1_needed" class="in-blue" value="100" step="any"></td>
+                        <td><input type="number" id="r2_needed" class="in-blue" value="50" step="any"></td>
+                        <td><input type="number" id="r3_needed" class="in-blue" value="0" step="any"></td>
+                        <td><input type="number" id="r4_needed" class="in-blue" value="0" step="any"></td>
+                    </tr>
+                    <tr class="out-row">
+                        <td data-id="Total biaya efektif resource ini (silver)" data-en="Total effective cost of this resource (silver)">Total biaya efektif resource ini</td>
+                        <td><span id="r1_totalcost" class="out">0</span></td>
+                        <td><span id="r2_totalcost" class="out">0</span></td>
+                        <td><span id="r3_totalcost" class="out">0</span></td>
+                        <td><span id="r4_totalcost" class="out">0</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <div class="total-line">
+                <span data-id="TOTAL biaya bahan (semua resource, batch ini):" data-en="TOTAL material cost (all resources, this batch):">TOTAL biaya bahan (semua resource):</span>
+                <span id="out_totalRawMaterialCost" class="out big">0</span>
+            </div>
+            <div id="out_warning" class="calc-warning ok"></div>
+        </div>
+
+        <!-- SECTION II: CRAFTING -->
+        <div class="section-block">
+            <div class="section-header">
+                <h2 data-id="II. Crafting Item Jadi" data-en="II. Crafting the Finished Item">II. Crafting Item Jadi</h2>
+                <p data-id="Lewati bagian ini (set bonus = 0) kalau kamu cuma refine dan jual bar/block."
+                   data-en="Skip this (set bonus = 0) if you only refine and sell bars/blocks.">Lewati (bonus = 0) kalau kamu cuma refine & jual bar.</p>
+            </div>
+            <div class="field-grid">
+                <div class="field-row">
+                    <label data-id="Total bonus crafting kota (%)" data-en="TOTAL city crafting bonus (%)">Total bonus crafting kota (%)</label>
+                    <input type="number" id="craft_bonus" class="in-blue" value="33" step="any">
+                </div>
+                <div class="field-row">
+                    <label data-id="Pakai Focus saat crafting?" data-en="Use Focus while crafting?">Pakai Focus saat crafting?</label>
+                    <input type="checkbox" id="craft_focus" class="in-check">
+                </div>
+                <div class="field-row">
+                    <label data-id="Item Value item jadi (untuk usage fee)" data-en="Item Value of finished item (usage fee)">Item Value item jadi</label>
+                    <input type="number" id="craft_itemvalue" class="in-blue" value="256" step="any">
+                </div>
+                <div class="field-row">
+                    <label data-id="Fee station per 100 nutrition (silver)" data-en="Station fee per 100 nutrition (silver)">Fee station per 100 nutrition</label>
+                    <input type="number" id="craft_fee" class="in-blue" value="1000" step="any">
+                </div>
+                <div class="field-row">
+                    <label data-id="Jumlah item dibuat per batch" data-en="Number of items crafted per batch">Jumlah item dibuat per batch</label>
+                    <input type="number" id="craft_numitems" class="in-blue" value="1" step="any">
+                </div>
+            </div>
+            <div class="out-grid">
+                <div><span data-id="Craft RRR" data-en="Craft RRR">Craft RRR</span><span id="out_craftRRR" class="out">0</span></div>
+                <div><span data-id="Biaya bahan setelah return craft" data-en="Material cost after craft return">Biaya bahan setelah return craft</span><span id="out_matCostAfterCraft" class="out">0</span></div>
+                <div><span data-id="Total usage fee crafting" data-en="Total crafting usage fee">Total usage fee crafting</span><span id="out_craftUsageFee" class="out">0</span></div>
+            </div>
+        </div>
+
+        <!-- SECTION III: ARTIFACT -->
+        <div class="section-block">
+            <div class="section-header">
+                <h2 data-id="III. Biaya Artifact" data-en="III. Artifact Cost">III. Biaya Artifact</h2>
+                <p data-id="Hanya untuk item yang butuh artifact. Set ke No kalau tidak pakai."
+                   data-en="Only for items requiring an artifact. Set to No if not used.">Hanya untuk item yang butuh artifact. Set No kalau tidak pakai.</p>
+            </div>
+            <div class="field-grid">
+                <div class="field-row check-row">
+                    <label data-id="Item butuh artifact?" data-en="Does this item require an artifact?">Item butuh artifact?</label>
+                    <input type="checkbox" id="art_required" class="in-check" checked>
+                </div>
+                <div class="field-row">
+                    <label data-id="Jumlah artifact per craft" data-en="Artifacts required per craft">Jumlah artifact per craft</label>
+                    <input type="number" id="art_count" class="in-blue" value="1" step="any">
+                </div>
+                <div class="field-row">
+                    <label data-id="Harga artifact per unit (silver)" data-en="Artifact price per unit (silver)">Harga artifact per unit (silver)</label>
+                    <input type="number" id="art_price" class="in-blue" value="500000" step="any">
+                </div>
+                <div class="field-row check-row">
+                    <label data-id="Artifact habis (hancur) saat craft?" data-en="Is the artifact consumed on craft?">Artifact habis saat craft?</label>
+                    <input type="checkbox" id="art_consumed" class="in-check" checked>
+                </div>
+            </div>
+            <div class="out-grid">
+                <div><span data-id="Biaya artifact (batch ini)" data-en="Artifact cost (this batch)">Biaya artifact (batch ini)</span><span id="out_artifactCost" class="out">0</span></div>
+            </div>
+        </div>
+
+        <!-- SECTION IV: TOTAL PRODUCTION COST -->
+        <div class="section-block highlight-block">
+            <div class="section-header">
+                <h2 data-id="IV. Total Biaya Produksi" data-en="IV. Total Production Cost">IV. Total Biaya Produksi</h2>
+            </div>
+            <div class="out-grid">
+                <div><span data-id="TOTAL biaya produksi (seluruh batch)" data-en="TOTAL production cost (whole batch)">TOTAL biaya produksi (batch)</span><span id="out_totalProductionCost" class="out big">0</span></div>
+            </div>
+        </div>
+
+        <!-- SECTION V: MARKET & TAX -->
+        <div class="section-block">
+            <div class="section-header">
+                <h2 data-id="V. Pasar & Pajak" data-en="V. Market & Tax">V. Pasar & Pajak</h2>
+            </div>
+            <div class="field-grid">
+                <div class="field-row check-row">
+                    <label data-id="Premium aktif?" data-en="Premium active?">Premium aktif?</label>
+                    <input type="checkbox" id="mkt_premium" class="in-check" checked>
+                </div>
+                <div class="field-row">
+                    <label data-id="Harga jual per item (silver)" data-en="Sale price per item (silver)">Harga jual per item (silver)</label>
+                    <input type="number" id="mkt_saleprice" class="in-blue" value="25000" step="any">
+                </div>
+                <div class="field-row">
+                    <label data-id="Setup fee (%)" data-en="Setup fee (%)">Setup fee (%)</label>
+                    <input type="number" id="mkt_setupfee" class="in-blue" value="2.5" step="any">
+                </div>
+            </div>
+            <div class="out-grid">
+                <div><span data-id="Pajak transaksi (otomatis)" data-en="Transaction tax (automatic)">Pajak transaksi (otomatis)</span><span id="out_taxPercent" class="out">0</span></div>
+                <div><span data-id="Pendapatan kotor" data-en="Gross revenue">Pendapatan kotor</span><span id="out_gross" class="out">0</span></div>
+                <div><span data-id="Biaya setup fee" data-en="Setup fee cost">Biaya setup fee</span><span id="out_setupCost" class="out">0</span></div>
+                <div><span data-id="Biaya pajak transaksi" data-en="Transaction tax cost">Biaya pajak transaksi</span><span id="out_taxCost" class="out">0</span></div>
+                <div><span data-id="Pendapatan bersih (setelah biaya pasar)" data-en="Net revenue (after market costs)">Pendapatan bersih</span><span id="out_netRevenue" class="out">0</span></div>
+            </div>
+        </div>
+
+        <!-- SECTION VI: FINAL RESULTS -->
+        <div class="section-block result-block">
+            <div class="section-header">
+                <h2 data-id="VI. Hasil Akhir" data-en="VI. Final Results">VI. Hasil Akhir</h2>
+            </div>
+            <div class="out-grid">
+                <div class="big-result"><span data-id="Untung bersih per batch (silver)" data-en="Net Profit per batch (silver)">Untung bersih per batch</span><span id="out_netProfit" class="out big">0</span></div>
+                <div><span data-id="Margin untung (% dari pendapatan kotor)" data-en="Profit Margin (% of gross revenue)">Margin (% dari kotor)</span><span id="out_marginGross" class="out">0</span></div>
+                <div><span data-id="Margin untung (% dari biaya produksi)" data-en="Profit Margin (% of production cost)">Margin (% dari biaya)</span><span id="out_marginCost" class="out">0</span></div>
+            </div>
+        </div>
+
+        <!-- SECTION VII: PREMIUM vs NO PREMIUM -->
+        <div class="section-block">
+            <div class="section-header">
+                <h2 data-id="VII. Perbandingan: Premium vs Tanpa Premium" data-en="VII. Comparison: Premium vs No Premium">VII. Premium vs Tanpa Premium</h2>
+            </div>
+            <div class="out-grid">
+                <div><span data-id="Tanpa Premium (pajak 8%)" data-en="No Premium (8% tax)">Tanpa Premium (pajak 8%)</span><span id="out_profitNoPrem" class="out">0</span></div>
+                <div><span data-id="Dengan Premium (pajak 4%)" data-en="With Premium (4% tax)">Dengan Premium (pajak 4%)</span><span id="out_profitPrem" class="out">0</span></div>
+                <div><span data-id="Selisih (untung ekstra dari Premium)" data-en="Difference (extra profit from Premium)">Selisih (ekstra dari Premium)</span><span id="out_premDiff" class="out">0</span></div>
+            </div>
+        </div>
+
+        <!-- SECTION VIII: FOCUS vs NO FOCUS -->
+        <div class="section-block">
+            <div class="section-header">
+                <h2 data-id="VIII. Perbandingan: Pakai Focus vs Tidak" data-en="VIII. Comparison: Using Focus vs Not">VIII. Pakai Focus vs Tidak</h2>
+                <p data-id="Membandingkan menyalakan Focus untuk SEMUA resource + crafting sekaligus, vs mematikannya semua. Harga & jumlah tetap sama."
+                   data-en="Compares turning Focus on for ALL resources + crafting at once, vs off for all. Price & quantity stay the same.">Menyalakan Focus untuk semua resource + crafting, vs mematikan semua.</p>
+            </div>
+            <div class="out-grid">
+                <div><span data-id="Tanpa Focus" data-en="No Focus">Tanpa Focus</span><span id="out_profitNoFocus" class="out">0</span></div>
+                <div><span data-id="Dengan Focus (refining & crafting)" data-en="With Focus (refining & crafting)">Dengan Focus</span><span id="out_profitWithFocus" class="out">0</span></div>
+                <div><span data-id="Selisih (untung ekstra dari Focus)" data-en="Difference (extra profit from Focus)">Selisih (ekstra dari Focus)</span><span id="out_focusDiff" class="out">0</span></div>
+            </div>
+        </div>
+
+        </form>
+
+        <!-- CITY REFERENCE -->
+        <div class="section-block">
+            <div class="section-header">
+                <h2 data-id="🏙️ Referensi Bonus Kota" data-en="🏙️ City Bonus Reference">🏙️ Referensi Bonus Kota</h2>
+                <p data-id="Baseline semua kota: Refining +18% & Crafting +18%. Angka di bawah adalah bonus spesialisasi TAMBAHAN, hanya berlaku di kota itu. (Bonus refining penuh = 18 + 40 = 58.)"
+                   data-en="Baseline for all cities: Refining +18% & Crafting +18%. Numbers below are the ADDITIONAL specialty bonus, only at that city. (Full refining bonus = 18 + 40 = 58.)">Baseline semua kota: Refining +18% & Crafting +18%. Angka di bawah = bonus spesialisasi tambahan.</p>
+            </div>
+            <div class="table-scroll">
+                <table class="calc-table city-table">
+                    <thead>
+                        <tr>
+                            <th data-id="Kota" data-en="City">Kota</th>
+                            <th data-id="Spesialisasi Refining" data-en="Refining Specialty">Spesialisasi Refining</th>
+                            <th data-id="Spesialisasi Crafting (Gear, +15%)" data-en="Crafting Specialty (Gear, +15%)">Spesialisasi Crafting (+15%)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cityRefBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- ACCURACY NOTE -->
+        <div class="section-block accuracy-note">
+            <p data-id="<strong>Sumber & akurasi:</strong> Logika & semua rumus kalkulator ini disalin 1:1 dari spreadsheet <em>Albion_Calc_Refine_G.xlsx (v2.6)</em>. Rumus RRR = (1 − 1/(1 + bonus/100)) × 100. Usage fee = (Item Value × 0,1125) × Fee/100nutrition ÷ 100. Pajak: setup 2,5% + transaksi 4% (Premium) / 8% (non). Bonus Focus +59% adalah estimasi komunitas — kalibrasi manual setelah tes in-game."
+               data-en="<strong>Source & accuracy:</strong> The logic & all formulas here are copied 1:1 from the <em>Albion_Calc_Refine_G.xlsx (v2.6)</em> spreadsheet. RRR = (1 − 1/(1 + bonus/100)) × 100. Usage fee = (Item Value × 0.1125) × Fee/100nutrition ÷ 100. Tax: setup 2.5% + transaction 4% (Premium) / 8% (non). The +59% Focus bonus is a community estimate — calibrate manually after in-game testing.">Logika & semua rumus disalin 1:1 dari spreadsheet Albion_Calc_Refine_G.xlsx (v2.6).</p>
+        </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-id="Kalkulator Refining Albion Online • dibuat dari Albion_Calc_Refine_G.xlsx v2.6"
+               data-en="Albion Online Refining Calculator • built from Albion_Calc_Refine_G.xlsx v2.6">Kalkulator Refining Albion Online • dari Albion_Calc_Refine_G.xlsx v2.6</p>
+        </div>
+    </footer>
+
+    <script src="calculator.js"></script>
+</body>
+</html>

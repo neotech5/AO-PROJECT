@@ -1137,3 +1137,21 @@ p {
         font-size: 1.25rem;
     }
 }
+
+/* ============================================
+   Header calculator link (added)
+   ============================================ */
+.header-calc-link {
+    margin-left: auto;
+    margin-right: 1.5rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    transition: color 150ms ease-out;
+}
+.header-calc-link:hover { color: var(--foreground); }
+@media (max-width: 600px) {
+    .header-calc-link { font-size: 0.8rem; margin-right: 0.5rem; }
+}
