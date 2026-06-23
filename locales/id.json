@@ -175,6 +175,8 @@
     "author": "Penulis: ABID"
   },
   "nav": {
-    "home": "🏠 Beranda"
+    "home": "🏠 Beranda",
+    "beginner": "📘 Pemula",
+    "builds": "⚔️ Build"
   }
 }

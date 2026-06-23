@@ -175,6 +175,8 @@
     "author": "Author: ABID"
   },
   "nav": {
-    "home": "🏠 Home"
+    "home": "🏠 Home",
+    "beginner": "📘 Beginner",
+    "builds": "⚔️ Builds"
   }
 }

@@ -161,7 +161,16 @@ body.intro-open { overflow: hidden; }
     height: auto;
     filter: drop-shadow(0 0 34px rgba(255, 45, 63, 0.4));
     margin-bottom: 1rem;
-    animation: bellGlow 3.2s ease-in-out infinite;
+    transform-origin: 50% 10%;
+    animation: bellGlow 3.2s ease-in-out infinite, bellSway 5s ease-in-out infinite;
+}
+/* subtle bell swing on the landing hero logo */
+@keyframes bellSway {
+    0%, 100% { transform: rotate(-1.4deg); }
+    50%      { transform: rotate(1.4deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .landing-logo { animation: bellGlow 3.2s ease-in-out infinite; }
 }
 .landing-badge {
     display: inline-block;
