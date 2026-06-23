@@ -276,6 +276,27 @@
     font-size: 0.92rem;
     line-height: 1.55;
 }
+.build-set {
+    margin-top: 0.85rem;
+    padding-top: 0.7rem;
+    border-top: 1px solid rgba(192, 22, 34, 0.22);
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+.build-set p {
+    margin: 0;
+    font-size: 0.84rem !important;
+    line-height: 1.45;
+}
+.build-set .set-label {
+    color: var(--crimson-bright);
+    font-family: 'Cinzel', var(--font-serif);
+    font-size: 0.74rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.build-set .set-val { color: var(--silver); }
 
 @media (max-width: 600px) {
     .guide-block, .build-block { padding: 1.2rem; }
