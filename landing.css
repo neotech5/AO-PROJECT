@@ -278,6 +278,45 @@ body.intro-open { overflow: hidden; }
 .landing-body .footer {
     border-top: 1px solid rgba(192, 22, 34, 0.25);
 }
+.footer-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+}
+.visitor-count {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid rgba(192, 22, 34, 0.35);
+    border-radius: var(--radius-md, 8px);
+    background: rgba(192, 22, 34, 0.08);
+    font-size: 0.9rem;
+    color: var(--foreground, #e8e8f0);
+}
+.visitor-count strong { color: var(--primary, #d4af37); font-variant-numeric: tabular-nums; }
+.visitor-icon { font-size: 0.95rem; line-height: 1; }
+.contact-dev {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: var(--radius-md, 8px);
+    background: #5865F2;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.15s, transform 0.15s;
+}
+.contact-dev:hover { background: #4752c4; transform: translateY(-1px); }
+@media (max-width: 480px) {
+    .footer-meta { flex-direction: column; gap: 0.6rem; }
+    .visitor-count, .contact-dev { font-size: 0.82rem; }
+}
 
 /* ============================================
    RESPONSIVE HEADER (shared by all pages)

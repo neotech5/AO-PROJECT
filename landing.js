@@ -49,6 +49,29 @@
         });
     }
 
+    // ---- Visitor counter (free, no-server; abacus.jasoncameron.dev) ----
+    // Counts once per browser session so refreshes don't inflate the number.
+    function initVisitorCount() {
+        const out = document.getElementById('visitorNumber');
+        if (!out) return;
+        const COUNT_URL = 'https://abacus.jasoncameron.dev/hit/crimsonbell.web.id/home';
+        const GET_URL = 'https://abacus.jasoncameron.dev/get/crimsonbell.web.id/home';
+        let counted = false;
+        try { counted = sessionStorage.getItem('cbCounted') === '1'; } catch (e) { /* ignore */ }
+        const url = counted ? GET_URL : COUNT_URL;
+        fetch(url)
+            .then(function (r) { return r.json(); })
+            .then(function (d) {
+                if (d && typeof d.value === 'number') {
+                    out.textContent = d.value.toLocaleString();
+                    try { sessionStorage.setItem('cbCounted', '1'); } catch (e) { /* ignore */ }
+                } else {
+                    out.textContent = '—';
+                }
+            })
+            .catch(function () { out.textContent = '—'; });
+    }
+
     document.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll('.lang-btn').forEach(function (btn) {
             btn.addEventListener('click', function () {
@@ -59,5 +82,6 @@
         });
         applyLanguage();
         initIntro();
+        initVisitorCount();
     });
 })();
