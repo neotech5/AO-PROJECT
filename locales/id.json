@@ -173,5 +173,11 @@
   "footer": {
     "text": "Panduan Pengumpulan Albion Online 2026 • Terakhir Diperbarui: Mei 2026",
     "author": "Penulis: ABID"
+  },
+  "nav": {
+    "home": "🏠 Beranda",
+    "beginner": "📘 Pemula",
+    "builds": "⚔️ Build",
+    "roa": "🗺️ Roads"
   }
 }

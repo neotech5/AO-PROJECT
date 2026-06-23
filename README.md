@@ -30,7 +30,10 @@ A modern, responsive farming guide for Albion Online built with pure HTML, CSS, 
 
 ```
 albion-simplified/
-├── index.html          # Main HTML file
+├── index.html          # Main HTML file (farming guide)
+├── calculator.html     # Refining/crafting profit calculator (port of Albion_Calc_Refine_G.xlsx v2.6)
+├── calculator.js       # Calculator logic (1:1 with the spreadsheet formulas)
+├── calculator.css      # Calculator page styles (reuses styles.css theme)
 ├── styles.css          # All styling
 ├── script.js           # JavaScript for interactivity
 ├── locales/
@@ -38,6 +41,21 @@ albion-simplified/
 │   └── id.json        # Indonesian translations
 └── README.md          # This file
 ```
+
+## Refining Calculator
+
+`calculator.html` is a standalone, bilingual (ID/EN) refining & crafting profit
+calculator that mirrors the `Albion_Calc_Refine_G.xlsx` (v2.6) spreadsheet
+cell-for-cell. Key formulas:
+
+- RRR = `(1 - 1/(1 + bonus/100)) * 100`
+- Usage fee per unit = `(Item Value * 0.1125) * (Fee per 100 nutrition) / 100`
+- Transaction tax = 4% with Premium, 8% without; setup fee 2.5%
+- Focus bonus = flat +59% (community estimate; calibrate in-game)
+
+It supports up to 4 raw materials, the crafting step, artifacts, taxes, and
+Premium-vs-no-Premium / Focus-vs-no-Focus comparisons. Open it directly in a
+browser or via the "Refining Calculator" link in the guide header.
 
 ## Deployment to Netlify
 
