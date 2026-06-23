@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Albion Online Refining Calculator</title>
+    <title>Refining Calculator — CrimsonBell</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/crimsonbell-mark.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="landing.css">
     <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
@@ -15,10 +17,15 @@
     <header class="sticky-header">
         <div class="container">
             <div class="header-content">
-                <h1 class="logo">Albion Refining Calc</h1>
-                <nav class="calc-nav">
-                    <a href="index.html" class="nav-link"
-                       data-id="🏠 Panduan Farming" data-en="🏠 Farming Guide">🏠 Panduan Farming</a>
+                <a href="index.html" class="logo-link">
+                    <img src="assets/crimsonbell-mark.webp" alt="CrimsonBell" class="header-mark">
+                    <span class="logo">CrimsonBell</span>
+                </a>
+                <nav class="calc-nav header-nav">
+                    <a href="index.html" class="nav-link header-nav-link"
+                       data-id="🏠 Beranda" data-en="🏠 Home">🏠 Beranda</a>
+                    <a href="farming.html" class="nav-link header-nav-link"
+                       data-id="🌾 Panduan Farming" data-en="🌾 Farming Guide">🌾 Panduan Farming</a>
                 </nav>
                 <div class="language-switcher">
                     <button class="lang-btn" data-lang="en">EN</button>
@@ -37,8 +44,8 @@
                 data-id="Kalkulator Untung Refining Albion Online"
                 data-en="Albion Online Refining Profit Calculator">Kalkulator Untung Refining Albion Online</h1>
             <p class="hero-description"
-               data-id="Hitung untung/rugi sebelum kamu beli ore, refine jadi bar, dan jual. Akurat 1:1 dengan spreadsheet aslinya (v2.6)."
-               data-en="Calculate profit/loss before you buy ore, refine into bars, and sell. 1:1 accurate with the original spreadsheet (v2.6).">Hitung untung/rugi sebelum kamu beli ore, refine jadi bar, dan jual. Akurat 1:1 dengan spreadsheet aslinya (v2.6).</p>
+               data-id="Hitung untung/rugi sebelum kamu beli ore, refine jadi bar, dan jual."
+               data-en="Calculate profit/loss before you buy ore, refine into bars, and sell.">Hitung untung/rugi sebelum kamu beli ore, refine jadi bar, dan jual.</p>
             <div class="headline-profit-wrap">
                 <span class="headline-profit-label"
                       data-id="Untung bersih per batch:" data-en="Net profit per batch:">Untung bersih per batch:</span>
@@ -411,8 +418,8 @@
 
         <!-- ACCURACY NOTE -->
         <div class="section-block accuracy-note">
-            <p data-id="<strong>Sumber & akurasi:</strong> Logika & semua rumus kalkulator ini disalin 1:1 dari spreadsheet <em>Albion_Calc_Refine_G.xlsx (v2.6)</em>. Rumus RRR = (1 − 1/(1 + bonus/100)) × 100. Usage fee = (Item Value × 0,1125) × Fee/100nutrition ÷ 100. Pajak: setup 2,5% + transaksi 4% (Premium) / 8% (non). Bonus Focus +59% adalah estimasi komunitas — kalibrasi manual setelah tes in-game."
-               data-en="<strong>Source & accuracy:</strong> The logic & all formulas here are copied 1:1 from the <em>Albion_Calc_Refine_G.xlsx (v2.6)</em> spreadsheet. RRR = (1 − 1/(1 + bonus/100)) × 100. Usage fee = (Item Value × 0.1125) × Fee/100nutrition ÷ 100. Tax: setup 2.5% + transaction 4% (Premium) / 8% (non). The +59% Focus bonus is a community estimate — calibrate manually after in-game testing.">Logika & semua rumus disalin 1:1 dari spreadsheet Albion_Calc_Refine_G.xlsx (v2.6).</p>
+            <p data-id="<strong>Rumus & akurasi:</strong> Rumus RRR = (1 − 1/(1 + bonus/100)) × 100. Usage fee = (Item Value × 0,1125) × Fee/100nutrition ÷ 100. Pajak: setup 2,5% + transaksi 4% (Premium) / 8% (non). Bonus Focus +59% adalah estimasi komunitas — kalibrasi manual setelah tes in-game."
+               data-en="<strong>Formulas & accuracy:</strong> RRR = (1 − 1/(1 + bonus/100)) × 100. Usage fee = (Item Value × 0.1125) × Fee/100nutrition ÷ 100. Tax: setup 2.5% + transaction 4% (Premium) / 8% (non). The +59% Focus bonus is a community estimate — calibrate manually after in-game testing.">Rumus RRR = (1 − 1/(1 + bonus/100)) × 100. Usage fee = (Item Value × 0,1125) × Fee/100nutrition ÷ 100.</p>
         </div>
 
         </div>
@@ -420,8 +427,8 @@
 
     <footer class="footer">
         <div class="container">
-            <p data-id="Kalkulator Refining Albion Online • dibuat dari Albion_Calc_Refine_G.xlsx v2.6"
-               data-en="Albion Online Refining Calculator • built from Albion_Calc_Refine_G.xlsx v2.6">Kalkulator Refining Albion Online • dari Albion_Calc_Refine_G.xlsx v2.6</p>
+            <p data-id="Kalkulator Refining Albion Online • by CrimsonBell"
+               data-en="Albion Online Refining Calculator • by CrimsonBell">Albion Online Refining Calculator • by CrimsonBell</p>
         </div>
     </footer>
 

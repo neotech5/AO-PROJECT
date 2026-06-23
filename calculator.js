@@ -1,16 +1,14 @@
 // ============================================
-// Albion Online Refining/Crafting Calculator
-// Faithful re-implementation of Albion_Calc_Refine_G.xlsx (v2.6)
-// Every formula below mirrors a spreadsheet cell (referenced in comments).
+// Albion Online Refining/Crafting Calculator — CrimsonBell
 // ============================================
 
-// ---- Resource Return Rate, the spreadsheet's core formula ----
-// xlsx: RRR = (1 - 1/(1 + bonus/100)) * 100
+// ---- Resource Return Rate (core refining formula) ----
+// RRR = (1 - 1/(1 + bonus/100)) * 100
 function rrrFromBonus(bonusPercent) {
     return (1 - 1 / (1 + bonusPercent / 100)) * 100;
 }
 
-// xlsx usage fee: (ItemValue * 0.1125) * Fee/100nutrition / 100
+// usage fee: (ItemValue * 0.1125) * Fee/100nutrition / 100
 function usageFeePerUnit(itemValue, stationFee) {
     return (itemValue * 0.1125) * stationFee / 100;
 }

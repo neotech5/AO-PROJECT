@@ -1,138 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Albion Online Farming Guide</title>
+    <title>Albion Online Guide — Beginner by CrimsonBell</title>
+    <meta name="description" content="Albion Online beginner guide and tools by CrimsonBell — refining calculator, farming guide, and more.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/crimsonbell-mark.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="landing.css">
 </head>
-<body>
+<body class="landing-body">
+
+    <!-- Intro / Bio Popup -->
+    <div class="intro-overlay" id="introOverlay">
+        <div class="intro-card">
+            <picture>
+                <source srcset="assets/crimsonbell-logo.webp" type="image/webp">
+                <img src="assets/crimsonbell-logo.jpg" alt="CrimsonBell" class="intro-logo">
+            </picture>
+            <p class="intro-quote"
+               data-id="“Saat CrimsonBell berdentang, bahkan yang paling berani pun mulai menghitung detik-detik terakhirnya.”"
+               data-en="“When the CrimsonBell tolls, even the bravest begin to count their final moments.”">“When the CrimsonBell tolls, even the bravest begin to count their final moments.”</p>
+            <button class="btn btn-primary intro-enter" id="introEnter"
+                    data-id="Masuk" data-en="Enter">Enter</button>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="sticky-header">
         <div class="container">
             <div class="header-content">
-                <h1 class="logo" data-i18n="hero.title">Albion Farming</h1>
-                <a href="calculator.html" class="header-calc-link">🧮 Refining Calculator</a>
+                <a href="index.html" class="logo-link">
+                    <img src="assets/crimsonbell-mark.webp" alt="CrimsonBell" class="header-mark">
+                    <span class="logo">CrimsonBell</span>
+                </a>
                 <div class="language-switcher">
-                    <button class="lang-btn active" data-lang="en">EN</button>
-                    <button class="lang-btn" data-lang="id">ID</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn active" data-lang="id">ID</button>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-background"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-badge" data-i18n="hero.badge">2026 FARMING GUIDE</div>
-            <h1 class="hero-title" data-i18n="hero.title">Albion Online Farming Guide</h1>
-            <p class="hero-description" data-i18n="hero.description">Master the art of resource gathering across all tiers. From beginner zones to the most dangerous T8 Outlands, discover the best farming spots and strategies.</p>
-            <button class="btn btn-primary" data-i18n="hero.cta">Start Farming</button>
+    <!-- Hero -->
+    <section class="landing-hero">
+        <div class="landing-hero-glow"></div>
+        <div class="container landing-hero-inner">
+            <picture>
+                <source srcset="assets/crimsonbell-logo.webp" type="image/webp">
+                <img src="assets/crimsonbell-logo.jpg" alt="CrimsonBell" class="landing-logo">
+            </picture>
+            <div class="landing-badge"
+                 data-id="PANDUAN & TOOLS ALBION ONLINE" data-en="ALBION ONLINE GUIDE & TOOLS">ALBION ONLINE GUIDE & TOOLS</div>
+            <h1 class="landing-title"
+                data-id="Albion Online Guide" data-en="Albion Online Guide">Albion Online Guide</h1>
+            <p class="landing-subtitle"
+               data-id="Panduan untuk Pemula — by CrimsonBell"
+               data-en="Beginner Guide — by CrimsonBell">Beginner Guide — by CrimsonBell</p>
+            <p class="landing-quote"
+               data-id="“Saat CrimsonBell berdentang, bahkan yang paling berani pun mulai menghitung detik-detik terakhirnya.”"
+               data-en="“When the CrimsonBell tolls, even the bravest begin to count their final moments.”">“When the CrimsonBell tolls, even the bravest begin to count their final moments.”</p>
         </div>
     </section>
 
-    <!-- Prime Time Tracker -->
-    <section class="prime-time-section">
+    <!-- Tools / Sections -->
+    <section class="landing-tools">
         <div class="container">
-            <div class="prime-time-widget">
-                <div class="prime-time-header">
-                    <h3>🕐 Asia Server Status</h3>
-                </div>
-                <div class="prime-time-content">
-                    <div class="time-display">
-                        <div class="time-row">
-                            <div class="time-item">
-                                <div class="time-label" data-i18n="tracker.localTime">Your Time</div>
-                                <div class="current-time" id="localTime">--:-- --</div>
-                            </div>
-                            <div class="time-divider">|</div>
-                            <div class="time-item">
-                                <div class="time-label" data-i18n="tracker.serverTime">Server Time (UTC)</div>
-                                <div class="current-time" id="utcTime">--:-- UTC</div>
-                            </div>
-                        </div>
-                        <div class="danger-level" id="dangerLevel">Safe</div>
-                    </div>
-                    <div class="time-info">
-                        <p><strong>Peak Time:</strong> <span id="peakTimeInfo">14:00 UTC</span></p>
-                        <p><strong>Status:</strong> <span id="statusInfo">Calculating...</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <h2 class="tools-heading"
+                data-id="Pilih Tool / Panduan" data-en="Choose a Tool / Guide">Choose a Tool / Guide</h2>
+            <div class="tools-grid">
 
-    <!-- Main Content -->
-    <section class="main-content">
-        <div class="container">
-            <!-- Gathering Builds Section -->
-            <div class="section-block">
-                <div class="section-header">
-                    <h2>⚔️ <span data-i18n="builds.title">Recommended Gathering Builds</span></h2>
-                    <p data-i18n="builds.description">Optimize your equipment for maximum efficiency and safety while gathering T8 resources.</p>
-                </div>
-                <div class="builds-grid" id="buildsGrid"></div>
-            </div>
+                <a href="calculator.html" class="tool-card">
+                    <div class="tool-icon">🧮</div>
+                    <h3 class="tool-name"
+                        data-id="Kalkulator Refining" data-en="Refining Calculator">Refining Calculator</h3>
+                    <p class="tool-desc"
+                       data-id="Hitung untung/rugi sebelum beli ore, refine jadi bar, dan jual kembali."
+                       data-en="Calculate profit/loss before you buy ore, refine into bars, and resell.">Calculate profit/loss before you buy ore, refine into bars, and resell.</p>
+                    <span class="tool-cta"
+                          data-id="Buka Tool →" data-en="Open Tool →">Open Tool →</span>
+                </a>
 
-            <!-- Biomes Section -->
-            <div class="section-block">
-                <div class="section-header">
-                    <h2 data-i18n="biomes.title">Biome Distribution</h2>
-                    <p data-i18n="biomes.description">Each city specializes in different resources. Choose your farming location based on what you need.</p>
-                </div>
-                <div class="biomes-grid" id="biomesGrid"></div>
-            </div>
+                <a href="farming.html" class="tool-card">
+                    <div class="tool-icon">🌾</div>
+                    <h3 class="tool-name"
+                        data-id="Panduan Farming" data-en="Farming Guide">Farming Guide</h3>
+                    <p class="tool-desc"
+                       data-id="Lokasi farming terbaik per tier, biome tiap kota, build gathering, dan tips aman."
+                       data-en="Best farming spots per tier, city biomes, gathering builds, and safety tips.">Best farming spots per tier, city biomes, gathering builds, and safety tips.</p>
+                    <span class="tool-cta"
+                          data-id="Buka Panduan →" data-en="Open Guide →">Open Guide →</span>
+                </a>
 
-            <!-- Tier Guide Section -->
-            <div class="section-block">
-                <div class="section-header">
-                    <h2 data-i18n="tiers.title">Tier Progression Guide</h2>
-                    <p data-i18n="tiers.description">Learn the best strategies for each tier level, from safe beginner zones to dangerous T8 Outlands.</p>
+                <div class="tool-card tool-card--soon" aria-disabled="true">
+                    <div class="tool-icon">⚒️</div>
+                    <h3 class="tool-name"
+                        data-id="Lebih Banyak Segera" data-en="More Coming Soon">More Coming Soon</h3>
+                    <p class="tool-desc"
+                       data-id="Tool & panduan baru akan ditambahkan di sini."
+                       data-en="New tools & guides will be added here.">New tools & guides will be added here.</p>
+                    <span class="tool-cta"
+                          data-id="Segera Hadir" data-en="Coming Soon">Coming Soon</span>
                 </div>
-                <div class="tiers-container" id="tiersContainer"></div>
-            </div>
 
-            <!-- T8 Maps Section -->
-            <div class="section-block">
-                <div class="section-header">
-                    <h2 data-i18n="t8Maps.title">T8 Farming Locations</h2>
-                    <p data-i18n="t8Maps.description">Specific map names for each resource type in the Outlands (Black Zone). These are the most valuable farming spots.</p>
-                </div>
-                <div class="t8-maps-grid" id="t8MapsGrid"></div>
-            </div>
-
-            <!-- Event Schedule Section -->
-            <div class="section-block">
-                <div class="section-header">
-                    <h2>📅 <span data-i18n="events.title">Asia Server Events & Schedule</span></h2>
-                    <p data-i18n="events.description">Important events and timings for Asia server farming activities.</p>
-                </div>
-                <div class="events-grid" id="eventsGrid"></div>
-            </div>
-
-            <!-- Pro Tips Section -->
-            <div class="pro-tips-grid">
-                <div class="card pro-tip-card">
-                    <div class="card-icon">⚡</div>
-                    <h3 class="card-title" data-i18n="proTips.efficiency.title">Efficiency Tips</h3>
-                    <div class="card-content" id="efficiencyTips"></div>
-                    <div class="card-note">💡 <em data-i18n="proTips.efficiency.radiantTip">Tip: Use the new Loot All button from Radiant Wilds for faster PvE farming!</em></div>
-                </div>
-                <div class="card pro-tip-card">
-                    <div class="card-icon">🛡️</div>
-                    <h3 class="card-title" data-i18n="proTips.safety.title">Safety Strategies</h3>
-                    <div class="card-content" id="safetyTips"></div>
-                </div>
-                <div class="card pro-tip-card">
-                    <div class="card-icon">🧭</div>
-                    <h3 class="card-title" data-i18n="proTips.profitability.title">Resource Profitability</h3>
-                    <div class="card-content" id="profitabilityTips"></div>
-                </div>
             </div>
         </div>
     </section>
@@ -140,13 +113,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p data-i18n="footer.text">Albion Online Farming Guide 2026 • Last Updated: May 2026</p>
-            <p class="footer-author" data-i18n="footer.author">Author: ABID</p>
+            <p data-id="Albion Online Guide — by CrimsonBell"
+               data-en="Albion Online Guide — by CrimsonBell">Albion Online Guide — by CrimsonBell</p>
         </div>
     </footer>
 
-    <script src="locales/en.json" type="application/json" id="en-locale"></script>
-    <script src="locales/id.json" type="application/json" id="id-locale"></script>
-    <script src="script.js"></script>
+    <script src="landing.js"></script>
 </body>
 </html>
