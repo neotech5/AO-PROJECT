@@ -283,8 +283,59 @@ function applyLanguage() {
 // ============================================
 // Init
 // ============================================
+// Field help tooltips. The tooltip is position:fixed (so it isn't clipped by the
+// table's horizontal scroll container) and gets placed next to its "?" button.
+function positionTip(btn, tip) {
+    tip.classList.add('show'); // make it measurable
+    const b = btn.getBoundingClientRect();
+    const t = tip.getBoundingClientRect();
+    const margin = 8;
+    let left = b.left + b.width / 2 - t.width / 2;
+    left = Math.max(margin, Math.min(left, window.innerWidth - t.width - margin));
+    let top = b.top - t.height - margin; // prefer above
+    if (top < margin) top = b.bottom + margin; // fall back to below
+    tip.style.left = left + 'px';
+    tip.style.top = top + 'px';
+}
+
+function hideAllTips() {
+    document.querySelectorAll('.help.open').forEach(h => h.classList.remove('open'));
+    document.querySelectorAll('.help-tip.show').forEach(t => t.classList.remove('show'));
+}
+
+function setupTooltips() {
+    document.querySelectorAll('.help').forEach(help => {
+        const btn = help.querySelector('.help-btn');
+        const tip = help.querySelector('.help-tip');
+        if (!btn || !tip) return;
+
+        btn.addEventListener('click', e => {
+            e.preventDefault();
+            e.stopPropagation();
+            const isOpen = help.classList.contains('open');
+            hideAllTips();
+            if (!isOpen) {
+                help.classList.add('open');
+                positionTip(btn, tip);
+            }
+        });
+        // desktop hover
+        help.addEventListener('mouseenter', () => {
+            if (!help.classList.contains('open')) positionTip(btn, tip);
+        });
+        help.addEventListener('mouseleave', () => {
+            if (!help.classList.contains('open')) tip.classList.remove('show');
+        });
+    });
+
+    document.addEventListener('click', hideAllTips);
+    window.addEventListener('scroll', hideAllTips, true);
+    window.addEventListener('resize', hideAllTips);
+}
+
 function init() {
     renderCityReference();
+    setupTooltips();
 
     // recompute on any input change
     document.querySelectorAll('#calcForm input').forEach(el => {
